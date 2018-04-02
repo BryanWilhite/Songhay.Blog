@@ -17,6 +17,6 @@ namespace Songhay.Blog.Models
         /// Sets the index.
         /// </summary>
         /// <param name="json">The json.</param>
-        void SetIndex(string json);
+        Task SetIndex(string json);
     }
 }
