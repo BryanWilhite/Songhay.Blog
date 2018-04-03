@@ -4,11 +4,15 @@
         {
             "label": "build",
             "command": "dotnet",
-            "type": "process",
+            "isBackground": true,
+            "type": "shell",
             "args": [
                 "build",
-                "${workspaceFolder}/Songhay.Blog/Songhay.Blog.csproj"
+                "Songhay.Blog.sln"
             ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
             "problemMatcher": "$msCompile"
         }
     ]
