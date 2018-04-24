@@ -6,14 +6,28 @@
             "command": "dotnet",
             "isBackground": true,
             "type": "shell",
-            "args": [
-                "build",
-                "Songhay.Blog.sln"
-            ],
+            "args": ["build", "Songhay.Blog.sln"],
             "options": {
                 "cwd": "${workspaceRoot}"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "command": "npm",
+            "label": "npm: install",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["install"],
+            "options": {
+                "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "Songhay.Blog/ClientApp/",
+            "problemMatcher": ["$tslint4"]
         }
     ]
 }
