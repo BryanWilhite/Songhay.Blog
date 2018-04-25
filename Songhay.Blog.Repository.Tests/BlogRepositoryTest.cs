@@ -274,6 +274,76 @@ namespace Songhay.Blog.Repository.Tests
             Assert.IsTrue(await repository.HasEntityAsync<BlogEntry>(slug), "The expected Blog Entry is not in the Repository.");
         }
 
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("htmlFile", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
+        [TestProperty("slug", "asp-net-web-api-ready-state-4-2017")]
+        public async Task ShouldLoadEntryIntoHtmlFile()
+        {
+            var projectRoot = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 2);
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+            var htmlFile = this.TestContext.Properties["htmlFile"].ToString();
+            htmlFile = Path.Combine(projectRoot, htmlFile);
+            var slug = this.TestContext.Properties["slug"].ToString();
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+            var blogEntry = await repository.LoadSingleAsync<BlogEntry>(slug);
+
+            var h2 = new XElement("h2", blogEntry.Title);
+            var contentHtml = string.Format("<content>{0}</content>", blogEntry.Content);
+            contentHtml = HtmlUtility.ConvertToXml(contentHtml);
+            var content = XElement.Parse(contentHtml);
+
+            var html = File.ReadAllText(htmlFile);
+            var xDoc = XDocument.Parse(html);
+            var body = xDoc.Root.Element("body");
+            body.Value = string.Empty;
+            body.Add(h2);
+            body.Add(content.Elements());
+
+            File.WriteAllText(htmlFile, xDoc.ToString());
+        }
+
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("markdownPath", @"E:\~shares\sourceRoot\Git\Blog\2016-12\Working in markdown, leaving behind typing a typeface.md")]
+        [TestProperty("entryPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
+        public void ShouldLoadEntryIntoHtmlFileFromMarkdown()
+        {
+            var projectRoot = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 2);
+
+            #region test properties:
+
+            var markdownPath = this.TestContext.Properties["markdownPath"].ToString();
+            this.TestContext.ShouldFindFile(markdownPath);
+
+            var entryPath = this.TestContext.Properties["entryPath"].ToString();
+            entryPath = Path.Combine(projectRoot, entryPath);
+            this.TestContext.ShouldFindFile(entryPath);
+
+            #endregion
+
+            var markdown = File.ReadAllText(markdownPath);
+            var entry = CommonMark.CommonMarkConverter.Convert(markdown);
+            var contentHtml = string.Format("<content>{0}</content>", entry);
+            var content = XElement.Parse(contentHtml);
+            content.Element("h1").Name = "h2";
+
+            var html = File.ReadAllText(entryPath);
+            var xDoc = XDocument.Parse(html);
+            var body = xDoc.Root.Element("body");
+            body.Value = string.Empty;
+            body.Add(content.Elements());
+
+            File.WriteAllText(entryPath, xDoc.ToString());
+        }
+
         static CloudStorageAccount cloudStorageAccount;
     }
 }
