@@ -39,6 +39,7 @@ namespace Songhay.Blog.Repository.Tests
             cloudStorageAccount = this.TestContext.ShouldGetCloudStorageAccount(basePath);
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -151,6 +152,7 @@ namespace Songhay.Blog.Repository.Tests
             });
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -177,6 +179,7 @@ namespace Songhay.Blog.Repository.Tests
             Assert.AreEqual(sampleSize, index.Count(), "The expected repository index count is not here.");
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -257,6 +260,7 @@ namespace Songhay.Blog.Repository.Tests
             await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, indexPath);
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -274,6 +278,7 @@ namespace Songhay.Blog.Repository.Tests
             Assert.IsTrue(await repository.HasEntityAsync<BlogEntry>(slug), "The expected Blog Entry is not in the Repository.");
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -310,6 +315,7 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(htmlFile, xDoc.ToString());
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("markdownPath", @"E:\~shares\sourceRoot\Git\Blog\2016-12\Working in markdown, leaving behind typing a typeface.md")]
@@ -344,6 +350,7 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(entryPath, xDoc.ToString());
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
