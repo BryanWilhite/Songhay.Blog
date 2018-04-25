@@ -257,6 +257,23 @@ namespace Songhay.Blog.Repository.Tests
             await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, indexPath);
         }
 
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("slug", "inter-view-model-communication")]
+        public async Task ShouldHaveEntity()
+        {
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+            var slug = this.TestContext.Properties["slug"].ToString();
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+            Assert.IsTrue(await repository.HasEntityAsync<BlogEntry>(slug), "The expected Blog Entry is not in the Repository.");
+        }
+
         static CloudStorageAccount cloudStorageAccount;
     }
 }
