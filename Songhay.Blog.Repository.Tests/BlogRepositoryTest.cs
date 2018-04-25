@@ -344,6 +344,32 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(entryPath, xDoc.ToString());
         }
 
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("slugNew", "non-blocking-ui-s-with-interface-previews-themadray-and-other-twinks")]
+        [TestProperty("slugOld", "non-blocking-ui-s-with-interface-previews-and-other-twinks")]
+        public async Task ShouldReplaceEntry()
+        {
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+            var slugNew = this.TestContext.Properties["slugNew"].ToString();
+            var slugOld = this.TestContext.Properties["slugOld"].ToString();
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+            var blogEntryNew = await repository.LoadSingleAsync<BlogEntry>(slugNew);
+            var blogEntryOld = await repository.LoadSingleAsync<BlogEntry>(slugOld);
+
+            blogEntryNew.InceptDate = blogEntryOld.InceptDate;
+            blogEntryNew.ModificationDate = DateTime.Now;
+
+            await repository.SaveEntityAsync(blogEntryNew);
+            await repository.DeleteEntityAsync<BlogEntry>(blogEntryOld.Slug);
+        }
+
         static CloudStorageAccount cloudStorageAccount;
     }
 }
