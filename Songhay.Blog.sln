@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog", "Songhay.Blo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Tests", "Songhay.Blog.Tests\Songhay.Blog.Tests.csproj", "{4268D616-2289-4E0D-BEEB-43772C567E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.Blog.Models", "Songhay.Blog.Models\Songhay.Blog.Models.csproj", "{8B3E68CB-9E75-4FA5-8C90-45109A56870F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Models", "Songhay.Blog.Models\Songhay.Blog.Models.csproj", "{8B3E68CB-9E75-4FA5-8C90-45109A56870F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.Blog.Repository", "Songhay.Blog.Repository\Songhay.Blog.Repository.csproj", "{CEF79217-920C-4885-BECE-0040802427EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Repository", "Songhay.Blog.Repository\Songhay.Blog.Repository.csproj", "{CEF79217-920C-4885-BECE-0040802427EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.Blog.Repository.Tests", "Songhay.Blog.Repository.Tests\Songhay.Blog.Repository.Tests.csproj", "{305C72D3-CAB4-453D-9096-E09918495853}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{CEF79217-920C-4885-BECE-0040802427EF}.Release|x64.Build.0 = Release|Any CPU
 		{CEF79217-920C-4885-BECE-0040802427EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{CEF79217-920C-4885-BECE-0040802427EF}.Release|x86.Build.0 = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|x64.Build.0 = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Debug|x86.Build.0 = Debug|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x64.ActiveCfg = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x64.Build.0 = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x86.ActiveCfg = Release|Any CPU
+		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
