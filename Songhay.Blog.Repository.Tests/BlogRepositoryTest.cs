@@ -3,16 +3,19 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Newtonsoft.Json;
 using Songhay.Blog.Models;
+using Songhay.Blog.Models.Extensions;
 using Songhay.Blog.Repository.Tests.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
+using Songhay.Xml;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Songhay.Blog.Repository.Tests
 {
@@ -172,6 +175,86 @@ namespace Songhay.Blog.Repository.Tests
             index.ForEachInEnumerable(i => this.TestContext.WriteLine(i.ToString()));
 
             Assert.AreEqual(sampleSize, index.Count(), "The expected repository index count is not here.");
+        }
+
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("entryPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
+        [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntryAndUpdateIndex.json")]
+        [TestProperty("indexPath", @"json\ShouldGenerateRepositoryIndex.json")]
+        [TestProperty("topicsPath", @"Songhay.Blog\App_Data\topics.opml")]
+        public async Task ShouldGenerateBlogEntryAndUpdateIndex()
+        {
+            var projectsRoot = this.TestContext
+                .ShouldGetAssemblyDirectoryInfo(this.GetType())
+                ?.Parent
+                ?.Parent
+                ?.Parent.FullName;
+            this.TestContext.ShouldFindDirectory(projectsRoot);
+
+            #region test properties:
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+
+            var entryPath = this.TestContext.Properties["entryPath"].ToString();
+            entryPath = Path.Combine(projectsRoot, this.GetType().Namespace, entryPath);
+            this.TestContext.ShouldFindFile(entryPath);
+
+            var entryOutputPath = this.TestContext.Properties["entryOutputPath"].ToString();
+            entryOutputPath = Path.Combine(projectsRoot, this.GetType().Namespace, entryOutputPath);
+            this.TestContext.ShouldFindFile(entryOutputPath);
+
+            var indexPath = this.TestContext.Properties["indexPath"].ToString();
+            indexPath = Path.Combine(projectsRoot, this.GetType().Namespace, indexPath);
+            this.TestContext.ShouldFindFile(indexPath);
+
+            var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
+            topicsPath = Path.Combine(projectsRoot, topicsPath);
+            this.TestContext.ShouldFindFile(topicsPath);
+
+            #endregion
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+
+            var entry = File.ReadAllText(entryPath);
+            entry = HtmlUtility.ConvertToXml(entry);
+            var xdEntry = XDocument.Parse(entry);
+            var body = xdEntry.Root.Element("body");
+            Assert.IsNotNull(body, "The expected body is not here.");
+
+            var title = body.Element("h2").GetInnerXml();
+            var content = new XElement("body",
+                body
+                    .Elements()
+                    .Where(i => !i.Name.LocalName.Equals("h2"))
+                ).GetInnerXml();
+
+            var blogEntry = (new BlogEntry
+            {
+                Content = content,
+                InceptDate = DateTime.Now,
+                IsPublished = true,
+                Title = title
+            }).WithDefaultSlug();
+
+            if (await repository.HasEntityAsync<BlogEntry>(blogEntry.Slug))
+            {
+                var previousEntry = await repository.LoadSingleAsync<BlogEntry>(blogEntry.Slug);
+                Assert.IsNotNull(previousEntry, "The expected previous entry is not here.");
+                blogEntry.InceptDate = previousEntry.InceptDate;
+            }
+
+            await repository.SaveEntityAsync(blogEntry);
+            Assert.IsTrue(await repository.HasEntityAsync<BlogEntry>(blogEntry.Slug), "The expected Blog Entry is not in the Repository.");
+            var json = JsonConvert.SerializeObject(blogEntry, Formatting.Indented);
+            File.WriteAllText(entryOutputPath, json);
+
+            await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, indexPath);
         }
 
         static CloudStorageAccount cloudStorageAccount;

@@ -1,8 +1,14 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.WindowsAzure.Storage;
+using Songhay.Blog.Models;
+using Songhay.Blog.Models.Extensions;
 using Songhay.Models;
+using Songhay.Xml;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Songhay.Blog.Repository.Tests.Extensions
 {
@@ -28,6 +34,24 @@ namespace Songhay.Blog.Repository.Tests.Extensions
             var connectionString = set.First().Value;
             var cloudStorageAccount = CloudStorageAccount.Parse(connectionString);
             return cloudStorageAccount;
+        }
+
+        public static async Task ShouldGenerateRepositoryIndex(this TestContext context, BlogRepository repository, string topicsPath, string indexPath)
+        {
+            Assert.IsNotNull(repository, "The expected repository is not here.");
+
+            var entries = await repository.LoadAllAsync<BlogEntry>();
+            Assert.IsTrue(entries.Any(), "The expected Blog entries are not here.");
+
+            var xd = XDocument.Load(topicsPath);
+            var topics = OpmlUtility.GetDocument(xd.Root, OpmlUtility.rx);
+
+            var json = repository.GenerateIndex(entries, topics);
+            Assert.IsFalse(string.IsNullOrEmpty(json), "The expected index data is not here.");
+
+            File.WriteAllText(indexPath, json);
+
+            await repository.SetIndex(json);
         }
     }
 }
