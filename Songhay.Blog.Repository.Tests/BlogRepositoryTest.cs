@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Newtonsoft.Json;
 using Songhay.Blog.Models;
 using Songhay.Blog.Repository.Tests.Extensions;
+using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
 using System;
@@ -145,6 +146,32 @@ namespace Songhay.Blog.Repository.Tests
                     this.TestContext.WriteLine("Exception: {0}", ex.Message);
                 }
             });
+        }
+
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        public async Task ShouldGetIndex()
+        {
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+
+            var sampleSize = 10;
+            var index = await repository.GetIndexAsync();
+            index = index
+                .OrderByDescending(i => i.InceptDate)
+                .Take(sampleSize);
+            Assert.IsTrue(index.Any(), "The expected repository index is not here.");
+
+            index.ForEachInEnumerable(i => this.TestContext.WriteLine(i.ToString()));
+
+            Assert.AreEqual(sampleSize, index.Count(), "The expected repository index count is not here.");
         }
 
         static CloudStorageAccount cloudStorageAccount;
