@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Models", "Song
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Repository", "Songhay.Blog.Repository\Songhay.Blog.Repository.csproj", "{CEF79217-920C-4885-BECE-0040802427EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.Blog.Repository.Tests", "Songhay.Blog.Repository.Tests\Songhay.Blog.Repository.Tests.csproj", "{305C72D3-CAB4-453D-9096-E09918495853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Songhay.Blog.Repository.Tests", "Songhay.Blog.Repository.Tests\Songhay.Blog.Repository.Tests.csproj", "{305C72D3-CAB4-453D-9096-E09918495853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Songhay.Blog.Shell.Tests", "Songhay.Blog.Shell.Tests\Songhay.Blog.Shell.Tests.csproj", "{582BF152-872D-4357-8377-FEF82153FF58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,18 @@ Global
 		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x64.Build.0 = Release|Any CPU
 		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x86.ActiveCfg = Release|Any CPU
 		{305C72D3-CAB4-453D-9096-E09918495853}.Release|x86.Build.0 = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|x64.Build.0 = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Debug|x86.Build.0 = Debug|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|x64.ActiveCfg = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|x64.Build.0 = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|x86.ActiveCfg = Release|Any CPU
+		{582BF152-872D-4357-8377-FEF82153FF58}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
