@@ -1,0 +1,21 @@
+﻿{
+    "name": "songhayblog-index",
+    "fields": [
+        {
+            "name": "Slug",
+            "type": "Edm.String",
+            "key": true,
+            "searchable": false
+        },
+        {
+            "name": "Content",
+            "type": "Edm.String",
+            "searchable": true
+        },
+        {
+            "name": "Title",
+            "type": "Edm.String",
+            "searchable": true
+        }
+    ]
+}

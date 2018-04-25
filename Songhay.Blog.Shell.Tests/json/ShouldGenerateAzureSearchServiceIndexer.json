@@ -1,0 +1,7 @@
+﻿{
+    "name": "songhayblog-indexer",
+    "dataSourceName": "songhayblog-datasource",
+    "parameters": { "configuration": { "useJsonParser": true } },
+    "targetIndexName": "songhayblog-index",
+    "schedule": { "interval": "PT2H" }
+}
