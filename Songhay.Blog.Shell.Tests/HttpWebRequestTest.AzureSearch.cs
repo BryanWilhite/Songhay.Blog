@@ -36,7 +36,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("uri: {0}", uri);
 
             var request = new HttpRequestMessage(HttpMethod.Delete, uri);
-            request.Headers.Add("api-key", restApiMetadata.ApiKey);
+            request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey);
 
             var response = await httpClient.SendAsync(request);
             this.TestContext.WriteLine($"HTTP Status Code: {response.StatusCode}");
@@ -73,10 +73,11 @@ namespace Songhay.Blog.Shell.Tests
             json = jO.ToString();
             this.TestContext.WriteLine($"JSON payload: {json}");
 
-            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add("api-key", restApiMetadata.ApiKey));
+            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldGenerateAzureSearchServiceIndex.json")]
@@ -101,10 +102,11 @@ namespace Songhay.Blog.Shell.Tests
 
             var json = File.ReadAllText(jsonPath);
 
-            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add("api-key", restApiMetadata.ApiKey));
+            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldGenerateAzureSearchServiceIndexer.json")]
@@ -129,8 +131,27 @@ namespace Songhay.Blog.Shell.Tests
 
             var json = File.ReadAllText(jsonPath);
 
-            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add("api-key", restApiMetadata.ApiKey));
+            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
+
+        [Ignore("This test is meant to run manually on the Desktop.")]
+        [TestCategory("Integration")]
+        [TestMethod]
+        public async Task ShouldGetAzureSearchServiceComponent()
+        {
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search"]);
+            var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
+            var componentName = restApiMetadata.ClaimsSet["component-name-indexers"];
+            var itemName = restApiMetadata.ClaimsSet["search-item-name"];
+
+            var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, componentName, itemName, apiVersion);
+            this.TestContext.WriteLine("uri: {0}", uri);
+
+            var response = await httpClient.DownloadToStringAsync(uri, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
+            this.TestContext.WriteLine($"response: {response}");
+        }
+
+        const string apiKeyHeader = "api-key";
     }
 }
