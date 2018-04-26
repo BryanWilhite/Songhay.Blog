@@ -1,0 +1,9 @@
+﻿{
+    "name": "songhayblog-datasource",
+    "type": "azureblob",
+    "credentials": { "connectionString": "[connectionString]" },
+    "container": {
+        "name": "[name]",
+        "query": "BlogEntry"
+    }
+}

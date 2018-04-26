@@ -1,14 +1,13 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
-using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Extensions;
 using Songhay.Models;
 using Songhay.Xml;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -16,12 +15,11 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Tavis.UriTemplates;
 
 namespace Songhay.Blog.Shell.Tests
 {
     [TestClass]
-    public class HttpWebRequestTest
+    public partial class HttpWebRequestTest
     {
         static HttpWebRequestTest()
         {
@@ -50,28 +48,11 @@ namespace Songhay.Blog.Shell.Tests
 
             restApiMetadata = meta.ToAzureSearchRestApiMetadata();
 
+            cloudStorageMeta = meta.CloudStorageSet["SonghayCloudStorage"];
+            Assert.IsNotNull(cloudStorageMeta, "The expected connection string is not here.");
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
-        [TestCategory("Integration")]
-        [TestMethod]
-        public async Task ShouldDeleteAzureSearchServiceComponent()
-        {
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search"]);
-            var componentName = restApiMetadata.ClaimsSet["search-component-name"];
-            var itemName = restApiMetadata.ClaimsSet["search-item-name"];
-
-            var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, componentName, itemName);
-            this.TestContext.WriteLine("uri: {0}", uri);
-
-            var request = new HttpRequestMessage(HttpMethod.Delete, uri);
-            request.Headers.Add("api-key", restApiMetadata.ApiKey);
-
-            var response = await httpClient.SendAsync(request);
-            this.TestContext.WriteLine($"HTTP Status Code: {response.StatusCode}");
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.NoContent, "The expected status code is not here.");
-        }
-
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("uri", "http://ow.ly/87kA3076kM1")]
@@ -86,6 +67,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"Loaction: {response.Headers.Location}");
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldExpandUris.json")]
@@ -139,6 +121,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("XHTML:\n{0}", xhtml);
         }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("htmlPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
@@ -257,5 +240,6 @@ namespace Songhay.Blog.Shell.Tests
         static readonly HttpClient httpClient;
 
         static RestApiMetadata restApiMetadata;
+        static Dictionary<string, string> cloudStorageMeta;
     }
 }
