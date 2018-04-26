@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
 using Songhay.Extensions;
@@ -50,6 +51,8 @@ namespace Songhay.Blog.Shell.Tests
 
             cloudStorageMeta = meta.CloudStorageSet["SonghayCloudStorage"];
             Assert.IsNotNull(cloudStorageMeta, "The expected connection string is not here.");
+
+            azureSearchPostTemplate = configuration.Get<AzureSearchPostTemplate>();
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
@@ -239,6 +242,7 @@ namespace Songhay.Blog.Shell.Tests
 
         static readonly HttpClient httpClient;
 
+        static AzureSearchPostTemplate azureSearchPostTemplate;
         static RestApiMetadata restApiMetadata;
         static Dictionary<string, string> cloudStorageMeta;
     }

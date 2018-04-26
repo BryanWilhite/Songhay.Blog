@@ -27,10 +27,10 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         public async Task ShouldDeleteAzureSearchServiceComponent()
         {
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search"]);
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component-item"]);
             var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
             var componentName = restApiMetadata.ClaimsSet["component-name-indexers"];
-            var itemName = restApiMetadata.ClaimsSet["search-item-name"];
+            var itemName = restApiMetadata.ClaimsSet["search-item-indexer-name"];
 
             var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, componentName, itemName, apiVersion);
             this.TestContext.WriteLine("uri: {0}", uri);
@@ -59,7 +59,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["endpoint"]);
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component"]);
             var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
             var componentName = restApiMetadata.ClaimsSet["component-name-datasources"];
 
@@ -93,7 +93,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["endpoint"]);
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component"]);
             var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
             var componentName = restApiMetadata.ClaimsSet["component-name-indexes"];
 
@@ -122,7 +122,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["endpoint"]);
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component"]);
             var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
             var componentName = restApiMetadata.ClaimsSet["component-name-indexers"];
 
@@ -140,10 +140,10 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         public async Task ShouldGetAzureSearchServiceComponent()
         {
-            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search"]);
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component-item"]);
             var apiVersion = restApiMetadata.ClaimsSet["search-api-version"];
             var componentName = restApiMetadata.ClaimsSet["component-name-indexers"];
-            var itemName = restApiMetadata.ClaimsSet["search-item-name"];
+            var itemName = restApiMetadata.ClaimsSet["search-item-indexer-name"];
 
             var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, componentName, itemName, apiVersion);
             this.TestContext.WriteLine("uri: {0}", uri);
