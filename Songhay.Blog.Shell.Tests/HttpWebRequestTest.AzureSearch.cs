@@ -1,21 +1,11 @@
-using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
-using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Extensions;
-using Songhay.Models;
-using Songhay.Xml;
 using System;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 using Tavis.UriTemplates;
 
 namespace Songhay.Blog.Shell.Tests
@@ -35,10 +25,7 @@ namespace Songhay.Blog.Shell.Tests
             var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, componentName, itemName, apiVersion);
             this.TestContext.WriteLine("uri: {0}", uri);
 
-            var request = new HttpRequestMessage(HttpMethod.Delete, uri);
-            request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey);
-
-            var response = await httpClient.SendAsync(request);
+            var response = await httpClient.DeleteAsync(uri, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
             this.TestContext.WriteLine($"HTTP Status Code: {response.StatusCode}");
             Assert.IsTrue(response.StatusCode == HttpStatusCode.NoContent, "The expected status code is not here.");
         }
@@ -152,6 +139,33 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"response: {response}");
         }
 
-        const string apiKeyHeader = "api-key";
+        [Ignore("This test is meant to run manually on the Desktop.")]
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("searchText", "ASP.NET")]
+        [TestProperty("skipValue", "10")]
+        public async Task ShouldSearchAzureSearchIndex()
+        {
+            #region test properties:
+
+            var searchText = this.TestContext.Properties["searchText"].ToString();
+            var skipValue = Convert.ToInt32(this.TestContext.Properties["skipValue"]);
+
+            #endregion
+
+            azureSearchPostTemplate.Search = searchText;
+            azureSearchPostTemplate.Skip = skipValue;
+
+            var json = azureSearchPostTemplate.ToJson();
+            this.TestContext.WriteLine("query: {0}", json);
+
+            var apiTemplate = new UriTemplate(restApiMetadata.UriTemplates["search-component-item"]);
+            var itemName = restApiMetadata.ClaimsSet["search-item-index-name"];
+            var uri = apiTemplate.BindByPosition(restApiMetadata.ApiBase, itemName);
+            this.TestContext.WriteLine("uri: {0}", uri);
+
+            var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, restApiMetadata.ApiKey));
+            this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
+        }
     }
 }
