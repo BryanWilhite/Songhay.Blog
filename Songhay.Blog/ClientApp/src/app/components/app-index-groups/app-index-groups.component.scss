@@ -1,0 +1,26 @@
+@import '../../../assets/scss/themes/akyinkyin/palette';
+
+.mat-card {
+    background-color: $akyinkyin-background;
+    height: 6rem;
+    margin: 0.25rem;
+    width: 14rem;
+
+    & > .mat-card-content {
+        height: 5rem;
+    }
+
+    & > .mat-card-footer {
+        padding-left: 1rem;
+    }
+}
+
+.cell.filter,
+.cell.grouping,
+.cell.nav {
+    padding-top: 1rem;
+}
+
+.cell.nav {
+    padding-left: 1rem;
+}

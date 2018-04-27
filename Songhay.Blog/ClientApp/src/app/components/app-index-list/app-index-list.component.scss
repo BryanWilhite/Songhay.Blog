@@ -1,0 +1,31 @@
+@import '../../../assets/scss/themes/akyinkyin/palette';
+
+.index.pagination /deep/ .ngx-pagination {
+    padding-left: 0;
+    text-align: center;
+    & > li.current {
+        background-color: $akyinkyin-base;
+    }
+    & li > a {
+        color: $light-primary-text;
+
+        &:active,
+        &:link,
+        &:visited {
+            color: $light-primary-text;
+        }
+
+        &:hover {
+            color: $dark-primary-text;
+        }
+    }
+}
+
+.cell.filter,
+.cell.nav {
+    padding-top: 1rem;
+}
+
+.cell.nav {
+    padding-left: 1rem;
+}

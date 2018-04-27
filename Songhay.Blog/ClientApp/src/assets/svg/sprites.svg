@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 24 24" id="ic_report_problem_24px">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="ic_toc_24px">
+        <path d="M3 9h14V7H3v2zm0 4h14v-2H3v2zm0 4h14v-2H3v2zm16 0h2v-2h-2v2zm0-10v2h2V7h-2zm0 6h2v-2h-2v2z" />
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="mdi_angular_24px">
+        <path d="M12,2.5L20.84,5.65L19.5,17.35L12,21.5L4.5,17.35L3.16,5.65L12,2.5M12,4.6L6.47,17H8.53L9.64,14.22H14.34L15.45,17H17.5L12,4.6M13.62,12.5H10.39L12,8.63L13.62,12.5Z" />
+    </symbol>
+</svg>

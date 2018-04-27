@@ -1,0 +1,11 @@
+<div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
+    <mat-toolbar color="primary">
+        <span class="app title">{{appTitle}}</span>
+        <mat-icon color="secondary" svgIcon="rx:ic_toc_24px"></mat-icon>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <div class="app footer" fxLayout="row" fxFlex="100">
+        <mat-icon color="accent" svgIcon="rx:mdi_angular_24px"></mat-icon>
+        <span class="framework version">{{frameworkVersion}}</span>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+/*
+    Selects styles for Index App
+*/
+// Material.io does not theme anchor elements that are not buttons:
+a {
+    &.index {
+        &:active,
+        &:link,
+        &:visited {
+            color: $akyinkyin-light-tint;
+        }
+    }
+}
