@@ -26,7 +26,7 @@ namespace Songhay.Blog.Models.Extensions
             template.SearchFields = "Content, Title";
             template.SearchMode = "any";
             template.Select = "*";
-            template.Skip = "{skipValue}";
+            template.Skip = 0;
             template.Top = 10;
 
             return template;
