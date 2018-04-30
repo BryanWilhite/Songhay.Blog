@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Songhay.Blog.Tests
+namespace Songhay.Blog.Tests.Controllers
 {
     [TestClass]
     public class AzureSearchControllerTest
