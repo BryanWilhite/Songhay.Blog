@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Songhay.Blog.Models;
+using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
-using Songhay.Models;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Songhay.Blog.Controllers
 {
@@ -26,11 +27,10 @@ namespace Songhay.Blog.Controllers
         /// Initializes a new instance of the <see cref="BlogApiController"/> class.
         /// </summary>
         /// <param name="repository">The repository.</param>
-        public BlogController(IRepository repository)
+        public BlogController(IRepositoryAsync repository)
         {
             this._repository = repository;
-            this._repositoryIndex = repository as IBlogEntryIndex;
-            traceSource.TraceVerbose("initializing {0}", this.GetType().Name);
+            traceSource.TraceVerbose($"initializing {this.GetType().Name}...");
         }
 
         /// <summary>
@@ -38,9 +38,8 @@ namespace Songhay.Blog.Controllers
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
-        /// <exception cref="System.Web.Http.Routing.Constraints.MinRouteConstraint"></exception>
         [Route("entry/{id}")]
-        public IActionResult GetBlogEntry(string id)
+        public async Task<IActionResult> GetBlogEntry(string id)
         {
 
             if (string.IsNullOrEmpty(id)) return this.BadRequest();
@@ -48,7 +47,7 @@ namespace Songhay.Blog.Controllers
             traceSource.TraceVerbose("Getting repository entry...");
             try
             {
-                var blogEntry = this._repository.LoadSingle<BlogEntry>(id.ToLowerInvariant());
+                var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
                 traceSource.TraceVerbose("Returning repository entry...");
                 return this.Ok(blogEntry);
             }
@@ -60,7 +59,6 @@ namespace Songhay.Blog.Controllers
             }
         }
 
-        readonly IRepository _repository;
-        readonly IBlogEntryIndex _repositoryIndex;
+        readonly IRepositoryAsync _repository;
     }
 }
