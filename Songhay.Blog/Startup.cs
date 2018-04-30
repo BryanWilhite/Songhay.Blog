@@ -64,7 +64,7 @@ namespace Songhay.Blog
             }
             else
             {
-                app.UseExceptionHandler("/Client/Error");
+                app.UseStatusCodePages();
             }
 
             app.UseStaticFiles();
