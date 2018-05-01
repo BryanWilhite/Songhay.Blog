@@ -55,7 +55,7 @@ namespace Songhay.Blog.Tests.Controllers
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        [TestProperty("pathTemplate", "entry/{id}")]
+        [TestProperty("pathTemplate", "blog/{searchText}/{skipValue}")]
         [TestProperty("searchText", "ASP.NET")]
         [TestProperty("skipValue", "10")]
         public async Task ShouldGetBlogSearchResultAsync()

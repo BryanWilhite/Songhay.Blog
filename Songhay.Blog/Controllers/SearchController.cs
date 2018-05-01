@@ -36,7 +36,7 @@ namespace Songhay.Blog.Controllers
 
         [HttpGet]
         [Route("blog/{searchText}/{skipValue}")]
-        public async Task<JObject> GetBlogSearchResultAsync(string searchText, int skipValue)
+        public async Task<IActionResult> GetBlogSearchResultAsync(string searchText, int skipValue)
         {
             this._searchPostTemplate.Search = searchText;
             this._searchPostTemplate.Skip = skipValue;
@@ -52,8 +52,15 @@ namespace Songhay.Blog.Controllers
             var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, this._restApiMetadata.ApiKey));
             var jsonOutput = await response.Content.ReadAsStringAsync();
 
+            if (!response.IsSuccessStatusCode)
+            {
+                traceSource.TraceError($"Search POST reponse: {response.StatusCode}");
+                if (string.IsNullOrEmpty(jsonOutput)) traceSource.TraceError("The expected JSON output is not here.");
+                return this.BadRequest();
+            }
+
             var jO = JObject.Parse(jsonOutput);
-            return jO;
+            return this.Ok(jO);
         }
 
         const string apiKeyHeader = "api-key";
