@@ -38,8 +38,9 @@ namespace Songhay.Blog.Controllers
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
+        [HttpGet]
         [Route("entry/{id}")]
-        public async Task<IActionResult> GetBlogEntry(string id)
+        public async Task<IActionResult> GetBlogEntryAsync(string id)
         {
 
             if (string.IsNullOrEmpty(id)) return this.BadRequest();
