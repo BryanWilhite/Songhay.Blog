@@ -10,7 +10,7 @@ using Tavis.UriTemplates;
 namespace Songhay.Blog.Tests.Controllers
 {
     [TestClass]
-    public class BlogControllerTest
+    public class SearchControllerTest
     {
         [TestInitialize]
         public void InitializeTest()
@@ -54,27 +54,28 @@ namespace Songhay.Blog.Tests.Controllers
 
         public TestContext TestContext { get; set; }
 
-        [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("pathTemplate", "entry/{id}")]
-        [TestProperty("id", "asp-net-web-api-ready-state-4-2017")]
-        public async Task ShouldGetBlogEntryAsync()
+        [TestProperty("searchText", "ASP.NET")]
+        [TestProperty("skipValue", "10")]
+        public async Task ShouldGetBlogSearchResultAsync()
         {
             #region test properties:
 
             var pathTemplate = new UriTemplate(string.Concat(baseRoute, this.TestContext.Properties["pathTemplate"].ToString()));
-            var id = this.TestContext.Properties["id"].ToString();
+            var searchText = this.TestContext.Properties["searchText"].ToString();
+            var skipValue = this.TestContext.Properties["skipValue"].ToString();
 
             #endregion
 
-            var path = pathTemplate.BindByPosition(id);
+            var path = pathTemplate.BindByPosition(searchText, skipValue);
             var client = this._server.CreateClient();
             var response = await client.GetAsync(path);
 
             response.EnsureSuccessStatusCode();
         }
 
-        const string baseRoute = "api/blog/";
+        const string baseRoute = "api/search/";
 
         ProgramMetadata _meta;
         TestServer _server;
