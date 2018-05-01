@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage;
 using Songhay.Blog.Models;
+using Songhay.Blog.Models.Extensions;
 using Songhay.Blog.Repository;
 using Songhay.Cloud.BlobStorage.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
@@ -33,23 +34,31 @@ namespace Songhay.Blog
             var validation = meta.ToValidationResults();
             if (validation.Any()) throw new ApplicationException(validation.ToDisplayText());
 
+            #region functional members:
+
+            BlogRepository serveRepository(IServiceProvider factory)
+            {
+                var set = meta
+                    .CloudStorageSet
+                    .TryGetValueWithKey("SonghayCloudStorage");
+
+                var connectionString = set.TryGetValueWithKey("classic");
+                var cloudStorageAccount = CloudStorageAccount.Parse(connectionString);
+
+                var repositoryKeys = new AzureBlobKeys();
+                repositoryKeys.Add<BlogEntry>(e => e.Slug);
+
+                var container = cloudStorageAccount.GetContainerReference(set.TryGetValueWithKey("classic-day-path-container"));
+
+                return new BlogRepository(repositoryKeys, container);
+            }
+
+            #endregion
+
             services
-                .AddSingleton<IRepositoryAsync, BlogRepository>(factory =>
-                {
-                    var set = meta
-                        .CloudStorageSet
-                        .TryGetValueWithKey("SonghayCloudStorage");
-
-                    var connectionString = set.TryGetValueWithKey("classic");
-                    var cloudStorageAccount = CloudStorageAccount.Parse(connectionString);
-
-                    var repositoryKeys = new AzureBlobKeys();
-                    repositoryKeys.Add<BlogEntry>(e => e.Slug);
-
-                    var container = cloudStorageAccount.GetContainerReference(set.TryGetValueWithKey("classic-day-path-container"));
-
-                    return new BlogRepository(repositoryKeys, container);
-                })
+                .AddSingleton<IRepositoryAsync, BlogRepository>(serveRepository)
+                .AddSingleton(factory => meta.ToAzureSearchRestApiMetadata())
+                .AddSingleton(factory => this.Configuration.GetSection(nameof(AzureSearchPostTemplate)).Get<AzureSearchPostTemplate>())
                 .AddSpaStaticFiles(configuration =>
                 {
                     configuration.RootPath = "ClientApp/dist";

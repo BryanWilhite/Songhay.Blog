@@ -2,7 +2,6 @@
 using Newtonsoft.Json.Linq;
 using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
-using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
 using Songhay.Models;
@@ -29,16 +28,15 @@ namespace Songhay.Blog.Controllers
 
         static readonly TraceSource traceSource;
 
-        public SearchController(RestApiMetadata searchRestApiMetadata, AzureSearchMetadata searchMetadata, AzureSearchPostTemplate searchPostTemplate)
+        public SearchController(RestApiMetadata searchMetadata, AzureSearchPostTemplate searchPostTemplate)
         {
-            this._restApiMetadata = searchRestApiMetadata;
-            this._searchMetadata = searchMetadata;
+            this._restApiMetadata = searchMetadata;
             this._searchPostTemplate = searchPostTemplate;
         }
 
         [HttpGet]
-        [Route("search/{searchText}/{skipValue}")]
-        public async Task<JObject> GetSearchResultAsync(string searchText, int skipValue)
+        [Route("blog/{searchText}/{skipValue}")]
+        public async Task<JObject> GetBlogSearchResultAsync(string searchText, int skipValue)
         {
             this._searchPostTemplate.Search = searchText;
             this._searchPostTemplate.Skip = skipValue;
@@ -46,9 +44,9 @@ namespace Songhay.Blog.Controllers
             var json = this._searchPostTemplate.ToJson();
             traceSource.TraceVerbose("query: {0}", json);
 
-            var apiTemplate = new UriTemplate(this._searchMetadata.UriTemplates["search-component-item"]);
-            var itemName = this._searchMetadata.ClaimsSet["search-item-index-name"];
-            var uri = apiTemplate.BindByPosition(this._searchMetadata.ApiBase, itemName);
+            var apiTemplate = new UriTemplate(this._restApiMetadata.UriTemplates["search-component-item"]);
+            var itemName = this._restApiMetadata.ClaimsSet["search-item-index-name"];
+            var uri = apiTemplate.BindByPosition(this._restApiMetadata.ApiBase, itemName);
             traceSource.TraceVerbose("uri: {0}", uri);
 
             var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, this._restApiMetadata.ApiKey));
@@ -63,7 +61,6 @@ namespace Songhay.Blog.Controllers
         static readonly HttpClient httpClient;
 
         readonly RestApiMetadata _restApiMetadata;
-        readonly AzureSearchMetadata _searchMetadata;
         readonly AzureSearchPostTemplate _searchPostTemplate;
     }
 }
