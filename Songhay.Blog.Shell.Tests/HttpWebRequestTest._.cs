@@ -129,17 +129,17 @@ namespace Songhay.Blog.Shell.Tests
         [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
-        [TestProperty("htmlPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
+        [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
         [TestProperty("twitterHost", "t.co")]
         [TestProperty("hootsuiteHost", "ow.ly")]
         public void ShouldExpandUrisFromNewEntry()
         {
-            var projectDirectoryInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 4);
 
             #region test properties:
 
             var htmlPath = this.TestContext.Properties["htmlPath"].ToString();
-            htmlPath = Path.Combine(projectDirectoryInfo.FullName, htmlPath);
+            htmlPath = Path.Combine(root, htmlPath);
             this.TestContext.ShouldFindFile(htmlPath);
 
             var twitterHost = this.TestContext.Properties["twitterHost"].ToString();
