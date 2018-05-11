@@ -4,7 +4,7 @@
     </div>
     <div class="cell grouping" fxFlex="60">
         <mat-form-field>
-            <mat-select formControlName="indexGroupingSelection" [value]="indexGroupingOption" placeholder="select grouping">
+            <mat-select formControlName="indexGroupingSelection" [value]="indexGroupingOptions" placeholder="select grouping">
                 <mat-option *ngFor="let option of indexGroupingOptions" [value]="option">
                     {{ option.displayName }}
                 </mat-option>

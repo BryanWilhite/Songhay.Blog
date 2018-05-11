@@ -37,9 +37,25 @@
             ]
         },
         {
+            "type": "npm",
+            "script": "build:prod",
+            "path": "Songhay.Blog/ClientApp/",
+            "problemMatcher": [
+                "$tslint5"
+            ]
+        },
+        {
             "label": "build:ssr [Server-Side Rendering]",
             "type": "npm",
             "script": "build:ssr",
+            "path": "Songhay.Blog/ClientApp/",
+            "problemMatcher": [
+                "$tslint5"
+            ]
+        },
+        {
+            "type": "npm",
+            "script": "build:staging",
             "path": "Songhay.Blog/ClientApp/",
             "problemMatcher": [
                 "$tslint5"

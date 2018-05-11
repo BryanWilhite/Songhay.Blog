@@ -26,7 +26,7 @@ export class AppIndexComponent implements OnInit {
      * @memberof AppIndexComponent
      */
     constructor(
-        private indexService: BlogEntriesService,
+        public indexService: BlogEntriesService,
         private route: ActivatedRoute
     ) {}
 
