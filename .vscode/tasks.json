@@ -33,7 +33,16 @@
             "script": "build",
             "path": "Songhay.Blog/ClientApp/",
             "problemMatcher": [
-                "$tslint4"
+                "$tslint5"
+            ]
+        },
+        {
+            "label": "build:ssr [Server-Side Rendering]",
+            "type": "npm",
+            "script": "build:ssr",
+            "path": "Songhay.Blog/ClientApp/",
+            "problemMatcher": [
+                "$tslint5"
             ]
         },
         {
@@ -41,7 +50,7 @@
             "script": "e2e",
             "path": "Songhay.Blog/ClientApp/",
             "problemMatcher": [
-                "$tslint4"
+                "$tslint5"
             ]
         },
         {
@@ -49,7 +58,7 @@
             "script": "start",
             "path": "Songhay.Blog/ClientApp/",
             "problemMatcher": [
-                "$tslint4"
+                "$tslint5"
             ]
         }
     ]
