@@ -17,6 +17,12 @@ import { IndexStyles } from '../../models/songhay-index-styles';
     templateUrl: './app-index.component.html'
 })
 export class AppIndexComponent implements OnInit {
+    /**
+     * the Index layout style
+     *
+     * @type {IndexStyles}
+     * @memberof AppIndexComponent
+     */
     viewStyle: IndexStyles;
 
     /**
@@ -37,7 +43,7 @@ export class AppIndexComponent implements OnInit {
      */
     ngOnInit(): void {
         this.route.params.subscribe(params => {
-            this.viewStyle =  params['style'] as any;
+            this.viewStyle = params['style'] as any;
         });
 
         this.indexService.loadIndex();
