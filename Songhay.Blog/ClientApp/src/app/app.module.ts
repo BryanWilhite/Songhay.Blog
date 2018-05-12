@@ -14,6 +14,7 @@ import { CssUtility } from './services/songhay-css.utility';
 import { MathUtility } from './services/songhay-math.utility';
 
 import { AppComponent } from './components/app.component';
+import { AppBlogEntryComponent } from './components/app-blog-entry/app-blog-entry.component';
 import { AppErrorComponent } from './components/app-error/app-error.component';
 import { AppIndexComponent } from './components/app-index/app-index.component';
 import { AppIndexGroupsComponent } from './components/app-index-groups/app-index-groups.component';
@@ -25,7 +26,8 @@ import { AppIndexListComponent } from './components/app-index-list/app-index-lis
         AppErrorComponent,
         AppIndexComponent,
         AppIndexGroupsComponent,
-        AppIndexListComponent
+        AppIndexListComponent,
+        AppBlogEntryComponent
     ],
     imports: [
         BrowserModule,
