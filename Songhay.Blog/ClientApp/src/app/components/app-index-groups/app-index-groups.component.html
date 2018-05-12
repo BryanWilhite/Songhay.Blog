@@ -27,7 +27,7 @@
         <div fxLayout="row wrap">
             <mat-card *ngFor="let j of i.group">
                 <mat-card-content>
-                    <a class="index" href="#/entry/{{ j.Slug }}" [innerHTML]="j.Title"></a>
+                    <a class="index" href="blog/entry/{{ j.Slug }}" [innerHTML]="j.Title"></a>
                 </mat-card-content>
                 <mat-card-footer>{{ j.InceptDate | date:'yyyy-MM-dd' }}</mat-card-footer>
             </mat-card>

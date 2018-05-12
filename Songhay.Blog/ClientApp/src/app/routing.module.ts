@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppIndexComponent } from './components/app-index/app-index.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/index/list', pathMatch: 'full' },
+    { path: '', redirectTo: '/index/groups', pathMatch: 'full' },
     { path: 'index/:style', component: AppIndexComponent }
 ];
 

@@ -14,7 +14,7 @@ export class AppComponent {
             sanitizer.bypassSecurityTrustResourceUrl('assets/svg/sprites.svg')
         );
 
-        this.appTitle = 'Songhay Index App';
+        this.appTitle = '>Day Path_';
         this.frameworkVersion = VERSION.full;
     }
     appTitle: string;
