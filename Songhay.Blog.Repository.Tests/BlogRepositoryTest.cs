@@ -35,8 +35,8 @@ namespace Songhay.Blog.Repository.Tests
         [TestInitialize]
         public void InitializeTest()
         {
-            var basePath = FrameworkFileUtility.FindParentDirectory(Directory.GetCurrentDirectory(), this.GetType().Namespace, 5);
-            cloudStorageAccount = this.TestContext.ShouldGetCloudStorageAccount(basePath);
+            var projectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            cloudStorageAccount = this.TestContext.ShouldGetCloudStorageAccount(projectInfo.FullName);
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
@@ -186,34 +186,30 @@ namespace Songhay.Blog.Repository.Tests
         [TestProperty("entryPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
         [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntryAndUpdateIndex.json")]
         [TestProperty("indexPath", @"json\ShouldGenerateRepositoryIndex.json")]
-        [TestProperty("topicsPath", @"Songhay.Blog\App_Data\topics.opml")]
+        [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
         public async Task ShouldGenerateBlogEntryAndUpdateIndex()
         {
-            var projectsRoot = this.TestContext
-                .ShouldGetAssemblyDirectoryInfo(this.GetType())
-                ?.Parent
-                ?.Parent
-                ?.Parent.FullName;
-            this.TestContext.ShouldFindDirectory(projectsRoot);
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
+            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var entryPath = this.TestContext.Properties["entryPath"].ToString();
-            entryPath = Path.Combine(projectsRoot, this.GetType().Namespace, entryPath);
+            entryPath = Path.Combine(projectInfo.FullName, entryPath);
             this.TestContext.ShouldFindFile(entryPath);
 
             var entryOutputPath = this.TestContext.Properties["entryOutputPath"].ToString();
-            entryOutputPath = Path.Combine(projectsRoot, this.GetType().Namespace, entryOutputPath);
+            entryOutputPath = Path.Combine(projectInfo.FullName, entryOutputPath);
             this.TestContext.ShouldFindFile(entryOutputPath);
 
             var indexPath = this.TestContext.Properties["indexPath"].ToString();
-            indexPath = Path.Combine(projectsRoot, this.GetType().Namespace, indexPath);
+            indexPath = Path.Combine(projectInfo.FullName, indexPath);
             this.TestContext.ShouldFindFile(indexPath);
 
             var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
-            topicsPath = Path.Combine(projectsRoot, topicsPath);
+            topicsPath = Path.Combine(webProjectInfo.FullName, topicsPath);
             this.TestContext.ShouldFindFile(topicsPath);
 
             #endregion
