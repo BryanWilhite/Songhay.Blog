@@ -77,14 +77,14 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldExpandUris.json")]
         [TestProperty("twitterHost", "t.co")]
-        public void ShouldExpandUris()
+        public async Task ShouldExpandUris()
         {
-            var projectDirectory = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 2);
+            var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var jsonPath = this.TestContext.Properties["jsonPath"].ToString();
-            jsonPath = Path.Combine(projectDirectory, jsonPath);
+            jsonPath = Path.Combine(projectDirectoryInfo.FullName, jsonPath);
             this.TestContext.ShouldFindFile(jsonPath);
 
             var twitterHost = this.TestContext.Properties["twitterHost"].ToString();
@@ -102,13 +102,10 @@ namespace Songhay.Blog.Shell.Tests
                 .Where(i => i.Value.Contains(string.Format("://{0}/", twitterHost)));
             Assert.IsTrue(twitterAnchors.Any(), string.Format("The expected {0} anchors are not here.", twitterHost));
 
-            twitterAnchors.ForEachInEnumerable(async i =>
+            var tasks = twitterAnchors.Select(async i =>
             {
                 var uri = new Uri(i.Attribute("href").Value, UriKind.Absolute);
                 this.TestContext.WriteLine("wrapped uri: {0}", uri);
-
-                var request = (HttpWebRequest)WebRequest.Create(uri);
-                request.AllowAutoRedirect = false;
 
                 var response = await httpClient.GetAsync(uri);
                 this.TestContext.WriteLine("HttpStatusCode: {0}", response.StatusCode);
@@ -120,6 +117,7 @@ namespace Songhay.Blog.Shell.Tests
 
                 i.ExpandTwitterAnchor(expandedUri.OriginalString, twitterHost);
             });
+            await Task.WhenAll(tasks);
 
             var xhtml = xd.ToString().Replace(@"</a><a", "</a> <a");
 
@@ -132,7 +130,7 @@ namespace Songhay.Blog.Shell.Tests
         [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
         [TestProperty("twitterHost", "t.co")]
         [TestProperty("hootsuiteHost", "ow.ly")]
-        public void ShouldExpandUrisFromNewEntry()
+        public async Task ShouldExpandUrisFromNewEntry()
         {
             var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 4);
 
@@ -180,7 +178,7 @@ namespace Songhay.Blog.Shell.Tests
             var twitterAnchors = xd.Descendants("a").Where(i => isHost(i.Value, twitterHost));
             Assert.IsTrue(twitterAnchors.Any(), string.Format("The expected {0} anchors are not here.", twitterHost));
 
-            twitterAnchors.ForEachInEnumerable(async i =>
+            var tasks = twitterAnchors.Select(async i =>
             {
                 var uri = new Uri(i.Attribute("href").Value, UriKind.Absolute);
                 var expandedUri = await expandUri(uri);
@@ -191,6 +189,7 @@ namespace Songhay.Blog.Shell.Tests
 
                 i.ExpandTwitterAnchor(expandedUri.OriginalString, twitterHost);
             });
+            await Task.WhenAll(tasks);
 
             #region functional members:
 
