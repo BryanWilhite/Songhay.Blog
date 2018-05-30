@@ -124,7 +124,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("XHTML:\n{0}", xhtml);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
+        //[Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
@@ -144,10 +144,6 @@ namespace Songhay.Blog.Shell.Tests
             var hootsuiteHost = this.TestContext.Properties["hootsuiteHost"].ToString();
 
             #endregion
-
-            var html = File.ReadAllText(htmlPath);
-            var xml = HtmlUtility.ConvertToXml(html);
-            var xd = XDocument.Parse(xml);
 
             #region functional members:
 
@@ -172,7 +168,25 @@ namespace Songhay.Blog.Shell.Tests
 
             bool isHost(string context, string host) => context.Contains(string.Format("://{0}/", host));
 
+            string removeNonBreakingSpace(string s)
+            {
+                var re = new Regex(@"\s*(&nbsp;)\s*");
+                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
+                {
+                    s = s.Replace(i.Value, " ");
+                });
+
+                return s;
+            }
+
             #endregion
+
+            var html = File.ReadAllText(htmlPath);
+            var xml = HtmlUtility.ConvertToXml(html);
+
+            xml = removeNonBreakingSpace(xml);
+
+            var xd = XDocument.Parse(xml);
 
             this.TestContext.WriteLine("looking for Twitter anchors of the form <a*>*://{0}//*</a>...", twitterHost);
             var twitterAnchors = xd.Descendants("a").Where(i => isHost(i.Value, twitterHost));
@@ -233,10 +247,11 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            xml = addSpaceBetweenAnchors(xd.ToString());
             xml = removeNewLineAndSpaceAfterParagraphElement(xml);
             xml = removeNewLineAndSpaceBeforeImageElement(xml);
             xml = removeNewLineAndSpaceBeforeAnchorElement(xml);
+
+            xml = addSpaceBetweenAnchors(xd.ToString());
 
             File.WriteAllText(htmlPath, xml);
         }
