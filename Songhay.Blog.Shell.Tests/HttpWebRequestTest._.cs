@@ -124,7 +124,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("XHTML:\n{0}", xhtml);
         }
 
-        //[Ignore("This test is meant to run manually on the Desktop.")]
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
