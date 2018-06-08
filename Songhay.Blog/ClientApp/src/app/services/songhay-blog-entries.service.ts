@@ -116,6 +116,36 @@ export class BlogEntriesService {
     }
 
     /**
+     * Promises to load a Blog entry.
+     *
+     * @param {string} slug
+     * @returns {Promise<Response>}
+     * @memberof BlogEntriesService
+     */
+    getEntry(slug: string): Promise<Response> {
+        this.initialize();
+
+        const uri = `${this.baseApiRoute}/entry/${slug}`;
+        const promise = this.client.get(uri).toPromise();
+        promise
+            .catch(() => {
+                this.isError = true;
+                this.isLoaded = false;
+            })
+            .then(responseOrVoid => {
+                const response = <Response>responseOrVoid;
+                if (!response) {
+                    return;
+                }
+
+                this.isLoaded = true;
+                this.isLoading = false;
+            });
+
+        return promise;
+    }
+
+    /**
      * Promises to load index data.
      *
      * @returns {Promise<HttpResponse>}
