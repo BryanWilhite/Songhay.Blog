@@ -21,6 +21,7 @@ export class BlogEntriesService {
      */
     constructor(private http: Http) {
         this.client = this.http;
+        this.baseApiRoute = './api/blog/';
         this.indexLocation = './assets/data/index.json'; // TODO: inject this from config?
         this.initialize();
     }
@@ -32,6 +33,14 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     client: Http;
+
+    /**
+     * Returns the base, relative Blog API location.
+     *
+     * @type {string}
+     * @memberof BlogEntriesService
+     */
+    baseApiRoute: string;
 
     /**
      * Returns the @type {BlogEntry} set.
