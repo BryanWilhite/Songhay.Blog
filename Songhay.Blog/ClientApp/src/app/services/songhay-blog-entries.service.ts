@@ -138,6 +138,8 @@ export class BlogEntriesService {
                     return;
                 }
 
+                console.log('response: ', response);
+
                 this.isLoaded = true;
                 this.isLoading = false;
             });
