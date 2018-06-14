@@ -122,7 +122,7 @@ export class BlogEntriesService {
      * @returns {Promise<Response>}
      * @memberof BlogEntriesService
      */
-    getEntry(slug: string): Promise<Response> {
+    loadEntry(slug: string): Promise<Response> {
         this.initialize();
 
         const uri = `${this.baseApiRoute}/entry/${slug}`;

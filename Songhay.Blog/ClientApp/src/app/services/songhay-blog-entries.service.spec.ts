@@ -38,24 +38,96 @@ describe('BlogEntriesService', () => {
         expect(service).not.toBeNull();
         service
             .loadIndex()
-            .catch(response => expect(response).toBeUndefined())
+            .catch(response => {
+                done();
+                console.log('loadIndex() catch response: ', response);
+            })
             .then(responseOrVoid => {
                 const response = <Response>responseOrVoid;
-                expect(response).not.toBeNull();
-                expect(response.ok).toBe(true);
+                expect(response).toBeDefined(
+                    'The expected response is not defined.'
+                );
+                expect(response).not.toBeNull(
+                    'The expected response is not here.'
+                );
+                expect(response.ok).toBe(
+                    true,
+                    'The expected OK response is not here.'
+                );
 
                 done();
 
-                expect(service.isError).toBe(false);
-                expect(service.isLoaded).toBe(true);
-                expect(service.isLoading).toBe(false);
-                expect(service.index).not.toBeNull();
+                expect(service.isError).toBe(
+                    false,
+                    'Service in error state is unexpected.'
+                );
+                expect(service.isLoaded).toBe(
+                    true,
+                    'The expected Service loaded state is not here.'
+                );
+                expect(service.isLoading).toBe(
+                    false,
+                    'The expected Service loading state is not here.'
+                );
 
-                expect(service.index).not.toBeNull();
-                expect(service.index.length).toBeGreaterThan(0);
+                expect(service.index).not.toBeNull(
+                    'The expected Service Index is not here.'
+                );
+                expect(service.index.length).toBeGreaterThan(
+                    0,
+                    'The expected Service Index entries are not here.'
+                );
 
                 const i = math.getRandom(0, service.index.length);
                 console.log(`service.index[${i}]`, service.index[i]);
-            });
+            })
+            ;
+    });
+
+    it('should load entry from live service (when available)', done => {
+        service = testBed.get(BlogEntriesService);
+        service.baseApiRoute =
+            'https://songhayblog-staging.azurewebsites.net/api/blog';
+        expect(service).not.toBeNull();
+
+        const slug = 'asp-net-web-api-ready-state-4-2017';
+
+        service
+            .loadEntry(slug)
+            .then(responseOrVoid => {
+                const response = <Response>responseOrVoid;
+                expect(response).toBeDefined(
+                    'The expected response is not defined.'
+                );
+                expect(response).not.toBeNull(
+                    'The expected response is not here.'
+                );
+                expect(response.ok).toBe(
+                    true,
+                    'The expected OK response is not here.'
+                );
+
+                done();
+
+                expect(service.isError).toBe(
+                    false,
+                    'Service in error state is unexpected.'
+                );
+                expect(service.isLoaded).toBe(
+                    true,
+                    'The expected Service loaded state is not here.'
+                );
+                expect(service.isLoading).toBe(
+                    false,
+                    'The expected Service loading state is not here.'
+                );
+
+                console.log('then response: ', response);
+            })
+            .catch(response => {
+                done();
+                console.log('loadEntry() catch response: ', response);
+            })
+            ;
     });
 });
