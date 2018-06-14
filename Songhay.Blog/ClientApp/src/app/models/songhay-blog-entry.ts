@@ -5,75 +5,75 @@ export class BlogEntry {
      * @value
      * The author.
      */
-    Author: string;
+    author: string;
 
     /**
      * Gets or sets the content.
      * @value
      * The content.
      */
-    Content: string;
+    content: string;
 
     /**
      * Gets or sets the incept date.
      * @value
      * The incept date.
      */
-    InceptDate: Date;
+    inceptDate: Date;
 
     /**
      * Gets or sets the published state.
      * @value
      * The published state.
      */
-    IsPublished: boolean | null;
+    isPublished: boolean | null;
 
     /**
      * Gets or sets the item category.
      * @value
      * The item category.
      */
-    ItemCategory: string;
+    itemCategory: string;
 
     /**
      * Gets or sets the item category.
      * @value
      * The item category.
      */
-    ItemCategoryObject: object;
+    itemCategoryObject: object;
 
     /**
      * Gets or sets the modification date.
      * @value
      * The modification date.
      */
-    ModificationDate: Date;
+    modificationDate: Date;
 
     /**
      * Gets or sets the slug.
      * @value
      * The slug.
      */
-    Slug: string;
+    slug: string;
 
     /**
      * Gets or sets the sort ordinal.
      * @value
      * The sort ordinal.
      */
-    SortOrdinal: string;
+    sortOrdinal: string;
 
     /**
      * Gets or sets the tag.
      * @value
      * The tag.
      */
-    Tag: string;
+    tag: string;
 
     /**
      * Gets or sets the title.
      * @value
      * The title.
      */
-    Title: string;
+    title: string;
 }

@@ -105,7 +105,7 @@ export class AppIndexGroupsComponent implements OnInit {
                 .chain()
                 .groupBy((i: BlogEntry) =>
                     _.toString(
-                        i.ItemCategoryObject[
+                        i.itemCategoryObject[
                         indexGroupingOption.groupByPropertyName
                         ]
                     )

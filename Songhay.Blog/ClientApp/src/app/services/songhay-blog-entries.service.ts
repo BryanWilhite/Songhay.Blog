@@ -43,12 +43,20 @@ export class BlogEntriesService {
     baseApiRoute: string;
 
     /**
-     * Returns the @type {BlogEntry} set.
+     * Returns the @type {BlogEntry}.
      *
-     * @type {Array<BlogEntry>}
+     * @type {BlogEntry}
      * @memberof BlogEntriesService
      */
-    index: Array<BlogEntry>;
+    entry: BlogEntry;
+
+    /**
+     * Returns the @type {BlogEntry} set.
+     *
+     * @type {BlogEntry[]}
+     * @memberof BlogEntriesService
+     */
+    index: BlogEntry[];
 
     /**
      * Returns the @type {string}, locating JSON.
@@ -98,7 +106,7 @@ export class BlogEntriesService {
      * @returns {Array<BlogEntry>}
      * @memberof BlogEntriesService
      */
-    filterEntries(entries: BlogEntry[], particle: string): Array<BlogEntry> {
+    filterEntries(entries: BlogEntry[], particle: string): BlogEntry[] {
         const contains = (needle: string, haystack: string) => {
             return (
                 needle &&
@@ -112,7 +120,7 @@ export class BlogEntriesService {
         if (particle.length < 2) {
             return entries;
         }
-        return entries.filter(i => contains(particle, i.Title));
+        return entries.filter(i => contains(particle, i.title));
     }
 
     /**
@@ -133,12 +141,12 @@ export class BlogEntriesService {
                 this.isLoaded = false;
             })
             .then(responseOrVoid => {
-                const response = <Response>responseOrVoid;
+                const response = responseOrVoid as Response;
                 if (!response) {
                     return;
                 }
 
-                console.log('response: ', response);
+                this.entry = response.json() as BlogEntry;
 
                 this.isLoaded = true;
                 this.isLoading = false;
@@ -163,21 +171,21 @@ export class BlogEntriesService {
                 this.isLoaded = false;
             })
             .then(responseOrVoid => {
-                const response = <Response>responseOrVoid;
+                const response = responseOrVoid as Response;
                 if (!response) {
                     return;
                 }
 
-                this.index = <Array<BlogEntry>>response.json();
+                this.index = response.json() as BlogEntry[];
                 if (!this.index) {
                     return;
                 }
 
                 _(this.index).each((blogEntry: BlogEntry) => {
-                    blogEntry.ItemCategoryObject = this.getItemCategoryProperties(
+                    blogEntry.itemCategoryObject = this.getItemCategoryProperties(
                         blogEntry
                     );
-                    blogEntry.SortOrdinal = this.getSortOrdinal(blogEntry);
+                    blogEntry.sortOrdinal = this.getSortOrdinal(blogEntry);
                 });
 
                 this.index = _(this.index).orderBy(['SortOrdinal'], ['desc']).value();
@@ -190,7 +198,7 @@ export class BlogEntriesService {
     }
 
     private getItemCategoryProperties(blogEntry: BlogEntry): object {
-        const o = JSON.parse(`{ ${blogEntry.ItemCategory} }`);
+        const o = JSON.parse(`{ ${blogEntry.itemCategory} }`);
         const topics = Object.keys(o).filter(function (v) {
             return v ? v.indexOf('topic-') === 0 : false;
         });
@@ -207,7 +215,7 @@ export class BlogEntriesService {
     }
 
     private getSortOrdinal(blogEntry: BlogEntry): string {
-        if (!blogEntry.ItemCategoryObject) {
+        if (!blogEntry.itemCategoryObject) {
             return '';
         }
         const pad = function (num, size) {
@@ -218,13 +226,13 @@ export class BlogEntriesService {
             return s;
         };
         return (
-            blogEntry.ItemCategoryObject['year'] +
+            blogEntry.itemCategoryObject['year'] +
             '-' +
-            pad(blogEntry.ItemCategoryObject['month'], 2) +
+            pad(blogEntry.itemCategoryObject['month'], 2) +
             '-' +
-            pad(blogEntry.ItemCategoryObject['day'], 2) +
+            pad(blogEntry.itemCategoryObject['day'], 2) +
             '-' +
-            blogEntry.Slug
+            blogEntry.slug
         );
     }
 }

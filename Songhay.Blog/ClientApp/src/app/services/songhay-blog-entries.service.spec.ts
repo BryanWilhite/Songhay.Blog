@@ -38,12 +38,8 @@ describe('BlogEntriesService', () => {
         expect(service).not.toBeNull();
         service
             .loadIndex()
-            .catch(response => {
-                done();
-                console.log('loadIndex() catch response: ', response);
-            })
             .then(responseOrVoid => {
-                const response = <Response>responseOrVoid;
+                const response = responseOrVoid as Response;
                 expect(response).toBeDefined(
                     'The expected response is not defined.'
                 );
@@ -56,7 +52,8 @@ describe('BlogEntriesService', () => {
                 );
 
                 done();
-
+            })
+            .then(_ => {
                 expect(service.isError).toBe(
                     false,
                     'Service in error state is unexpected.'
@@ -81,7 +78,10 @@ describe('BlogEntriesService', () => {
                 const i = math.getRandom(0, service.index.length);
                 console.log(`service.index[${i}]`, service.index[i]);
             })
-            ;
+            .catch(response => {
+                done();
+                console.log('loadIndex() catch response: ', response);
+            });
     });
 
     it('should load entry from live service (when available)', done => {
@@ -95,7 +95,7 @@ describe('BlogEntriesService', () => {
         service
             .loadEntry(slug)
             .then(responseOrVoid => {
-                const response = <Response>responseOrVoid;
+                const response = responseOrVoid as Response;
                 expect(response).toBeDefined(
                     'The expected response is not defined.'
                 );
@@ -108,7 +108,8 @@ describe('BlogEntriesService', () => {
                 );
 
                 done();
-
+            })
+            .then(_ => {
                 expect(service.isError).toBe(
                     false,
                     'Service in error state is unexpected.'
@@ -122,12 +123,22 @@ describe('BlogEntriesService', () => {
                     'The expected Service loading state is not here.'
                 );
 
-                console.log('then response: ', response);
+                expect(service.entry).toBeDefined(
+                    'The expected Blog Entry is not defined.'
+                );
+
+                expect(service.entry).not.toBeNull(
+                    'The expected Blog Entry is not here.'
+                );
+
+                expect(service.entry.slug).toBe(
+                    slug,
+                    'The expected Blog Entry Slug is not here.'
+                );
             })
             .catch(response => {
                 done();
                 console.log('loadEntry() catch response: ', response);
-            })
-            ;
+            });
     });
 });
