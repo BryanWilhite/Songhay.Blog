@@ -52,8 +52,7 @@ describe('BlogEntriesService', () => {
                 );
 
                 done();
-            })
-            .then(_ => {
+
                 expect(service.isError).toBe(
                     false,
                     'Service in error state is unexpected.'
@@ -108,8 +107,7 @@ describe('BlogEntriesService', () => {
                 );
 
                 done();
-            })
-            .then(_ => {
+
                 expect(service.isError).toBe(
                     false,
                     'Service in error state is unexpected.'
