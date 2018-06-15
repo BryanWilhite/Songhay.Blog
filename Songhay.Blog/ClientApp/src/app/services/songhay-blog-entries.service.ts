@@ -133,25 +133,35 @@ export class BlogEntriesService {
     loadEntry(slug: string): Promise<Response> {
         this.initialize();
 
-        const uri = `${this.baseApiRoute}/entry/${slug}`;
-        const promise = this.client.get(uri).toPromise();
-        promise
-            .catch(() => {
-                this.isError = true;
-                this.isLoaded = false;
-            })
-            .then(responseOrVoid => {
-                const response = responseOrVoid as Response;
-                if (!response) {
-                    return;
-                }
+        const wrapPromise = (resolve: any, reject: any) => {
+            const uri = `${this.baseApiRoute}/entry/${slug}`;
 
-                this.entry = response.json() as BlogEntry;
+            this.client
+                .get(uri)
+                .toPromise()
+                .then(
+                    responseOrVoid => {
+                        const response = responseOrVoid as Response;
+                        if (!response) {
+                            return;
+                        }
 
-                this.isLoaded = true;
-                this.isLoading = false;
-            });
+                        this.entry = response.json() as BlogEntry;
 
+                        this.isLoaded = true;
+                        this.isLoading = false;
+
+                        resolve(responseOrVoid);
+                    },
+                    error => {
+                        this.isError = true;
+                        this.isLoaded = false;
+                        reject(error);
+                    }
+                );
+        };
+
+        const promise = new Promise<Response>(wrapPromise);
         return promise;
     }
 
@@ -164,48 +174,61 @@ export class BlogEntriesService {
     loadIndex(): Promise<Response> {
         this.initialize();
 
-        const promise = this.client.get(this.indexLocation).toPromise();
-        promise
-            .catch(() => {
-                this.isError = true;
-                this.isLoaded = false;
-            })
-            .then(responseOrVoid => {
-                const response = responseOrVoid as Response;
-                if (!response) {
-                    return;
-                }
+        const wrapPromise = (resolve: any, reject: any) => {
+            this.client
+                .get(this.indexLocation)
+                .toPromise()
+                .then(
+                    responseOrVoid => {
+                        const response = responseOrVoid as Response;
+                        if (!response) {
+                            return;
+                        }
 
-                this.index = response.json() as BlogEntry[];
-                if (!this.index) {
-                    return;
-                }
+                        this.index = response.json() as BlogEntry[];
+                        if (!this.index) {
+                            return;
+                        }
 
-                _(this.index).each((blogEntry: BlogEntry) => {
-                    blogEntry.itemCategoryObject = this.getItemCategoryProperties(
-                        blogEntry
-                    );
-                    blogEntry.sortOrdinal = this.getSortOrdinal(blogEntry);
-                });
+                        _(this.index).each((blogEntry: BlogEntry) => {
+                            blogEntry.itemCategoryObject = this.getItemCategoryProperties(
+                                blogEntry
+                            );
+                            blogEntry.sortOrdinal = this.getSortOrdinal(
+                                blogEntry
+                            );
+                        });
 
-                this.index = _(this.index).orderBy(['SortOrdinal'], ['desc']).value();
+                        this.index = _(this.index)
+                            .orderBy(['SortOrdinal'], ['desc'])
+                            .value();
 
-                this.isLoaded = true;
-                this.isLoading = false;
-            });
+                        this.isLoaded = true;
+                        this.isLoading = false;
 
+                        resolve(responseOrVoid);
+                    },
+                    error => {
+                        this.isError = true;
+                        this.isLoaded = false;
+                        reject(error);
+                    }
+                );
+        };
+
+        const promise = new Promise<Response>(wrapPromise);
         return promise;
     }
 
     private getItemCategoryProperties(blogEntry: BlogEntry): object {
         const o = JSON.parse(`{ ${blogEntry.itemCategory} }`);
-        const topics = Object.keys(o).filter(function (v) {
+        const topics = Object.keys(o).filter(function(v) {
             return v ? v.indexOf('topic-') === 0 : false;
         });
         o.topic = _(topics).isEmpty()
             ? '<!--zzz-->[no topic]'
             : `<!-- ${_(topics).first()} --> ${o[_(topics).first()]}`;
-        o.topics = topics.map(function (v) {
+        o.topics = topics.map(function(v) {
             return {
                 key: v,
                 value: o[v]
@@ -218,7 +241,7 @@ export class BlogEntriesService {
         if (!blogEntry.itemCategoryObject) {
             return '';
         }
-        const pad = function (num, size) {
+        const pad = function(num, size) {
             let s = String(num);
             while (s.length < size) {
                 s = `0${s}`;

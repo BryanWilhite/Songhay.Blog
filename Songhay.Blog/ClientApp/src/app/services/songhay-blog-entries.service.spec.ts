@@ -38,11 +38,6 @@ describe('BlogEntriesService', () => {
         expect(service).not.toBeNull();
         service
             .loadIndex()
-            .catch(response => {
-                console.log('loadIndex() catch response: ', response);
-
-                done();
-            })
             .then(responseOrVoid => {
                 const response = responseOrVoid as Response;
                 expect(response).toBeDefined(
@@ -81,6 +76,11 @@ describe('BlogEntriesService', () => {
                 console.log(`service.index[${i}]`, service.index[i]);
 
                 done();
+            })
+            .catch(response => {
+                console.log('loadIndex() catch response: ', response);
+
+                done();
             });
     });
 
@@ -91,34 +91,10 @@ describe('BlogEntriesService', () => {
         expect(service).not.toBeNull();
 
         const slug = 'asp-net-web-api-ready-state-4-2017';
-        let hadErrorProgressEvent = false;
 
         service
             .loadEntry(slug)
-            .catch(response => {
-                console.log('loadEntry() catch response: ', response);
-                const progress = response.json() as ProgressEvent;
-                if (progress != null && progress.type === 'error') {
-                    console.log(
-                        'loadEntry() catch ProgressEvent: there was an error:',
-                        progress
-                    );
-                    hadErrorProgressEvent = true;
-                }
-
-                done();
-            })
             .then(responseOrVoid => {
-                if (hadErrorProgressEvent) {
-                    console.log(
-                        'loadEntry(): a progress error was caught: responseOrVoid:',
-                        responseOrVoid
-                    );
-
-                    done();
-                    return;
-                }
-
                 const response = responseOrVoid as Response;
                 expect(response).toBeDefined(
                     'The expected response is not defined.'
@@ -156,6 +132,18 @@ describe('BlogEntriesService', () => {
                     slug,
                     'The expected Blog Entry Slug is not here.'
                 );
+
+                done();
+            })
+            .catch(response => {
+                console.log('loadEntry() catch response: ', response);
+                const progress = response.json() as ProgressEvent;
+                if (progress != null && progress.type === 'error') {
+                    console.log(
+                        'loadEntry() catch ProgressEvent: there was an error:',
+                        progress
+                    );
+                }
 
                 done();
             });
