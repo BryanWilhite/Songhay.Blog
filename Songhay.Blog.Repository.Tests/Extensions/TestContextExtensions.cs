@@ -46,7 +46,7 @@ namespace Songhay.Blog.Repository.Tests.Extensions
             var xd = XDocument.Load(topicsPath);
             var topics = OpmlUtility.GetDocument(xd.Root, OpmlUtility.rx);
 
-            var json = repository.GenerateIndex(entries, topics);
+            var json = entries.GenerateIndex(topics);
             Assert.IsFalse(string.IsNullOrEmpty(json), "The expected index data is not here.");
 
             File.WriteAllText(indexPath, json);

@@ -1,4 +1,6 @@
-﻿using Songhay.Diagnostics;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Songhay.Diagnostics;
 using Songhay.Extensions;
 using Songhay.Models;
 using Songhay.Xml;
@@ -21,6 +23,78 @@ namespace Songhay.Blog.Models.Extensions
             .GetTraceSourceFromConfiguredName()
             .WithAllSourceLevels()
             .EnsureTraceSource();
+
+        /// <summary>
+        /// Generates an index from <see cref="IEnumerable{BlogEntry}"/>.
+        /// </summary>
+        /// <param name="entries">The entries.</param>
+        /// <param name="topics">The topics.</param>
+        /// <returns></returns>
+        /// <exception cref="System.NullReferenceException">
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog topics are not here.
+        /// </exception>
+        public static string GenerateIndex(this IEnumerable<BlogEntry> entries, OpmlDocument topics)
+        {
+            return entries.GenerateIndex(topics, useJavaScriptCase: false);
+        }
+
+        /// <summary>
+        /// Generates an index from <see cref="IEnumerable{BlogEntry}"/>.
+        /// </summary>
+        /// <param name="repository">The repository.</param>
+        /// <param name="entries">The entries.</param>
+        /// <param name="topics">The topics.</param>
+        /// <param name="useJavaScriptCase">if set to <c>true</c> [use java script case].</param>
+        /// <returns></returns>
+        /// <exception cref="NullReferenceException">
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog entries are not here.
+        /// </exception>
+        /// <exception cref="System.NullReferenceException">The expected Blog entries are not here.
+        /// or
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog topics are not here.</exception>
+        public static string GenerateIndex(this IEnumerable<BlogEntry> entries, OpmlDocument topics, bool useJavaScriptCase)
+        {
+            if (entries == null) throw new NullReferenceException("The expected Blog entries are not here.");
+            if (!entries.Any()) throw new NullReferenceException("The expected Blog entries are not here.");
+
+            traceSource.TraceInformation("Generating Blog Index...");
+
+            var entriesLite = entries.Select(i =>
+            {
+                var entry = i.ToMemberwiseClone()
+                    .WithItemCategory(topics)
+                    .WithContentAsExtract();
+
+                traceSource.TraceVerbose("entry: {0}", entry);
+
+                return entry;
+            });
+
+
+            var serializerSettings = useJavaScriptCase ?
+                new JsonSerializerSettings
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    Formatting = Formatting.Indented
+                }
+                :
+                new JsonSerializerSettings
+                {
+                    Formatting = Formatting.Indented
+                }
+                ;
+
+            var json = JsonConvert.SerializeObject(entriesLite, serializerSettings);
+            return json;
+        }
 
         /// <summary>
         /// Reduces <see cref="BlogEntry.Content"/> to an extract.
