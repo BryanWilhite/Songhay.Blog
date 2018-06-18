@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
 using Songhay.Models;
@@ -52,7 +53,14 @@ namespace Songhay.Blog.Models.Extensions
                 return entry;
             });
 
-            var json = JsonConvert.SerializeObject(entriesLite, Formatting.Indented);
+
+            var serializerSettings = new JsonSerializerSettings
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                Formatting = Formatting.Indented
+            };
+
+            var json = JsonConvert.SerializeObject(entriesLite, serializerSettings);
             return json;
         }
 
