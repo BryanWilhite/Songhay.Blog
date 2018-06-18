@@ -37,6 +37,29 @@ namespace Songhay.Blog.Models.Extensions
         /// </exception>
         public static string GenerateIndex(this IBlogEntryIndex repository, IEnumerable<BlogEntry> entries, OpmlDocument topics)
         {
+            return repository.GenerateIndex(entries, topics, useJavaScriptCase: false);
+        }
+
+        /// <summary>
+        /// Generates the index.
+        /// </summary>
+        /// <param name="repository">The repository.</param>
+        /// <param name="entries">The entries.</param>
+        /// <param name="topics">The topics.</param>
+        /// <param name="useJavaScriptCase">if set to <c>true</c> [use java script case].</param>
+        /// <returns></returns>
+        /// <exception cref="NullReferenceException">
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog entries are not here.
+        /// </exception>
+        /// <exception cref="System.NullReferenceException">The expected Blog entries are not here.
+        /// or
+        /// The expected Blog entries are not here.
+        /// or
+        /// The expected Blog topics are not here.</exception>
+        public static string GenerateIndex(this IBlogEntryIndex repository, IEnumerable<BlogEntry> entries, OpmlDocument topics, bool useJavaScriptCase)
+        {
             if (entries == null) throw new NullReferenceException("The expected Blog entries are not here.");
             if (!entries.Any()) throw new NullReferenceException("The expected Blog entries are not here.");
 
@@ -54,11 +77,18 @@ namespace Songhay.Blog.Models.Extensions
             });
 
 
-            var serializerSettings = new JsonSerializerSettings
-            {
-                ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                Formatting = Formatting.Indented
-            };
+            var serializerSettings = useJavaScriptCase ?
+                new JsonSerializerSettings
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    Formatting = Formatting.Indented
+                }
+                :
+                new JsonSerializerSettings
+                {
+                    Formatting = Formatting.Indented
+                }
+                ;
 
             var json = JsonConvert.SerializeObject(entriesLite, serializerSettings);
             return json;
