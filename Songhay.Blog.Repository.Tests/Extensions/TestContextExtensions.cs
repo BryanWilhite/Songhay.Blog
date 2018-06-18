@@ -36,7 +36,7 @@ namespace Songhay.Blog.Repository.Tests.Extensions
             return cloudStorageAccount;
         }
 
-        public static async Task ShouldGenerateRepositoryIndex(this TestContext context, BlogRepository repository, string topicsPath, string indexPath)
+        public static async Task<string> ShouldGenerateRepositoryIndex(this TestContext context, BlogRepository repository, string topicsPath, bool useJavaScriptCase)
         {
             Assert.IsNotNull(repository, "The expected repository is not here.");
 
@@ -46,12 +46,10 @@ namespace Songhay.Blog.Repository.Tests.Extensions
             var xd = XDocument.Load(topicsPath);
             var topics = OpmlUtility.GetDocument(xd.Root, OpmlUtility.rx);
 
-            var json = entries.GenerateIndex(topics);
+            var json = entries.GenerateIndex(topics, useJavaScriptCase);
             Assert.IsFalse(string.IsNullOrEmpty(json), "The expected index data is not here.");
 
-            File.WriteAllText(indexPath, json);
-
-            await repository.SetIndex(json);
+            return json;
         }
     }
 }

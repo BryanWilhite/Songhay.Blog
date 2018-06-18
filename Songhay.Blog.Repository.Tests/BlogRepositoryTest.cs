@@ -253,7 +253,48 @@ namespace Songhay.Blog.Repository.Tests
             var json = JsonConvert.SerializeObject(blogEntry, Formatting.Indented);
             File.WriteAllText(entryOutputPath, json);
 
-            await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, indexPath);
+            var jsonForIndex = await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, useJavaScriptCase: false);
+
+            File.WriteAllText(indexPath, json);
+
+            await repository.SetIndex(json);
+        }
+
+        [Ignore("This test is meant to run manually on the Desktop.")]
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("indexPath", @"json\ShouldGenerateRepositoryIndex.json")]
+        [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
+        public async Task ShouldGenerateRepositoryIndex()
+        {
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
+            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+
+            #region test properties:
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+
+            var indexPath = this.TestContext.Properties["indexPath"].ToString();
+            indexPath = Path.Combine(projectInfo.FullName, indexPath);
+            this.TestContext.ShouldFindFile(indexPath);
+
+            var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
+            topicsPath = Path.Combine(webProjectInfo.FullName, topicsPath);
+            this.TestContext.ShouldFindFile(topicsPath);
+
+            #endregion
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+
+            var json = await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, useJavaScriptCase: true);
+
+            File.WriteAllText(indexPath, json);
+
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
