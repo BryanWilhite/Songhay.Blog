@@ -106,20 +106,21 @@ export class AppIndexGroupsComponent implements OnInit {
         ) => {
             return _(entries)
                 .chain()
-                .groupBy(i =>
+                .groupBy((i: BlogEntry) =>
                     _.toString(
                         i.itemCategoryObject[
                             indexGroupingOption.groupByPropertyName
                         ]
                     )
                 )
-                .map(i => {
-                    console.log('map: ', i);
+                .map((i: BlogEntry[]) => {
                     if (!i || !i.length) {
+                        console.log('The expected group of Blog entries are not here.');
                         return;
                     }
+                    const firstEntry = i[0];
                     const groupDisplayName =
-                        i[0].ItemCategoryObject[
+                        firstEntry.itemCategoryObject[
                             indexGroupingOption.groupByPropertyName
                         ];
                     const indexGroup: IndexGroup = {
