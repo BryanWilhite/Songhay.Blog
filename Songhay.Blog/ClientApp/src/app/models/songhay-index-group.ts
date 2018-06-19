@@ -15,7 +15,7 @@ export class IndexGroup {
      * @type {string}
      * @memberof IndexGroup
      */
-    group: Array<BlogEntry>;
+    group: BlogEntry[];
 
     /**
      * group display name

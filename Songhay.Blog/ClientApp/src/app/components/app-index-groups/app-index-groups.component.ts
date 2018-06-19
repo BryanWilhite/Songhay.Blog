@@ -51,18 +51,18 @@ export class AppIndexGroupsComponent implements OnInit {
     /**
      * index grouping options
      *
-     * @type {Array<IndexGroupingOption>}
+     * @type {IndexGroupingOption[]}
      * @memberof AppIndexGroupsComponent
      */
-    indexGroupingOptions: Array<IndexGroupingOption>;
+    indexGroupingOptions: IndexGroupingOption[];
 
     /**
      * observable index groups
      *
-     * @type {Observable<Array<IndexGroup>>}
+     * @type {Observable<IndexGroup[]>}
      * @memberof AppIndexGroupsComponent
      */
-    indexGroups$: Observable<Array<IndexGroup>>;
+    indexGroups$: Observable<IndexGroup[]>;
 
     /**
      * input binding of @type {BlogEntriesService}
@@ -76,7 +76,7 @@ export class AppIndexGroupsComponent implements OnInit {
      * Creates an instance of AppIndexGroupsComponent.
      * @memberof AppIndexGroupsComponent
      */
-    constructor(private sanitizer: DomSanitizer) { }
+    constructor(private sanitizer: DomSanitizer) {}
 
     /**
      * implements @type {OnInit.ngOnInit}
@@ -100,33 +100,40 @@ export class AppIndexGroupsComponent implements OnInit {
     }
 
     private initializeIndexGroups(): void {
-        const chainIntoGroups = (entries: BlogEntry[], indexGroupingOption: IndexGroupingOption) => {
+        const chainIntoGroups = (
+            entries: BlogEntry[],
+            indexGroupingOption: IndexGroupingOption
+        ) => {
             return _(entries)
                 .chain()
-                .groupBy((i: BlogEntry) =>
+                .groupBy(i =>
                     _.toString(
                         i.itemCategoryObject[
-                        indexGroupingOption.groupByPropertyName
+                            indexGroupingOption.groupByPropertyName
                         ]
                     )
                 )
                 .map(i => {
+                    console.log('map: ', i);
                     if (!i || !i.length) {
                         return;
                     }
-                    const groupDisplayName = i[0].ItemCategoryObject[
-                        indexGroupingOption.groupByPropertyName
-                    ];
+                    const groupDisplayName =
+                        i[0].ItemCategoryObject[
+                            indexGroupingOption.groupByPropertyName
+                        ];
                     const indexGroup: IndexGroup = {
                         group: i,
-                        groupDisplayName: this.sanitizer.bypassSecurityTrustHtml(groupDisplayName),
+                        groupDisplayName: this.sanitizer.bypassSecurityTrustHtml(
+                            groupDisplayName
+                        ),
                         isCollapsed: false
                     };
                     return indexGroup;
                 })
                 .orderBy(
-                ['groupDisplayName'],
-                [indexGroupingOption.sortDescending ? 'desc' : 'asc']
+                    ['groupDisplayName'],
+                    [indexGroupingOption.sortDescending ? 'desc' : 'asc']
                 )
                 .value();
         };
@@ -146,8 +153,16 @@ export class AppIndexGroupsComponent implements OnInit {
 
     private initializeIndexGroupingOptions(): void {
         this.indexGroupingOptions = [
-            { displayName: 'by Date', groupByPropertyName: 'dateGroup', sortDescending: true },
-            { displayName: 'by Topic', groupByPropertyName: 'topic', sortDescending: false }
+            {
+                displayName: 'by Date',
+                groupByPropertyName: 'dateGroup',
+                sortDescending: true
+            },
+            {
+                displayName: 'by Topic',
+                groupByPropertyName: 'topic',
+                sortDescending: false
+            }
         ];
     }
 }
