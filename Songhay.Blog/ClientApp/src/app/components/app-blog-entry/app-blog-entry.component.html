@@ -1,6 +1,8 @@
 <div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
-    <div class="entry body-content">
+    <mat-spinner *ngIf="indexService.isLoading" color="accent" fxFlex="100"></mat-spinner>
+    <div class="entry body-content" *ngIf="indexService.isLoaded">
         <h2 [innerHTML]="trustedTitle"></h2>
         <div class="entry-content" [innerHTML]="trustedContent"></div>
     </div>
+    <app-error *ngIf="indexService.isError"></app-error>
 </div>
