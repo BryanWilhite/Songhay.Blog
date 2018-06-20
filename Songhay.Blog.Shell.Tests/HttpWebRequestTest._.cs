@@ -69,7 +69,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("HttpStatusCode: {0}", response.StatusCode);
             Assert.IsTrue(response.StatusCode == HttpStatusCode.Moved ||
                 response.StatusCode == HttpStatusCode.Redirect, "The expected status code is not here.");
-            this.TestContext.WriteLine($"Loaction: {response.Headers.Location}");
+            this.TestContext.WriteLine($"Location: {response.Headers.Location}");
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
