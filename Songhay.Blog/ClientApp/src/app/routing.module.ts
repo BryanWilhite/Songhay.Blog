@@ -5,7 +5,8 @@ import { AppBlogEntryComponent } from './components/app-blog-entry/app-blog-entr
 import { AppIndexComponent } from './components/app-index/app-index.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/index/groups', pathMatch: 'full' },
+    { path: '', redirectTo: 'index/groups', pathMatch: 'full' },
+    { path: 'entry/:slug', redirectTo: 'blog/entry/:slug', pathMatch: 'full' },
     { path: 'blog/entry/:slug', component: AppBlogEntryComponent },
     { path: 'index/:style', component: AppIndexComponent }
 ];
