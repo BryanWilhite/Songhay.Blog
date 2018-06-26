@@ -19,11 +19,6 @@ namespace Songhay.Blog.Controllers
 
         static readonly TraceSource traceSource;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         /// <summary>
         /// Redirects to angular client.
         /// </summary>
