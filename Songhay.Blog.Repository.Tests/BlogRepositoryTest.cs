@@ -179,7 +179,7 @@ namespace Songhay.Blog.Repository.Tests
             Assert.AreEqual(sampleSize, index.Count(), "The expected repository index count is not here.");
         }
 
-        //[Ignore("This test is meant to run manually on the Desktop.")]
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -250,7 +250,7 @@ namespace Songhay.Blog.Repository.Tests
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
-        [TestProperty("indexPath", @"ClientApp\dist\assets\data\index.json")]
+        [TestProperty("indexPath", @"ClientApp\src\assets\data\index.json")]
         [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
         public async Task ShouldGenerateRepositoryIndex()
         {
