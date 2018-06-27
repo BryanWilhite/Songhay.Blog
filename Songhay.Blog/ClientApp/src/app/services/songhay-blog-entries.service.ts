@@ -200,7 +200,7 @@ export class BlogEntriesService {
                         });
 
                         this.index = _(this.index)
-                            .orderBy(['SortOrdinal'], ['desc'])
+                            .orderBy(['sortOrdinal'], ['desc'])
                             .value();
 
                         this.isLoaded = true;
