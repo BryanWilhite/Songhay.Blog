@@ -183,11 +183,10 @@ namespace Songhay.Blog.Repository.Tests
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("entryHeaderElement", "h2")]
         [TestProperty("entryPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
         [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntryAndUpdateIndex.json")]
-        [TestProperty("indexPath", @"json\ShouldGenerateRepositoryIndex.json")]
-        [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
-        public async Task ShouldGenerateBlogEntryAndUpdateIndex()
+        public async Task ShouldGenerateBlogEntry()
         {
             var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
             var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
@@ -195,6 +194,7 @@ namespace Songhay.Blog.Repository.Tests
             #region test properties:
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+            var entryHeaderElement = this.TestContext.Properties["entryHeaderElement"].ToString();
 
             var entryPath = this.TestContext.Properties["entryPath"].ToString();
             entryPath = Path.Combine(projectInfo.FullName, entryPath);
@@ -203,14 +203,6 @@ namespace Songhay.Blog.Repository.Tests
             var entryOutputPath = this.TestContext.Properties["entryOutputPath"].ToString();
             entryOutputPath = Path.Combine(projectInfo.FullName, entryOutputPath);
             this.TestContext.ShouldFindFile(entryOutputPath);
-
-            var indexPath = this.TestContext.Properties["indexPath"].ToString();
-            indexPath = Path.Combine(projectInfo.FullName, indexPath);
-            this.TestContext.ShouldFindFile(indexPath);
-
-            var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
-            topicsPath = Path.Combine(webProjectInfo.FullName, topicsPath);
-            this.TestContext.ShouldFindFile(topicsPath);
 
             #endregion
 
@@ -226,11 +218,11 @@ namespace Songhay.Blog.Repository.Tests
             var body = xdEntry.Root.Element("body");
             Assert.IsNotNull(body, "The expected body is not here.");
 
-            var title = body.Element("h2").GetInnerXml();
+            var title = body.Element(entryHeaderElement).GetInnerXml();
             var content = new XElement("body",
                 body
                     .Elements()
-                    .Where(i => !i.Name.LocalName.Equals("h2"))
+                    .Where(i => !i.Name.LocalName.Equals(entryHeaderElement))
                 ).GetInnerXml();
 
             var blogEntry = (new BlogEntry
@@ -250,14 +242,8 @@ namespace Songhay.Blog.Repository.Tests
 
             await repository.SaveEntityAsync(blogEntry);
             Assert.IsTrue(await repository.HasEntityAsync<BlogEntry>(blogEntry.Slug), "The expected Blog Entry is not in the Repository.");
-            var json = JsonConvert.SerializeObject(blogEntry, Formatting.Indented);
+            var json = blogEntry.ToJson(useJavaScriptCase: true);
             File.WriteAllText(entryOutputPath, json);
-
-            var jsonForIndex = await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, useJavaScriptCase: false);
-
-            File.WriteAllText(indexPath, json);
-
-            await repository.SetIndex(json);
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
@@ -291,6 +277,8 @@ namespace Songhay.Blog.Repository.Tests
             var repository = new BlogRepository(keys, container);
 
             var json = await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, useJavaScriptCase: true);
+
+            await repository.SetIndex(json);
 
             File.WriteAllText(indexPath, json);
 

@@ -48,7 +48,7 @@ namespace Songhay.Blog.Models.Extensions
         /// <param name="repository">The repository.</param>
         /// <param name="entries">The entries.</param>
         /// <param name="topics">The topics.</param>
-        /// <param name="useJavaScriptCase">if set to <c>true</c> [use java script case].</param>
+        /// <param name="useJavaScriptCase">when <c>true</c> use “camel” casing.</param>
         /// <returns></returns>
         /// <exception cref="NullReferenceException">
         /// The expected Blog entries are not here.
@@ -78,21 +78,30 @@ namespace Songhay.Blog.Models.Extensions
                 return entry;
             });
 
-
-            var serializerSettings = useJavaScriptCase ?
-                new JsonSerializerSettings
-                {
-                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                    Formatting = Formatting.Indented
-                }
-                :
-                new JsonSerializerSettings
-                {
-                    Formatting = Formatting.Indented
-                }
-                ;
-
+            var serializerSettings = GetJsonSerializerSettings(useJavaScriptCase);
             var json = JsonConvert.SerializeObject(entriesLite, serializerSettings);
+            return json;
+        }
+
+        /// <summary>
+        /// Converts <see cref="BlogEntry"/> to JSON.
+        /// </summary>
+        /// <param name="entry">The entry.</param>
+        public static string ToJson(this BlogEntry entry)
+        {
+            return entry.ToJson(useJavaScriptCase: false);
+        }
+
+        /// <summary>
+        /// Converts <see cref="BlogEntry"/> to JSON.
+        /// </summary>
+        /// <param name="entry">The entry.</param>
+        /// <param name="useJavaScriptCase">when <c>true</c> use “camel” casing.</param>
+        /// <returns></returns>
+        public static string ToJson(this BlogEntry entry, bool useJavaScriptCase)
+        {
+            var serializerSettings = GetJsonSerializerSettings(useJavaScriptCase);
+            var json = JsonConvert.SerializeObject(entry, serializerSettings);
             return json;
         }
 
@@ -245,6 +254,22 @@ namespace Songhay.Blog.Models.Extensions
             data.ItemCategory = getCategory(data);
 
             return data;
+        }
+
+        static JsonSerializerSettings GetJsonSerializerSettings(bool useJavaScriptCase)
+        {
+            return useJavaScriptCase ?
+                new JsonSerializerSettings
+                {
+                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                    Formatting = Formatting.Indented
+                }
+                :
+                new JsonSerializerSettings
+                {
+                    Formatting = Formatting.Indented
+                }
+                ;
         }
 
         static readonly TraceSource traceSource;
