@@ -1,49 +1,3 @@
-img {
-    max-width: 90%;
-}
-
-blockquote,
-.Quote {
-    background-color: #EAEAEA;
-    border-left: 10px solid #B21300;
-    margin: 1.5em auto 1em auto;
-    max-width: 75%;
-    padding: .25em;
-    text-align: left;
-}
-
-blockquote p,
-.Quote p {
-    margin: 1.5em;
-}
-
-code,
-kbd {
-    background-color: #cfc;
-    color: navy;
-    font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono", monospace;
-    font-size: smaller;
-}
-
-pre {
-    background-color: #cfc;
-    color: navy;
-    font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono", monospace;
-    line-height: 1.5em;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-    overflow: auto;
-    padding: .75em 1.625em;
-}
-
-sup {
-    font-size: 1em;
-}
-
-sup.CleanXhtmlFootnoteReference {
-    background-color: #eaeaea;
-}
-
 nav {
     margin-bottom: 1.5em;
 }
@@ -54,95 +8,153 @@ nav {
     color: #000;
     margin: 1.5em auto;
     padding: 2em;
-}
 
-.entry .entry-date {
-    position: relative;
-}
+    .entry-date {
+        position: relative;
 
-.entry .entry-date > span {
-    display: inline-block;
-    margin: 0 0.5em;
-    vertical-align: top;
-}
+        & > span {
+            display: inline-block;
+            margin: 0 0.5em;
+            vertical-align: top;
+        }
 
-.entry .entry-date div[data-tweet] {
-    display: inline-block;
-}
+        & div[data-tweet] {
+            display: inline-block;
+        }
+    }
 
-.entry .Callout {
-    background-color: #660b00;
-    color: #fff5ee;
-    font-size: 2em;
-    margin: inherit auto 1em;
-    padding: .5em;
-    text-align: left;
-    max-width: 75%;
-}
+    .Callout {
+        background-color: #660b00;
+        color: #fff5ee;
+        font-size: 2em;
+        margin: inherit auto 1em;
+        padding: .5em;
+        text-align: left;
+        max-width: 75%;
+    }
 
-.entry .Note {
-    background-color: #cf0;
-    margin: inherit auto 1em;
-    padding: .5em;
-    text-align: left;
-}
+    .Note {
+        background-color: #cf0;
+        margin: inherit auto 1em;
+        padding: .5em;
+        text-align: left;
 
-.entry .Note > p {
-    margin: 0;
-    margin: 1em inherit;
-}
+        & > p {
+            margin: 0;
+            margin: 1em inherit;
+        }
 
-.entry acronym {
-    cursor: help;
-}
+        acronym {
+            cursor: help;
+        }
+    }
 
-.entry ul {
-    list-style-type: square;
-    margin-left: 3em;
-    margin-top: 1.5em;
-}
+    ul {
+        list-style-type: square;
+        margin-left: 3em;
+        margin-top: 1.5em;
 
-.entry ul li {
-    margin-bottom: .5em;
-}
+        li {
+            margin-bottom: .5em;
+        }
+    }
 
-.entry .entry-content {
-    padding: 2em;
-    padding-top: 3em;
-}
+    .entry-content {
+        padding: 2em;
+        padding-top: 3em;
+    }
 
-.entry .entry-content,
-.entry .entry-content > p {
-    margin-top: 1.5em;
-}
+    .entry-content,
+    .entry-content > p {
+        margin-top: 1.5em;
+    }
 
-.entry .entry-content > h2,
-.entry .entry-content > h3,
-.entry .entry-content > h4 {
-    margin-top: 1.5em;
-}
+    .entry-content > h2,
+    .entry-content > h3,
+    .entry-content > h4 {
+        margin-top: 1.5em;
+    }
 
-.WordWalkingStickTable {
-    border: 2px solid #063;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    width: 90%;
-}
+    img {
+        max-width: 90%;
+    }
 
-.WordWalkingStickTable td {
-    border-top: 1px solid #063;
-}
+    blockquote,
+    .Quote {
+        background-color: #EAEAEA;
+        border-left: 10px solid #B21300;
+        margin: 1.5em auto 1em auto;
+        max-width: 75%;
+        padding: .25em;
+        text-align: left;
+    }
 
-.WordWalkingStickTable th {
-    background-color: #063;
-    color: #FFF5EE;
-    font-weight: 700;
-}
+    blockquote p,
+    .Quote p {
+        margin: 1.5em;
+    }
 
-.WordWalkingStickTable td,
-.WordWalkingStickTable th {
-    padding: .25em;
-    vertical-align: top;
+    code,
+    kbd {
+        background-color: #cfc;
+        color: navy;
+        font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: smaller;
+    }
+
+    pre {
+        background-color: #cfc;
+        color: navy;
+        font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono", monospace;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+        overflow: auto;
+        padding: .75em 1.625em;
+    }
+
+    .sourceCode {
+        & > pre {
+            white-space: normal;
+
+            & code {
+                & > .sourceLine {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    sup {
+        font-size: 1em;
+    }
+
+    sup.CleanXhtmlFootnoteReference {
+        background-color: #eaeaea;
+    }
+
+    .WordWalkingStickTable {
+        border: 2px solid #063;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+        width: 90%;
+    }
+
+    .WordWalkingStickTable td {
+        border-top: 1px solid #063;
+    }
+
+    .WordWalkingStickTable th {
+        background-color: #063;
+        color: #FFF5EE;
+        font-weight: 700;
+    }
+
+    .WordWalkingStickTable td,
+    .WordWalkingStickTable th {
+        padding: .25em;
+        vertical-align: top;
+    }
 }
