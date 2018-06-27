@@ -179,13 +179,13 @@ namespace Songhay.Blog.Repository.Tests
             Assert.AreEqual(sampleSize, index.Count(), "The expected repository index count is not here.");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
+        //[Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("entryHeaderElement", "h2")]
-        [TestProperty("entryPath", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
-        [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntryAndUpdateIndex.json")]
+        [TestProperty("entryPath", @"content\ShouldGenerateBlogEntry.html")]
+        [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntry.json")]
         public async Task ShouldGenerateBlogEntry()
         {
             var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());

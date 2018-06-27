@@ -39,7 +39,6 @@
   <p>The <code>&lt;Target Name=&quot;PublishRunWebpack&quot;…</code> declaration in <code>*.csproj</code> refers to <code>$(SpaRoot)dist\</code> (and <code>$(SpaRoot)dist-server\</code>) which leads back to <code>ClientApp/dist</code>.</p>
   <p>This arrangement completely separates the contents of <code>ClientApp</code> from the rest of the Visual Studio “world” around it. The aforementioned <code>DefaultItemExcludes</code> declaration in <code>*.csproj</code> prevents Visual Studio from “reaching” into <code>ClientApp</code>:</p>
   <div class="sourceCode" id="cb4"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">&lt;DefaultItemExcludes&gt;</span>$(DefaultItemExcludes);$(SpaRoot)node_modules\**<span class="kw">&lt;/DefaultItemExcludes&gt;</span></a></code></pre></div>
-
 </body>
 
 </html>
