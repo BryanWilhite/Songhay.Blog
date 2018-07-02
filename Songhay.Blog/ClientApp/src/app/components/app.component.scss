@@ -1,11 +1,20 @@
-.app.footer > span {
-    display: inline-block;
-    font-size: .75rem;
-    vertical-align: top;
-}
+.mat-toolbar {
+    .app.footer > span {
+        font-size: 0.75rem;
+        vertical-align: top;
+    }
 
-.app.title{
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 100;
+    .app.title {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 100;
+    }
+
+    & > span {
+        & a {
+            text-decoration: none;
+        }
+        display: inline-block;
+        padding-right: 1.5em;
+    }
 }

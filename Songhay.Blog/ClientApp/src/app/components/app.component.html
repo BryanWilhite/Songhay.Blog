@@ -1,8 +1,33 @@
 <div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
     <mat-toolbar color="primary">
-        <span class="app title">{{appTitle}}</span>
-        <mat-icon color="secondary" svgIcon="rx:ic_toc_24px"></mat-icon>
-        <span class="app author"><a class="index" href="http://twitter.com/BryanWilhite">@BryanWilhite</a></span>
+        <span class="app title"><a href="./" class="index">{{appTitle}}</a></span>
+        <span>
+            <a href="https://portal.azure.com/" class="index" title="azure portal">
+                <mat-icon color="accent" svgIcon="rx:mdi_cloud_24px"></mat-icon>
+                <span fxHide.lt-md>azure portal</span>
+            </a>
+        </span>
+        <span>
+            <a href="https://dev.windows.com/" class="index" title="dev center">
+                <mat-icon color="accent" svgIcon="rx:mdi_cellphone_text_24px"></mat-icon>
+                <span fxHide.lt-md>dev center</span>
+            </a>
+        </span>
+        <span>
+            <a href="https://github.com/BryanWilhite" class="index" title="github">
+                <mat-icon color="accent" svgIcon="rx:mdi_github_circle_24px"></mat-icon>
+                <span fxHide.lt-md>github</span>
+            </a>
+        </span>
+        <span>
+            <a href="https://songhay.visualstudio.com/" class="index" title="visual studio online">
+                <mat-icon color="accent" svgIcon="rx:mdi_visual_studio_24px"></mat-icon>
+                <span fxHide.lt-md>visual studio online</span>
+            </a>
+        </span>
+        <span class="app author">
+            <a class="index" href="http://twitter.com/BryanWilhite">@BryanWilhite</a>
+        </span>
     </mat-toolbar>
     <router-outlet></router-outlet>
     <div class="app footer" fxLayout="row" fxFlex="100">
