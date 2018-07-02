@@ -7,33 +7,121 @@
 </head>
 
 <body>
-  <h2 id="i-finally-finally-finally-converted-my-blog-to-angular-modern">I finally, finally, finally converted my Blog to Angular modern…</h2>
-  <p>Meh. Blow a party whistle. And I am <em>far</em> from “done,” by the way. I now understand why <a href="https://www.hanselman.com/blog/">Scott Hanselman</a> would stay with ASP.NET Web Forms and no SPA-action for his Blog. I have been dealing with this ‘challenge’ <em>actively</em> since the summer of 2017. These are challenges I set up for myself (not really understanding that each of these challenges had at least three challenges wrapped inside):</p>
-  <ul>
-  <li>maintain a private-sector day job (compared to a government or academic job)</li>
-  <li>convert from Visual Studio web-building workflows to Visual Studio Code workflows</li>
-  <li>convert my .NET 4.x investments to .NET Core in general and .NET Standard 2.0 in particular</li>
-  <li>maintain a private-sector day job</li>
-  <li>migrate from a few huge Team Foundation Server solutions to many, many Git repositories</li>
-  <li>migrate to a Node.js based development culture</li>
-  <li>migrate from Angular JS to Angular</li>
-  <li>maintain a private-sector day job</li>
-  <li>establish a Visual Studio Team Services CI/CD pipeline for multiple Git repositories</li>
-  </ul>
-  <p>It is clear—abundantly clear—that I am not converting from Angular JS to Angular in a vacuum. I am converting multiple production pipelines over to a new paradigm as well as converting from Angular JS to Angular. This is the downside of being a developer with legacy load, struggling to stay out of technical debt.</p>
-  <h3 id="many-many-git-repositories">many, many Git repositories</h3>
-  <p>I will attempt to list the Git repositories I built for this mega-conversion in the proper chronological order to explain (even to myself) what the hell I was doing. Each of these repositories contain their own histories, detailing more of my joy and pain—and pain. It may help to mention that I have been using Team Foundation Services to host a few huge Team Foundation Server (TFS) solutions that I have been building up for over a decade. Most of these GitHub repositories draw from these TFS solutions:</p>
-  <p><a href="https://github.com/BryanWilhite/SonghayCore">SonghayCore</a>: all my Blog sites have run on top this Core so this had to move first. <a href="https://github.com/BryanWilhite/SonghayCore/graphs/contributors">My contributions</a> show I started this process in the summer of 2016. It may help to mention that I use the assets in this repository for my day job.</p>
-  <p><a href="https://github.com/BryanWilhite/Songhay.Cloud.BlobStorage">Songhay.Cloud.BlobStorage</a>: all of my MVC-era Blog sites have run on top Azure Storage, abstracted into a repository. <a href="https://github.com/BryanWilhite/Songhay.Cloud.BlobStorage/graphs/contributors">My contributions</a> show I started this process in the autumn of 2017. For the reader who would prefer to not get into this ‘trap’ I have set up for myself, it may help to mention that this month Microsoft has announced “<a href="https://azure.microsoft.com/en-us/blog/azure-storage-static-web-hosting-public-preview/">Static website hosting for Azure Storage now in public preview</a>” which <em>should</em> do well with a <a href="https://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/">static website generator</a>.</p>
-  <p><a href="https://github.com/BryanWilhite/Songhay.Social">Songhay.Social</a>: this repository supports the Tweeted Links posts, a Blog post made of Twitter statuses which has been totally dominating my Blog posting for the last few years. <a href="https://github.com/BryanWilhite/Songhay.Social/graphs/contributors">My contributions</a> show I started this process in the winter of this year.</p>
-  <p><a href="https://github.com/BryanWilhite/Songhay.Feeds">Songhay.Feeds</a>: this repository is the solution to generating RSS feeds in a JSON format for UI display via a back-end <a href="https://docs.microsoft.com/en-us/azure/app-service/web-sites-create-web-jobs">Azure job</a>. The RSS feed for my Blog is now broken as this is functionality is not running in the cloud as of this writing. <a href="https://github.com/BryanWilhite/Songhay.Feeds/graphs/contributors">My contributions</a> show I started this process in the winter of this year.</p>
-  <p><a href="https://github.com/BryanWilhite/dotnet-core">dotnet-core</a>: I started this repository <a href="https://github.com/BryanWilhite/dotnet-core/graphs/contributors">in the fall of 2017</a> to teach myself .NET Core and ASP.NET Core. I am passionate about learning in public, demystifying this process for less experienced developers.</p>
-  <p><a href="https://github.com/BryanWilhite/nodejs">nodejs</a>: I started this repository <a href="https://github.com/BryanWilhite/nodejs/graphs/contributors">in the spring of 2017</a> to, as aforementioned, ‘migrate to a Node.js based development culture.’</p>
-  <p><a href="https://github.com/BryanWilhite/angular.io-index-app">angular.io-index-app</a>: this repository represents my intention to standardize my studio around an Index app for SPA solutions. This Blog as of this writing is currently running off of a ‘seed’ based on this Index app. I started this repository <a href="https://github.com/BryanWilhite/angular.io-index-app/graphs/contributors">in the autumn of 2017</a> <em>after</em> experimenting with <a href="https://github.com/BryanWilhite/aurelia-index-app">aurelia-index-app</a>.</p>
-  <p><a href="https://github.com/BryanWilhite/Songhay.Blog">Songhay.Blog</a>: as of this writing this repository is the engine behind this Blog site, started <a href="https://github.com/BryanWilhite/Songhay.Blog/graphs/contributors">in the spring of 2018</a>. It is quite intimidating (to me) to see that all of the repositories mentioned above made this repository possible.</p>
-  <p>Since I am clearly not as bright as Scott Hanselman, I have been laboring under the assumption that like a fictional Jedi I have to waste years of my real life trying to build my own light saber, using patterns and practices that both conform and deviate from the norm. The principle I am trying to uphold is simple but has been quite brutal (on me): my technical Blog should be built by me. When I started this Blog there was nothing in the ASP.NET MVC world for blogging on the scale of, say, WordPress. It follows quite naturally that I followed <a href="http://songhayblog.azurewebsites.net/blog/entry/replacing-my-nblog-with-a-read-only-angular-js-seed-over-web-api">the example of Chris Fulstow</a> and went out on my own… I do not recommend doing this. Today, I would recommend a <a href="https://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/">static website generator</a>. But do understand that I make this recommendation <em>after</em> learning about ASP.NET MVC by building my own Blog site(s).</p>
-  <p>Going forward my plan is to continue posting Tweeted Links—like <a href="http://songhayblog.azurewebsites.net/blog/entry/the-2018-front-end-performance-checklist-and-other-tweeted-links">my latest one</a> as of this writing—and Blog posts detailing how I am finishing this Blog site. Writing about what I am doing motivates me to work—even when no one is reading about what I am writing. I understand this weird thing about myself so it has been quite uncomfortable to endure about three years without a technical blogging platform. I welcome myself back. I hope Bing search bots will index this thing correctly.</p>
-  <p>@<a href="https://twitter.com/bryanwilhite">BryanWilhite</a></p>
+  <h2>“Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx” and other Tweeted links…</h2>
+  <p><a href="" title="Alex [Alex51482]" id="979456779200409600"><img alt="Alex [Alex51482]" src="https://songhay.blob.core.windows.net/shared-social-twitter/Alex51482.jpg">
+  </a> Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx by <a href="http://twitter.com/chris_noring">@chris_noring</a> forward by <a href="http://twitter.com/josepheames">@josepheames</a> <a href="https://t.co/HHjdckuda5">https://t.co/HHjdckuda5</a></p>
+<p><a href="https://t.co/ZGhMzNeGtN" title="Mark Erikson [acemarke]" id="979353781338034200"><img alt="Mark Erikson [acemarke]" src="https://songhay.blob.core.windows.net/shared-social-twitter/acemarke.jpg">
+  </a> There's been a lot of confusion and misinformation about Redux going around lately.
+
+I just posted "Redux - Not Dea… <a href="https://t.co/HcjfUEuX64">https://t.co/HcjfUEuX64</a></p>
+<p><a href="https://t.co/Cnoi2OucWz" title="Lee Byron [leeb]" id="979484350558347300"><img alt="Lee Byron [leeb]" src="https://songhay.blob.core.windows.net/shared-social-twitter/leeb.jpg">
+  </a> Do you maintain a JS library that uses GraphQL? I need your help preparing for the next major release! <a href="https://t.co/DdpXfCYVCn">https://t.co/DdpXfCYVCn</a></p>
+<p><a href="https://t.co/7KvH8BhqZf" title="Minko Gechev [mgechev]" id="979935407704952800"><img alt="Minko Gechev [mgechev]" src="https://songhay.blob.core.windows.net/shared-social-twitter/mgechev.jpg">
+  </a> Radar which lets you trace the frame rate of your JavaScript application  <a href="https://t.co/Zyfxhdzj4w">https://t.co/Zyfxhdzj4w</a> <a href="https://t.co/rcC0sxOQr6">https://t.co/rcC0sxOQr6</a></p>
+<p><a href="https://t.co/ZANWJjC3FT" title="Mara Averick [dataandme]" id="980265767001317400"><img alt="Mara Averick [dataandme]" src="https://songhay.blob.core.windows.net/shared-social-twitter/dataandme.jpg">
+  </a> How to, w/ code: "Index starting points &amp; dataviz" by <a href="http://twitter.com/lenkiefer">@lenkiefer</a> (👍 write up, too) <a href="https://t.co/96ze7cFjcU">https://t.co/96ze7cFjcU</a> <a href="http://twitter.com/search?q=%23rstats">#rstats</a>… <a href="https://t.co/wcfCNjoQd7">https://t.co/wcfCNjoQd7</a></p>
+<p><a href="https://t.co/Tb9mBjcLBe" title="Jenny Wong 🐝 [miss_jwo]" id="979444202965733400"><img alt="Jenny Wong 🐝 [miss_jwo]" src="https://songhay.blob.core.windows.net/shared-social-twitter/miss_jwo.jpg">
+  </a> Dear developers, please stop assuming that everyone has amazing internet and it's cheap.</p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979473417681305600"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> Mermaid. Generation of diagrams and flowcharts from text in a similar manner as markdown. <a href="https://t.co/Hq0bzXMHlr">https://t.co/Hq0bzXMHlr</a> <a href="http://twitter.com/code">@code</a></p>
+<p><a href="https://t.co/XKK4NcxDZ3" title="David Fowler [davidfowl]" id="979549994557489200"><img alt="David Fowler [davidfowl]" src="https://songhay.blob.core.windows.net/shared-social-twitter/davidfowl.jpeg">
+  </a> Project bedrock update <a href="https://t.co/ezUGCgah6q">https://t.co/ezUGCgah6q</a> <a href="http://twitter.com/search?q=%23aspnetcore">#aspnetcore</a> <a href="http://twitter.com/search?q=%23signalr">#signalr</a></p>
+<p><a href="http://t.co/VCkinoHijZ" title="Filip W [filip_woj]" id="979610625637847000"><img alt="Filip W [filip_woj]" src="https://songhay.blob.core.windows.net/shared-social-twitter/filip_woj.jpg">
+  </a> read this update from <a href="http://twitter.com/davidfowl">@davidfowl</a> if you are interested in the latest cutting-edge stuff related to Kestrel and… <a href="https://t.co/rc9yJSl4XI">https://t.co/rc9yJSl4XI</a></p>
+<p><a href="https://t.co/VqBBfLLxPm" title="Chris Gillum [cgillum]" id="979485901410598900"><img alt="Chris Gillum [cgillum]" src="https://songhay.blob.core.windows.net/shared-social-twitter/cgillum.jpeg">
+  </a> We just pushed a minor update to the Azure Durable Functions extension. This update is compatible with the recently… <a href="https://t.co/NqQtn28oP1">https://t.co/NqQtn28oP1</a></p>
+<p><a href="https://t.co/l66ZAwxNBp" title="Microsoft Orleans [msftorleans]" id="979566567435395100"><img alt="Microsoft Orleans [msftorleans]" src="https://songhay.blob.core.windows.net/shared-social-twitter/msftorleans.jpg">
+  </a> Final release of 2.0.0 is on <a href="https://t.co/q7LEri3oC3">https://t.co/q7LEri3oC3</a>
+Huge kudos to the community for helping navigate this major re… <a href="https://t.co/qnJ3rfvdaW">https://t.co/qnJ3rfvdaW</a></p>
+<p><a href="https://t.co/qvRqRy5VWz" title="Azure Portal [AzurePortal]" id="979768983334211600"><img alt="Azure Portal [AzurePortal]" src="https://songhay.blob.core.windows.net/shared-social-twitter/AzurePortal.jpg">
+  </a> Soft delete for Azure Storage Blobs now in public preview. Check out the blog post for more details.
+
+<a href="https://t.co/BjtZnUPWYM">https://t.co/BjtZnUPWYM</a></p>
+<p><a href="http://t.co/SiLvmue9fJ" title="Cloudflare [Cloudflare]" id="980430875258212400"><img alt="Cloudflare [Cloudflare]" src="https://songhay.blob.core.windows.net/shared-social-twitter/Cloudflare.jpg">
+  </a> Announcing 1.1.1.1: the fastest, privacy-first consumer DNS service - <a href="https://t.co/xiM3yllWHj">https://t.co/xiM3yllWHj</a> <a href="https://t.co/5keff8uuD2">https://t.co/5keff8uuD2</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979107551705841700"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> The PublicClientApplication.AcquireTokenAsync() experience on .NET Core is not yet implemented (login prompt baked… <a href="https://t.co/GXHdWTk0Vx">https://t.co/GXHdWTk0Vx</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979108300187885600"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> Microsoft.Identity.Client: <a href="https://t.co/gHzlUGxdNO">https://t.co/gHzlUGxdNO</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979110469397966800"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> excited to see how <a href="http://twitter.com/jm_prieur">@jm_prieur</a> and co. implement a cross-platform authentication login prompt for <a href="http://twitter.com/azure">@azure</a> AD =&gt; <a href="http://twitter.com/JamesMontemagno">@JamesMontemagno</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979119415835836400"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/JamesMontemagno">@JamesMontemagno</a> <a href="http://twitter.com/jm_prieur">@jm_prieur</a> <a href="http://twitter.com/Azure">@Azure</a> hey <a href="http://twitter.com/JamesMontemagno">@JamesMontemagno</a> when, say, PowerShell running on Linux needs a login prompt… <a href="https://t.co/rj63N3MzrS">https://t.co/rj63N3MzrS</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979055224064114700"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> How to recognize differences between delegated and application permissions | Microsoft Docs <a href="https://t.co/0QENuCtSXo">https://t.co/0QENuCtSXo</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979432091262730200"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> “This post compares package management systems for JavaScript, including npm, Yarn, Bower and jpsm.” <a href="https://t.co/LGjktMwz9O">https://t.co/LGjktMwz9O</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979834407447011300"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> when my current 1990s-era-Microsoft-IT-shop thought leader says, "We need to be cloud-ready," i am almost certain o… <a href="https://t.co/RQiMQxRhft">https://t.co/RQiMQxRhft</a></p>
+<p><a href="https://t.co/XUfckSNIJ7" title="Mimi Gentz [mimigentz]" id="979057198813859800"><img alt="Mimi Gentz [mimigentz]" src="https://songhay.blob.core.windows.net/shared-social-twitter/mimigentz.jpg">
+  </a> Azure <a href="http://twitter.com/search?q=%23CosmosDB">#CosmosDB</a> customers, we'd love your feedback on the organizational changes we're testing out on the Cosmos DB… <a href="https://t.co/PmGBS7wfZX">https://t.co/PmGBS7wfZX</a></p>
+<p><a href="http://t.co/fciNGWlxof" title="Rasťo Novotný [duracellko]" id="979250607528841200"><img alt="Rasťo Novotný [duracellko]" src="https://songhay.blob.core.windows.net/shared-social-twitter/duracellko.jpeg">
+  </a> This <a href="http://twitter.com/search?q=%23VSTS">#VSTS</a> feature brings balance to the force. Case-insensitive <a href="http://twitter.com/search?q=%23Git">#Git</a> repositories are really awesome. I've seen lo… <a href="https://t.co/x23sVV2YVW">https://t.co/x23sVV2YVW</a></p>
+<p><a href="http://t.co/Qa34JB41pb" title="wallingf [wallingf]" id="979460751697039400"><img alt="wallingf [wallingf]" src="https://songhay.blob.core.windows.net/shared-social-twitter/wallingf.jpg">
+  </a> Heresy in the Battle Between OOP and FP <a href="https://t.co/o1b1uyxYU5">https://t.co/o1b1uyxYU5</a></p>
+<p><a href="http://t.co/aC5mXb9iZQ" title="Brian Beckman [lorentzframe]" id="979201010399830000"><img alt="Brian Beckman [lorentzframe]" src="https://songhay.blob.core.windows.net/shared-social-twitter/lorentzframe.jpg">
+  </a> Don't Fear the Monoids!  Yes, Monoids.  I wrote this about 15 years ago for SQL Server and forgot about it.  Cleani… <a href="https://t.co/HQgtOezsZq">https://t.co/HQgtOezsZq</a></p>
+<p><a href="https://t.co/QYHvGE7Gju" title="Jeffrey Snover [jsnover]" id="979427100011642900"><img alt="Jeffrey Snover [jsnover]" src="https://songhay.blob.core.windows.net/shared-social-twitter/jsnover.jpg">
+  </a> CloudShell has just been updated and look what you can now do after you start a Bash session! <a href="https://t.co/eKEXXSf8DR">https://t.co/eKEXXSf8DR</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979109527898415100"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> hey, Bryan, it's me, Bryan... you are hitting this line of code: <a href="https://t.co/MeRzYZbicw">https://t.co/MeRzYZbicw</a> <a href="https://t.co/JUBCLq204F">https://t.co/JUBCLq204F</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980328965930995700"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> I liked a <a href="http://twitter.com/YouTube">@YouTube</a> video <a href="https://t.co/SOjfSHPx9n">https://t.co/SOjfSHPx9n</a> 09 The Unreasonable Effectiveness of Lenses for Business Applications</p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980332198023835600"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> I liked a <a href="http://twitter.com/YouTube">@YouTube</a> video <a href="https://t.co/LTWwGZNmqI">https://t.co/LTWwGZNmqI</a> LambdaConf 2015 - How to Learn Haskell in Less Than 5 Years Chris Allen</p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980334011330519000"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> I liked a <a href="http://twitter.com/YouTube">@YouTube</a> video <a href="https://t.co/uyKrrl4Nc4">https://t.co/uyKrrl4Nc4</a> Fun never stops. Introduction to Haskell Programming language by Paul Szulc</p>
+<p><a href="https://t.co/pr1NhYseRK" title="Sarah Drasner [sarah_edo]" id="979410605042892800"><img alt="Sarah Drasner [sarah_edo]" src="https://songhay.blob.core.windows.net/shared-social-twitter/sarah_edo.jpg">
+  </a> Fellow speakers, can I humbly make a suggestion? If you’re doing a live demo, do a screen recording of what it look… <a href="https://t.co/S7p3dhtJRp">https://t.co/S7p3dhtJRp</a></p>
+<p><a href="http://t.co/VCkinoHijZ" title="Filip W [filip_woj]" id="979446500274114600"><img alt="Filip W [filip_woj]" src="https://songhay.blob.core.windows.net/shared-social-twitter/filip_woj.jpg">
+  </a> why are some Microsoft NuGet packages still actively developed as "WindowsAzure"? <a href="https://t.co/DNluIq6VBt">https://t.co/DNluIq6VBt</a>… <a href="https://t.co/pFUKcHV0R6">https://t.co/pFUKcHV0R6</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979835058692415500"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> Duplicati 2.0: Free backup software to store encrypted backups online
+For Windows, macOS and Linux <a href="https://t.co/7fjXTmLPSg">https://t.co/7fjXTmLPSg</a> &lt;= <a href="http://twitter.com/TekThing">@TekThing</a></p>
+<p><a href="https://t.co/QGefgKfF8h" title="blackcomputeHER.org [blackcomputeHER]" id="979052911962574800"><img alt="blackcomputeHER.org [blackcomputeHER]" src="https://songhay.blob.core.windows.net/shared-social-twitter/blackcomputeHER.jpg">
+  </a> 26 Women of Color Diversifying Entrepreneurship in Silicon Valley, Media, and Beyond <a href="https://t.co/KFSVmLvlWn">https://t.co/KFSVmLvlWn</a>… <a href="https://t.co/F5posetoqu">https://t.co/F5posetoqu</a></p>
+<p><a href="http://t.co/qJf6Vbi9nq" title="Mary Jo Foley [maryjofoley]" id="979368997484486700"><img alt="Mary Jo Foley [maryjofoley]" src="https://songhay.blob.core.windows.net/shared-social-twitter/maryjofoley.png">
+  </a> Big shakeup at MSFT today, especially in Windows. Terry Myerson is leaving the company: <a href="https://t.co/hEWS0gTiRY">https://t.co/hEWS0gTiRY</a></p>
+<p><a href="http://t.co/qJf6Vbi9nq" title="Mary Jo Foley [maryjofoley]" id="979372944785801200"><img alt="Mary Jo Foley [maryjofoley]" src="https://songhay.blob.core.windows.net/shared-social-twitter/maryjofoley.png">
+  </a> More details on Microsoft's reorg and how/why Microsoft is splitting up Windows and Devices: <a href="https://t.co/UehGZQrLRN">https://t.co/UehGZQrLRN</a></p>
+<p><a href="http://t.co/qJf6Vbi9nq" title="Mary Jo Foley [maryjofoley]" id="979757399731994600"><img alt="Mary Jo Foley [maryjofoley]" src="https://songhay.blob.core.windows.net/shared-social-twitter/maryjofoley.png">
+  </a> It was 8 years ago that then MSFT Chief Software Architect <a href="http://twitter.com/rozzie">@rozzie</a> wrote a memo on the post-PC world looming:… <a href="https://t.co/I6w7tc7CMB">https://t.co/I6w7tc7CMB</a></p>
+<p><a href="https://t.co/v3V9xEIvEl" title="Dave Rael [raelyard]" id="980086820775104500"><img alt="Dave Rael [raelyard]" src="https://songhay.blob.core.windows.net/shared-social-twitter/raelyard.jpg">
+  </a> What are you going to learn today (or what have you already learned)?</p>
+<p><a href="https://t.co/8tkHwv4W3u" title="getify [getify]" id="980410952024776700"><img alt="getify [getify]" src="https://songhay.blob.core.windows.net/shared-social-twitter/getify.jpg">
+  </a> We've accepted as an industry/society a very low bar for what constitutes "education".
+
+I don't think documentation… <a href="https://t.co/Bhmg1hIXwc">https://t.co/Bhmg1hIXwc</a></p>
+<p><a href="https://t.co/8wuRpLOaxa" title="Ody Mbegbu [Odytrice]" id="980155239180460000"><img alt="Ody Mbegbu [Odytrice]" src="https://songhay.blob.core.windows.net/shared-social-twitter/Odytrice.jpg">
+  </a> Here you go, proof that 1 + 1 = 2 <a href="https://t.co/zl0bYQNh0p">https://t.co/zl0bYQNh0p</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980491662265757700"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/Odytrice">@Odytrice</a> It looks like it is based on set theory? I haven't seen stuff like this since c. 1989.</p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980492064386293800"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/Odytrice">@Odytrice</a> But with my newfound discovery of Jupyter notebooks I can study this stuff again (eventually).</p>
+<p><a href="https://t.co/G8pgR1Zwwz" title="Scott Nimrod [Bizmonger]" id="980180949752336400"><img alt="Scott Nimrod [Bizmonger]" src="https://songhay.blob.core.windows.net/shared-social-twitter/Bizmonger.jpg">
+  </a> <a href="http://twitter.com/raelyard">@raelyard</a> Why is it common for a doctor or lawyer to make $500K / yr and not for a developer?
+
+Why are those profes… <a href="https://t.co/r51ZA8EHw1">https://t.co/r51ZA8EHw1</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980493087842517000"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/Bizmonger">@Bizmonger</a> <a href="http://twitter.com/raelyard">@raelyard</a> Developers can't pass (immigration) laws. Period. And, hell no, I am not a white nationalist.</p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980495647072649200"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/Bizmonger">@Bizmonger</a> <a href="http://twitter.com/raelyard">@raelyard</a> Also tech giants have been known to collude with each other to prevent salaries from rising😈 h… <a href="https://t.co/5Tn2LfZBZA">https://t.co/5Tn2LfZBZA</a></p>
+<p><a href="https://t.co/WXPi0Gcgn5" title="Jessica Rose [jesslynnrose]" id="980148478193143800"><img alt="Jessica Rose [jesslynnrose]" src="https://songhay.blob.core.windows.net/shared-social-twitter/jesslynnrose.jpg">
+  </a> In this thread:
+
+➡️Burnout seems common in tech
+➡️Recorry time varies, can take years
+➡️Some report never recoverin… <a href="https://t.co/wlkcpRUfKY">https://t.co/wlkcpRUfKY</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980488223167148000"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/jesslynnrose">@jesslynnrose</a> I have not burned out for whatever sense of self awareness I have had as one who tries to practice me… <a href="https://t.co/GkT9xOkPrY">https://t.co/GkT9xOkPrY</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="980489951920848900"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> <a href="http://twitter.com/jesslynnrose">@jesslynnrose</a> I think burn out in tech comes from forcing one's self to take a ridiculous IT enterprise seriously t… <a href="https://t.co/Ovp2zhx4oh">https://t.co/Ovp2zhx4oh</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979147680717795300"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> Tech workers are fleeing the United States to work in Canada <a href="https://t.co/K8bYD3R3Ck">https://t.co/K8bYD3R3Ck</a> via <a href="http://twitter.com/businessinsider">@businessinsider</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979558893188612100"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> The Undersea Network (Sign, Storage, Transmission) <a href="https://t.co/on35ytqHKx">https://t.co/on35ytqHKx</a> by <a href="http://twitter.com/n_str">@n_str</a> <a href="https://t.co/Id2ZX5mu05">https://t.co/Id2ZX5mu05</a></p>
+<p><a href="http://t.co/UNdqV0Z1zz" title="Bryan D. Wilhite [BryanWilhite]" id="979561543477092400"><img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net/shared-social-twitter/BryanWilhite.jpeg">
+  </a> 1532 Falcon Heavy Geek Out <a href="https://t.co/IntkwekGTT">https://t.co/IntkwekGTT</a> [<a href="http://twitter.com/richcampbell">@richcampbell</a> schools me on toxic perchlorate dust that would h… <a href="https://t.co/o8v3lSgcya">https://t.co/o8v3lSgcya</a></p>
   </body>
 
 </html>
