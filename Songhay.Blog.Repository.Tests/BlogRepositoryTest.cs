@@ -306,15 +306,15 @@ namespace Songhay.Blog.Repository.Tests
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
-        [TestProperty("htmlFile", @"content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
-        [TestProperty("slug", "asp-net-web-api-ready-state-4-2017")]
+        [TestProperty("htmlFile", @"content\ShouldGenerateBlogEntry.html")]
+        [TestProperty("slug", "yes-finally-here-architecting-ng-apps-with-redux-rxjs-and-nhrx-and-other-tweeted-links")]
         public async Task ShouldLoadEntryIntoHtmlFile()
         {
-            var projectRoot = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 2);
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
             var htmlFile = this.TestContext.Properties["htmlFile"].ToString();
-            htmlFile = Path.Combine(projectRoot, htmlFile);
+            htmlFile = Path.Combine(projectInfo.FullName, htmlFile);
             var slug = this.TestContext.Properties["slug"].ToString();
 
             var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);

@@ -127,7 +127,7 @@ namespace Songhay.Blog.Shell.Tests
         [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
-        [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntryAndUpdateIndex.html")]
+        [TestProperty("htmlPath", @"Songhay.Blog.Repository.Tests\content\ShouldGenerateBlogEntry.html")]
         [TestProperty("twitterHost", "t.co")]
         [TestProperty("hootsuiteHost", "ow.ly")]
         public async Task ShouldExpandUrisFromNewEntry()
