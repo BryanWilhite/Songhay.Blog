@@ -2,8 +2,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
             "command": "dotnet",
+            "label": "dotnet build",
             "isBackground": true,
             "type": "shell",
             "args": [
@@ -12,6 +12,19 @@
             ],
             "options": {
                 "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "command": "dotnet",
+            "label": "dotnet run",
+            "isBackground": true,
+            "type": "shell",
+            "args": [
+                "run"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/Songhay.Blog"
             },
             "problemMatcher": "$msCompile"
         },
@@ -29,6 +42,7 @@
             "problemMatcher": []
         },
         {
+            "label": "npm build",
             "type": "npm",
             "script": "build",
             "path": "Songhay.Blog/ClientApp/",
@@ -37,6 +51,7 @@
             ]
         },
         {
+            "label": "npm build:prod",
             "type": "npm",
             "script": "build:prod",
             "path": "Songhay.Blog/ClientApp/",
@@ -54,6 +69,7 @@
             ]
         },
         {
+            "label": "npm build:staging",
             "type": "npm",
             "script": "build:staging",
             "path": "Songhay.Blog/ClientApp/",
@@ -62,6 +78,7 @@
             ]
         },
         {
+            "label": "npm e2e",
             "type": "npm",
             "script": "e2e",
             "path": "Songhay.Blog/ClientApp/",
@@ -70,6 +87,7 @@
             ]
         },
         {
+            "label": "npm start",
             "type": "npm",
             "script": "start",
             "path": "Songhay.Blog/ClientApp/",
