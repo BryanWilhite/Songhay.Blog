@@ -8,6 +8,11 @@ a {
         &:link,
         &:visited {
             color: $akyinkyin-light-tint;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $akyinkyin-base;
         }
     }
 }
