@@ -4,6 +4,7 @@
     color: #000;
     margin: 1.5em auto;
     max-width: 70em;
+    width: 90%;
     padding: 2em;
 
     & > .entry-date {
@@ -20,7 +21,7 @@
         }
     }
 
-    & > .entry-content {
+    & ::ng-deep .entry-content {
         padding: 2em;
         padding-top: 3em;
 
@@ -50,7 +51,7 @@
             }
         }
 
-        & > p {
+        & p {
             margin-top: 1.5em;
         }
 
@@ -89,8 +90,8 @@
             margin: 1.5em;
         }
 
-        & > code,
-        & > kbd {
+        & code,
+        & kbd {
             background-color: #cfc;
             color: navy;
             font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
@@ -98,7 +99,7 @@
             font-size: smaller;
         }
 
-        & > pre {
+        & pre {
             background-color: #cfc;
             color: navy;
             font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
