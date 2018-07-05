@@ -9,7 +9,7 @@
 </form>
 <mat-list>
     <mat-list-item *ngFor="let i of index$ | async | paginate: { itemsPerPage: 10, currentPage: currentPage }">
-        {{ i.inceptDate | date:'yyyy-MM-dd' }}:&nbsp;
+        <span class="incept-date">{{ i.inceptDate | date:'yyyy-MM-dd' }}:</span>
         <a class="index" href="blog/entry/{{ i.slug }}" [innerHTML]="i.title"></a>
     </mat-list-item>
 </mat-list>

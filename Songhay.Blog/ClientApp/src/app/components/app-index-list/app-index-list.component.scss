@@ -1,22 +1,24 @@
 @import '../../../assets/scss/themes/akyinkyin/palette';
 
-.index.pagination /deep/ .ngx-pagination {
-    padding-left: 0;
-    text-align: center;
-    & > li.current {
-        background-color: $akyinkyin-base;
-    }
-    & li > a {
-        color: $light-primary-text;
-
-        &:active,
-        &:link,
-        &:visited {
-            color: $light-primary-text;
+.index.pagination {
+    & ::ng-deep .ngx-pagination {
+        padding-left: 0;
+        text-align: center;
+        & > li.current {
+            background-color: $akyinkyin-base;
         }
+        & li > a {
+            color: $light-primary-text;
 
-        &:hover {
-            color: $dark-primary-text;
+            &:active,
+            &:link,
+            &:visited {
+                color: $light-primary-text;
+            }
+
+            &:hover {
+                color: $dark-primary-text;
+            }
         }
     }
 }
@@ -28,4 +30,16 @@
 
 .cell.nav {
     padding-left: 1rem;
+}
+
+.mat-list-item {
+    & .incept-date {
+        display: inline-block;
+        margin-right: 0.5em;
+        white-space: nowrap;
+    }
+    & a {
+        display: inline-block;
+        min-width: 30em;
+    }
 }
