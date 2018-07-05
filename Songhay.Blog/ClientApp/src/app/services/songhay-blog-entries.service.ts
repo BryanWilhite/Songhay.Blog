@@ -127,6 +127,7 @@ export class BlogEntriesService {
      * Promises to load a Blog entry.
      *
      * @param {string} slug
+     * @param {string} entryLocation
      * @returns {Promise<Response>}
      * @memberof BlogEntriesService
      */

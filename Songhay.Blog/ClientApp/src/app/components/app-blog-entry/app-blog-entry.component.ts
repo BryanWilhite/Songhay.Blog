@@ -22,8 +22,9 @@ export class AppBlogEntryComponent implements OnInit {
 
     ngOnInit() {
         this.route.params.subscribe(params => {
+            const entryLocation = './assets/data/asp-net-core-angular-client-app-q2-2018.json';
             this.slug = params['slug'] as string;
-            this.indexService.loadEntry(this.slug).then(() => {
+            this.indexService.loadEntry(this.slug, entryLocation).then(() => {
                 this.trustedContent = this.sanitizer.bypassSecurityTrustHtml(
                     this.indexService.entry.content
                 );
