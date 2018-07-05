@@ -1,5 +1,13 @@
 @import '../../../assets/scss/themes/akyinkyin/palette';
 
+.mat-form-field-label {
+    padding-bottom: 0.25em;
+}
+
+.mat-option.mat-selected:not(.mat-option-disabled) {
+    color: $akyinkyin-light-tint;
+}
+
 .mat-card {
     background-color: $akyinkyin-background;
     height: 6rem;
