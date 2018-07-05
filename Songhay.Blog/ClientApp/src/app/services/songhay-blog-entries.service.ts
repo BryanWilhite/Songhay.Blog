@@ -59,7 +59,7 @@ export class BlogEntriesService {
     index: BlogEntry[];
 
     /**
-     * Returns the @type {string}, locating JSON.
+     * Returns the @type {string}, locating Index JSON.
      *
      * @type {string}
      * @memberof BlogEntriesService
@@ -130,12 +130,14 @@ export class BlogEntriesService {
      * @returns {Promise<Response>}
      * @memberof BlogEntriesService
      */
-    loadEntry(slug: string): Promise<Response> {
+    loadEntry(slug: string, entryLocation: string = null): Promise<Response> {
         this.initialize();
 
-        const wrapPromise = (resolve: any, reject: any) => {
-            const uri = `${this.baseApiRoute}/entry/${slug}`;
+        const uri = entryLocation
+            ? entryLocation
+            : `${this.baseApiRoute}/entry/${slug}`;
 
+        const wrapPromise = (resolve: any, reject: any) => {
             this.client
                 .get(uri)
                 .toPromise()
