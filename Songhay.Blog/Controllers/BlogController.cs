@@ -4,6 +4,8 @@ using Songhay.Blog.Models.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
+using Songhay.Models;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
@@ -86,13 +88,30 @@ namespace Songhay.Blog.Controllers
         }
 
         /// <summary>
+        /// Gets the inline-framing of GitHub Gist.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        [Route("/Inline/GitHubGist/{id}")]
+        public IActionResult GetInlineFramingOfGitHubGist(string id)
+        {
+            traceSource.TraceVerbose($"{nameof(this.GetInlineFramingOfGitHubGist)} ID: {0}", id);
+
+            var data = new DisplayItemModel
+            {
+                ResourceIndicator = new Uri($"https://gist.github.com/BryanWilhite/{id}.js", UriKind.Absolute)
+            };
+            return View("GitHubGist", data);
+        }
+
+        /// <summary>
         /// Redirects to angular client.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
         [HttpGet]
         [Route("/Index/Entry/Show/{id}")]
-        public ActionResult RedirectToAngularClient(string id)
+        public IActionResult RedirectToAngularClient(string id)
         {
             traceSource.TraceVerbose($"{nameof(this.RedirectToAngularClient)} ID: {id}");
 
