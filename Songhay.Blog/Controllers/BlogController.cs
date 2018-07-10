@@ -61,6 +61,11 @@ namespace Songhay.Blog.Controllers
             }
         }
 
+        /// <summary>
+        /// Gets the blog entry as permalink.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         [HttpGet]
         [Route("/[controller]/entry/permalink/{id}")]
         public async Task<IActionResult> GetBlogEntryAsPermaLinkAsync(string id)
@@ -78,6 +83,20 @@ namespace Songhay.Blog.Controllers
                 traceSource.TraceError(ex);
                 return this.NotFound();
             }
+        }
+
+        /// <summary>
+        /// Redirects to angular client.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("/Index/Entry/Show/{id}")]
+        public ActionResult RedirectToAngularClient(string id)
+        {
+            traceSource.TraceVerbose($"{nameof(this.RedirectToAngularClient)} ID: {id}");
+
+            return this.RedirectPermanent($"~/blog/entry/{id}");
         }
 
         readonly IRepositoryAsync _repository;
