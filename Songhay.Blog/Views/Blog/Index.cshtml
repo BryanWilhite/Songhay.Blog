@@ -1,0 +1,9 @@
+﻿@using System.Linq
+@using Songhay.Blog.Models
+@model IEnumerable<BlogEntry>
+<ul>
+    @foreach (var entry in Model)
+    {
+        <li><a href="@Url.Content("~/entry/" + @entry.Slug)">@entry.Title</a></li>
+    }
+</ul>

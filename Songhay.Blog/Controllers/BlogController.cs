@@ -88,6 +88,17 @@ namespace Songhay.Blog.Controllers
         }
 
         /// <summary>
+        /// Gets the index of <see cref="BlogEntry"/>.
+        /// </summary>
+        /// <returns></returns>
+        [Route("index")]
+        public async Task<ActionResult> GetIndexAsync()
+        {
+            var data = await (this._repository as IBlogEntryIndex).GetIndexAsync();
+            return View("Index", data);
+        }
+
+        /// <summary>
         /// Gets the inline-framing of GitHub Gist.
         /// </summary>
         /// <param name="id">The identifier.</param>
