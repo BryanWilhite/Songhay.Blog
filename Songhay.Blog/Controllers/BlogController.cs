@@ -60,6 +60,25 @@ namespace Songhay.Blog.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("/[controller]/entry/permalink/{id}")]
+        public async Task<IActionResult> GetBlogEntryAsPermaLinkAsync(string id)
+        {
+            if (string.IsNullOrEmpty(id)) return this.BadRequest();
+            try
+            {
+                var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
+                traceSource.TraceVerbose("Returning repository entry...");
+                return this.View("permalink", blogEntry);
+            }
+            catch (FileNotFoundException ex)
+            {
+                traceSource.TraceError("The expected repository entry ID {0} is not here. Throwing a 404...", id);
+                traceSource.TraceError(ex);
+                return this.NotFound();
+            }
+        }
+
         readonly IRepositoryAsync _repository;
     }
 }

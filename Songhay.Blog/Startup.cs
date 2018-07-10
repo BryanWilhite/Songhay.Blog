@@ -78,12 +78,7 @@ namespace Songhay.Blog
 
             app.UseSpaStaticFiles();
             app
-                .UseMvc(routes =>
-                {
-                    routes.MapRoute(
-                        name: "default",
-                        template: "{controller}/{action=Index}/{id?}");
-                })
+                .UseMvc()
                 .UseSpa(spa =>
                 {
                     // To learn more about options for serving an Angular SPA from ASP.NET Core,
