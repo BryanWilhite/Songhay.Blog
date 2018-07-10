@@ -1,1 +1,43 @@
-﻿<h1>perma-link</h1>
+﻿@model Songhay.Blog.Models.BlogEntry
+@{ 
+    var absoluteUri = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}";
+}
+@section SocialHeaders
+    {
+    <!-- Open Graph protocol meta http://ogp.me/ -->
+    <meta name="og:title" content="@Model.Title" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="@(absoluteUri)" />
+    <meta name="og:image" content="@Url.Content("~/Content/app/img/songhay.ico")" />
+
+    <!-- Twitter Cards https://dev.twitter.com/cards/overview -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@("@BryanWilhite")" />
+    <meta name="twitter:title" content="@Model.Title" />
+    <meta name="twitter:description" content=">Day Path_ Blog…" />
+    <meta name="twitter:url" content="@(absoluteUri)" />
+}
+
+@section StyleLinks
+    {
+    <!-- permalink -->
+    <link rel="bookmark" href="@(absoluteUri)" />
+}
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="entry body-content col-sm-12">
+                <h2>@Html.Raw(Model.Title)</h2>
+                <div class="entry-date">
+                    <span>@Model.InceptDate.ToString("dddd, MMMM d, yyyy")</span>
+
+                    <!--reference: https://about.twitter.com/resources/buttons-->
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="BryanWilhite">Tweet</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+
+                </div>
+                <div class="entry-content">@Html.Raw(Model.Content)</div>
+            </div>
+        </div>
+    </div>
+</div>

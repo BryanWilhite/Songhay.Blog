@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Songhay.Blog.Models;
+using Songhay.Blog.Models.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
@@ -69,7 +70,7 @@ namespace Songhay.Blog.Controllers
             {
                 var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
                 traceSource.TraceVerbose("Returning repository entry...");
-                return this.View("permalink", blogEntry);
+                return this.View("permalink", blogEntry.WithGitHubDirectivesTranscluded());
             }
             catch (FileNotFoundException ex)
             {
