@@ -250,11 +250,11 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(entryOutputPath, json);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
+        //[Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
-        [TestProperty("rssPath", @"wwwroot\data\site-rss.xml")]
+        [TestProperty("rssPath", @"ClientApp\src\assets\data\site-rss.xml")]
         public async Task ShouldGenerateBlogRss()
         {
             var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
@@ -287,7 +287,8 @@ namespace Songhay.Blog.Repository.Tests
                 Async = true,
                 CloseOutput = true,
                 Encoding = Encoding.UTF8,
-                Indent = true
+                Indent = true,
+                OmitXmlDeclaration = true
             };
             var person = new SyndicationPerson("Bryan Wilhite", "rasx@songhaysystem.com");
 

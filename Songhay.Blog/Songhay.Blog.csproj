@@ -29,6 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\src\assets\data\site-rss.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Songhay.Blog.Models\Songhay.Blog.Models.csproj" />
     <ProjectReference Include="..\Songhay.Blog.Repository\Songhay.Blog.Repository.csproj" />
   </ItemGroup>
