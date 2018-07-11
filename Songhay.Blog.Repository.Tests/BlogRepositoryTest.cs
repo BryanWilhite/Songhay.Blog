@@ -250,6 +250,42 @@ namespace Songhay.Blog.Repository.Tests
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
+        [TestProperty("rssPath", @"wwwroot\data\site-rss.xml")]
+        public async Task ShouldGenerateBlogFeeds()
+        {
+            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+
+            #region test properties:
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+
+            var indexPath = this.TestContext.Properties["indexPath"].ToString();
+            indexPath = Path.Combine(webProjectInfo.FullName, indexPath);
+            this.TestContext.ShouldFindFile(indexPath);
+
+            var rssPath = this.TestContext.Properties["rssPath"].ToString();
+            rssPath = Path.Combine(webProjectInfo.FullName, rssPath);
+            this.TestContext.ShouldFindFile(rssPath);
+
+            #endregion
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var keys = new AzureBlobKeys();
+            keys.Add<BlogEntry>(i => i.Slug);
+
+            var repository = new BlogRepository(keys, container);
+            var data = await (repository as IBlogEntryIndex).GetIndexAsync();
+            Assert.IsTrue(data.Any(), "The expected data are not here.");
+
+            var feed = data
+                .OrderByDescending(i => i.InceptDate)
+                .Take(10);
+        }
+
+        [Ignore("This test is meant to run manually on the Desktop.")]
+        [TestCategory("Integration")]
+        [TestMethod]
+        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("indexPath", @"ClientApp\src\assets\data\index.json")]
         [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
         public async Task ShouldGenerateRepositoryIndex()
