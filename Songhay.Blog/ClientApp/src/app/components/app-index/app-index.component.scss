@@ -2,13 +2,14 @@
     width: 100%;
 }
 
-.mat-spinner {
-    margin: 1rem auto;
-    min-height: 8rem;
-}
-
 .index {
     margin: 0 auto;
+    margin-top: 4em;
     max-width: 70em;
     width: 90%;
+
+    & .mat-spinner {
+        margin: 1rem auto;
+        min-height: 8rem;
+    }
 }
