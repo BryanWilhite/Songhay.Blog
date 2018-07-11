@@ -250,12 +250,12 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(entryOutputPath, json);
         }
 
-        //[Ignore("This test is meant to run manually on the Desktop.")]
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("rssPath", @"wwwroot\data\site-rss.xml")]
-        public async Task ShouldGenerateBlogFeeds()
+        public async Task ShouldGenerateBlogRss()
         {
             var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
@@ -297,8 +297,9 @@ namespace Songhay.Blog.Repository.Tests
 
                 await feedWriter.WritePubDate(DateTime.Now);
                 await feedWriter.WriteTitle($">DayPath_");
-                await feedWriter.WriteDescription($"The technical journey of Bryan Wilhite.");
+                await feedWriter.WriteDescription($"The technical journey of @BryanWilhite.");
                 await feedWriter.WriteCopyright($"Bryan Wilhite, Songhay System {DateTime.Now.Year}");
+                await feedWriter.Write(new SyndicationLink(new Uri("http://songhayblog.azurewebsites.net", UriKind.Absolute)));
 
                 var tasks = feed.Select(async entry =>
                 {
@@ -319,8 +320,9 @@ namespace Songhay.Blog.Repository.Tests
                 await Task.WhenAll(tasks);
                 await writer.FlushAsync();
 
-                File.WriteAllText(rssPath, builder.ToString());
             }
+
+            File.WriteAllText(rssPath, builder.ToString());
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
