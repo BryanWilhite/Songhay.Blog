@@ -1,3 +1,5 @@
+using Microsoft.SyndicationFeed;
+using Microsoft.SyndicationFeed.Rss;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
@@ -14,7 +16,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace Songhay.Blog.Repository.Tests
@@ -140,7 +144,7 @@ namespace Songhay.Blog.Repository.Tests
                         Title = anon.Title
                     };
 
-                    var json = JsonConvert.SerializeObject(blogEntry, Formatting.Indented);
+                    var json = JsonConvert.SerializeObject(blogEntry, Newtonsoft.Json.Formatting.Indented);
                     var path = string.Format("{0}{1}.json", inRoot, blogEntry.Slug);
                     File.WriteAllText(path, json);
                 }
@@ -246,7 +250,7 @@ namespace Songhay.Blog.Repository.Tests
             File.WriteAllText(entryOutputPath, json);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
+        //[Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -258,10 +262,6 @@ namespace Songhay.Blog.Repository.Tests
             #region test properties:
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
-
-            var indexPath = this.TestContext.Properties["indexPath"].ToString();
-            indexPath = Path.Combine(webProjectInfo.FullName, indexPath);
-            this.TestContext.ShouldFindFile(indexPath);
 
             var rssPath = this.TestContext.Properties["rssPath"].ToString();
             rssPath = Path.Combine(webProjectInfo.FullName, rssPath);
@@ -280,6 +280,47 @@ namespace Songhay.Blog.Repository.Tests
             var feed = data
                 .OrderByDescending(i => i.InceptDate)
                 .Take(10);
+
+            var builder = new StringBuilder();
+            var settings = new XmlWriterSettings
+            {
+                Async = true,
+                CloseOutput = true,
+                Encoding = Encoding.UTF8,
+                Indent = true
+            };
+            var person = new SyndicationPerson("Bryan Wilhite", "rasx@songhaysystem.com");
+
+            using (var writer = XmlWriter.Create(builder, settings))
+            {
+                var feedWriter = new RssFeedWriter(writer);
+
+                await feedWriter.WritePubDate(DateTime.Now);
+                await feedWriter.WriteTitle($">DayPath_");
+                await feedWriter.WriteDescription($"The technical journey of Bryan Wilhite.");
+                await feedWriter.WriteCopyright($"Bryan Wilhite, Songhay System {DateTime.Now.Year}");
+
+                var tasks = feed.Select(async entry =>
+                {
+                    var item = new SyndicationItem
+                    {
+                        Description = entry.Content,
+                        Id = $"http://songhayblog.azurewebsites.net/blog/entry/{entry.Slug}",
+                        LastUpdated = entry.ModificationDate,
+                        Published = entry.InceptDate,
+                        Title = entry.Title
+                    };
+
+                    item.AddContributor(person);
+
+                    await feedWriter.Write(item);
+                });
+
+                await Task.WhenAll(tasks);
+                await writer.FlushAsync();
+
+                File.WriteAllText(rssPath, builder.ToString());
+            }
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]

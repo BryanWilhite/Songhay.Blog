@@ -1,1 +1,93 @@
-﻿
+<?xml version="1.0" encoding="utf-16"?>
+<rss version="2.0">
+    <channel>
+        <pubDate>Wed, 11 Jul 2018 19:04:46 GMT</pubDate>
+        <title>&gt;DayPath_</title>
+        <description>The technical journey of Bryan Wilhite.</description>
+        <copyright>Bryan Wilhite, Songhay System 2018</copyright>
+        <item>
+            <title>“Introduction to Using Storybook for Angular” and other Tweeted links…</title>
+            <description>Introduction to Using Storybook for Angular: [alligator.io]@alligatorio 🎉🐊 Did you know that CSS Grid makes it easy to overlap things? We can use this common-in-print graphic design touch on… [twitter.com] 25+ #CSS Animation Libraries [cssauthor.com] G...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/introduction-to-using-storybook-for-angular-and-other-tweeted-links</guid>
+            <pubDate>Wed, 11 Jul 2018 17:06:28 GMT</pubDate>
+        </item>
+        <item>
+            <title>“Integrate shiny apps into regular webpages with responsive iframe resizing” and other Tweeted links…</title>
+            <description>New blogpost: Integrate shiny apps into regular webpages with responsive iframe resizing #rstats#rshiny… [twitter.com] Want to learn CSS Grid? Here’s a free full-length course: 14 interactive screencasts to take you from beginner to a… [twitter.com] Usin...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/integrate-shiny-apps-into-regular-webpages-with-responsive-iframe-resizing-and-other-tweeted-links</guid>
+            <pubDate>Tue, 10 Jul 2018 20:14:57 GMT</pubDate>
+        </item>
+        <item>
+            <title>“Most common mistakes beginners make in Xamarin.Forms” and other Tweeted links…</title>
+            <description>Most common mistakes beginners make in Xamarin.Forms [ift.tt]#Xamarin It’s 2018 and I still can’t center a website both vertically and horizontally. Can I use—? Is a great service, but its name is misleading, i.e. even if targeted browsers don’t support ...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/most-common-mistakes-beginners-make-in-xamarin-forms-and-other-tweeted-links</guid>
+            <pubDate>Mon, 09 Jul 2018 21:05:21 GMT</pubDate>
+        </item>
+        <item>
+            <title>“Behind the Illusions—Impossibly High-Performance Layout Animations” and other Tweeted links…</title>
+            <description>Behind the Illusions - Impossibly High-Performance Layout Animations https://t.co/D8hPKmAXG7 Easy navigation between #aspnetcore Razor Page cshtml &amp;amp; associated Page Model C# file via F7 keypress is now live i… https://t.co/YDtc01FpU3 Web Assembly... ...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/behind-the-illusions-impossibly-high-performance-layout-animations-and-other-tweeted-links</guid>
+            <pubDate>Fri, 06 Jul 2018 17:24:16 GMT</pubDate>
+        </item>
+        <item>
+            <title>“…announcing TypeScript 2.8 RC” and other Tweeted links…</title>
+            <description>
+                npm install -g typescript
+                @rc
+
+                ...announcing TypeScript 2.8 RC. We'd &amp;lt;3 some early feedback:
+                [msft.social] 🎊 Great code-through by
+                @andrewheiss
+                "Exploring Minard’s 1812 plot w/ ggplot2"
+                [buff.ly]#rstats…
+                [twitter.c...
+            </description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/announcing-typescript-2-8-rc-and-other-tweeted-links</guid>
+            <pubDate>Tue, 03 Jul 2018 17:27:38 GMT</pubDate>
+        </item>
+        <item>
+            <title>“Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx” and other Tweeted links…</title>
+            <description>
+                Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx by @chris_noring forward by @josepheames[twitter.com] There's been a lot of confusion and misinformation about Redux going around lately.
+
+                I just posted "Redux - Not Dea… [twitter.com]...
+            </description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/yes-finally-here-architecting-ng-apps-with-redux-rxjs-and-nhrx-and-other-tweeted-links</guid>
+            <pubDate>Mon, 02 Jul 2018 16:31:16 GMT</pubDate>
+        </item>
+        <item>
+            <title>I finally, finally, finally converted my Blog to Angular modern…</title>
+            <description>Meh. Blow a party whistle. And I am far from “done,” by the way. I now understand why Scott Hanselman would stay with ASP.NET Web Forms and no SPA-action for his Blog. I have been dealing with this ‘challenge’ actively since the summer of 2017. These are...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/i-finally-finally-finally-converted-my-blog-to-angular-modern</guid>
+            <pubDate>Fri, 29 Jun 2018 23:41:58 GMT</pubDate>
+        </item>
+        <item>
+            <title>ASP.NET Core Angular Client App Q2 2018</title>
+            <description>The intention here is to examine how dotnet new templates “wire up” a Node.js-based Angular project with a Visual Studio project. This wiring appears to be handled by JavaScriptServices [GitHub] via the .NET Foundation.In the Q2 2018 time frame, we have ...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/asp-net-core-angular-client-app-q2-2018</guid>
+            <pubDate>Wed, 27 Jun 2018 20:28:28 GMT</pubDate>
+        </item>
+        <item>
+            <title>“The 2018 front-end performance checklist…” and other Tweeted Links…</title>
+            <description>The 2018 front-end performance checklist: [bit.ly] — must read for every web developer. [twitter.com] New Aurelia Blog "Server Side Rendering" [aurelia.io] New flexbox guides on #MDN[hacks.mozilla.org]#CSS If you're a .NET developer that does web develop...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/the-2018-front-end-performance-checklist-and-other-tweeted-links</guid>
+            <pubDate>Mon, 18 Jun 2018 17:22:43 GMT</pubDate>
+        </item>
+        <item>
+            <title>“Here is why you will not find components inside Angular…” and other Tweeted Links…</title>
+            <description>Here is why you will not find components inside Angular. By @maxim_koretskyi[bit.ly] If you're fan of @shanselman, @DamianEdwards or just @dotnet or @aspnet make sure to check out our @YouTube channel… [twitter.com] If you are looking for a big icon coll...</description>
+            <author>rasx@songhaysystem.com</author>
+            <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/here-is-why-you-will-not-find-components-inside-angular-and-other-tweeted-links</guid>
+            <pubDate>Fri, 15 Jun 2018 23:36:38 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
