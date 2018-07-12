@@ -1,9 +1,20 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 12 Jul 2018 22:03:11 GMT</pubDate>
+  <channel><pubDate>Thu, 12 Jul 2018 22:16:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“The Difference and Relation Between #UI and #UX Design” and other Tweeted links…</title>
+  <description>The Difference and Relation Between
+    #UI and
+    #UX Design (In 30 Seconds)
+    [apple.news] As of a week ago, Ruby Sass was officially deprecated. Read about what that means for the project and for you here:
+    [sass.logdown.com] Flexbox and Gri...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/the-difference-and-relation-between-ui-and-ux-design-and-other-tweeted-links</guid>
+  <pubDate>Thu, 12 Jul 2018 22:14:57 GMT</pubDate>
+</item>
 <item>
   <title>“Introduction to Using Storybook for Angular” and other Tweeted links…</title>
   <description>The Difference and Relation Between
@@ -80,12 +91,5 @@ I just posted "Redux - Not Dea… [twitter.com]...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/the-2018-front-end-performance-checklist-and-other-tweeted-links</guid>
   <pubDate>Mon, 18 Jun 2018 17:22:43 GMT</pubDate>
-</item>
-<item>
-  <title>“Here is why you will not find components inside Angular…” and other Tweeted Links…</title>
-  <description>Here is why you will not find components inside Angular. By @maxim_koretskyi[bit.ly] If you're fan of @shanselman, @DamianEdwards or just @dotnet or @aspnet make sure to check out our @YouTube channel… [twitter.com] If you are looking for a big icon coll...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/here-is-why-you-will-not-find-components-inside-angular-and-other-tweeted-links</guid>
-  <pubDate>Fri, 15 Jun 2018 23:36:38 GMT</pubDate>
 </item></channel>
 </rss>
