@@ -1,12 +1,16 @@
 <rss version="2.0">
-  <channel><pubDate>Wed, 11 Jul 2018 22:41:07 GMT</pubDate>
+  <channel><pubDate>Thu, 12 Jul 2018 22:03:11 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
 <item>
   <title>“Introduction to Using Storybook for Angular” and other Tweeted links…</title>
-  <description>Introduction to Using Storybook for Angular: [alligator.io]@alligatorio 🎉🐊 Did you know that CSS Grid makes it easy to overlap things? We can use this common-in-print graphic design touch on… [twitter.com] 25+ #CSS Animation Libraries [cssauthor.com] G...</description>
+  <description>The Difference and Relation Between
+    #UI and
+    #UX Design (In 30 Seconds)
+    [apple.news] As of a week ago, Ruby Sass was officially deprecated. Read about what that means for the project and for you here:
+    [sass.logdown.com] Flexbox and Gri...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">http://songhayblog.azurewebsites.net/blog/entry/introduction-to-using-storybook-for-angular-and-other-tweeted-links</guid>
   <pubDate>Wed, 11 Jul 2018 17:06:28 GMT</pubDate>
