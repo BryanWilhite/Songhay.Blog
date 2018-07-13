@@ -307,13 +307,14 @@ namespace Songhay.Blog.Repository.Tests
                     var item = new SyndicationItem
                     {
                         Description = entry.Content,
-                        Id = $"http://songhayblog.azurewebsites.net/blog/entry/{entry.Slug}",
+                        Id = entry.Slug,
                         LastUpdated = entry.ModificationDate,
                         Published = entry.InceptDate,
                         Title = entry.Title
                     };
 
                     item.AddContributor(person);
+                    item.AddLink(new SyndicationLink(new Uri($"http://songhayblog.azurewebsites.net/blog/entry/{entry.Slug}", UriKind.Absolute)));
 
                     await feedWriter.Write(item);
                 });
