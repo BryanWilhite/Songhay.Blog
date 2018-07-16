@@ -15,8 +15,9 @@ namespace Songhay.Blog.Shell.Tests
     {
         public TestContext TestContext { get; set; }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
+        //[Ignore("This test is meant to run manually on the Desktop.")]
         [TestMethod]
+        [TestProperty("defaultNamespace", "http://www.sitemaps.org/schemas/sitemap/0.9")]
         [TestProperty("indexJsonFile", @"azure-storage-accounts\songhay\songhayblog-azurewebsites-net\index.json")]
         [TestProperty("rootUri", "http://songhayblog.azurewebsites.net")]
         [TestProperty("sitemapFile", @"Songhay.Blog\Songhay.Blog\ClientApp\src\sitemap.xml")]
@@ -26,6 +27,8 @@ namespace Songhay.Blog.Shell.Tests
             var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 5);
 
             #region test properties:
+
+            var defaultNamespace = XNamespace.Get(this.TestContext.Properties["defaultNamespace"].ToString());
 
             var indexJsonFile = this.TestContext.Properties["indexJsonFile"].ToString();
             indexJsonFile = Path.Combine(root, indexJsonFile);
@@ -57,7 +60,7 @@ namespace Songhay.Blog.Shell.Tests
                     categoryJObject["month"].Value<string>(),
                     categoryJObject["day"].Value<string>());
 
-                var url = new XElement("url",
+                var url = new XElement(defaultNamespace + "url",
                     new XElement("loc", loc),
                     new XElement("lastmod", lastmod),
                     new XElement("changefreq", "monthly")
