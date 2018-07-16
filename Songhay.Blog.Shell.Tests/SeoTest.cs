@@ -15,7 +15,7 @@ namespace Songhay.Blog.Shell.Tests
     {
         public TestContext TestContext { get; set; }
 
-        //[Ignore("This test is meant to run manually on the Desktop.")]
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestMethod]
         [TestProperty("defaultNamespace", "http://www.sitemaps.org/schemas/sitemap/0.9")]
         [TestProperty("indexJsonFile", @"azure-storage-accounts\songhay\songhayblog-azurewebsites-net\index.json")]
