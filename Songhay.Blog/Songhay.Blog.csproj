@@ -29,7 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\src\assets\data\site-rss.xml" />
+    <Content Include="ClientApp\src\assets\data\index.json" />
+    <Content Include="ClientApp\src\site-rss.xml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -14,30 +14,26 @@ namespace Songhay.Blog.Shell.Tests
     public class SeoTest
     {
         public TestContext TestContext { get; set; }
+
         [TestMethod]
         [TestProperty("indexJsonFile", @"AzureBlobStorage-songhay\songhayblog-azurewebsites-net\index.json")]
         [TestProperty("rootUri", "http://songhayblog.azurewebsites.net")]
-        [TestProperty("sitemapFile", @"Songhay.Blog\sitemap.xml")]
+        [TestProperty("sitemapFile", @"Songhay.Blog\ClientApp\src\sitemap.xml")]
         [TestProperty("urlTemplate", "/entry/{slug}")]
         public void ShouldGenerateSitemap()
         {
-            var projectsRoot = this.TestContext
-                .ShouldGetAssemblyDirectoryInfo(this.GetType())
-                ?.Parent
-                ?.Parent
-                ?.Parent.FullName;
-            this.TestContext.ShouldFindDirectory(projectsRoot);
+            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 4);
 
             #region test properties:
 
             var indexJsonFile = this.TestContext.Properties["indexJsonFile"].ToString();
-            indexJsonFile = Path.Combine(projectsRoot, indexJsonFile);
+            indexJsonFile = Path.Combine(root, indexJsonFile);
             this.TestContext.ShouldFindFile(indexJsonFile);
 
             var rootUri = new Uri(this.TestContext.Properties["rootUri"].ToString(), UriKind.Absolute);
 
             var sitemapFile = this.TestContext.Properties["sitemapFile"].ToString();
-            sitemapFile = Path.Combine(projectsRoot, sitemapFile);
+            sitemapFile = Path.Combine(root, sitemapFile);
             this.TestContext.ShouldFindFile(sitemapFile);
 
             var urlTemplate = new UriTemplate(this.TestContext.Properties["urlTemplate"].ToString());
