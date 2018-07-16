@@ -1,20 +1,9 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 16 Jul 2018 16:39:49 GMT</pubDate>
+  <channel><pubDate>Mon, 16 Jul 2018 16:49:13 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
-<item>
-  <title>“Police killed 1,147 people in 2017” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/police-killed-1-147-people-in-2017-and-other-tweeted-links</link>
-  <description>Police killed 1,147 people in 2017. Black people were 25% of those killed despite being only 13% of the population.…
-      [twitter.com] Diante Yarber: Police kill black father with barrage of bullets in Walmart parking lot
-
-      [theguardian.com] Th...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">police-killed-1-147-people-in-2017-and-other-tweeted-links</guid>
-  <pubDate>Mon, 16 Jul 2018 16:38:39 GMT</pubDate>
-</item>
 <item>
   <title>“The Difference and Relation Between #UI and #UX Design” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/the-difference-and-relation-between-ui-and-ux-design-and-other-tweeted-links</link>
@@ -100,5 +89,13 @@ I just posted "Redux - Not Dea… [twitter.com]...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">asp-net-core-angular-client-app-q2-2018</guid>
   <pubDate>Wed, 27 Jun 2018 20:28:28 GMT</pubDate>
+</item>
+<item>
+  <title>“The 2018 front-end performance checklist…” and other Tweeted Links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/the-2018-front-end-performance-checklist-and-other-tweeted-links</link>
+  <description>The 2018 front-end performance checklist: [bit.ly] — must read for every web developer. [twitter.com] New Aurelia Blog "Server Side Rendering" [aurelia.io] New flexbox guides on #MDN[hacks.mozilla.org]#CSS If you're a .NET developer that does web develop...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">the-2018-front-end-performance-checklist-and-other-tweeted-links</guid>
+  <pubDate>Mon, 18 Jun 2018 17:22:43 GMT</pubDate>
 </item></channel>
 </rss>
