@@ -15,14 +15,15 @@ namespace Songhay.Blog.Shell.Tests
     {
         public TestContext TestContext { get; set; }
 
+        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestMethod]
-        [TestProperty("indexJsonFile", @"AzureBlobStorage-songhay\songhayblog-azurewebsites-net\index.json")]
+        [TestProperty("indexJsonFile", @"azure-storage-accounts\songhay\songhayblog-azurewebsites-net\index.json")]
         [TestProperty("rootUri", "http://songhayblog.azurewebsites.net")]
-        [TestProperty("sitemapFile", @"Songhay.Blog\ClientApp\src\sitemap.xml")]
-        [TestProperty("urlTemplate", "/entry/{slug}")]
+        [TestProperty("sitemapFile", @"Songhay.Blog\Songhay.Blog\ClientApp\src\sitemap.xml")]
+        [TestProperty("urlTemplate", "/blog/entry/{slug}")]
         public void ShouldGenerateSitemap()
         {
-            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 4);
+            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 5);
 
             #region test properties:
 

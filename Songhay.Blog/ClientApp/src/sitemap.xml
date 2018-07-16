@@ -1,1108 +1,1823 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/10-awesome-features-of-visual-studio-code-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/10-awesome-features-of-visual-studio-code-and-other-tweeted-links</loc>
     <lastmod>2015-05-28</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/5-reasons-why-the-windows-tablet-is-coming-to-a-microsoft-store-near-you-and-other-twinks</loc>
-    <lastmod>2012-10-19</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/asp-net-web-api-ready-state-4-2017</loc>
+    <lastmod>2017-04-27</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/6-0-features-part-i-property-initializers-and-other-twinks</loc>
-    <lastmod>2014-09-25</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/apple-s-refusal-to-support-progressive-web-apps-is-a-detriment-to-future-of-the-web-and-other-tweeted-links</loc>
+    <lastmod>2017-12-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-2015-meeting-with-jpl-when-i-started-using-linq-in-interviews</loc>
-    <lastmod>2016-06-11</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-1-x-2014-how-i-ve-improved-my-angular-apps-by-banning-ng-controller-and-other-tweeted-links</loc>
+    <lastmod>2016-08-22</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-complete-guide-to-svg-fallbacks-and-other-twinks</loc>
-    <lastmod>2015-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-detailed-introduction-to-functional-reactive-programming-frp-and-other-twinks</loc>
-    <lastmod>2014-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-little-bit-about-basic-synchronization</loc>
-    <lastmod>2013-11-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-new-look-at-the-songhay-system-cores</loc>
-    <lastmod>2016-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-nice-for-reference-just-to-know-what-all-those-m-l-c-and-a-commands-stand-for-in-svg-path-strings-and-other-twinks</loc>
-    <lastmod>2015-03-06</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/a-problem-google-has-created-for-itself-and-other-twinks</loc>
-    <lastmod>2013-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/all-you-need-to-know-about-redis-and-other-twinks</loc>
-    <lastmod>2015-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/an-intro-to-web-hooks-and-other-twinks</loc>
-    <lastmod>2015-12-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/an-introduction-to-documentdb-programming-stored-procedures-triggers-and-udfs-and-other-twinks</loc>
-    <lastmod>2014-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angular-2-and-asp-net-core-a-webcast-and-other-twinks</loc>
-    <lastmod>2016-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angular-js-1-x-code-penning-my-way-to-a-new-blog-layout</loc>
-    <lastmod>2015-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angular-js-1-x-grouping-and-sorting-json-driven-sets-with-underscore-js</loc>
-    <lastmod>2015-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angular-js-and-checkbox-array-support</loc>
-    <lastmod>2015-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angular-material-1-0-now-available-and-other-twinks</loc>
-    <lastmod>2015-12-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angularjs-extending-existing-services-using-decorator-and-other-twinks</loc>
-    <lastmod>2016-02-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/angularjs-views-vs-directives-and-other-twinks</loc>
-    <lastmod>2015-07-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/announcing-azure-storage-data-movement-library-0-2-0-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/announcing-azure-storage-data-movement-library-0-2-0-and-other-tweeted-links</loc>
     <lastmod>2016-02-23</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/announcing-the-asp-net-webhooks-visual-studio-extension-preview-and-other-twinks</loc>
-    <lastmod>2015-10-26</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/all-you-need-to-know-about-redis-and-other-tweeted-links</loc>
+    <lastmod>2015-03-13</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/announcing-we-just-open-sourced-chakracore-at-github-and-other-twinks</loc>
-    <lastmod>2016-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/another-slather-of-hardware-to-supposedly-make-my-life-better</loc>
-    <lastmod>2012-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/answer-how-to-use-iframe-in-angularjs-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/answer-how-to-use-iframe-in-angularjs-and-other-tweeted-links</loc>
     <lastmod>2015-07-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/asp-net-web-api-logging-with-textwritertracelistener</loc>
-    <lastmod>2016-05-18</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-little-bit-about-basic-synchronization</loc>
+    <lastmod>2013-11-30</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/aspnet-blog-engines-and-squarespace</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-2015-meeting-with-jpl-when-i-started-using-linq-in-interviews</loc>
+    <lastmod>2016-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-complete-guide-to-svg-fallbacks-and-other-tweeted-links</loc>
+    <lastmod>2015-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-modern-day-front-end-development-stack-and-other-tweeted-links</loc>
+    <lastmod>2017-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/5-reasons-why-the-windows-tablet-is-coming-to-a-microsoft-store-near-you-and-other-tweeted-links</loc>
+    <lastmod>2012-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-friendly-introduction-to-machine-learning-and-other-tweeted-links</loc>
+    <lastmod>2017-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-2-and-asp-net-core-a-webcast-and-other-tweeted-links</loc>
+    <lastmod>2016-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-2-war-stories-and-other-tweeted-links</loc>
+    <lastmod>2016-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-js-1-x-code-penning-my-way-to-a-new-blog-layout</loc>
+    <lastmod>2015-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-js-and-checkbox-array-support</loc>
+    <lastmod>2015-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/aspnet-blog-engines-and-squarespace</loc>
     <lastmod>2012-01-31</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/aurelia-and-angular-2-0-code-side-by-side-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ashish-singh-complete-angular2-guide-reactive-forms-in-depth-part-1-and-other-tweeted-links</loc>
+    <lastmod>2018-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/aurelia-and-angular-2-0-code-side-by-side-and-other-tweeted-links</loc>
     <lastmod>2015-03-19</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/aurelia-q-amp-a-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/asp-net-web-api-logging-with-textwritertracelistener</loc>
+    <lastmod>2016-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/announcing-the-asp-net-webhooks-visual-studio-extension-preview-and-other-tweeted-links</loc>
+    <lastmod>2015-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/another-slather-of-hardware-to-supposedly-make-my-life-better</loc>
+    <lastmod>2012-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/aurelia-q-amp-a-and-other-tweeted-links</loc>
     <lastmod>2015-02-11</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/azure-container-service-is-now-generally-available-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/announcing-we-just-open-sourced-chakracore-at-github-and-other-tweeted-links</loc>
+    <lastmod>2016-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/azure-container-service-is-now-generally-available-and-other-tweeted-links</loc>
     <lastmod>2016-06-22</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/azure-powershell-101-managing-azure-storage-from-the-command-line-shanselman-and-other-twinks</loc>
-    <lastmod>2015-06-02</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/css-supports-css-feature-queries-rachelandrew-and-other-tweeted-links</loc>
+    <lastmod>2017-01-20</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/azure-search-best-practices-for-web-and-mobile-applications-and-other-twinks</loc>
-    <lastmod>2016-06-15</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/anime-js-polyvalent-javascript-animation-engine-and-other-tweeted-links</loc>
+    <lastmod>2016-08-24</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/better-responsive-images-with-the-picture-element-and-other-twinks</loc>
-    <lastmod>2014-01-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/bill-flora-and-erik-rath-the-microsoft-design-language</loc>
-    <lastmod>2013-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/blackmagic-s-powerful-and-free-compositing-software-is-coming-to-mac-very-soon-and-other-twinks</loc>
-    <lastmod>2015-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/bootstrap-4-alpha-and-other-twinks</loc>
-    <lastmod>2015-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/bryan-wilhite-service-oriented-user-interface-consultant</loc>
-    <lastmod>2012-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/building-a-simple-url-shorten-service-with-redis-and-other-twinks</loc>
-    <lastmod>2014-09-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/comparing-bootstrap-with-google-s-new-material-design-lite-and-other-twinks</loc>
-    <lastmod>2015-12-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/complete-control-and-domination-over-my-ubuntu-bash-shell-history</loc>
-    <lastmod>2015-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/connecting-to-my-ubuntu-vm-on-azure</loc>
-    <lastmod>2016-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/cors-for-a-dummy</loc>
-    <lastmod>2015-02-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/customizing-xaml-buttons-prepare-to-repeat-yourself</loc>
-    <lastmod>2012-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/dar-backing-up-my-blog-blob-storage</loc>
-    <lastmod>2013-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/ddd-again-beyond-data-transfer-objects-and-extension-methods</loc>
-    <lastmod>2016-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/delicious-dump-azure-blob-storage-links</loc>
-    <lastmod>2014-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/delicious-dump-old-silverlight-links</loc>
-    <lastmod>2014-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/design-diary-my-small-angular-js-1-x-patterns</loc>
-    <lastmod>2015-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/design-notes-xhtml5-responsive-gallery</loc>
-    <lastmod>2012-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/ecmascript-2015-has-been-approved-and-other-twinks</loc>
-    <lastmod>2015-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/embedding-code-pen-and-github-content-in-an-angular-template</loc>
-    <lastmod>2015-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/entity-framework-and-json-net</loc>
-    <lastmod>2015-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/fayde-inspired-by-silverlight-xaml-engine-using-javascript-and-rendering-to-the-html5-canvas-and-other-twinks</loc>
-    <lastmod>2015-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/finally-we-have-a-legitimate-opensource-replacement-for-flash-and-other-twinks</loc>
-    <lastmod>2015-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/free-database-of-the-entire-web-may-spawn-the-next-google-and-other-twinks</loc>
-    <lastmod>2013-03-06</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/get-started-with-azure-search-in-the-portal-and-other-twinks</loc>
-    <lastmod>2016-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/get-the-tech-back-in-tech-and-other-twinks</loc>
-    <lastmod>2012-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/getting-started-with-ecmascript-6-and-other-twinks</loc>
-    <lastmod>2015-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/getting-started-with-grunt-sass-and-task-runner-explorer-and-other-twinks</loc>
-    <lastmod>2015-04-11</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/getting-started-with-net-on-linux-and-other-mostly-owin-or-web-api-twinks</loc>
-    <lastmod>2015-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/getting-started-with-shader-effects-in-wpf-and-other-links</loc>
-    <lastmod>2014-12-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/google-interview-cumsum-challenge</loc>
-    <lastmod>2016-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/greg-young-on-ddd-and-other-twinks</loc>
-    <lastmod>2014-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/here-s-all-of-the-specifics-about-the-windows-10-devices-event-on-october-6th-and-other-twinks</loc>
-    <lastmod>2015-10-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/here-s-how-microsoft-will-support-bash-on-windows-10-and-other-twinks</loc>
-    <lastmod>2016-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/hiring-want-to-join-our-mono-coreclr-android-ios-team-and-other-twinks</loc>
-    <lastmod>2015-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/how-do-you-manually-set-powershell-s-oneget-repository-source-to-chocolatey-and-other-twinks</loc>
-    <lastmod>2015-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/how-to-correctly-use-bootstrapjs-and-angularjs-together-and-other-twinks</loc>
-    <lastmod>2015-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/how-to-create-katana-middleware-and-other-twinks</loc>
-    <lastmod>2015-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/how-to-make-the-switch-from-graphic-design-to-ux-ui-design-and-other-twinks</loc>
-    <lastmod>2015-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/how-to-use-odata-client-code-generator-to-generate-client-side-proxy-class-and-other-twinks</loc>
-    <lastmod>2015-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/i-prefer-not-using-multiple-iqueryable-t-join-calls-and-other-ef-notes</loc>
-    <lastmod>2012-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/i-ve-moved-to-nblog-away-from-blogengine-net</loc>
-    <lastmod>2012-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/implementing-an-asp-net-core-rc1-logging-provider-and-other-twinks</loc>
-    <lastmod>2016-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/implementing-inavigationcontentloader-with-an-abstract-class</loc>
-    <lastmod>2012-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/in-page-angular-js-compared-to-in-page-jquery</loc>
-    <lastmod>2015-02-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/integrating-angularjs-amp-three-js-two-patterns-one-app-and-other-twinks</loc>
-    <lastmod>2015-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/inter-view-model-communication</loc>
-    <lastmod>2013-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introducing-azure-cool-blob-storage-and-other-twinks</loc>
-    <lastmod>2016-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introducing-node-modules-and-bower-components-to-visual-studio-2013</loc>
-    <lastmod>2015-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introducing-visual-studio-code-and-other-twinks</loc>
-    <lastmod>2015-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introducing-visual-studio-community-2013-and-other-twinks</loc>
-    <lastmod>2014-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introduction-material-design-google-design-guidelines-and-other-twinks</loc>
-    <lastmod>2014-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/introduction-to-basics-of-angular-1-4-newrouter-and-other-twinks</loc>
-    <lastmod>2015-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/is-it-possible-to-concatenate-sounds-and-other-twinks</loc>
-    <lastmod>2014-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/it-s-finally-here-materialui-is-now-available-and-other-twinks</loc>
-    <lastmod>2016-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/line-of-sight-it-management-is-it-really-dead</loc>
-    <lastmod>2016-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/loading-net-configuration-files-as-xdocument-instances</loc>
-    <lastmod>2016-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/looking-forward-microsoft-support-for-secure-shell-ssh-and-other-twinks</loc>
-    <lastmod>2015-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/megafunk-com-html5-gallery-design-released</loc>
-    <lastmod>2012-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/menuitemdatum-namevaluepair-and-chartdatapoints</loc>
-    <lastmod>2013-01-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/microservices-an-application-revolution-powered-by-the-cloud-and-other-twinks</loc>
-    <lastmod>2016-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/microsoft-confirms-its-new-edge-browser-won-t-support-silverlight-and-other-twinks</loc>
-    <lastmod>2015-07-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/migueldeicaza-anybody-ever-try-linq-to-mbox-with-mono-and-other-twinks</loc>
-    <lastmod>2015-08-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/mobile-internet-comes-to-africa-in-a-big-way-and-other-twinks</loc>
-    <lastmod>2014-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/moving-songhay-system-to-net-4-5-2-with-serious-powershell</loc>
-    <lastmod>2016-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/moving-to-the-windows-8-timeframe</loc>
-    <lastmod>2013-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/my-angular-js-1-x-single-page-layout</loc>
-    <lastmod>2015-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/my-expression-gallery-picks-unfashionably-late</loc>
-    <lastmod>2012-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/my-first-presentation-on-silverlight</loc>
-    <lastmod>2012-02-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/my-introduction-to-the-odata-v4-timeframe-on-net</loc>
-    <lastmod>2015-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/my-xaml-navigation-system-in-layers</loc>
-    <lastmod>2013-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/netflix-will-switch-from-silverlight-to-html5-and-other-twinks</loc>
-    <lastmod>2013-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/new-azure-web-sites-features</loc>
-    <lastmod>2012-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/new-support-for-knockout-js-intellisense-inside-vs-2012-and-other-twinks</loc>
-    <lastmod>2013-01-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/non-blocking-ui-s-with-interface-previews-themadray-and-other-twinks</loc>
-    <lastmod>2015-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/not-sure-if-you-want-to-install-windows-10-or-not-and-other-twinks</loc>
-    <lastmod>2014-10-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/okay-studio-index-updated-to-getbootstrap-and-a-bunch-of-other-twinks</loc>
-    <lastmod>2015-02-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/package-mvcroutetester-mvc5-2-supports-attribute-mapping-cool-and-other-twinks</loc>
-    <lastmod>2015-06-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/particle-effects-in-wpf-and-other-twinks</loc>
-    <lastmod>2016-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/planning-and-creating-azure-search-indexes-and-other-twinks</loc>
-    <lastmod>2016-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/porting-a-silverlight-app-to-ios-and-other-twinks</loc>
-    <lastmod>2013-09-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/powershell-remove-webvirtualdirectory-notes</loc>
-    <lastmod>2016-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/powershell-so-far</loc>
-    <lastmod>2015-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/prism-wpf-and-unity-based-modular-application-step-by-step-and-other-twinks</loc>
-    <lastmod>2013-12-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/put-f-on-the-todo-list</loc>
-    <lastmod>2013-02-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/remembering-victor-gaudioso</loc>
-    <lastmod>2012-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/replacing-my-nblog-with-a-read-only-angular-js-seed-over-web-api</loc>
-    <lastmod>2015-06-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/ria-services-and-ef-entities</loc>
-    <lastmod>2012-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/sager-np6165-unboxing</loc>
-    <lastmod>2013-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/saying-goodbye-to-dnx-and-hello-to-the-net-core-cli-and-other-twinks</loc>
-    <lastmod>2016-04-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/scottgu-s-blog-announcing-open-source-of-net-core-framework-and-other-twinks</loc>
-    <lastmod>2014-11-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/scottgu-s-blog-announcing-the-new-azure-app-service-and-other-twinks</loc>
-    <lastmod>2015-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/scripting-with-mono-s-embedded-api-channel-9-and-other-twinks</loc>
-    <lastmod>2015-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/seriously-needing-async-and-await-in-silverlight-5</loc>
-    <lastmod>2013-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/setting-up-an-azure-search-json-blob-indexer-with-api-version-2015-02-28-preview</loc>
-    <lastmod>2016-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/signalr-reaches-v1-alpha-and-other-twinks</loc>
-    <lastmod>2012-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/silverlight-biggestbox-feature-complete-so-what</loc>
-    <lastmod>2012-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/silverlight-entity-framework-and-ria-services-recipe</loc>
-    <lastmod>2012-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/silverlight-page-navigating-with-mvvm-light-messaging-and-songhay-navigationbookmarkdata</loc>
-    <lastmod>2012-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/silverlight-poor-mans-task-wait-all</loc>
-    <lastmod>2012-03-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/some-ex-silverlight-guy-closure</loc>
-    <lastmod>2014-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-data-access-ready-for-codeplexcom</loc>
-    <lastmod>2012-01-31</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-project-down-to-four-code-analysis-warnings</loc>
-    <lastmod>2012-02-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-a-bit-of-a-struggle-with-cookies-in-net</loc>
-    <lastmod>2014-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-azure-table-storage-libraries-report</loc>
-    <lastmod>2014-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-cors-coverage</loc>
-    <lastmod>2015-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-ergotron-neo-flex-mobile-mediacenter</loc>
-    <lastmod>2014-10-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-finally-some-flippant-remarks-about-xaml-validation</loc>
-    <lastmod>2015-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-flippant-remarks-about-ubuntu-public-key-authentication</loc>
-    <lastmod>2015-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-getting-back-to-tf-exe</loc>
-    <lastmod>2015-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-hardware-acquisition-strategy-one-year-later</loc>
-    <lastmod>2015-02-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-hardware-acquisition-strategy</loc>
-    <lastmod>2014-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-how-to-disable-click-once-for-a-secondary-exe-project</loc>
-    <lastmod>2014-10-29</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-it-s-no-longer-about-mstest-exe-it-s-vstest-console-exe</loc>
-    <lastmod>2014-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-kintespace-com-design-notes</loc>
-    <lastmod>2015-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-mef-imperative-exports-broke-prism-region-based-navigation-system</loc>
-    <lastmod>2014-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-menuitemdatum-revisited</loc>
-    <lastmod>2014-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-minimal-xamdatagrid-markup</loc>
-    <lastmod>2014-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-more-slightly-better-flippant-remarks-about-net-validation</loc>
-    <lastmod>2015-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-my-logitech-trackball-mouse-drowned-by-my-daughter</loc>
-    <lastmod>2014-10-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-powershell-revival</loc>
-    <lastmod>2014-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-the-sapphire-radeon-r9-270x-appears-to-be-working</loc>
-    <lastmod>2015-02-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-ux-and-ddd-my-new-acronym-umbrella</loc>
-    <lastmod>2014-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-web-index-design-study</loc>
-    <lastmod>2015-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhay-studio-zotac-geforce-gtx-580-not-working</loc>
-    <lastmod>2014-06-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhaycore-project-down-to-eight-code-analysis-warnings</loc>
-    <lastmod>2012-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhaydataaccessrunner-breakthrough</loc>
-    <lastmod>2012-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/songhaysilverlightcontrolsanalogdigit-my-first-custom-control</loc>
-    <lastmod>2012-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/speed-comparison-dapper-vs-entity-framework-and-other-twinks</loc>
-    <lastmod>2015-11-09</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/sql-server-for-linux-coming-in-mid-2017-and-other-twinks</loc>
-    <lastmod>2016-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/svg-how-to-create-interactive-graphics-for-your-website-and-other-twinks</loc>
-    <lastmod>2015-12-30</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/swashbuckle-5-0-seamlessly-adds-a-swagger-to-webapi-projects-and-other-twinks</loc>
-    <lastmod>2015-09-25</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/talked-to-microsoft-at-longo-toyota</loc>
-    <lastmod>2015-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/telerik-based-ux-with-silverlight-5</loc>
-    <lastmod>2013-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/term-rewriting-in-javascript-for-fun-and-world-domination-and-other-twinks</loc>
-    <lastmod>2014-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/tfs-2015-power-tools-are-available-and-other-twinks</loc>
-    <lastmod>2015-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-2012-enterprise-web-server-kit</loc>
-    <lastmod>2012-11-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-azure-api-management-publishing-tool-announced-and-other-twinks</loc>
-    <lastmod>2016-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-british-library-puts-over-1-000-000-images-in-the-public-domain-and-other-twinks</loc>
-    <lastmod>2015-09-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-fat-getter-and-other-mvvm-anti-patterns</loc>
-    <lastmod>2013-12-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-importance-of-the-experimental-transitioning-content-control</loc>
-    <lastmod>2012-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-ornery-twitter-api-1-1-struggling-with-the-lack-of-fresh-documentation</loc>
-    <lastmod>2013-09-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-second-era-of-cloud-platforms-will-dwarf-the-first-and-other-twinks</loc>
-    <lastmod>2016-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-silverlight-business-application-project-and-ntlm</loc>
-    <lastmod>2013-03-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-songhay-home-drive-on-a-new-vm</loc>
-    <lastmod>2012-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-songhay-system-by-net-namespaces</loc>
-    <lastmod>2012-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-songhay-system-ubuntu-vms-in-review</loc>
-    <lastmod>2016-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-typography-of-bootstrap</loc>
-    <lastmod>2015-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/the-youtube-api-and-oauth-confirmation</loc>
-    <lastmod>2016-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/this-year-s-8-smartest-ui-design-ideas-and-other-twinks</loc>
-    <lastmod>2015-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/tip-how-to-quickly-format-someone-else-s-xaml</loc>
-    <lastmod>2014-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/tip-temporarily-converting-a-wpf-library-project-to-an-executable-winexe-project</loc>
-    <lastmod>2014-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/top-5-tips-for-running-external-commands-in-powershell-and-other-twinks</loc>
-    <lastmod>2015-06-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/underscore-js-grouping</loc>
-    <lastmod>2015-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/understanding-the-microsoft-surface-a-sort-of-review-and-other-twinks</loc>
-    <lastmod>2012-11-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/understanding-the-role-of-startup-cs-file-in-aspnet-core-and-other-twinks</loc>
-    <lastmod>2016-04-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/unit-testing-with-mvcroutetester-mvc5-2-webconfigtransformrunner-and-nuget-core</loc>
-    <lastmod>2015-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/unusual-ways-of-boosting-up-app-performance-lambdas-and-linqs-and-other-twinks</loc>
-    <lastmod>2014-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/using-angularjs-for-data-visualisations-and-other-twinks</loc>
-    <lastmod>2015-02-27</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/using-gem-install-sass-pre-on-windows-10</loc>
-    <lastmod>2016-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/using-gulp-ruby-sass-on-an-ubuntu-virtual-machine-with-some-history</loc>
-    <lastmod>2015-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/visual-studio-ctp3-with-xunit-testing-for-vnext-projects-and-other-twinks</loc>
-    <lastmod>2014-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/web-essentials-1-4-for-visual-studio-and-other-twinks</loc>
-    <lastmod>2012-10-13</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/what-s-any-roadmap-toward-robust-odata-support-for-swashbuckle-swagger-and-other-twinks</loc>
-    <lastmod>2015-12-17</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/what-s-new-and-coming-for-glimpse-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angularjs-extending-existing-services-using-decorator-and-other-tweeted-links</loc>
     <lastmod>2016-02-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/what-s-new-in-reactiveui-6-0-and-other-twinks</loc>
-    <lastmod>2014-07-19</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-new-look-at-the-songhay-system-cores</loc>
+    <lastmod>2016-05-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/what-s-new-in-vs-2015-update-2-for-universal-windows-developers-and-other-twinks</loc>
-    <lastmod>2016-06-20</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-detailed-introduction-to-functional-reactive-programming-frp-and-other-tweeted-links</loc>
+    <lastmod>2014-07-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/when-in-bower-doubt-delete-all-of-your-components-and-reinstall</loc>
-    <lastmod>2015-08-19</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/andy-farnell-designing-sound-procedural-computational-audio-lecture-part-1-and-other-tweeted-links</loc>
+    <lastmod>2016-11-21</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/why-all-the-lambdas-and-other-twinks</loc>
-    <lastmod>2012-12-04</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-js-1-x-grouping-and-sorting-json-driven-sets-with-underscore-js</loc>
+    <lastmod>2015-05-21</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/why-does-c-use-utf-16-for-strings-and-other-twinks</loc>
-    <lastmod>2014-05-22</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/aurelia-logging-a-minimal-but-effective-logging-mechanism-and-other-tweeted-links</loc>
+    <lastmod>2018-02-01</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/why-does-firefox-have-such-poor-responsive-image-support</loc>
-    <lastmod>2015-04-08</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/azure-powershell-101-managing-azure-storage-from-the-command-line-shanselman-and-other-tweeted-links</loc>
+    <lastmod>2015-06-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/why-does-git-commit-not-save-my-changes-and-other-twinks</loc>
-    <lastmod>2015-08-14</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-material-1-0-now-available-and-other-tweeted-links</loc>
+    <lastmod>2015-12-28</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/why-static-website-generators-are-the-next-big-thing-and-other-twinks</loc>
-    <lastmod>2015-11-17</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-5-is-out-and-other-tweeted-links</loc>
+    <lastmod>2017-11-13</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/windows-10-looking-pretty-cool-and-other-twinks</loc>
-    <lastmod>2014-10-01</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/azure-search-best-practices-for-web-and-mobile-applications-and-other-tweeted-links</loc>
+    <lastmod>2016-06-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/windows-10-minimum-hardware-requirements-for-pc-and-other-twinks</loc>
-    <lastmod>2015-03-26</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-2-for-angular-1-developers-meligy-and-other-tweeted-links</loc>
+    <lastmod>2016-11-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/windows-10-vm-setup</loc>
-    <lastmod>2015-08-01</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/darkpatterns-org-offers-plenty-of-examples-of-deliberately-confusing-or-deceptive-user-interfaces-and-other-tweeted-links</loc>
+    <lastmod>2016-09-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/windows-8-1-review-and-other-twinks</loc>
-    <lastmod>2013-09-14</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/colors-a-data-driven-collection-of-beautiful-color-palettes-and-other-tweeted-links</loc>
+    <lastmod>2018-02-05</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/windows-8-operating-under-the-influence-and-other-old-ass-twinks</loc>
-    <lastmod>2012-11-11</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-nice-for-reference-just-to-know-what-all-those-m-l-c-and-a-commands-stand-for-in-svg-path-strings-and-other-tweeted-links</loc>
+    <lastmod>2015-03-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/word-javascript-api-and-other-twinks</loc>
-    <lastmod>2015-12-03</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/building-an-asp-net-core-website-with-xamarin-forms-xaml-and-ooui-and-other-tweeted-links</loc>
+    <lastmod>2018-01-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/write-etl-jobs-in-pure-c-and-other-twinks</loc>
-    <lastmod>2015-11-30</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/an-intro-to-web-hooks-and-other-tweeted-links</loc>
+    <lastmod>2015-12-07</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamarin-evolve-2014-session-recordings-now-available-and-other-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/deploying-azure-functions-with-kudu-and-powershell-and-other-tweeted-links</loc>
+    <lastmod>2017-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/delicious-dump-azure-blob-storage-links</loc>
+    <lastmod>2014-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/building-a-simple-url-shorten-service-with-redis-and-other-tweeted-links</loc>
+    <lastmod>2014-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/dar-backing-up-my-blog-blob-storage</loc>
+    <lastmod>2013-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/composite-uis-for-microservices-and-other-tweeted-links</loc>
+    <lastmod>2017-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/comparing-bootstrap-with-google-s-new-material-design-lite-and-other-tweeted-links</loc>
+    <lastmod>2015-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/bill-flora-and-erik-rath-the-microsoft-design-language</loc>
+    <lastmod>2013-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-problem-google-has-created-for-itself-and-other-tweeted-links</loc>
+    <lastmod>2013-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/an-introduction-to-documentdb-programming-stored-procedures-triggers-and-udfs-and-other-tweeted-links</loc>
+    <lastmod>2014-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/design-diary-my-small-angular-js-1-x-patterns</loc>
+    <lastmod>2015-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ddd-again-beyond-data-transfer-objects-and-extension-methods</loc>
+    <lastmod>2016-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-2018-front-end-performance-checklist-and-other-tweeted-links</loc>
+    <lastmod>2018-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/delicious-dump-old-silverlight-links</loc>
+    <lastmod>2014-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/customizing-xaml-buttons-prepare-to-repeat-yourself</loc>
+    <lastmod>2012-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/composite-uis-for-microservices-server-composition-and-other-tweeted-links</loc>
+    <lastmod>2018-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/complete-control-and-domination-over-my-ubuntu-bash-shell-history</loc>
+    <lastmod>2015-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/bryan-wilhite-service-oriented-user-interface-consultant</loc>
+    <lastmod>2012-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/better-responsive-images-with-the-picture-element-and-other-tweeted-links</loc>
+    <lastmod>2014-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/dark-patterns-user-interfaces-designed-to-trick-people-and-other-tweeted-links</loc>
+    <lastmod>2016-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/chocolatey-gui-is-the-way-to-go</loc>
+    <lastmod>2017-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/build-a-digital-book-with-epub-and-other-tweeted-links</loc>
+    <lastmod>2017-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/bootstrap-4-alpha-and-other-tweeted-links</loc>
+    <lastmod>2015-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/debugging-react-native-with-typescript-and-visual-studio-code-and-other-tweeted-links</loc>
+    <lastmod>2017-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/blackmagic-s-powerful-and-free-compositing-software-is-coming-to-mac-very-soon-and-other-tweeted-links</loc>
+    <lastmod>2015-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/css-grid-gotchas-and-stumbling-blocks-and-other-tweeted-links</loc>
+    <lastmod>2018-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/an-introduction-to-the-fr-css-unit-and-other-tweeted-links</loc>
+    <lastmod>2017-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/a-selection-of-progressive-web-apps-and-other-tweeted-links</loc>
+    <lastmod>2018-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/dapper-entity-framework-and-hybrid-apps-and-other-tweeted-links</loc>
+    <lastmod>2016-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/cors-for-a-dummy</loc>
+    <lastmod>2015-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/6-0-features-part-i-property-initializers-and-other-tweeted-links</loc>
+    <lastmod>2014-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/data-pagination-with-webapi-and-angularjs-and-other-tweeted-links</loc>
+    <lastmod>2016-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/taking-pictures-from-html-and-other-tweeted-links</loc>
+    <lastmod>2016-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/swashbuckle-5-0-seamlessly-adds-a-swagger-to-webapi-projects-and-other-tweeted-links</loc>
+    <lastmod>2015-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/special-characters-on-unity-desktop</loc>
+    <lastmod>2016-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/svg-code-path-code-introduction-sarasoueidan-chriscoyier</loc>
+    <lastmod>2017-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/sql-server-for-linux-coming-in-mid-2017-and-other-tweeted-links</loc>
+    <lastmod>2016-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/suggestions-for-structuring-a-large-aurelia-application-and-other-tweeted-links</loc>
+    <lastmod>2018-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angularjs-directive-for-syntax-highlighting-with-highlight-js-and-other-tweeted-links</loc>
+    <lastmod>2016-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/creating-custom-tag-helper-components-with-jass-bagga-and-other-tweeted-links</loc>
+    <lastmod>2017-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/svg-can-do-that-and-other-tweeted-links</loc>
+    <lastmod>2018-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/swipe-tap-pinch-hammerjs-angular-animations-and-other-tweeted-links</loc>
+    <lastmod>2018-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-system-the-conventional-way-to-derive-a-file-location</loc>
+    <lastmod>2016-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/wpf-prism-migrating-from-mef-to-unity</loc>
+    <lastmod>2017-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/tour-of-f-microsoft-docs-and-other-tweeted-links</loc>
+    <lastmod>2017-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/xamdatagrid-drag-drop-from-excel-to-wpf</loc>
     <lastmod>2014-10-23</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamdatagrid-drag-drop-from-excel-to-wpf</loc>
-    <lastmod>2014-10-23</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/speed-comparison-dapper-vs-entity-framework-and-other-tweeted-links</loc>
+    <lastmod>2015-11-09</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamdatagrid-fixedfieldsplitter-styling</loc>
-    <lastmod>2014-10-07</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/typescript-angular-2-s-secret-weapon-and-other-tweeted-links</loc>
+    <lastmod>2017-06-29</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamdatagrid-foreground-color-for-cellvaluepresenter-is-ignored</loc>
-    <lastmod>2014-10-23</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhaydataaccessrunner-breakthrough</loc>
+    <lastmod>2012-09-21</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamdatagrid-hey-ex-silverlight-guy-remember-the-wpf-datatrigger</loc>
-    <lastmod>2014-09-22</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/understanding-the-user-in-user-experience-curated-by-uxceo-and-other-tweeted-links</loc>
+    <lastmod>2017-04-11</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xamdatagrid-saturation-bombing-a-race-condition</loc>
-    <lastmod>2014-10-23</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/spectre-css-is-a-lightweight-responsive-and-modern-css-framework-and-other-tweeted-links</loc>
+    <lastmod>2016-08-02</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/xaml-fontfamily-and-fontsize-as-pts-points-imperatively</loc>
-    <lastmod>2015-01-29</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/unit-testing-with-mvcroutetester-mvc5-2-webconfigtransformrunner-and-nuget-core</loc>
+    <lastmod>2015-06-22</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/you-can-t-effectively-replace-cmd-scripts-with-ps1-scripts-without-these-key-powershell-ingredients</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/understanding-the-microsoft-surface-a-sort-of-review-and-other-tweeted-links</loc>
+    <lastmod>2012-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/you-can-t-effectively-replace-cmd-scripts-with-ps1-scripts-without-these-key-powershell-ingredients</loc>
     <lastmod>2015-06-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/you-can-t-impress-developers-so-don-t-try-and-other-very-historical-twinks</loc>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/unusual-ways-of-boosting-up-app-performance-lambdas-and-linqs-and-other-tweeted-links</loc>
+    <lastmod>2014-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angularjs-views-vs-directives-and-other-tweeted-links</loc>
+    <lastmod>2015-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/css-instead-of-svg-creating-animating-and-morphing-shapes-and-other-tweeted-links</loc>
+    <lastmod>2016-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/support-your-app-with-background-tasks-uwp-app-developer-and-other-tweeted-links</loc>
+    <lastmod>2017-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/you-cannot-use-the-desktop-version-of-microsoft-word-on-files-in-an-onedrive-folder</loc>
+    <lastmod>2015-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/connecting-to-my-ubuntu-vm-on-azure</loc>
+    <lastmod>2016-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/xamarin-evolve-2014-session-recordings-now-available-and-other-tweeted-links</loc>
+    <lastmod>2014-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/pure-css-scrolling-background-switching-and-other-tweeted-links</loc>
+    <lastmod>2016-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/underscore-js-grouping</loc>
+    <lastmod>2015-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/xd-essentials-shadows-and-blur-effects-in-modern-ui-design-and-other-tweeted-links</loc>
+    <lastmod>2016-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/prism-wpf-and-unity-based-modular-application-step-by-step-and-other-tweeted-links</loc>
+    <lastmod>2013-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/your-first-angular-2-asp-net-core-project-in-visual-studio-code-and-other-tweeted-links</loc>
+    <lastmod>2016-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/write-etl-jobs-in-pure-c-and-other-tweeted-links</loc>
+    <lastmod>2015-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/understanding-the-role-of-startup-cs-file-in-aspnet-core-and-other-tweeted-links</loc>
+    <lastmod>2016-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/you-can-t-impress-developers-so-don-t-try-and-other-very-historical-tweeted-links</loc>
     <lastmod>2014-07-19</lastmod>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>http://songhayblog.azurewebsites.net/entry/you-cannot-use-the-desktop-version-of-microsoft-word-on-files-in-an-onedrive-folder</loc>
-    <lastmod>2015-07-09</lastmod>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/top-5-tips-for-running-external-commands-in-powershell-and-other-tweeted-links</loc>
+    <lastmod>2015-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/understanding-aspnet-core-initialization-and-other-tweeted-links</loc>
+    <lastmod>2016-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/top-accessibility-complaints-from-people-with-disabilities-and-other-tweeted-links</loc>
+    <lastmod>2017-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/rachel-andrew-laying-out-the-future-with-grid-and-flexbox-and-other-tweeted-links</loc>
+    <lastmod>2017-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/xamdatagrid-saturation-bombing-a-race-condition</loc>
+    <lastmod>2014-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/xaml-fontfamily-and-fontsize-as-pts-points-imperatively</loc>
+    <lastmod>2015-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/2016-testing-angular-2-and-other-tweeted-links</loc>
+    <lastmod>2017-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-my-logitech-trackball-mouse-drowned-by-my-daughter</loc>
+    <lastmod>2014-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-more-slightly-better-flippant-remarks-about-net-validation</loc>
+    <lastmod>2015-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-ergotron-neo-flex-mobile-mediacenter</loc>
+    <lastmod>2014-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-hardware-acquisition-strategy</loc>
+    <lastmod>2014-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-mathematica-online-and-markdown-instead-of-word-in-visual-studio</loc>
+    <lastmod>2016-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-finally-some-flippant-remarks-about-xaml-validation</loc>
+    <lastmod>2015-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-kintespace-com-design-notes</loc>
+    <lastmod>2015-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-mef-imperative-exports-broke-prism-region-based-navigation-system</loc>
+    <lastmod>2014-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-the-sapphire-radeon-r9-270x-appears-to-be-working</loc>
+    <lastmod>2015-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-net-standard-with-songhay-standard-core</loc>
+    <lastmod>2016-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-flippant-remarks-about-ubuntu-public-key-authentication</loc>
+    <lastmod>2015-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-web-index-design-study</loc>
+    <lastmod>2015-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-a-bit-of-a-struggle-with-cookies-in-net</loc>
+    <lastmod>2014-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-cors-coverage</loc>
+    <lastmod>2015-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-svg-path-syntax-an-illustrated-guide-and-other-tweeted-links</loc>
+    <lastmod>2017-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/scripting-with-mono-s-embedded-api-channel-9-and-other-tweeted-links</loc>
+    <lastmod>2015-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/tip-temporarily-converting-a-wpf-library-project-to-an-executable-winexe-project</loc>
+    <lastmod>2014-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/tom-preston-werner-created-jekyll-to-enable-people-to-blog-using-a-simple-static-html-website-and-other-tweeted-links</loc>
+    <lastmod>2017-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-songhay-system-ubuntu-vms-in-review</loc>
+    <lastmod>2016-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/talked-to-microsoft-at-longo-toyota</loc>
+    <lastmod>2015-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/working-with-svg-a-primer-by-sarasoueidan-and-other-tweeted-links</loc>
+    <lastmod>2017-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-ornery-twitter-api-1-1-struggling-with-the-lack-of-fresh-documentation</loc>
+    <lastmod>2013-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-importance-of-the-experimental-transitioning-content-control</loc>
+    <lastmod>2012-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/this-year-s-8-smartest-ui-design-ideas-and-other-tweeted-links</loc>
+    <lastmod>2015-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/tfs-2015-power-tools-are-available-and-other-tweeted-links</loc>
+    <lastmod>2015-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-second-era-of-cloud-platforms-will-dwarf-the-first-and-other-tweeted-links</loc>
+    <lastmod>2016-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-fat-getter-and-other-mvvm-anti-patterns</loc>
+    <lastmod>2013-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-hardware-acquisition-strategy-one-year-later</loc>
+    <lastmod>2015-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/put-f-on-the-todo-list</loc>
+    <lastmod>2013-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-it-s-no-longer-about-mstest-exe-it-s-vstest-console-exe</loc>
+    <lastmod>2014-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-getting-back-to-tf-exe</loc>
+    <lastmod>2015-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/practical-svg-chriscoyier-and-other-tweeted-links</loc>
+    <lastmod>2016-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/preparing-and-exporting-svg-icons-in-sketch-and-other-tweeted-links</loc>
+    <lastmod>2017-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/svg-how-to-create-interactive-graphics-for-your-website-and-other-tweeted-links</loc>
+    <lastmod>2015-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-how-to-disable-click-once-for-a-secondary-exe-project</loc>
+    <lastmod>2014-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/sager-np6165-unboxing</loc>
+    <lastmod>2013-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-azure-table-storage-libraries-report</loc>
+    <lastmod>2014-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-silverlight-controls-analogdigit-my-first-custom-control</loc>
+    <lastmod>2012-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/powershell-so-far</loc>
+    <lastmod>2015-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/putting-people-first-tips-and-advice-from-ux-pioneer-don-norman-and-other-tweeted-links</loc>
+    <lastmod>2018-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/saying-goodbye-to-dnx-and-hello-to-the-net-core-cli-and-other-tweeted-links</loc>
+    <lastmod>2016-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ria-services-and-ef-entities</loc>
+    <lastmod>2012-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-ux-and-ddd-my-new-acronym-umbrella</loc>
+    <lastmod>2014-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-zotac-geforce-gtx-580-not-working</loc>
+    <lastmod>2014-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/some-ex-silverlight-guy-closure</loc>
+    <lastmod>2014-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhaycore-project-down-to-eight-code-analysis-warnings</loc>
+    <lastmod>2012-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/term-rewriting-in-javascript-for-fun-and-world-domination-and-other-tweeted-links</loc>
+    <lastmod>2014-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-aurelia-and-redux-together-for-good-times-all-around-and-other-tweeted-links</loc>
+    <lastmod>2017-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/does-css-grid-replace-flexbox-and-other-tweeted-links</loc>
+    <lastmod>2017-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/designing-motion-smart-transitions-in-ui-design-and-other-tweeted-links</loc>
+    <lastmod>2017-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/designing-a-usable-dashboard-and-other-tweeted-links</loc>
+    <lastmod>2017-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-project-down-to-four-code-analysis-warnings</loc>
+    <lastmod>2012-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/remembering-victor-gaudioso</loc>
+    <lastmod>2012-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-angularjs-for-data-visualisations-and-other-tweeted-links</loc>
+    <lastmod>2015-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/scottgu-s-blog-announcing-the-new-azure-app-service-and-other-tweeted-links</loc>
+    <lastmod>2015-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/hiring-want-to-join-our-mono-coreclr-android-ios-team-and-other-tweeted-links</loc>
+    <lastmod>2015-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-do-you-manually-set-powershell-s-oneget-repository-source-to-chocolatey-and-other-tweeted-links</loc>
+    <lastmod>2015-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-grunt-sass-and-task-runner-explorer-and-other-tweeted-links</loc>
+    <lastmod>2015-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-mp3-clips-widget-lets-you-play-song-samples-from-amazon-s-drm-free-mp3-catalog-and-other-tweeted-links</loc>
+    <lastmod>2016-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/google-interview-cumsum-challenge</loc>
+    <lastmod>2016-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-shader-effects-in-wpf-and-other-links</loc>
+    <lastmod>2014-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/design-notes-xhtml5-responsive-gallery</loc>
+    <lastmod>2012-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-correctly-use-bootstrapjs-and-angularjs-together-and-other-tweeted-links</loc>
+    <lastmod>2015-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-aurelia-cli-and-boostrap-and-other-tweeted-links</loc>
+    <lastmod>2017-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/get-the-tech-back-in-tech-and-other-tweeted-links</loc>
+    <lastmod>2012-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-create-katana-middleware-and-other-tweeted-links</loc>
+    <lastmod>2015-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/greg-young-on-ddd-and-other-tweeted-links</loc>
+    <lastmod>2014-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-azure-cdn-with-cors-and-other-tweeted-links</loc>
+    <lastmod>2016-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/replacing-my-nblog-with-a-read-only-angular-js-seed-over-web-api</loc>
+    <lastmod>2015-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/science-proves-flat-design-was-a-mistake-and-other-tweeted-links</loc>
+    <lastmod>2018-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/going-mobile-with-react-native-and-other-tweeted-links</loc>
+    <lastmod>2017-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-web-app-css-disorganization</loc>
+    <lastmod>2016-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-net-on-linux-and-other-mostly-owin-or-web-api-tweeted-links</loc>
+    <lastmod>2015-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/here-s-how-microsoft-will-support-bash-on-windows-10-and-other-tweeted-links</loc>
+    <lastmod>2016-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/here-s-all-of-the-specifics-about-the-windows-10-devices-event-on-october-6th-and-other-tweeted-links</loc>
+    <lastmod>2015-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-ecmascript-6-and-other-tweeted-links</loc>
+    <lastmod>2015-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/python-is-the-fastest-growing-language-due-to-a-feature-you-ve-never-heard-of-and-other-tweeted-links</loc>
+    <lastmod>2018-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/react-native-with-elm-and-other-tweeted-links</loc>
+    <lastmod>2017-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-asp-net-core-and-entity-framework-6-and-other-tweeted-links</loc>
+    <lastmod>2016-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-background-audio-in-a-uwp-app-for-xbox-and-other-tweeted-links</loc>
+    <lastmod>2016-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/powershell-on-linux-and-open-source-and-other-tweeted-links</loc>
+    <lastmod>2016-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/powershell-remove-webvirtualdirectory-notes</loc>
+    <lastmod>2016-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ok-let-me-explain-it-s-going-to-be-angular-4-and-other-tweeted-links</loc>
+    <lastmod>2017-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/silverlight-poor-mans-task-wait-all</loc>
+    <lastmod>2012-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/odataangularresources-is-a-fork-of-angular-s-resource-that-allows-odata-queries-in-a-fluent-way-and-other-tweeted-links</loc>
+    <lastmod>2016-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/new-in-the-wolfram-language-audio-and-other-tweeted-links</loc>
+    <lastmod>2016-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/new-git-features-in-visual-studio-2017-and-other-tweeted-links</loc>
+    <lastmod>2017-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-does-git-commit-not-save-my-changes-and-other-tweeted-links</loc>
+    <lastmod>2015-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/new-support-for-knockout-js-intellisense-inside-vs-2012-and-other-tweeted-links</loc>
+    <lastmod>2013-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/polygonal-map-generation-html5-version-and-other-tweeted-links</loc>
+    <lastmod>2018-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-10-vm-setup</loc>
+    <lastmod>2015-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-10-looking-pretty-cool-and-other-tweeted-links</loc>
+    <lastmod>2014-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/tip-how-to-quickly-format-someone-else-s-xaml</loc>
+    <lastmod>2014-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-is-react-is-taking-over-front-end-development-and-other-tweeted-links</loc>
+    <lastmod>2017-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-three-things-i-have-done-about-failing-in-job-interviews</loc>
+    <lastmod>2017-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-songhay-home-drive-on-a-new-vm</loc>
+    <lastmod>2012-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-azure-api-management-publishing-tool-announced-and-other-tweeted-links</loc>
+    <lastmod>2016-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/telerik-based-ux-with-silverlight-5</loc>
+    <lastmod>2013-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-silverlight-business-application-project-and-ntlm</loc>
+    <lastmod>2013-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-powershell-clear-history-command-on-windows-10</loc>
+    <lastmod>2017-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/planning-and-creating-azure-search-indexes-and-other-tweeted-links</loc>
+    <lastmod>2016-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-most-important-reason-people-chose-aurelia-is-full-support-for-typescript-built-in-and-other-tweeted-links</loc>
+    <lastmod>2017-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/seriously-needing-async-and-await-in-silverlight-5</loc>
+    <lastmod>2013-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/setting-up-an-azure-search-json-blob-indexer-with-api-version-2015-02-28-preview</loc>
+    <lastmod>2016-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/silverlight-entity-framework-and-ria-services-recipe</loc>
+    <lastmod>2012-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/particle-effects-in-wpf-and-other-tweeted-links</loc>
+    <lastmod>2016-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-british-library-puts-over-1-000-000-images-in-the-public-domain-and-other-tweeted-links</loc>
+    <lastmod>2015-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/silverlight-page-navigating-with-mvvm-light-messaging-and-songhay-navigationbookmarkdata</loc>
+    <lastmod>2012-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-javascript-phenomenon-is-a-mass-psychosis-and-other-tweeted-links</loc>
+    <lastmod>2017-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-songhay-system-by-net-namespaces</loc>
+    <lastmod>2012-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-youtube-api-and-oauth-confirmation</loc>
+    <lastmod>2016-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/word-javascript-api-and-other-tweeted-links</loc>
+    <lastmod>2015-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-2012-enterprise-web-server-kit</loc>
+    <lastmod>2012-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/seriously-don-t-use-icon-fonts-and-other-tweeted-links</loc>
+    <lastmod>2016-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-8-operating-under-the-influence-and-other-old-ass-tweeted-links</loc>
+    <lastmod>2012-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-8-1-review-and-other-tweeted-links</loc>
+    <lastmod>2013-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-powershell-revival</loc>
+    <lastmod>2014-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/working-in-markdown-leaving-behind-typing-a-typeface</loc>
+    <lastmod>2016-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/silverlight-biggestbox-feature-complete-so-what</loc>
+    <lastmod>2012-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-data-access-ready-for-codeplexcom</loc>
+    <lastmod>2012-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-typography-of-bootstrap</loc>
+    <lastmod>2015-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-does-firefox-have-such-poor-responsive-image-support</loc>
+    <lastmod>2015-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-10-minimum-hardware-requirements-for-pc-and-other-tweeted-links</loc>
+    <lastmod>2015-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/the-troubles-with-javascript-modules-and-other-tweeted-links</loc>
+    <lastmod>2016-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/finally-we-have-a-legitimate-opensource-replacement-for-flash-and-other-tweeted-links</loc>
+    <lastmod>2015-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/when-in-bower-doubt-delete-all-of-your-components-and-reinstall</loc>
+    <lastmod>2015-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/get-started-with-azure-search-in-the-portal-and-other-tweeted-links</loc>
+    <lastmod>2016-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-minimal-xamdatagrid-markup</loc>
+    <lastmod>2014-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/non-blocking-ui-s-with-interface-previews-themadray-and-other-tweeted-links</loc>
+    <lastmod>2015-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-visual-studio-code-and-other-tweeted-links</loc>
+    <lastmod>2015-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-postman-for-windows-and-other-tweeted-links</loc>
+    <lastmod>2016-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/porting-a-silverlight-app-to-ios-and-other-tweeted-links</loc>
+    <lastmod>2013-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-new-in-vs-2015-update-2-for-universal-windows-developers-and-other-tweeted-links</loc>
+    <lastmod>2016-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/where-will-ux-design-be-in-5-years-and-other-tweeted-links</loc>
+    <lastmod>2017-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-10-anniversary-update-desktop-app-converter-preview-and-other-tweeted-links</loc>
+    <lastmod>2016-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/mathematica-and-my-calculus-work-from-1988</loc>
+    <lastmod>2016-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-any-roadmap-toward-robust-odata-support-for-swashbuckle-swagger-and-other-tweeted-links</loc>
+    <lastmod>2015-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-scriptcs-to-generate-epub-xhtml</loc>
+    <lastmod>2017-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-xaml-navigation-system-in-layers</loc>
+    <lastmod>2013-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-new-in-reactiveui-6-0-and-other-tweeted-links</loc>
+    <lastmod>2014-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-is-github-pages-and-other-tweeted-links</loc>
+    <lastmod>2017-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-introduction-to-the-odata-v4-timeframe-on-net</loc>
+    <lastmod>2015-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/new-azure-web-sites-features</loc>
+    <lastmod>2012-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/migueldeicaza-anybody-ever-try-linq-to-mbox-with-mono-and-other-tweeted-links</loc>
+    <lastmod>2015-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/moving-to-the-windows-8-timeframe</loc>
+    <lastmod>2013-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/signalr-reaches-v1-alpha-and-other-tweeted-links</loc>
+    <lastmod>2012-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-expression-gallery-picks-unfashionably-late</loc>
+    <lastmod>2012-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-codepen-io-angular-samples</loc>
+    <lastmod>2016-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-little-git-tricks</loc>
+    <lastmod>2017-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/netflix-will-switch-from-silverlight-to-html5-and-other-tweeted-links</loc>
+    <lastmod>2013-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-current-aurelia-inspired-web-app-technology-road-map</loc>
+    <lastmod>2017-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/first-encounter-with-scriptcs-scriptcsnet</loc>
+    <lastmod>2017-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/integrating-angularjs-amp-three-js-two-patterns-one-app-and-other-tweeted-links</loc>
+    <lastmod>2015-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-azure-cool-blob-storage-and-other-tweeted-links</loc>
+    <lastmod>2016-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/inter-view-model-communication</loc>
+    <lastmod>2013-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-gulp-ruby-sass-on-an-ubuntu-virtual-machine-with-some-history</loc>
+    <lastmod>2015-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ecmascript-2015-has-been-approved-and-other-tweeted-links</loc>
+    <lastmod>2015-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/douglas-crockford-envisions-a-post-javascript-world-and-other-tweeted-links</loc>
+    <lastmod>2017-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/epubcheck-on-linux-and-other-tweeted-links</loc>
+    <lastmod>2017-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/every-angular-2-vs-react-article-out-there-and-other-tweeted-links</loc>
+    <lastmod>2016-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/generating-a-junction-not-technically-a-symbolic-link-in-windows-10</loc>
+    <lastmod>2017-01-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/everyday-fonts-these-typefaces-always-work-and-other-tweeted-links</loc>
+    <lastmod>2016-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/for-windows-10-i-have-a-bunch-of-free-as-in-baby-ubuntu-bash-shells-to-maintain</loc>
+    <lastmod>2016-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/embedding-code-pen-and-github-content-in-an-angular-template</loc>
+    <lastmod>2015-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/entity-framework-and-json-net</loc>
+    <lastmod>2015-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-autofac-packages-drama</loc>
+    <lastmod>2016-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-first-presentation-on-silverlight</loc>
+    <lastmod>2012-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-angular-js-1-x-single-page-layout</loc>
+    <lastmod>2015-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/free-database-of-the-entire-web-may-spawn-the-next-google-and-other-tweeted-links</loc>
+    <lastmod>2013-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/installed-choco-exe-on-the-azure-vm</loc>
+    <lastmod>2016-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/my-acer-liquid-m330-crap-phone</loc>
+    <lastmod>2016-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introduction-material-design-google-design-guidelines-and-other-tweeted-links</loc>
+    <lastmod>2014-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introduction-to-basics-of-angular-1-4-newrouter-and-other-tweeted-links</loc>
+    <lastmod>2015-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ecmascript-2017-the-final-feature-set-and-other-tweeted-links</loc>
+    <lastmod>2017-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-visual-studio-community-2013-and-other-tweeted-links</loc>
+    <lastmod>2014-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/looking-for-the-goldilocks-of-web-frameworks-and-other-tweeted-links</loc>
+    <lastmod>2016-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-improve-your-site-s-ux-and-other-tweeted-links</loc>
+    <lastmod>2017-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/fayde-inspired-by-silverlight-xaml-engine-using-javascript-and-rendering-to-the-html5-canvas-and-other-tweeted-links</loc>
+    <lastmod>2015-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-the-switch-from-graphic-design-to-ux-ui-design-and-other-tweeted-links</loc>
+    <lastmod>2015-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/windows-10-enterprise-anniversary-upgrade-log</loc>
+    <lastmod>2016-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/maybe-just-use-vanilla-javascript-and-other-tweeted-links</loc>
+    <lastmod>2018-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introduction-to-claims-based-security-in-net4-5-with-c-part-1-and-other-tweeted-links</loc>
+    <lastmod>2017-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/is-jquery-still-relevant-and-other-tweeted-links</loc>
+    <lastmod>2016-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introduction-to-prism-for-xamarin-forms-and-other-tweeted-links</loc>
+    <lastmod>2017-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/it-s-finally-here-materialui-is-now-available-and-other-tweeted-links</loc>
+    <lastmod>2016-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/line-of-sight-it-management-is-it-really-dead</loc>
+    <lastmod>2016-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-node-modules-and-bower-components-to-visual-studio-2013</loc>
+    <lastmod>2015-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/masonry-layout-isn-t-a-two-dimensional-grid-and-other-tweeted-links</loc>
+    <lastmod>2017-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/looking-forward-microsoft-support-for-secure-shell-ssh-and-other-tweeted-links</loc>
+    <lastmod>2015-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/page-the-doctor-when-entity-framework-paging-goes-rogue-and-other-tweeted-links</loc>
+    <lastmod>2017-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/microservices-an-application-revolution-powered-by-the-cloud-and-other-tweeted-links</loc>
+    <lastmod>2016-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-all-the-lambdas-and-other-tweeted-links</loc>
+    <lastmod>2012-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/material-design-in-xaml-toolkit-an-introduction-and-other-tweeted-links</loc>
+    <lastmod>2016-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/loading-net-configuration-files-as-xdocument-instances</loc>
+    <lastmod>2016-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-static-website-generators-are-the-next-big-thing-and-other-tweeted-links</loc>
+    <lastmod>2015-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-every-user-experience-designer-needs-to-think-about-ux-in-real-life-and-other-tweeted-links</loc>
+    <lastmod>2017-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/jquery-3-0-stops-supporting-internet-explorer-workarounds-and-other-tweeted-links</loc>
+    <lastmod>2016-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/menuitemdatum-namevaluepair-and-chartdatapoints</loc>
+    <lastmod>2013-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/migration-to-ubuntu-14-04-64-bit</loc>
+    <lastmod>2016-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/mobile-internet-comes-to-africa-in-a-big-way-and-other-tweeted-links</loc>
+    <lastmod>2014-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/implementing-an-asp-net-core-rc1-logging-provider-and-other-tweeted-links</loc>
+    <lastmod>2016-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/is-it-possible-to-concatenate-sounds-and-other-tweeted-links</loc>
+    <lastmod>2014-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/megafunk-com-html5-gallery-design-released</loc>
+    <lastmod>2012-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/microsoft-confirms-its-new-edge-browser-won-t-support-silverlight-and-other-tweeted-links</loc>
+    <lastmod>2015-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/web-essentials-1-4-for-visual-studio-and-other-tweeted-links</loc>
+    <lastmod>2012-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-gem-install-sass-pre-on-windows-10</loc>
+    <lastmod>2016-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/implementing-inavigationcontentloader-with-an-abstract-class</loc>
+    <lastmod>2012-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/in-page-angular-js-compared-to-in-page-jquery</loc>
+    <lastmod>2015-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-new-for-uwp-developers-in-visual-studio-2017-and-other-tweeted-links</loc>
+    <lastmod>2016-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-swashbuckle-to-generate-arbitrary-xml-example-values</loc>
+    <lastmod>2017-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/why-does-c-use-utf-16-for-strings-and-other-tweeted-links</loc>
+    <lastmod>2014-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/okay-studio-index-updated-to-getbootstrap-and-a-bunch-of-other-tweeted-links</loc>
+    <lastmod>2015-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/moving-songhay-system-to-net-4-5-2-with-serious-powershell</loc>
+    <lastmod>2016-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/not-sure-if-you-want-to-install-windows-10-or-not-and-other-tweeted-links</loc>
+    <lastmod>2014-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-swashbuckle-to-support-swaggerfied-xml-production-and-consumption</loc>
+    <lastmod>2017-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/magix-sound-forge-pro-11-inherits-a-nasty-bug-from-sony</loc>
+    <lastmod>2016-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-studio-menuitemdatum-revisited</loc>
+    <lastmod>2014-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/scottgu-s-blog-announcing-open-source-of-net-core-framework-and-other-tweeted-links</loc>
+    <lastmod>2014-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/using-page-objects-to-overcome-protractor-s-shortcomings-and-other-tweeted-links</loc>
+    <lastmod>2017-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/here-is-why-you-will-not-find-components-inside-angular-and-other-tweeted-links</loc>
+    <lastmod>2018-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/machine-learning-for-developers-and-other-tweeted-links</loc>
+    <lastmod>2017-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/visual-studio-ctp3-with-xunit-testing-for-vnext-projects-and-other-tweeted-links</loc>
+    <lastmod>2014-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/songhay-data-access-ready-for-codeplex-com</loc>
+    <lastmod>2012-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/package-mvcroutetester-mvc5-2-supports-attribute-mapping-cool-and-other-tweeted-links</loc>
+    <lastmod>2015-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-new-in-visual-studio-15-preview-5-for-universal-windows-developers-and-other-tweeted-links</loc>
+    <lastmod>2016-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/implementing-a-log-inspired-logging-service-in-angular-2-rc-4-and-other-tweeted-links</loc>
+    <lastmod>2017-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/loren-brichter-on-tweetie-2009-and-other-tweeted-links</loc>
+    <lastmod>2018-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/in-response-to-electron-is-flash-for-the-desktop-and-other-tweeted-links</loc>
+    <lastmod>2017-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introducing-aurelia-in-action-and-other-tweeted-links</loc>
+    <lastmod>2017-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/what-s-new-and-coming-for-glimpse-and-other-tweeted-links</loc>
+    <lastmod>2016-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/introduction-to-flexjs-yishay-weiss-and-other-tweeted-links</loc>
+    <lastmod>2017-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/general-availability-azure-search-parses-json-blobs-and-other-tweeted-links</loc>
+    <lastmod>2017-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/ux-improving-user-flow-through-page-transitions-and-other-tweeted-links</loc>
+    <lastmod>2016-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/i-ve-moved-to-nblog-away-from-blogengine-net</loc>
+    <lastmod>2012-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/i-prefer-not-using-multiple-iqueryable-t-join-calls-and-other-ef-notes</loc>
+    <lastmod>2012-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/if-it-weren-t-for-apple-hybrid-app-development-would-be-the-winner-over-native-and-other-tweeted-links</loc>
+    <lastmod>2017-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/i-ve-repeatedly-run-into-the-following-problem-with-bootstrap-s-modal-dialog-and-other-tweeted-links</loc>
+    <lastmod>2016-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/chen-hui-jing-explains-how-she-plans-the-setup-for-a-css-grid-layout-and-other-tweeted-links</loc>
+    <lastmod>2018-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-recreate-medium-s-article-layout-with-css-grid-and-other-tweeted-links</loc>
+    <lastmod>2018-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/huge-number-of-announcement-this-morning-at-build-and-other-tweeted-links</loc>
+    <lastmod>2017-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-use-responsive-images-and-other-tweeted-links</loc>
+    <lastmod>2017-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/if-you-re-not-already-using-modules-then-you-should-become-familiar-with-the-commonjs-format-and-other-tweeted-links</loc>
+    <lastmod>2016-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/how-to-use-odata-client-code-generator-to-generate-client-side-proxy-class-and-other-tweeted-links</loc>
+    <lastmod>2015-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/angular-testing-quick-start-and-other-tweeted-links</loc>
+    <lastmod>2017-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url xmlns="">
+    <loc>http://songhayblog.azurewebsites.net/blog/entry/mathematica-consulting-point-and-click-tableau-like-visuals-in-mathematica-and-other-tweeted-links</loc>
+    <lastmod>2016-11-23</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
