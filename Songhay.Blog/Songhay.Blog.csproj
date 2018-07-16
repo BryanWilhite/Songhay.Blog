@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <Content Include="ClientApp\src\assets\data\index.json" />
-    <Content Include="ClientApp\src\site-rss.xml" />
   </ItemGroup>
 
   <ItemGroup>
