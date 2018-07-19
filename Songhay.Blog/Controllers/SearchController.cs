@@ -5,6 +5,7 @@ using Songhay.Blog.Models.Extensions;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
 using Songhay.Models;
+using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -44,17 +45,21 @@ namespace Songhay.Blog.Controllers
             var json = this._searchPostTemplate.ToJson();
             traceSource.TraceVerbose("query: {0}", json);
 
-            var apiTemplate = new UriTemplate(this._restApiMetadata.UriTemplates["search-component-item"]);
-            var itemName = this._restApiMetadata.ClaimsSet["search-item-index-name"];
-            var uri = apiTemplate.BindByPosition(this._restApiMetadata.ApiBase, itemName);
-            traceSource.TraceVerbose("uri: {0}", uri);
+            var apiTemplate = new UriTemplate(this._restApiMetadata.UriTemplates["search-docs"]);
+            var indexName = this._restApiMetadata.ClaimsSet["search-item-index-name"];
+            var apiVersion = this._restApiMetadata.ClaimsSet["search-api-version"];
+            var uri = apiTemplate.BindByPosition(this._restApiMetadata.ApiBase, indexName, apiVersion, searchText);
+            var uriBuilder = new UriBuilder(uri.OriginalString.Replace("%3F", "?").Replace(":443", string.Empty));
+            uriBuilder.Query = uriBuilder.Query.Replace("api_version", "api-version");
+            uri = uriBuilder.Uri;
+            traceSource.TraceVerbose("URI: {0}", uri);
 
             var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, this._restApiMetadata.ApiKey));
             var jsonOutput = await response.Content.ReadAsStringAsync();
 
             if (!response.IsSuccessStatusCode)
             {
-                traceSource.TraceError($"Search POST reponse: {response.StatusCode}");
+                traceSource.TraceError($"Search POST response: {response.StatusCode}");
                 if (string.IsNullOrEmpty(jsonOutput)) traceSource.TraceError("The expected JSON output is not here.");
                 return this.BadRequest();
             }
