@@ -49,7 +49,7 @@ namespace Songhay.Blog.Controllers
             var indexName = this._restApiMetadata.ClaimsSet["search-item-index-name"];
             var apiVersion = this._restApiMetadata.ClaimsSet["search-api-version"];
             var uri = apiTemplate.BindByPosition(this._restApiMetadata.ApiBase, indexName, apiVersion, searchText);
-            var uriBuilder = new UriBuilder(uri.OriginalString.Replace("%3F", "?").Replace(":443", string.Empty));
+            var uriBuilder = new UriBuilder(uri.OriginalString.Replace("%3F", "?"));
             uriBuilder.Query = uriBuilder.Query.Replace("api_version", "api-version");
             uri = uriBuilder.Uri;
             traceSource.TraceVerbose("URI: {0}", uri);
