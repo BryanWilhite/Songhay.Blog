@@ -22,6 +22,7 @@ export class BlogEntriesService {
     constructor(private http: Http) {
         this.client = this.http;
         this.baseApiRoute = './api/blog';
+        this.baseApiSearchRoute = './api/search/blog';
         this.indexLocation = './assets/data/index.json'; // TODO: inject this from config?
         this.initialize();
     }
@@ -41,6 +42,14 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     baseApiRoute: string;
+
+    /**
+     * Returns the base for search, relative Blog API location.
+     *
+     * @type {string}
+     * @memberof BlogEntriesService
+     */
+    baseApiSearchRoute: string;
 
     /**
      * Returns the @type {BlogEntry}.
@@ -205,6 +214,41 @@ export class BlogEntriesService {
                         this.index = _(this.index)
                             .orderBy(['sortOrdinal'], ['desc'])
                             .value();
+
+                        this.isLoaded = true;
+                        this.isLoading = false;
+
+                        resolve(responseOrVoid);
+                    },
+                    error => {
+                        this.isError = true;
+                        this.isLoaded = false;
+                        reject(error);
+                    }
+                );
+        };
+
+        const promise = new Promise<Response>(wrapPromise);
+        return promise;
+    }
+
+    search(searchText: string, skipValue: number): Promise<Response> {
+        this.initialize();
+
+        const uri = `${this.baseApiSearchRoute}/${searchText}/${skipValue}`;
+
+        const wrapPromise = (resolve: any, reject: any) => {
+            this.client
+                .get(uri)
+                .toPromise()
+                .then(
+                    responseOrVoid => {
+                        const response = responseOrVoid as Response;
+                        if (!response) {
+                            return;
+                        }
+
+                        this.entry = response.json() as BlogEntry;
 
                         this.isLoaded = true;
                         this.isLoading = false;
