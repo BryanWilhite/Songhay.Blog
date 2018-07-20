@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
 
 @Component({
-    selector: 'app-app-blog-entry',
+    selector: 'app-blog-entry',
     templateUrl: './app-blog-entry.component.html',
     styleUrls: ['./app-blog-entry.component.scss']
 })

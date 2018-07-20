@@ -19,6 +19,7 @@ import { AppErrorComponent } from './components/app-error/app-error.component';
 import { AppIndexComponent } from './components/app-index/app-index.component';
 import { AppIndexGroupsComponent } from './components/app-index-groups/app-index-groups.component';
 import { AppIndexListComponent } from './components/app-index-list/app-index-list.component';
+import { AppSearchComponent } from './components/app-search/app-search.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { AppIndexListComponent } from './components/app-index-list/app-index-lis
         AppIndexComponent,
         AppIndexGroupsComponent,
         AppIndexListComponent,
-        AppBlogEntryComponent
+        AppBlogEntryComponent,
+        AppSearchComponent
     ],
     imports: [
         BrowserModule,
