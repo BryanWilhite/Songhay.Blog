@@ -7,4 +7,9 @@
     width: 90%;
     padding: 2em;
 
+    & .search-pages {
+        & > a {
+            margin: 0 0.25em;
+        }
+    }
 }

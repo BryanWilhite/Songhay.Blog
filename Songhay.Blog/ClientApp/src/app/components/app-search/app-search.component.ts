@@ -48,7 +48,7 @@ export class AppSearchComponent implements OnInit {
 
     initializePaging() {
         this.restPagingMetadata.totalSetSize = this.pagingJson['@odata.count'];
-        this.restPagingMetadata.resultSetSize = this.pagingJson.valueOf.length;
+        this.restPagingMetadata.resultSetSize = this.pagingJson.value.length;
     }
 
     setPageNumberList() {

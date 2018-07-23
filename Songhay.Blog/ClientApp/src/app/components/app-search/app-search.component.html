@@ -5,7 +5,7 @@
         <div class="search-pages">
             {{ restPagingMetadata.totalSetSize }} results found.
             <span class="search-pages" *ngIf="hasPageNumbers">
-                <a class="btn btn-default" *ngFor="let i of pageNumberList" title="page through results">{{ i }}</a>
+                <a mat-mini-fab *ngFor="let i of pageNumberList" title="page through results">{{ i }}</a>
             </span>
         </div>
         <div class="search-result" *ngFor="let i of pagingJson.value">
