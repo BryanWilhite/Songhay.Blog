@@ -27,6 +27,8 @@ export class AppSearchComponent implements OnInit {
 
     ngOnInit() {
         this.route.params.subscribe(params => {
+            this.hasPageNumbers = false;
+            this.pageNumberList = [];
             this.skipValue = 0;
             this.searchTerm = params['searchTerm'] as string;
             if (!this.searchTerm) {
