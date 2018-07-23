@@ -46,12 +46,19 @@ export class AppSearchComponent implements OnInit {
         });
     }
 
-    initializePaging() {
+    pageSearchResults(index: number) {
+        this.skipValue = index;
+        this.indexService
+            .search(this.searchTerm, this.skipValue)
+            .then(response => (this.pagingJson = response.json()));
+    }
+
+    private initializePaging() {
         this.restPagingMetadata.totalSetSize = this.pagingJson['@odata.count'];
         this.restPagingMetadata.resultSetSize = this.pagingJson.value.length;
     }
 
-    setPageNumberList() {
+    private setPageNumberList() {
         _(this.restPagingMetadata.toNumberOfPages()).times(i => {
             this.pageNumberList.push(++i);
         });
