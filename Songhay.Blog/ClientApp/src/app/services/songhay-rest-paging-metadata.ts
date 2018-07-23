@@ -1,9 +1,12 @@
+import { Injectable } from '@angular/core';
+
 /**
  * REST paging metadata
  *
  * @export
  * @class RestPagingMetadata
  */
+@Injectable()
 export class RestPagingMetadata {
 
     /**
