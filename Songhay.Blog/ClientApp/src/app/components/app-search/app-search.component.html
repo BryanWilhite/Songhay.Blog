@@ -1,1 +1,19 @@
-<h2>Search for “{{ searchTerm }}”</h2>
+<div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
+    <mat-spinner *ngIf="indexService.isLoading" color="accent" fxFlex="100"></mat-spinner>
+    <div class="entry body-content" *ngIf="indexService.isLoaded">
+        <h2>Search for “{{ searchTerm }}”</h2>
+        <div class="search-pages">
+            {{ restPagingMetadata.totalSetSize }} results found.
+            <span class="search-pages" *ngIf="hasPageNumbers">
+                <a class="btn btn-default" *ngFor="let i of pageNumberList" title="page through results">{{ i }}</a>
+            </span>
+        </div>
+        <div class="search-result" *ngFor="let i of pagingJson.value">
+            <h3 class="title">
+                <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>
+            </h3>
+            <div class="entry-content"></div>
+        </div>
+    </div>
+    <app-error *ngIf="indexService.isError"></app-error>
+</div>
