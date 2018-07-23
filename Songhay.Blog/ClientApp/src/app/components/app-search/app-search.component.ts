@@ -1,3 +1,5 @@
+import * as _ from 'lodash';
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -17,7 +19,6 @@ export class AppSearchComponent implements OnInit {
     ) {}
 
     hasPageNumbers: boolean;
-    isSearching: boolean;
     pageNumberList: number[];
 
     private pagingJson: any;
@@ -37,6 +38,7 @@ export class AppSearchComponent implements OnInit {
                     if (!this.skipValue) {
                         this.initializePaging();
                     }
+                    this.setPageNumberList();
                 });
         });
     }
@@ -44,5 +46,13 @@ export class AppSearchComponent implements OnInit {
     initializePaging() {
         this.restPagingMetadata.totalSetSize = this.pagingJson['@odata.count'];
         this.restPagingMetadata.resultSetSize = this.pagingJson.valueOf.length;
+    }
+
+    setPageNumberList() {
+        _(this.restPagingMetadata.toNumberOfPages()).times(i => {
+            this.pageNumberList.push(++i);
+        });
+
+        this.hasPageNumbers = this.pageNumberList.length > 1;
     }
 }
