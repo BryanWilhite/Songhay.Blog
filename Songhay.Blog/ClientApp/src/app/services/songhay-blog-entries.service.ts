@@ -248,8 +248,6 @@ export class BlogEntriesService {
                             return;
                         }
 
-                        this.entry = response.json() as BlogEntry;
-
                         this.isLoaded = true;
                         this.isLoading = false;
 
