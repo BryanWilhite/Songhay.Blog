@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { RoutingModule } from './routing.module';
 
 import { BlogEntriesService } from './services/songhay-blog-entries.service';
@@ -39,6 +40,7 @@ import { AppSearchComponent } from './components/app-search/app-search.component
         HttpClientModule,
         HttpModule,
         MaterialModule,
+        NgxPaginationModule,
         ReactiveFormsModule,
         RoutingModule
     ],

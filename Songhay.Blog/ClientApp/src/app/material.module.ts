@@ -10,7 +10,6 @@ import {
     MatSelectModule,
     MatToolbarModule
 } from '@angular/material';
-import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
     imports: [
@@ -22,8 +21,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
         MatListModule,
         MatProgressSpinnerModule,
         MatSelectModule,
-        MatToolbarModule,
-        NgxPaginationModule
+        MatToolbarModule
     ],
     exports: [
         MatButtonModule,
@@ -34,8 +32,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
         MatListModule,
         MatProgressSpinnerModule,
         MatSelectModule,
-        MatToolbarModule,
-        NgxPaginationModule
+        MatToolbarModule
     ]
 })
 export class MaterialModule {}
