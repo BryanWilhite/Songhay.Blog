@@ -2,10 +2,10 @@
     <mat-spinner *ngIf="indexService.isLoading" color="accent" fxFlex="100"></mat-spinner>
     <div class="entry body-content" *ngIf="indexService.isLoaded">
         <h2>Search for “{{ searchTerm }}”</h2>
-        <div class="search-pages">
+        <div class="search-results">
             {{ restPagingMetadata.totalSetSize }} results found.
-            <span class="search-pages" *ngIf="hasPageNumbers">
-                <a mat-mini-fab *ngFor="let n of pageNumberList; index as i" (click)=pageSearchResults(i) title="page through results">{{ n }}</a>
+            <span class="search-page-numbers" *ngIf="hasPageNumbers">
+                <a mat-mini-fab *ngFor="let o of pageNumberList" (click)=pageSearchResults(o) [ngClass]="{'disabled': o.isSelected}" title="page through results">{{ o.index }}</a>
             </span>
         </div>
         <div class="search-result" *ngFor="let i of pagingJson.value">

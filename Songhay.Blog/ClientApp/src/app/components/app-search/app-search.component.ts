@@ -19,7 +19,7 @@ export class AppSearchComponent implements OnInit {
     ) {}
 
     hasPageNumbers: boolean;
-    pageNumberList: number[];
+    pageNumberList: { isSelected: boolean; index: number }[];
 
     private pagingJson: any;
     private searchTerm: string;
@@ -46,8 +46,12 @@ export class AppSearchComponent implements OnInit {
         });
     }
 
-    pageSearchResults(index: number) {
-        this.skipValue = index;
+    pageSearchResults(o: { isSelected: boolean; index: number }) {
+        this.pageNumberList.forEach(i => (i.isSelected = false));
+        o.isSelected = true;
+
+        this.skipValue = o.index;
+
         this.indexService
             .search(this.searchTerm, this.skipValue)
             .then(response => (this.pagingJson = response.json()));
@@ -60,9 +64,14 @@ export class AppSearchComponent implements OnInit {
 
     private setPageNumberList() {
         _(this.restPagingMetadata.toNumberOfPages()).times(i => {
-            this.pageNumberList.push(++i);
+            this.pageNumberList.push({ isSelected: false, index: ++i });
         });
 
         this.hasPageNumbers = this.pageNumberList.length > 1;
+
+        if (this.hasPageNumbers) {
+            const first = _(this.pageSearchResults).first() as { isSelected: boolean; index: number };
+            first.isSelected = true;
+        }
     }
 }
