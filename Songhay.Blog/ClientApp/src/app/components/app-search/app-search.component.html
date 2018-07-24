@@ -1,18 +1,16 @@
-<div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
-    <mat-spinner *ngIf="indexService.isLoading" color="accent" fxFlex="100"></mat-spinner>
-    <div class="entry body-content" *ngIf="indexService.isLoaded">
+<div class="app mat-typography">
+    <div class="entry body-content">
         <h2>Search for “{{ searchTerm }}”</h2>
-        <div class="search-results">
-            {{ restPagingMetadata.totalSetSize }} results found.
-            <span class="search-page-numbers" *ngIf="hasPageNumbers">
-                <a mat-mini-fab *ngFor="let o of pageNumberList" (click)=pageSearchResults(o) [ngClass]="{'disabled': o.isSelected}" title="page through results">{{ o.index }}</a>
-            </span>
-        </div>
-        <div class="search-result" *ngFor="let i of pagingJson.value">
-            <h3 class="title">
-                <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>
-            </h3>
-            <div class="entry-content"></div>
+        <h3>{{ totalSetSize }} results found.</h3>
+        <pagination-controls (pageChange)="pageChanged($event)" class="pagination"></pagination-controls>
+        <mat-spinner *ngIf="indexService.isLoading" color="accent"></mat-spinner>
+        <div class="search-results" *ngIf="indexService.isLoaded">
+            <div class="search-result" *ngFor="let i of pagingJson.value | paginate: { itemsPerPage: 10, currentPage: currentPage, totalItems: totalSetSize }">
+                <h3 class="title">
+                    <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>
+                </h3>
+                <div class="entry-content"></div>
+            </div>
         </div>
     </div>
     <app-error *ngIf="indexService.isError"></app-error>

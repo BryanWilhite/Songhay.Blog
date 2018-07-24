@@ -18,8 +18,8 @@ export class AppSearchComponent implements OnInit {
         private route: ActivatedRoute
     ) {}
 
-    hasPageNumbers: boolean;
-    pageNumberList: { isSelected: boolean; index: number }[];
+    currentPage: number;
+    totalSetSize: number;
 
     private pagingJson: any;
     private searchTerm: string;
@@ -27,9 +27,9 @@ export class AppSearchComponent implements OnInit {
 
     ngOnInit() {
         this.route.params.subscribe(params => {
-            this.hasPageNumbers = false;
-            this.pageNumberList = [];
-            this.skipValue = 0;
+            this.currentPage = 1;
+            this.skipValue = this.currentPage - 1;
+            this.totalSetSize = 0;
             this.searchTerm = params['searchTerm'] as string;
             if (!this.searchTerm) {
                 return;
@@ -38,40 +38,16 @@ export class AppSearchComponent implements OnInit {
                 .search(this.searchTerm, this.skipValue)
                 .then(response => {
                     this.pagingJson = response.json();
-                    if (!this.skipValue) {
-                        this.initializePaging();
-                    }
-                    this.setPageNumberList();
+                    this.totalSetSize = this.pagingJson['@odata.count'];
                 });
         });
     }
 
-    pageSearchResults(o: { isSelected: boolean; index: number }) {
-        this.pageNumberList.forEach(i => (i.isSelected = false));
-        o.isSelected = true;
-
-        this.skipValue = o.index;
-
+    pageChanged(pageNumber: number) {
+        this.currentPage = pageNumber;
+        this.skipValue = this.currentPage - 1;
         this.indexService
             .search(this.searchTerm, this.skipValue)
             .then(response => (this.pagingJson = response.json()));
-    }
-
-    private initializePaging() {
-        this.restPagingMetadata.totalSetSize = this.pagingJson['@odata.count'];
-        this.restPagingMetadata.resultSetSize = this.pagingJson.value.length;
-    }
-
-    private setPageNumberList() {
-        _(this.restPagingMetadata.toNumberOfPages()).times(i => {
-            this.pageNumberList.push({ isSelected: false, index: ++i });
-        });
-
-        this.hasPageNumbers = this.pageNumberList.length > 1;
-
-        if (this.hasPageNumbers) {
-            const first = _(this.pageSearchResults).first() as { isSelected: boolean; index: number };
-            first.isSelected = true;
-        }
     }
 }

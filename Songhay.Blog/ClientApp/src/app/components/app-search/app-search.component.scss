@@ -4,14 +4,5 @@
     color: #000;
     margin: 1.5em auto;
     max-width: 70em;
-    width: 90%;
     padding: 2em;
-
-    & > .search-results {
-        & > .search-page-numbers {
-            & > a {
-                margin: 0 0.25em;
-            }
-        }
-    }
 }
