@@ -1,10 +1,7 @@
-import * as _ from 'lodash';
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
-import { RestPagingMetadata } from '../../services/songhay-rest-paging-metadata';
 
 @Component({
     selector: 'app-search',
@@ -14,7 +11,6 @@ import { RestPagingMetadata } from '../../services/songhay-rest-paging-metadata'
 export class AppSearchComponent implements OnInit {
     constructor(
         public indexService: BlogEntriesService,
-        private restPagingMetadata: RestPagingMetadata,
         private route: ActivatedRoute
     ) {}
 

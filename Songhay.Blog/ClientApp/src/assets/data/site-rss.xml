@@ -1,9 +1,21 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 23 Jul 2018 16:05:12 GMT</pubDate>
+  <channel><pubDate>Wed, 25 Jul 2018 17:40:19 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Gestalt Theory for #UX #Design” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/gestalt-theory-for-ux-design-and-other-tweeted-links</link>
+  <description>Gestalt Theory for
+      #UX#Design: Principle of Proximity
+      [tubikstudio.com] Tabbed Interfaces
+      [inclusive-components.design] Simple Icon Generator
+      [prefinem.com]#UI ⚛️ Preact, a fast 3KB React alternative with the same API, has jus...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">gestalt-theory-for-ux-design-and-other-tweeted-links</guid>
+  <pubDate>Wed, 25 Jul 2018 17:39:00 GMT</pubDate>
+</item>
 <item>
   <title>“Analyzing the Hamburger Menu in Web Design” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/analyzing-the-hamburger-menu-in-web-design-and-other-tweeted-links</link>
@@ -93,13 +105,5 @@ I just posted "Redux - Not Dea… [twitter.com]...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">i-finally-finally-finally-converted-my-blog-to-angular-modern</guid>
   <pubDate>Fri, 29 Jun 2018 23:41:58 GMT</pubDate>
-</item>
-<item>
-  <title>ASP.NET Core Angular Client App Q2 2018</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/asp-net-core-angular-client-app-q2-2018</link>
-  <description>The intention here is to examine how dotnet new templates “wire up” a Node.js-based Angular project with a Visual Studio project. This wiring appears to be handled by JavaScriptServices [GitHub] via the .NET Foundation.In the Q2 2018 time frame, we have ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">asp-net-core-angular-client-app-q2-2018</guid>
-  <pubDate>Wed, 27 Jun 2018 20:28:28 GMT</pubDate>
 </item></channel>
 </rss>
