@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Songhay.Cloud.BlobStorage" Version="2.3.7" />
-    <PackageReference Include="WindowsAzure.Storage" Version="9.1.1" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.0" />
   </ItemGroup>
 
   <ItemGroup>
