@@ -307,9 +307,10 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("indexPath", @"ClientApp\src\assets\data\index.json")]
-        [TestProperty("topicsPath", @"wwwroot\data\topics.opml")]
+        [TestProperty("topicsPath", @"opml\topics.opml")]
         public async Task ShouldGenerateRepositoryIndex()
         {
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
             var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
             #region test properties:
@@ -321,7 +322,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.ShouldFindFile(indexPath);
 
             var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
-            topicsPath = Path.Combine(webProjectInfo.FullName, topicsPath);
+            topicsPath = Path.Combine(projectInfo.FullName, topicsPath);
             this.TestContext.ShouldFindFile(topicsPath);
 
             #endregion
