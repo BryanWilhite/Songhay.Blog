@@ -6,11 +6,70 @@
     <rx:head>
         <rx:title>Songhay Blog Topics</rx:title>
         <rx:dateCreated>Mon, 27 Apr 2015 18:22:00 GMT</rx:dateCreated>
-        <rx:dateModified>Tue, 07 Jul 2015 09:51:00 GMT</rx:dateModified>
+        <rx:dateModified>Thur, 26 Jul 2018 14:51:00 GMT</rx:dateModified>
         <rx:ownerName>Bryan Wilhite</rx:ownerName>
         <rx:ownerEmail>rasx@songhaysystem.com</rx:ownerEmail>
     </rx:head>
     <rx:body>
+        <rx:outline id="topic-enterprise-data" text="Enterprise Solutions" category="topic">
+            <rx:outline text="autofac" category="keyword" />
+            <rx:outline text="exe" category="keyword" />
+            <rx:outline text="net" category="keyword" />
+            <rx:outline text="abs" category="keyword" />
+            <rx:outline text="api" category="keyword" />
+            <rx:outline text="ats" category="keyword" />
+            <rx:outline text="blob" category="keyword" />
+            <rx:outline text="c" category="keyword" />
+            <rx:outline text="class" category="keyword" />
+            <rx:outline text="cloud" category="keyword" />
+            <rx:outline text="cloud_platform" category="keyword" />
+            <rx:outline text="codeplex" category="keyword" />
+            <rx:outline text="code-analysis" category="keyword" />
+            <rx:outline text="codeplexcom" category="keyword" />
+            <rx:outline text="consultant" category="keyword" />
+            <rx:outline text="ddd" category="keyword" />
+            <rx:outline text="developer" category="keyword" />
+            <rx:outline text="developers" category="keyword" />
+            <rx:outline text="documentdb" category="keyword" />
+            <rx:outline text="dotnet" category="keyword" />
+            <rx:outline text="ef" category="keyword" />
+            <rx:outline text="enterprise" category="keyword" />
+            <rx:outline text="entity" category="keyword" />
+            <rx:outline text="exe" category="keyword" />
+            <rx:outline text="f" category="keyword" />
+            <rx:outline text="ienumerable" category="keyword" />
+            <rx:outline text="iqueryable" category="keyword" />
+            <rx:outline text="lambda" category="keyword" />
+            <rx:outline text="lambdas" category="keyword" />
+            <rx:outline text="linq" category="keyword" />
+            <rx:outline text="machine_learning" category="compoundkeyword" />
+            <rx:outline text="mef" category="keyword" />
+            <rx:outline text="menuitemdatum" category="keyword" />
+            <rx:outline text="microservice" category="keyword" />
+            <rx:outline text="microservices" category="keyword" />
+            <rx:outline text="microsoft_word" category="compoundkeyword" />
+            <rx:outline text="model" category="keyword" />
+            <rx:outline text="odata" category="keyword" />
+            <rx:outline text="onedrive" category="keyword" />
+            <rx:outline text="prism" category="keyword" />
+            <rx:outline text="property_initializers" category="compoundkeyword" />
+            <rx:outline text="python" category="keyword" />
+            <rx:outline text="ria" category="keyword" />
+            <rx:outline text="scriptcs" category="keyword" />
+            <rx:outline text="service-oriented" category="keyword" />
+            <rx:outline text="songhaycore" category="keyword" />
+            <rx:outline text="songhay_dataaccess" category="compoundkeyword" />
+            <rx:outline text="songhay_index" category="compoundkeyword" />
+            <rx:outline text="songhayindex" category="keyword" />
+            <rx:outline text="songhay_studio" category="compoundkeyword" />
+            <rx:outline text="songhay_system" category="compoundkeyword" />
+            <rx:outline text="special_characters" category="compoundkeyword" />
+            <rx:outline text="sql" category="keyword" />
+            <rx:outline text="sqlite" category="keyword" />
+            <rx:outline text="storage" category="keyword" />
+            <rx:outline text="tfexe" category="keyword" />
+            <rx:outline text="wcf" category="keyword" />
+        </rx:outline>
         <rx:outline id="topic-enterprise-azure" text="Enterprise Solutions: Microsoft Azure" category="topic">
             <rx:outline text="application_insights" category="compoundkeyword" />
             <rx:outline text="@azure" category="keyword" />
@@ -21,9 +80,68 @@
             <rx:outline text="redis" category="keyword" />
             <rx:outline text="webjob" category="keyword" />
         </rx:outline>
+        <rx:outline id="topic-enterprise-visual-studio" text="Enterprise Solutions: Visual Studio" category="topic">
+            <rx:outline text="codeplexcom" category="keyword" />
+            <rx:outline text="git" category="keyword" />
+            <rx:outline text="github" category="keyword" />
+            <rx:outline text="infragistics" category="keyword" />
+            <rx:outline text="mstest" category="keyword" />
+            <rx:outline text="mstestexe" category="keyword" />
+            <rx:outline text="nuget" category="keyword" />
+            <rx:outline text="nugetcore" category="keyword" />
+            <rx:outline text="nunit" category="keyword" />
+            <rx:outline text="team_foundation_server" category="compoundkeyword" />
+            <rx:outline text="telerik" category="keyword" />
+            <rx:outline text="tfexe" category="keyword" />
+            <rx:outline text="tfs" category="keyword" />
+            <rx:outline text="visual_studio" category="compoundkeyword" />
+            <rx:outline text="vs_2012" category="compoundkeyword" />
+            <rx:outline text="vs_2013" category="compoundkeyword" />
+            <rx:outline text="vs_2015" category="compoundkeyword" />
+            <rx:outline text="vstest" category="keyword" />
+            <rx:outline text="vstestconsoleexe" category="keyword" />
+            <rx:outline text="xunit" category="keyword" />
+        </rx:outline>
+        <rx:outline id="topic-digital-production-audio" text="Digital Production: Audio" category="topic">
+            <rx:outline text="acoustic" category="keyword" />
+            <rx:outline text="audio" category="keyword" />
+            <rx:outline text="behringer" category="keyword" />
+            <rx:outline text="emu" category="keyword" />
+            <rx:outline text="eq" category="keyword" />
+            <rx:outline text="equalizer" category="keyword" />
+            <rx:outline text="equalization" category="keyword" />
+            <rx:outline text="mp3" category="keyword" />
+            <rx:outline text="n-audio" category="keyword" />
+            <rx:outline text="noise_gate" category="compoundkeyword" />
+            <rx:outline text="resample" category="keyword" />
+            <rx:outline text="reverb" category="keyword" />
+            <rx:outline text="sound_sampling" category="compoundkeyword" />
+            <rx:outline text="sony" category="keyword" />
+            <rx:outline text="sound" category="keyword" />
+            <rx:outline text="sounds" category="keyword" />
+            <rx:outline text="sound_font" category="compoundkeyword" />
+            <rx:outline text="wave_hammer" category="compoundkeyword" />
+        </rx:outline>
+        <rx:outline id="topic-digital-production-data-visualization" text="Digital Production: Data Visualization" category="topic">
+            <rx:outline text="bing" category="keyword" />
+            <rx:outline text="chart" category="keyword" />
+            <rx:outline text="mathematica" category="keyword" />
+            <rx:outline text="tableau" category="keyword" />
+            <rx:outline text="term-rewriting" category="keyword" />
+            <rx:outline text="visualization" category="keyword" />
+            <rx:outline text="wolfram" category="keyword" />
+            <rx:outline text="wolfram_language" category="compoundkeyword" />
+        </rx:outline>
+        <rx:outline id="topic-digital-production-OS" text="Digital Production: Desktop Publishing" category="topic">
+            <rx:outline text="epub" category="keyword" />
+            <rx:outline text="epubcheck" category="keyword" />
+            <rx:outline text="pandoc" category="keyword" />
+            <rx:outline text="scribus" category="keyword" />
+        </rx:outline>
         <rx:outline id="topic-digital-production-graphics" text="Digital Production: Graphics" category="topic">
             <rx:outline text="bitmap" category="keyword" />
             <rx:outline text="bitmaps" category="keyword" />
+            <rx:outline text="gimp" category="keyword" />
             <rx:outline text="graphic" category="keyword" />
             <rx:outline text="graphics" category="keyword" />
             <rx:outline text="image" category="keyword" />
@@ -57,36 +175,6 @@
             <rx:outline text="xbox" category="keyword" />
             <rx:outline text="zotac" category="keyword" />
         </rx:outline>
-        <rx:outline id="topic-digital-production-audio" text="Digital Production: Audio" category="topic">
-            <rx:outline text="acoustic" category="keyword" />
-            <rx:outline text="audio" category="keyword" />
-            <rx:outline text="behringer" category="keyword" />
-            <rx:outline text="emu" category="keyword" />
-            <rx:outline text="eq" category="keyword" />
-            <rx:outline text="equalizer" category="keyword" />
-            <rx:outline text="equalization" category="keyword" />
-            <rx:outline text="mp3" category="keyword" />
-            <rx:outline text="n-audio" category="keyword" />
-            <rx:outline text="noise_gate" category="compoundkeyword" />
-            <rx:outline text="resample" category="keyword" />
-            <rx:outline text="reverb" category="keyword" />
-            <rx:outline text="sound_sampling" category="compoundkeyword" />
-            <rx:outline text="sony" category="keyword" />
-            <rx:outline text="sound" category="keyword" />
-            <rx:outline text="sounds" category="keyword" />
-            <rx:outline text="sound_font" category="compoundkeyword" />
-            <rx:outline text="wave_hammer" category="compoundkeyword" />
-        </rx:outline>
-        <rx:outline id="topic-digital-production-data-visualization" text="Digital Production: Data Visualization" category="topic">
-            <rx:outline text="bing" category="keyword" />
-            <rx:outline text="chart" category="keyword" />
-            <rx:outline text="mathematica" category="keyword" />
-            <rx:outline text="tableau" category="keyword" />
-            <rx:outline text="term-rewriting" category="keyword" />
-            <rx:outline text="visualization" category="keyword" />
-            <rx:outline text="wolfram" category="keyword" />
-            <rx:outline text="wolfram_language" category="compoundkeyword" />
-        </rx:outline>
         <rx:outline id="topic-digital-production-OS" text="Digital Production: OS" category="topic">
             <rx:outline text="android" category="keyword" />
             <rx:outline text="chocolatey" category="keyword" />
@@ -104,32 +192,20 @@
             <rx:outline text="windows" category="keyword" />
         </rx:outline>
         <rx:outline id="topic-digital-production-ui" text="Digital Production: UI/UX" category="topic">
-            <rx:outline text="angular" category="keyword" />
-            <rx:outline text="angular_js" category="compoundkeyword" />
-            <rx:outline text="angularjs" category="keyword" />
-            <rx:outline text="bootstrap" category="keyword" />
-            <rx:outline text="bootstrap_js" category="compoundkeyword" />
-            <rx:outline text="bootstrapjs" category="keyword" />
-            <rx:outline text="commonjs" category="keyword" />
-            <rx:outline text="cookies" category="keyword" />
+            <rx:outline text="dashboard" category="keyword" />
+            <rx:outline text="flat_design" category="compoundkeyword" />
             <rx:outline text="font" category="keyword" />
             <rx:outline text="fonts" category="keyword" />
-            <rx:outline text="gulp_js" category="compoundkeyword" />
-            <rx:outline text="gulpjs" category="keyword" />
-            <rx:outline text="jquery" category="keyword" />
-            <rx:outline text="html" category="keyword" />
-            <rx:outline text="html5" category="keyword" />
             <rx:outline text="inter-view-model" category="keyword" />
-            <rx:outline text="knockout" category="keyword" />
-            <rx:outline text="knockout_js" category="compoundkeyword" />
-            <rx:outline text="knockoutjs" category="keyword" />
+            <rx:outline text="layout" category="keyword" />
             <rx:outline text="microsoft_design_language" category="compoundkeyword" />
             <rx:outline text="mvvm" category="keyword" />
             <rx:outline text="navigation" category="keyword" />
+            <rx:outline text="navigation" category="keyword" />
             <rx:outline text="reactive" category="keyword" />
+            <rx:outline text="react_native" category="compoundkeyword" />
             <rx:outline text="reactiveui" category="keyword" />
             <rx:outline text="responsive" category="keyword" />
-            <rx:outline text="silverlight" category="keyword" />
             <rx:outline text="synchronization" category="keyword" />
             <rx:outline text="transitioning_content_control" category="compoundkeyword" />
             <rx:outline text="typeface" category="keyword" />
@@ -148,35 +224,52 @@
             <rx:outline text="xamarin" category="keyword" />
             <rx:outline text="xamdatagrid" category="keyword" />
             <rx:outline text="xaml" category="keyword" />
-            <rx:outline text="xhtml" category="keyword" />
-            <rx:outline text="xhtml5" category="keyword" />
         </rx:outline>
         <rx:outline id="topic-digital-production-web" text="Digital Production: Web" category="topic">
             <rx:outline text="@getbootstrap" category="keyword" />
             <rx:outline text="angular" category="keyword" />
+            <rx:outline text="angular_js" category="compoundkeyword" />
+            <rx:outline text="angularjs" category="keyword" />
             <rx:outline text="aspnet" category="keyword" />
             <rx:outline text="attribute_mapping" category="compoundkeyword" />
             <rx:outline text="aurelia" category="keyword" />
             <rx:outline text="blog" category="keyword" />
             <rx:outline text="bootstrap" category="keyword" />
+            <rx:outline text="bootstrap_js" category="compoundkeyword" />
+            <rx:outline text="bootstrapjs" category="keyword" />
+            <rx:outline text="bootstraps" category="keyword" />
             <rx:outline text="bower" category="keyword" />
+            <rx:outline text="commonjs" category="keyword" />
+            <rx:outline text="cookies" category="keyword" />
             <rx:outline text="coreclr" category="keyword" />
             <rx:outline text="cors" category="keyword" />
             <rx:outline text="css" category="keyword" />
+            <rx:outline text="douglas_crockford" category="compoundkeyword" />
             <rx:outline text="ecmascript" category="keyword" />
+            <rx:outline text="elm" category="keyword" />
             <rx:outline text="ex-silverlight-guy" category="keyword" />
             <rx:outline text="expression_gallery" category="compoundkeyword" />
             <rx:outline text="firefox" category="keyword" />
             <rx:outline text="flash" category="keyword" />
+            <rx:outline text="flexjs" category="keyword" />
+            <rx:outline text="front_end" category="compoundkeyword" />
             <rx:outline text="glimpse" category="keyword" />
             <rx:outline text="google" category="keyword" />
             <rx:outline text="grunt" category="keyword" />
+            <rx:outline text="gulp_js" category="compoundkeyword" />
+            <rx:outline text="gulpjs" category="keyword" />
             <rx:outline text="html" category="keyword" />
+            <rx:outline text="html5" category="keyword" />
             <rx:outline text="internet" category="keyword" />
+            <rx:outline text="jasmine" category="keyword" />
             <rx:outline text="javascript" category="keyword" />
             <rx:outline text="jquery" category="keyword" />
             <rx:outline text="js" category="keyword" />
             <rx:outline text="json" category="keyword" />
+            <rx:outline text="karma" category="keyword" />
+            <rx:outline text="knockout" category="keyword" />
+            <rx:outline text="knockout_js" category="compoundkeyword" />
+            <rx:outline text="knockoutjs" category="keyword" />
             <rx:outline text="katana" category="keyword" />
             <rx:outline text="knockout" category="keyword" />
             <rx:outline text="materialui" category="keyword" />
@@ -184,96 +277,26 @@
             <rx:outline text="microsoft_expression" category="compoundkeyword" />
             <rx:outline text="moment" category="keyword" />
             <rx:outline text="owin" category="keyword" />
+            <rx:outline text="protractor" category="keyword" />
             <rx:outline text="nblog" category="keyword" />
             <rx:outline text="node" category="keyword" />
+            <rx:outline text="rxjs" category="keyword" />
             <rx:outline text="sass" category="keyword" />
             <rx:outline text="signalr" category="keyword" />
             <rx:outline text="silverlight" category="keyword" />
             <rx:outline text="svg" category="keyword" />
             <rx:outline text="swagger" category="keyword" />
             <rx:outline text="swashbuckle" category="keyword" />
+            <rx:outline text="tag_helper" category="compoundkeyword" />
+            <rx:outline text="typescript" category="keyword" />
             <rx:outline text="underscore" category="keyword" />
             <rx:outline text="web_api" category="compoundkeyword" />
+            <rx:outline text="web_app" category="compoundkeyword" />
             <rx:outline text="web" category="keyword" />
             <rx:outline text="webapi" category="keyword" />
             <rx:outline text="website" category="keyword" />
-        </rx:outline>
-        <rx:outline id="topic-enterprise-visual-studio" text="Enterprise Solutions: Visual Studio" category="topic">
-            <rx:outline text="codeplexcom" category="keyword" />
-            <rx:outline text="git" category="keyword" />
-            <rx:outline text="github" category="keyword" />
-            <rx:outline text="infragistics" category="keyword" />
-            <rx:outline text="mstest" category="keyword" />
-            <rx:outline text="mstestexe" category="keyword" />
-            <rx:outline text="nuget" category="keyword" />
-            <rx:outline text="nugetcore" category="keyword" />
-            <rx:outline text="nunit" category="keyword" />
-            <rx:outline text="team_foundation_server" category="compoundkeyword" />
-            <rx:outline text="telerik" category="keyword" />
-            <rx:outline text="tfexe" category="keyword" />
-            <rx:outline text="tfs" category="keyword" />
-            <rx:outline text="visual_studio" category="compoundkeyword" />
-            <rx:outline text="vs_2012" category="compoundkeyword" />
-            <rx:outline text="vs_2013" category="compoundkeyword" />
-            <rx:outline text="vs_2015" category="compoundkeyword" />
-            <rx:outline text="vstest" category="keyword" />
-            <rx:outline text="vstestconsoleexe" category="keyword" />
-            <rx:outline text="xunit" category="keyword" />
-        </rx:outline>
-        <rx:outline id="topic-enterprise-data" text="Enterprise Solutions" category="topic">
-            <rx:outline text="autofac" category="keyword" />
-            <rx:outline text="exe" category="keyword" />
-            <rx:outline text="net" category="keyword" />
-            <rx:outline text="abs" category="keyword" />
-            <rx:outline text="api" category="keyword" />
-            <rx:outline text="ats" category="keyword" />
-            <rx:outline text="blob" category="keyword" />
-            <rx:outline text="c" category="keyword" />
-            <rx:outline text="class" category="keyword" />
-            <rx:outline text="cloud" category="keyword" />
-            <rx:outline text="cloud_platform" category="keyword" />
-            <rx:outline text="codeplex" category="keyword" />
-            <rx:outline text="code-analysis" category="keyword" />
-            <rx:outline text="codeplexcom" category="keyword" />
-            <rx:outline text="consultant" category="keyword" />
-            <rx:outline text="ddd" category="keyword" />
-            <rx:outline text="developer" category="keyword" />
-            <rx:outline text="developers" category="keyword" />
-            <rx:outline text="documentdb" category="keyword" />
-            <rx:outline text="ef" category="keyword" />
-            <rx:outline text="enterprise" category="keyword" />
-            <rx:outline text="entity" category="keyword" />
-            <rx:outline text="exe" category="keyword" />
-            <rx:outline text="f" category="keyword" />
-            <rx:outline text="ienumerable" category="keyword" />
-            <rx:outline text="iqueryable" category="keyword" />
-            <rx:outline text="lambda" category="keyword" />
-            <rx:outline text="lambdas" category="keyword" />
-            <rx:outline text="linq" category="keyword" />
-            <rx:outline text="mef" category="keyword" />
-            <rx:outline text="menuitemdatum" category="keyword" />
-            <rx:outline text="microservice" category="keyword" />
-            <rx:outline text="microservices" category="keyword" />
-            <rx:outline text="microsoft_word" category="compoundkeyword" />
-            <rx:outline text="model" category="keyword" />
-            <rx:outline text="odata" category="keyword" />
-            <rx:outline text="onedrive" category="keyword" />
-            <rx:outline text="prism" category="keyword" />
-            <rx:outline text="property_initializers" category="compoundkeyword" />
-            <rx:outline text="ria" category="keyword" />
-            <rx:outline text="service-oriented" category="keyword" />
-            <rx:outline text="songhaycore" category="keyword" />
-            <rx:outline text="songhay_dataaccess" category="compoundkeyword" />
-            <rx:outline text="songhay_index" category="compoundkeyword" />
-            <rx:outline text="songhayindex" category="keyword" />
-            <rx:outline text="songhay_studio" category="compoundkeyword" />
-            <rx:outline text="songhay_system" category="compoundkeyword" />
-            <rx:outline text="special_characters" category="compoundkeyword" />
-            <rx:outline text="sql" category="keyword" />
-            <rx:outline text="sqlite" category="keyword" />
-            <rx:outline text="storage" category="keyword" />
-            <rx:outline text="tfexe" category="keyword" />
-            <rx:outline text="wcf" category="keyword" />
+            <rx:outline text="xhtml" category="keyword" />
+            <rx:outline text="xhtml5" category="keyword" />
         </rx:outline>
     </rx:body>
 </rx:opml>
