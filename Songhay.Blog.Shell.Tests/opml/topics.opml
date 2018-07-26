@@ -6,7 +6,7 @@
     <rx:head>
         <rx:title>Songhay Blog Topics</rx:title>
         <rx:dateCreated>Mon, 27 Apr 2015 18:22:00 GMT</rx:dateCreated>
-        <rx:dateModified>Thur, 26 Jul 2018 14:51:00 GMT</rx:dateModified>
+        <rx:dateModified>Thu, 26 Jul 2018 14:51:00 GMT</rx:dateModified>
         <rx:ownerName>Bryan Wilhite</rx:ownerName>
         <rx:ownerEmail>rasx@songhaysystem.com</rx:ownerEmail>
     </rx:head>
@@ -132,7 +132,7 @@
             <rx:outline text="wolfram" category="keyword" />
             <rx:outline text="wolfram_language" category="compoundkeyword" />
         </rx:outline>
-        <rx:outline id="topic-digital-production-OS" text="Digital Production: Desktop Publishing" category="topic">
+        <rx:outline id="topic-digital-production-dtp" text="Digital Production: Desktop Publishing" category="topic">
             <rx:outline text="epub" category="keyword" />
             <rx:outline text="epubcheck" category="keyword" />
             <rx:outline text="pandoc" category="keyword" />
