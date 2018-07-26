@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Songhay.Blog.Models;
 using System;
 using System.Runtime.CompilerServices;
 
@@ -21,11 +22,9 @@ namespace Songhay.Blog
                 .ConfigureAppConfiguration((builderContext, configBuilder) =>
                 {
                     builderAction?.Invoke(builderContext, configBuilder);
-                    configBuilder.AddJsonFile(conventionalSettingsFile, optional: false);
+                    configBuilder.AddJsonFile(AppScalars.conventionalSettingsFile, optional: false);
                 })
                 .UseStartup<Startup>()
                 ;
-
-        internal const string conventionalSettingsFile = "app-settings.songhay-system.json";
     }
 }

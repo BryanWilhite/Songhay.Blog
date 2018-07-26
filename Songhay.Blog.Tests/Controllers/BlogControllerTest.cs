@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Songhay.Blog.Models;
 using Songhay.Extensions;
 using Songhay.Models;
 using System.IO;
@@ -44,7 +45,7 @@ namespace Songhay.Blog.Tests.Controllers
             this._meta = new ProgramMetadata();
             var configuration = this.TestContext.ShouldLoadConfigurationFromConventionalProject(this.GetType(), b =>
             {
-                b.AddJsonFile(Program.conventionalSettingsFile, optional: false, reloadOnChange: false);
+                b.AddJsonFile(AppScalars.conventionalSettingsFile, optional: false, reloadOnChange: false);
                 b.SetBasePath(basePath);
                 return b;
             });

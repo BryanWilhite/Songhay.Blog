@@ -19,7 +19,7 @@ namespace Songhay.Blog.Repository.Extensions
         /// </summary>
         /// <param name="repository">The repository.</param>
         /// <param name="topicsPath">The topics path.</param>
-        /// <param name="useJavaScriptCase">if set to <c>true</c> [use java script case].</param>
+        /// <param name="useJavaScriptCase">when <c>true</c> emit JSON objects in camel case.</param>
         /// <returns></returns>
         /// <exception cref="NullReferenceException">
         /// The expected index data is not here.

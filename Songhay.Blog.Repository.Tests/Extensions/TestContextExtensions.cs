@@ -18,7 +18,7 @@ namespace Songhay.Blog.Repository.Tests.Extensions
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(basePath)
-                .AddJsonFile("app-settings.songhay-system.json", optional: false, reloadOnChange: true);
+                .AddJsonFile(AppScalars.conventionalSettingsFile, optional: false, reloadOnChange: true);
 
             var meta = new ProgramMetadata();
             builder.Build().Bind(nameof(ProgramMetadata), meta);
