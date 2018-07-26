@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonMark.NET" Version="0.15.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Microsoft.SyndicationFeed.ReaderWriter" Version="1.0.2" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.2.1" />
     <PackageReference Include="MSTest.TestFramework" Version="1.2.1" />
     <PackageReference Include="Songhay.Cloud.BlobStorage" Version="2.3.7" />
@@ -16,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Songhay.Blog.Models\Songhay.Blog.Models.csproj" />
+    <ProjectReference Include="..\Songhay.Blog.Repository\Songhay.Blog.Repository.csproj" />
   </ItemGroup>
 
 </Project>
