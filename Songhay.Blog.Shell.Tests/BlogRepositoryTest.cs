@@ -163,7 +163,7 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("entryHeaderElement", "h2")]
-        [TestProperty("entryPath", @"content\ShouldGenerateBlogEntry.html")]
+        [TestProperty("entryPath", @"html\ShouldGenerateBlogEntry.html")]
         [TestProperty("entryOutputPath", @"json\ShouldGenerateBlogEntry.json")]
         public async Task ShouldGenerateBlogEntry()
         {
