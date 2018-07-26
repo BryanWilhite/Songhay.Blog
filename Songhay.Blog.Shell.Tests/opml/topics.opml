@@ -192,6 +192,9 @@
             <rx:outline text="windows" category="keyword" />
         </rx:outline>
         <rx:outline id="topic-digital-production-ui" text="Digital Production: UI/UX" category="topic">
+            <rx:outline text="accessibility" category="keyword" />
+            <rx:outline text="color_palette" category="compoundkeyword" />
+            <rx:outline text="color_palettes" category="compoundkeyword" />
             <rx:outline text="dashboard" category="keyword" />
             <rx:outline text="flat_design" category="compoundkeyword" />
             <rx:outline text="font" category="keyword" />
@@ -251,6 +254,7 @@
             <rx:outline text="expression_gallery" category="compoundkeyword" />
             <rx:outline text="firefox" category="keyword" />
             <rx:outline text="flash" category="keyword" />
+            <rx:outline text="flexbox" category="keyword" />
             <rx:outline text="flexjs" category="keyword" />
             <rx:outline text="front_end" category="compoundkeyword" />
             <rx:outline text="glimpse" category="keyword" />
@@ -278,6 +282,7 @@
             <rx:outline text="moment" category="keyword" />
             <rx:outline text="owin" category="keyword" />
             <rx:outline text="protractor" category="keyword" />
+            <rx:outline text="pwa" category="keyword" />
             <rx:outline text="nblog" category="keyword" />
             <rx:outline text="node" category="keyword" />
             <rx:outline text="rxjs" category="keyword" />
@@ -292,6 +297,7 @@
             <rx:outline text="underscore" category="keyword" />
             <rx:outline text="web_api" category="compoundkeyword" />
             <rx:outline text="web_app" category="compoundkeyword" />
+            <rx:outline text="web_apps" category="compoundkeyword" />
             <rx:outline text="web" category="keyword" />
             <rx:outline text="webapi" category="keyword" />
             <rx:outline text="website" category="keyword" />
