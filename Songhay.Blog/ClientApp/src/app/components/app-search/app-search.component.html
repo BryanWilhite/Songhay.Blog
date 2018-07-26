@@ -1,10 +1,10 @@
-<div class="app mat-typography">
-    <div class="entry body-content">
+<div class="app mat-typography flex-layout-container" fxLayout="column" fxLayoutAlign="stretch center">
+    <div class="entry body-content" fxFlex="100">
         <h2>Search for “{{ searchTerm }}”</h2>
-        <h3>{{ totalSetSize }} results found.</h3>
-        <pagination-controls (pageChange)="pageChanged($event)" class="pagination"></pagination-controls>
+        <pagination-controls *ngIf="isFirstLoaded" (pageChange)="pageChanged($event)" class="pagination"></pagination-controls>
         <mat-spinner *ngIf="indexService.isLoading" color="accent"></mat-spinner>
         <div class="search-results" *ngIf="indexService.isLoaded">
+            <h3>{{ totalSetSize }} results found.</h3>
             <div class="search-result" *ngFor="let i of pagingJson.value | paginate: { itemsPerPage: 10, currentPage: currentPage, totalItems: totalSetSize }">
                 <h3 class="title">
                     <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>

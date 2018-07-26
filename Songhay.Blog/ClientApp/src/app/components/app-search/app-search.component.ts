@@ -15,6 +15,7 @@ export class AppSearchComponent implements OnInit {
     ) {}
 
     currentPage: number;
+    isFirstLoaded: boolean;
     totalSetSize: number;
 
     private pagingJson: any;
@@ -35,6 +36,7 @@ export class AppSearchComponent implements OnInit {
                 .then(response => {
                     this.pagingJson = response.json();
                     this.totalSetSize = this.pagingJson['@odata.count'];
+                    this.isFirstLoaded = true;
                 });
         });
     }
