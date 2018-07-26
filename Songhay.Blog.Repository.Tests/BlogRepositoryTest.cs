@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.SyndicationFeed;
 using Microsoft.SyndicationFeed.Rss;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -6,7 +7,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Newtonsoft.Json;
 using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
-using Songhay.Blog.Repository.Tests.Extensions;
+using Songhay.Blog.Repository.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
@@ -40,7 +41,7 @@ namespace Songhay.Blog.Repository.Tests
         public void InitializeTest()
         {
             var projectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
-            cloudStorageAccount = this.TestContext.ShouldGetCloudStorageAccount(projectInfo.FullName);
+            cloudStorageAccount = (new ConfigurationBuilder()).ToCloudStorageAccount(projectInfo.FullName);
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
@@ -357,7 +358,7 @@ namespace Songhay.Blog.Repository.Tests
 
             var repository = new BlogRepository(keys, container);
 
-            var json = await this.TestContext.ShouldGenerateRepositoryIndex(repository, topicsPath, useJavaScriptCase: true);
+            var json = await repository.ToRepositoryIndexAsync(topicsPath, useJavaScriptCase: true);
 
             await repository.SetIndex(json);
 
