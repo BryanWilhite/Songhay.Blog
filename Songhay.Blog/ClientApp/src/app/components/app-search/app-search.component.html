@@ -6,7 +6,7 @@
         <div class="search-results" *ngIf="indexService.isLoaded">
             <h3>{{ totalSetSize }} results found.</h3>
             <div class="search-result" *ngFor="let i of pagingJson.value | paginate: { itemsPerPage: 10, currentPage: currentPage, totalItems: totalSetSize }">
-                <h3 *ngIf="false" class="title">
+                <h3 class="title">
                     <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>
                 </h3>
                 <div class="entry-content"></div>
