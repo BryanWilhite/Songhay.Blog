@@ -73,6 +73,7 @@ $mat-akyinkyin-green: (
 $akyinkyin-background: map-get($map: $mat-akyinkyin-dark, $key: 500);
 $akyinkyin-base: map-get($map: $mat-akyinkyin-green, $key: 500);
 $akyinkyin-dark-tone: map-get($map: $mat-akyinkyin-green, $key: 900);
+$akyinkyin-light-text: map-get($map: $mat-akyinkyin-green, $key: 50);
 $akyinkyin-light-tint: map-get($map: $mat-akyinkyin-green, $key: A700);
 /* This light-green tint was originally #00ff7e
     but is conformed to the $mat-akyinkyin-green map. */

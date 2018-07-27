@@ -1,10 +1,11 @@
 <form [formGroup]="indexFormGroup" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
     <div class="cell nav" fxFlex="20"><a class="index" href="./index/groups" title="set groups view"><mat-icon color="accent" svgIcon="rx:mdi_eye_24px"></mat-icon><span fxHide.lt-md>set groups view</span></a></div>
-    <pagination-controls (pageChange)="currentPage=$event" class="cell index pagination" fxFlex="60"></pagination-controls>
-    <div class="cell filter" fxFlex="20">
+    <pagination-controls (pageChange)="currentPage=$event" class="cell index pagination" fxFlex="50"></pagination-controls>
+    <div class="cell filter" fxFlex="30">
         <mat-form-field>
             <input formControlName="indexFilter" matInput placeholder="filter index" />
         </mat-form-field>
+        <button (click)="routerUtility.navigateToSearch(indexFormGroup)" mat-stroked-button color="accent">search</button>
     </div>
 </form>
 <mat-list>

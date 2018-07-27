@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 
 import { DomSanitizer } from '@angular/platform-browser';
+import {Router} from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
@@ -22,6 +23,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 import { IIndexFormGroup } from '../../models/songhay-index-form-group';
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
+import { RouterUtility } from '../../services/songhay-router.utility';
 import { BlogEntry } from '../../models/songhay-blog-entry';
 import { IndexGroupingOption } from '../../models/songhay-index-grouping-option';
 import { IndexGroup } from '../../models/songhay-index-group';
@@ -76,7 +78,7 @@ export class AppIndexGroupsComponent implements OnInit {
      * Creates an instance of AppIndexGroupsComponent.
      * @memberof AppIndexGroupsComponent
      */
-    constructor(private sanitizer: DomSanitizer) {}
+    constructor(private routerUtility: RouterUtility, private sanitizer: DomSanitizer) {}
 
     /**
      * implements @type {OnInit.ngOnInit}
@@ -115,7 +117,9 @@ export class AppIndexGroupsComponent implements OnInit {
                 )
                 .map((i: BlogEntry[]) => {
                     if (!i || !i.length) {
-                        console.log('The expected group of Blog entries are not here.');
+                        console.log(
+                            'The expected group of Blog entries are not here.'
+                        );
                         return;
                     }
                     const firstEntry = i[0];

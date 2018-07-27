@@ -1,6 +1,10 @@
 @import '../../../assets/scss/normalize-component';
 @import '../../../assets/scss/themes/akyinkyin/palette';
 
+.mat-stroked-button.mat-accent {
+    color: $light-primary-text;
+}
+
 .index.pagination {
     & ::ng-deep .ngx-pagination {
         padding-left: 0;

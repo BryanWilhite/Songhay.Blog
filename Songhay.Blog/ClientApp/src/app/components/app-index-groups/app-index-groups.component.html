@@ -2,7 +2,7 @@
     <div class="cell nav" fxFlex="20">
         <a class="index" href="./index/list" title="set list view"><mat-icon color="accent" svgIcon="rx:mdi_eye_24px"></mat-icon><span fxHide.lt-md>set list view</span></a>
     </div>
-    <div class="cell grouping" fxFlex="60">
+    <div class="cell grouping" fxFlex="50">
         <mat-form-field>
             <mat-select formControlName="indexGroupingSelection" [value]="indexGroupingOptions" placeholder="select grouping">
                 <mat-option *ngFor="let option of indexGroupingOptions" [value]="option">
@@ -11,10 +11,11 @@
             </mat-select>
         </mat-form-field>
     </div>
-    <div class="cell filter" fxFlex="20">
+    <div class="cell filter" fxFlex="30">
         <mat-form-field>
             <input formControlName="indexFilter" matInput placeholder="filter index" />
         </mat-form-field>
+        <button (click)="routerUtility.navigateToSearch(indexFormGroup)" mat-stroked-button color="accent">search</button>
     </div>
 </form>
 <mat-accordion>
