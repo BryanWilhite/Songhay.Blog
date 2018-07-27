@@ -9,3 +9,10 @@
     max-width: 70em;
     padding: 2em;
 }
+
+.pagination {
+    & ::ng-deep .ngx-pagination {
+        padding-left: 0;
+        text-align: center;
+    }
+}
