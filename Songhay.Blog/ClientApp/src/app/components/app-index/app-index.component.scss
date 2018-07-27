@@ -1,15 +1,9 @@
-:host(app-index) {
-    width: 100%;
-}
+@import '../../../assets/scss/mat-spinner';
+@import '../../../assets/scss/normalize-component';
 
 .index {
     margin: 0 auto;
     margin-top: 4em;
     max-width: 70em;
     width: 90%;
-
-    & .mat-spinner {
-        margin: 1rem auto;
-        min-height: 8rem;
-    }
 }
