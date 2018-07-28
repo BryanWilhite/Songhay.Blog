@@ -22,6 +22,7 @@ import { AppIndexComponent } from './components/app-index/app-index.component';
 import { AppIndexGroupsComponent } from './components/app-index-groups/app-index-groups.component';
 import { AppIndexListComponent } from './components/app-index-list/app-index-list.component';
 import { AppSearchComponent } from './components/app-search/app-search.component';
+import { AppSearchCommandComponent } from './components/app-search-command/app-search-command.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { AppSearchComponent } from './components/app-search/app-search.component
         AppIndexGroupsComponent,
         AppIndexListComponent,
         AppBlogEntryComponent,
-        AppSearchComponent
+        AppSearchComponent,
+        AppSearchCommandComponent
     ],
     imports: [
         BrowserModule,
