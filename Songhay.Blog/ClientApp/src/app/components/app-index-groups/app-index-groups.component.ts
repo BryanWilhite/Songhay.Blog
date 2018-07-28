@@ -1,7 +1,6 @@
 import * as _ from 'lodash';
 
 import { DomSanitizer } from '@angular/platform-browser';
-import {Router} from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
@@ -23,7 +22,6 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 import { IIndexFormGroup } from '../../models/songhay-index-form-group';
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
-import { RouterUtility } from '../../services/songhay-router.utility';
 import { BlogEntry } from '../../models/songhay-blog-entry';
 import { IndexGroupingOption } from '../../models/songhay-index-grouping-option';
 import { IndexGroup } from '../../models/songhay-index-group';
@@ -78,7 +76,7 @@ export class AppIndexGroupsComponent implements OnInit {
      * Creates an instance of AppIndexGroupsComponent.
      * @memberof AppIndexGroupsComponent
      */
-    constructor(private routerUtility: RouterUtility, private sanitizer: DomSanitizer) {}
+    constructor(private sanitizer: DomSanitizer) {}
 
     /**
      * implements @type {OnInit.ngOnInit}

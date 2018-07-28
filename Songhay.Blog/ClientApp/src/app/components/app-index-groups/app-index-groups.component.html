@@ -15,7 +15,7 @@
         <mat-form-field>
             <input formControlName="indexFilter" matInput placeholder="filter index" />
         </mat-form-field>
-        <button (click)="routerUtility.navigateToSearch(indexFormGroup)" mat-stroked-button color="accent">search</button>
+        <app-search-command [indexFormGroup]="indexFormGroup"></app-search-command>
     </div>
 </form>
 <mat-accordion>

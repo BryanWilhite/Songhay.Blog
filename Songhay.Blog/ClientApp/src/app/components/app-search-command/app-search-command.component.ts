@@ -23,7 +23,7 @@ export class AppSearchCommandComponent {
 
     @Input() indexFormGroup: FormGroup;
 
-    private navigateToSearch(): void {
+    navigateToSearch(): void {
         const searchTerm: string = this.indexFormGroup.value['indexFilter'];
         if (!searchTerm) {
             return;

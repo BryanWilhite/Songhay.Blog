@@ -20,7 +20,6 @@ import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
-import { RouterUtility } from '../../services/songhay-router.utility';
 import { BlogEntry } from '../../models/songhay-blog-entry';
 
 /**
@@ -75,7 +74,7 @@ export class AppIndexListComponent implements OnInit {
      * Creates an instance of AppIndexListComponent.
      * @memberof AppIndexListComponent
      */
-    constructor(private routerUtility: RouterUtility) {
+    constructor() {
         this.filterIndexSubject = new Subject<string>();
     }
 
