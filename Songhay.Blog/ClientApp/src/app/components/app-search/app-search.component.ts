@@ -16,10 +16,10 @@ export class AppSearchComponent implements OnInit {
 
     currentPage: number;
     isFirstLoaded: boolean;
+    searchTerm: string;
     totalSetSize: number;
 
     private pagingJson: any;
-    private searchTerm: string;
     private skipValue: number;
 
     ngOnInit() {
