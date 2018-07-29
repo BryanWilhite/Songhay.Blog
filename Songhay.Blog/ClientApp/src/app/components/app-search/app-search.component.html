@@ -7,7 +7,7 @@
             <h3>{{ totalSetSize }} results found.</h3>
             <div class="search-result" *ngFor="let i of pagingJson.value | paginate: { itemsPerPage: 10, currentPage: currentPage, totalItems: totalSetSize }">
                 <h3 class="title">
-                    <a href="./blog/entry/{{ i.Slug }}">{{ i.Title }}</a>
+                    <a [routerLink]="['/blog/entry', i.Slug]">{{ i.Title }}</a>
                 </h3>
                 <div class="entry-content"></div>
             </div>

@@ -17,6 +17,19 @@
         },
         {
             "command": "dotnet",
+            "label": "dotnet clean",
+            "isBackground": true,
+            "type": "shell",
+            "args": [
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/Songhay.Blog"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "command": "dotnet",
             "label": "dotnet run",
             "isBackground": true,
             "type": "shell",
@@ -30,11 +43,37 @@
         },
         {
             "command": "npm",
+            "label": "npm: audit",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "audit"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
             "label": "npm: install",
             "isBackground": false,
             "type": "shell",
             "args": [
                 "install"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "npm: outdated",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "outdated"
             ],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
