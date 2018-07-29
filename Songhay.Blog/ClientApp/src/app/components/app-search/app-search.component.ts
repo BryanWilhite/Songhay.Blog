@@ -3,6 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
 
+/**
+ * app search component
+ *
+ * @export
+ * @class AppSearchComponent
+ * @implements {OnInit}
+ */
 @Component({
     selector: 'app-search',
     templateUrl: './app-search.component.html',
@@ -14,9 +21,36 @@ export class AppSearchComponent implements OnInit {
         private route: ActivatedRoute
     ) {}
 
+    /**
+     * the current page of search results
+     *
+     * @type {number}
+     * @memberof AppSearchComponent
+     */
     currentPage: number;
+
+    /**
+     * when true search results are first loaded
+     *
+     * @type {boolean}
+     * @memberof AppSearchComponent
+     */
     isFirstLoaded: boolean;
+
+    /**
+     * search term
+     *
+     * @type {string}
+     * @memberof AppSearchComponent
+     */
     searchTerm: string;
+
+    /**
+     * size of all paginated items
+     *
+     * @type {number}
+     * @memberof AppSearchComponent
+     */
     totalSetSize: number;
 
     private pagingJson: any;
