@@ -13,7 +13,6 @@ import { RoutingModule } from './routing.module';
 import { BlogEntriesService } from './services/songhay-blog-entries.service';
 import { CssUtility } from './services/songhay-css.utility';
 import { MathUtility } from './services/songhay-math.utility';
-import { RestPagingMetadata } from './services/songhay-rest-paging-metadata';
 
 import { AppComponent } from './components/app.component';
 import { AppBlogEntryComponent } from './components/app-blog-entry/app-blog-entry.component';
@@ -49,8 +48,7 @@ import { AppSearchCommandComponent } from './components/app-search-command/app-s
     providers: [
         BlogEntriesService,
         CssUtility,
-        MathUtility,
-        RestPagingMetadata
+        MathUtility
     ],
     bootstrap: [AppComponent]
 })
