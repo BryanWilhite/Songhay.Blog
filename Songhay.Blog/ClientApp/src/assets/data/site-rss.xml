@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 26 Jul 2018 17:52:51 GMT</pubDate>
+  <channel><pubDate>Mon, 30 Jul 2018 23:33:13 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Using Color Psychology for Better Website Results” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/using-color-psychology-for-better-website-results-and-other-tweeted-links</link>
+  <description>Using Color Psychology for Better Website Results
+      [speckyboy.com] Creating smooth sequential animations with Sass
+      [glennmccomb.com]#webdevelopment “How we designed page previews for Wikipedia — and what could be done with them in the future...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">using-color-psychology-for-better-website-results-and-other-tweeted-links</guid>
+  <pubDate>Mon, 30 Jul 2018 23:30:53 GMT</pubDate>
+</item>
 <item>
   <title>“Everything you need to know about change detection in Angular” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/everything-you-need-to-know-about-change-detection-in-angular-and-other-tweeted-links</link>
@@ -97,15 +107,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">announcing-typescript-2-8-rc-and-other-tweeted-links</guid>
   <pubDate>Tue, 03 Jul 2018 17:27:38 GMT</pubDate>
-</item>
-<item>
-  <title>“Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/yes-finally-here-architecting-ng-apps-with-redux-rxjs-and-nhrx-and-other-tweeted-links</link>
-  <description>Yes!! Finally here! Architecting NG Apps with Redux, RxJS, and NhRx by @chris_noring forward by @josepheames[twitter.com] There's been a lot of confusion and misinformation about Redux going around lately.
-
-I just posted "Redux - Not Dea… [twitter.com]...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">yes-finally-here-architecting-ng-apps-with-redux-rxjs-and-nhrx-and-other-tweeted-links</guid>
-  <pubDate>Mon, 02 Jul 2018 16:31:16 GMT</pubDate>
 </item></channel>
 </rss>
