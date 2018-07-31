@@ -18,26 +18,26 @@ namespace Songhay.Blog.Shell.Tests
         [Ignore("This test is meant to run manually on the Desktop.")]
         [TestMethod]
         [TestProperty("defaultNamespace", "http://www.sitemaps.org/schemas/sitemap/0.9")]
-        [TestProperty("indexJsonFile", @"azure-storage-accounts\songhay\songhayblog-azurewebsites-net\index.json")]
+        [TestProperty("indexJsonFile", @"ClientApp\src\assets\data\index.json")]
         [TestProperty("rootUri", "http://songhayblog.azurewebsites.net")]
-        [TestProperty("sitemapFile", @"Songhay.Blog\Songhay.Blog\ClientApp\src\sitemap.xml")]
+        [TestProperty("sitemapFile", @"ClientApp\src\sitemap.xml")]
         [TestProperty("urlTemplate", "/blog/entry/{slug}")]
         public void ShouldGenerateSitemap()
         {
-            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 5);
+            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var defaultNamespace = XNamespace.Get(this.TestContext.Properties["defaultNamespace"].ToString());
 
             var indexJsonFile = this.TestContext.Properties["indexJsonFile"].ToString();
-            indexJsonFile = Path.Combine(root, indexJsonFile);
+            indexJsonFile = Path.Combine(webProjectInfo.FullName, indexJsonFile);
             this.TestContext.ShouldFindFile(indexJsonFile);
 
             var rootUri = new Uri(this.TestContext.Properties["rootUri"].ToString(), UriKind.Absolute);
 
             var sitemapFile = this.TestContext.Properties["sitemapFile"].ToString();
-            sitemapFile = Path.Combine(root, sitemapFile);
+            sitemapFile = Path.Combine(webProjectInfo.FullName, sitemapFile);
             this.TestContext.ShouldFindFile(sitemapFile);
 
             var urlTemplate = new UriTemplate(this.TestContext.Properties["urlTemplate"].ToString());
@@ -52,9 +52,9 @@ namespace Songhay.Blog.Shell.Tests
             if (sitemap.Root.HasElements) sitemap.Root.Elements().Remove();
             indexEntries.ForEachInEnumerable(i =>
             {
-                var categoryJObject = JObject.Parse(string.Concat("{", i["ItemCategory"].Value<string>(), "}"));
+                var categoryJObject = JObject.Parse(string.Concat("{", i["itemCategory"].Value<string>(), "}"));
 
-                var loc = urlTemplate.BindByPosition(rootUri, i["Slug"].Value<string>());
+                var loc = urlTemplate.BindByPosition(rootUri, i["slug"].Value<string>());
                 var lastmod = string.Format("{0}-{1}-{2}",
                     categoryJObject["year"].Value<string>(),
                     categoryJObject["month"].Value<string>(),
