@@ -1,9 +1,22 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 30 Jul 2018 23:33:13 GMT</pubDate>
+  <channel><pubDate>Wed, 01 Aug 2018 15:51:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>There are at least 🖐 five services that can process your static &amp;lt;form&amp;gt; for you” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</link>
+  <description>There are at least 🖐 five services that can process your static &amp;lt;form&amp;gt; for you: ①
+      [pageclip.co]
+
+      ②…
+      [twitter.com] A Practical Guide to Angular Elements:
+      [nitayneeman.com] People keep asking me about CSS Grid "best prac...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</guid>
+  <pubDate>Wed, 01 Aug 2018 15:48:27 GMT</pubDate>
+</item>
 <item>
   <title>“Using Color Psychology for Better Website Results” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/using-color-psychology-for-better-website-results-and-other-tweeted-links</link>
@@ -91,21 +104,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">behind-the-illusions-impossibly-high-performance-layout-animations-and-other-tweeted-links</guid>
   <pubDate>Fri, 06 Jul 2018 17:24:16 GMT</pubDate>
-</item>
-<item>
-  <title>“…announcing TypeScript 2.8 RC” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/announcing-typescript-2-8-rc-and-other-tweeted-links</link>
-  <description>npm install -g typescript
-    @rc
-
-    ...announcing TypeScript 2.8 RC. We'd &amp;lt;3 some early feedback:
-    [msft.social] 🎊 Great code-through by
-    @andrewheiss
-    "Exploring Minard’s 1812 plot w/ ggplot2"
-    [buff.ly]#rstats…
-    [twitter.c...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">announcing-typescript-2-8-rc-and-other-tweeted-links</guid>
-  <pubDate>Tue, 03 Jul 2018 17:27:38 GMT</pubDate>
 </item></channel>
 </rss>
