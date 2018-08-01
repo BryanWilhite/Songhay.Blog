@@ -17,6 +17,10 @@ form {
         color: $light-primary-text;
     }
 
+    .cell.filter {
+        text-align: right;
+    }
+
     .cell.filter,
     .cell.grouping,
     .cell.nav {
