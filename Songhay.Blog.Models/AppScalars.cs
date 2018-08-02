@@ -23,6 +23,6 @@
         /// <summary>
         /// The render section style headers
         /// </summary>
-        public const string renderSectionStyleBlock = "StyleBlock";
+        public const string renderSectionStyleBlocks = "StyleBlocks";
     }
 }
