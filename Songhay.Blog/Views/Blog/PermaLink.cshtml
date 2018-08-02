@@ -2,8 +2,7 @@
 @{ 
     var absoluteUri = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}";
 }
-@section SocialHeaders
-    {
+@section SocialHeaders {
     <!-- Open Graph protocol meta http://ogp.me/ -->
     <meta name="og:title" content="@Model.Title" />
     <meta name="og:type" content="website" />
@@ -18,10 +17,169 @@
     <meta name="twitter:url" content="@(absoluteUri)" />
 }
 
-@section StyleLinks
-    {
+@section StyleLinks {
     <!-- permalink -->
     <link rel="bookmark" href="@(absoluteUri)" />
+    <style>
+        .entry {
+            background-color: #fff;
+            border-radius: 0.5em;
+            color: #000;
+            margin: 1.5em auto;
+            max-width: 70em;
+            width: 90%;
+            padding: 2em;
+        }
+
+        .entry .entry-date {
+            position: relative;
+
+            span {
+                display: inline-block;
+                margin: 0 0.5em;
+                vertical-align: top;
+            }
+
+            div[data-tweet] {
+                display: inline-block;
+            }
+        }
+
+        .entry .entry-content {
+            padding: 2em;
+            padding-top: 3em;
+        }
+
+        .entry .entry-content .Callout {
+            background-color: #660b00;
+            color: #fff5ee;
+            font-size: 2em;
+            margin: inherit auto 1em;
+            padding: 0.5em;
+            text-align: left;
+            max-width: 75%;
+        }
+
+        .entry .entry-content .Note {
+            background-color: #cf0;
+            margin: inherit auto 1em;
+            padding: 0.5em;
+            text-align: left;
+
+            p {
+                margin: 0;
+                margin: 1em inherit;
+            }
+
+            acronym {
+                cursor: help;
+            }
+        }
+
+        .entry .entry-content p {
+            margin-top: 1.5em;
+        }
+
+        .entry .entry-content ul {
+            list-style-type: square;
+            margin-left: 3em;
+            margin-top: 1.5em;
+
+            li {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .entry .entry-content h2,
+        .entry .entry-content h3,
+        .entry .entry-content h4 {
+            margin-top: 1.5em;
+        }
+
+        .entry .entry-content img {
+            max-width: 90%;
+        }
+
+        .entry .entry-content blockquote,
+        .entry .entry-content .Quote {
+            background-color: #eaeaea;
+            border-left: 10px solid #b21300;
+            margin: 1.5em auto 1em auto;
+            max-width: 75%;
+            padding: 0.25em;
+            text-align: left;
+        }
+
+        .entry .entry-content blockquote p,
+        .entry .entry-content .Quote p {
+            margin: 1.5em;
+        }
+
+        .entry .entry-content code,
+        .entry .entry-content kbd {
+            background-color: #cfc;
+            color: navy;
+            font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
+                monospace;
+            font-size: smaller;
+        }
+        .entry .entry-content pre {
+            background-color: #cfc;
+            color: navy;
+            font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
+                monospace;
+            line-height: 1.5em;
+            margin-bottom: 1.5em;
+            margin-top: 1.5em;
+            overflow: auto;
+            padding: 0.75em 1.625em;
+        }
+
+        .entry .entry-content .sourceCode {
+            pre {
+                white-space: normal;
+
+                code {
+                    .sourceLine {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .entry .entry-content sup {
+            font-size: 1em;
+        }
+
+        .entry .entry-content sup.CleanXhtmlFootnoteReference {
+            background-color: #eaeaea;
+        }
+
+        .entry .entry-content .WordWalkingStickTable {
+            border: 2px solid #063;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.5em;
+            width: 90%;
+        }
+
+        .entry .entry-content .WordWalkingStickTable td {
+            border-top: 1px solid #063;
+        }
+
+        .entry .entry-content .WordWalkingStickTable th {
+            background-color: #063;
+            color: #fff5ee;
+            font-weight: 700;
+        }
+
+        .entry .entry-content .WordWalkingStickTable td,
+        .entry .entry-content .WordWalkingStickTable th {
+            padding: 0.25em;
+            vertical-align: top;
+        }
+    </style>
 }
 <div>
     <div class="container">
