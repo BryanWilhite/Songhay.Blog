@@ -1,4 +1,5 @@
 ﻿@using Songhay
+@using Songhay.Blog.Models
 <!DOCTYPE html>
 @{
     ViewBag.Title = ">Day Path_";
@@ -13,9 +14,12 @@
     <meta name="google-site-verification" content="MyXJp0qYgoTSi472GCarwPFWqvRZAo8khVV_FXV33tI" />
     <meta name="msvalidate.01" content="9C08B066B4967EBE515E0CC7C146DE30" />
 
-    @RenderSection("SocialHeaders", required: false)
+    @RenderSection(AppScalars.renderSectionSocialHeaders, required: false)
 
-    @RenderSection("StyleLinks", required: false)
+    @RenderSection(AppScalars.renderSectionBlogHeaders, required: false)
+
+    @RenderSection(AppScalars.renderSectionStyleBlock, required: false)
+
     <title>@ViewBag.Title</title>
 </head>
 <body>
