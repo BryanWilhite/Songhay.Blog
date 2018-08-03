@@ -17,14 +17,11 @@
     <meta name="twitter:description" content=">Day Path_ Blog…" />
     <meta name="twitter:url" content="@(absoluteUri)" />
 }
-
 @section BlogHeaders {
     <!-- permalink -->
     <link rel="bookmark" href="@(absoluteUri)" />
 }
-
 @section StyleBlocks {
-    <link href="~/assets/css/styles.min.css" rel="stylesheet" />
     <style>
         .entry {
             background-color: #fff;
@@ -37,6 +34,7 @@
         }
 
             .entry .entry-date {
+                margin-bottom: 1rem;
                 position: relative;
             }
 
@@ -181,21 +179,13 @@
             }
     </style>
 }
-<div>
-    <div class="container">
-        <div class="row">
-            <div class="entry body-content col-sm-12">
-                <h2>@Html.Raw(Model.Title)</h2>
-                <div class="entry-date">
-                    <span>@Model.InceptDate.ToString("dddd, MMMM d, yyyy")</span>
-
-                    <!--reference: https://about.twitter.com/resources/buttons-->
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="BryanWilhite">Tweet</a>
-                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-
-                </div>
-                <div class="entry-content">@Html.Raw(Model.Content)</div>
-            </div>
-        </div>
+<div class="entry body-content">
+    <h2><a href="~/blog/entry/@Model.Slug">@Html.Raw(Model.Title)</a></h2>
+    <div class="entry-date">@Model.InceptDate.ToString("dddd, MMMM d, yyyy")</div>
+    <div class="entry-social">
+        <!--reference: https://about.twitter.com/resources/buttons-->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="BryanWilhite">Tweet</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
     </div>
+    <div class="entry-content">@Html.Raw(Model.Content)</div>
 </div>

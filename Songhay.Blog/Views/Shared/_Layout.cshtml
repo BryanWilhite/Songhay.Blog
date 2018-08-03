@@ -1,4 +1,5 @@
 ﻿@using Songhay
+@using Songhay.Blog
 @using Songhay.Blog.Models
 <!DOCTYPE html>
 @{
@@ -18,15 +19,25 @@
 
     @RenderSection(AppScalars.renderSectionBlogHeaders, required: false)
 
+    <link href="~/assets/css/styles.min.css" rel="stylesheet" />
+    <style>
+        .mat-body {
+            margin: 1rem;
+        }
+        .footer {
+            text-align: center;
+        }
+    </style>
+
     @RenderSection(AppScalars.renderSectionStyleBlocks, required: false)
 
     <title>@ViewBag.Title</title>
 </head>
-<body>
-    <h1 class="hidden">DayPath Journal</h1>
+<body class="mat-body mat-app-background mat-typography">
+    <h1>DayPath Journal by @("@BryanWilhite")</h1>
     @RenderBody()
     <div class="footer">
-        <span>@(FrameworkAssemblyUtility.GetAssemblyInfo(this.GetType().Assembly))</span>
+        <span>@(FrameworkAssemblyUtility.GetAssemblyInfo(typeof(Program).Assembly))</span>
     </div>
     @RenderSection("scripts", required: false)
 </body>
