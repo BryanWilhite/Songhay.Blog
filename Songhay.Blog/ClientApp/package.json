@@ -11,7 +11,7 @@
         "build": "ng build --extract-css",
         "postbuild": "npm run asp-core:sass && npm run asp-core:cpx && npm run asp-core:replace-in-file",
         "build:prod": "ng build --prod --extract-css --environment=prod",
-        "postbuild:prod": "npm run asp-core:sass && npm run asp-core:cpx && npm run asp-core:replace",
+        "postbuild:prod": "npm run asp-core:sass && npm run asp-core:cpx && npm run asp-core:replace-in-file",
         "build:staging": "ng build --prod --extract-css",
         "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
         "test": "ng test",
