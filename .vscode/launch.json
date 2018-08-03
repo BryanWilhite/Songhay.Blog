@@ -8,7 +8,7 @@
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "dotnet build",
+            "preLaunchTask": "dotnet build [process]",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/Songhay.Blog/bin/Debug/netcoreapp2.0/Songhay.Blog.dll",
             "args": [],

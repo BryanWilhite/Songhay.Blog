@@ -17,6 +17,20 @@
         },
         {
             "command": "dotnet",
+            "label": "dotnet build [process]",
+            "isBackground": false,
+            "type": "process",
+            "args": [
+                "build",
+                "Songhay.Blog.sln"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "command": "dotnet",
             "label": "dotnet clean",
             "isBackground": true,
             "type": "shell",
