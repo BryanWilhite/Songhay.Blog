@@ -77,7 +77,7 @@ namespace Songhay.Blog.Controllers
             {
                 var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
                 traceSource.TraceVerbose("Returning repository entry...");
-                return this.View("permalink", blogEntry.WithGitHubDirectivesTranscluded());
+                return this.View("PermaLink", blogEntry.WithGitHubDirectivesTranscluded());
             }
             catch (FileNotFoundException ex)
             {
