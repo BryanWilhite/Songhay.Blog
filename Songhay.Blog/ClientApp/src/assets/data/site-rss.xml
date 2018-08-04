@@ -1,9 +1,20 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 04 Aug 2018 00:24:05 GMT</pubDate>
+  <channel><pubDate>Sat, 04 Aug 2018 00:31:48 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Implementing an Infinite Scroll with Vue.js” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</link>
+  <description>Implementing an Infinite Scroll with Vue.js:
+      [alligator.io] Build a Basic CRUD App with Vue.js and Node by sitepointdotcom
+      [javascriptkicks.com]#javascript#vuejs#nodejs via JavaScriptKicks How
+      #CSS works: Parsing &amp;amp; painting CSS i...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</guid>
+  <pubDate>Sat, 04 Aug 2018 00:30:25 GMT</pubDate>
+</item>
 <item>
   <title>“There are at least 🖐 five services that can process your static &amp;lt;form&amp;gt; for you” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</link>
@@ -96,13 +107,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">most-common-mistakes-beginners-make-in-xamarin-forms-and-other-tweeted-links</guid>
   <pubDate>Mon, 09 Jul 2018 21:05:21 GMT</pubDate>
-</item>
-<item>
-  <title>“Behind the Illusions—Impossibly High-Performance Layout Animations” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/behind-the-illusions-impossibly-high-performance-layout-animations-and-other-tweeted-links</link>
-  <description>Behind the Illusions - Impossibly High-Performance Layout Animations https://t.co/D8hPKmAXG7 Easy navigation between #aspnetcore Razor Page cshtml &amp;amp; associated Page Model C# file via F7 keypress is now live i… https://t.co/YDtc01FpU3 Web Assembly... ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">behind-the-illusions-impossibly-high-performance-layout-animations-and-other-tweeted-links</guid>
-  <pubDate>Fri, 06 Jul 2018 17:24:16 GMT</pubDate>
 </item></channel>
 </rss>
