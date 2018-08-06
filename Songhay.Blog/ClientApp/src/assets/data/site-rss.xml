@@ -1,9 +1,20 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 04 Aug 2018 00:31:48 GMT</pubDate>
+  <channel><pubDate>Mon, 06 Aug 2018 21:09:14 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“SVG Polygon Generator” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/svg-polygon-generator-and-other-tweeted-links</link>
+  <description>SVG Polygon Generator
+      [codepen.io] Design—and designers—seem perpetually threatened by democratization. -
+      [subtraction.com] -
+      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">svg-polygon-generator-and-other-tweeted-links</guid>
+  <pubDate>Mon, 06 Aug 2018 21:06:48 GMT</pubDate>
+</item>
 <item>
   <title>“Implementing an Infinite Scroll with Vue.js” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</link>
@@ -99,13 +110,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">integrate-shiny-apps-into-regular-webpages-with-responsive-iframe-resizing-and-other-tweeted-links</guid>
   <pubDate>Tue, 10 Jul 2018 20:14:57 GMT</pubDate>
-</item>
-<item>
-  <title>“Most common mistakes beginners make in Xamarin.Forms” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/most-common-mistakes-beginners-make-in-xamarin-forms-and-other-tweeted-links</link>
-  <description>Most common mistakes beginners make in Xamarin.Forms [ift.tt]#Xamarin It’s 2018 and I still can’t center a website both vertically and horizontally. Can I use—? Is a great service, but its name is misleading, i.e. even if targeted browsers don’t support ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">most-common-mistakes-beginners-make-in-xamarin-forms-and-other-tweeted-links</guid>
-  <pubDate>Mon, 09 Jul 2018 21:05:21 GMT</pubDate>
 </item></channel>
 </rss>
