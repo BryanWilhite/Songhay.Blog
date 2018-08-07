@@ -29,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Songhay.Blog.Models\Songhay.Blog.Models.csproj" />
     <ProjectReference Include="..\Songhay.Blog.Repository\Songhay.Blog.Repository.csproj" />
+    <ProjectReference Include="..\Songhay.Blog\Songhay.Blog.csproj" />
   </ItemGroup>
 
 </Project>
