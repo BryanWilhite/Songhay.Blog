@@ -1,9 +1,20 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 06 Aug 2018 21:09:14 GMT</pubDate>
+  <channel><pubDate>Tue, 07 Aug 2018 17:01:21 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Glide.js: A Dependency-Free ES6 Slider and Carousel” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</link>
+  <description>Glide.js: A Dependency-Free ES6 Slider and Carousel -
+      [glidejs.com] ("Designed to slide. No less, no more" says the creator.) A Responsive Accessible Table
+      [adrianroselli.com] Since their “redesign”
+      @HSBC_UK online banking is now bar...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</guid>
+  <pubDate>Tue, 07 Aug 2018 16:59:20 GMT</pubDate>
+</item>
 <item>
   <title>“SVG Polygon Generator” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/svg-polygon-generator-and-other-tweeted-links</link>
@@ -102,13 +113,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">introduction-to-using-storybook-for-angular-and-other-tweeted-links</guid>
   <pubDate>Wed, 11 Jul 2018 17:06:28 GMT</pubDate>
-</item>
-<item>
-  <title>“Integrate shiny apps into regular webpages with responsive iframe resizing” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/integrate-shiny-apps-into-regular-webpages-with-responsive-iframe-resizing-and-other-tweeted-links</link>
-  <description>New blogpost: Integrate shiny apps into regular webpages with responsive iframe resizing #rstats#rshiny… [twitter.com] Want to learn CSS Grid? Here’s a free full-length course: 14 interactive screencasts to take you from beginner to a… [twitter.com] Usin...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">integrate-shiny-apps-into-regular-webpages-with-responsive-iframe-resizing-and-other-tweeted-links</guid>
-  <pubDate>Tue, 10 Jul 2018 20:14:57 GMT</pubDate>
 </item></channel>
 </rss>
