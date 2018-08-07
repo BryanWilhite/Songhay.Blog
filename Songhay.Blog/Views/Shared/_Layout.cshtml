@@ -27,6 +27,12 @@
         .footer {
             text-align: center;
         }
+
+        .footer > .server-assembly-info {
+            display: inline-block;
+            font-size: 0.75rem;
+            white-space: pre-line;
+        }
     </style>
 
     @RenderSection(AppScalars.renderSectionStyleBlocks, required: false)
@@ -37,7 +43,7 @@
     <h1>DayPath Journal by @("@BryanWilhite")</h1>
     @RenderBody()
     <div class="footer">
-        <span>@(FrameworkAssemblyUtility.GetAssemblyInfo(typeof(Program).Assembly))</span>
+        <span class="server-assembly-info">@(FrameworkAssemblyUtility.GetAssemblyInfo(typeof(Program).Assembly))</span>
     </div>
     @RenderSection("scripts", required: false)
 </body>

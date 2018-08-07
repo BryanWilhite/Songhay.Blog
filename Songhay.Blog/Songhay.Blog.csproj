@@ -10,6 +10,14 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+
+    <Authors>Bryan D. Wilhite</Authors>
+    <Company>Songhay System</Company>
+    <RepositoryUrl>https://github.com/BryanWilhite/Songhay.Blog</RepositoryUrl>
+    <Description>My current technical blogging solution for my public, self-education.</Description>
+    <Version>2.0.0</Version>
+    <Copyright>© Bryan D. Wilhite 2018</Copyright>
+
   </PropertyGroup>
 
   <ItemGroup>
