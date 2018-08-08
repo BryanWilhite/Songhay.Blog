@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 07 Aug 2018 17:01:21 GMT</pubDate>
+  <channel><pubDate>Wed, 08 Aug 2018 17:48:10 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“How to make responsiveness super simple with CSS Variables” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</link>
+  <description>How to make responsiveness super simple with CSS Variables A quick tutorial on how to create responsive websites i…
+      [twitter.com] The 3.0 releases of our aXe
+      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</guid>
+  <pubDate>Wed, 08 Aug 2018 17:41:02 GMT</pubDate>
+</item>
 <item>
   <title>“Glide.js: A Dependency-Free ES6 Slider and Carousel” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</link>
@@ -105,13 +115,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">the-difference-and-relation-between-ui-and-ux-design-and-other-tweeted-links</guid>
   <pubDate>Thu, 12 Jul 2018 22:14:57 GMT</pubDate>
-</item>
-<item>
-  <title>“Introduction to Using Storybook for Angular” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/introduction-to-using-storybook-for-angular-and-other-tweeted-links</link>
-  <description>Introduction to Using Storybook for Angular: [alligator.io]@alligatorio 🎉🐊 Did you know that CSS Grid makes it easy to overlap things? We can use this common-in-print graphic design touch on… [twitter.com] 25+ #CSS Animation Libraries [cssauthor.com] G...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">introduction-to-using-storybook-for-angular-and-other-tweeted-links</guid>
-  <pubDate>Wed, 11 Jul 2018 17:06:28 GMT</pubDate>
 </item></channel>
 </rss>
