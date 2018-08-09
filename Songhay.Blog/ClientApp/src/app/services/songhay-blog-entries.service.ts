@@ -118,13 +118,6 @@ export class BlogEntriesService {
      */
     serverMetaLocation: string;
 
-    initialize(): void {
-        this.index = null;
-        this.isError = false;
-        this.isLoaded = false;
-        this.isLoading = true;
-    }
-
     /**
      * Filters the specified entries with the specified particle.
      *
@@ -370,5 +363,12 @@ export class BlogEntriesService {
             '-' +
             blogEntry.slug
         );
+    }
+
+    private initialize(): void {
+        this.index = null;
+        this.isError = false;
+        this.isLoaded = false;
+        this.isLoading = true;
     }
 }
