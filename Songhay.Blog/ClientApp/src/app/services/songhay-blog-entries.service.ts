@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
+import { AssemblyInfo } from '../models/songhay-assembly-info';
 import { BlogEntry } from '../models/songhay-blog-entry';
 
 /**
@@ -24,16 +25,17 @@ export class BlogEntriesService {
         this.baseApiRoute = './api/blog';
         this.baseApiSearchRoute = './api/search/blog';
         this.indexLocation = './assets/data/index.json'; // TODO: inject this from config?
+        this.serverMetaLocation = './assets/data/server-meta.json';
         this.initialize();
     }
 
     /**
-     * Returns the injected @type {Http} from the DI container.
+     * Returns server assembly info.
      *
-     * @type {Http}
+     * @type {AssemblyInfo}
      * @memberof BlogEntriesService
      */
-    client: Http;
+    assemblyInfo: AssemblyInfo;
 
     /**
      * Returns the base, relative Blog API location.
@@ -50,6 +52,14 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     baseApiSearchRoute: string;
+
+    /**
+     * Returns the injected @type {Http} from the DI container.
+     *
+     * @type {Http}
+     * @memberof BlogEntriesService
+     */
+    client: Http;
 
     /**
      * Returns the @type {BlogEntry}.
@@ -100,6 +110,14 @@ export class BlogEntriesService {
      */
     isLoading: boolean;
 
+    /**
+     * Server metadata location
+     *
+     * @type {string}
+     * @memberof BlogEntriesService
+     */
+    serverMetaLocation: string;
+
     initialize(): void {
         this.index = null;
         this.isError = false;
@@ -108,7 +126,7 @@ export class BlogEntriesService {
     }
 
     /**
-     * filters the specified entries with the specified particle
+     * Filters the specified entries with the specified particle.
      *
      * @param {BlogEntry[]} entries
      * @param {string} particle
@@ -232,6 +250,56 @@ export class BlogEntriesService {
         return promise;
     }
 
+    /**
+     * Promises to load server metadata.
+     *
+     * @returns {Promise<HttpResponse>}
+     * @memberof BlogEntriesService
+     */
+    loadServerMeta(): Promise<Response> {
+        this.initialize();
+
+        const wrapPromise = (resolve: any, reject: any) => {
+            this.client
+                .get(this.serverMetaLocation)
+                .toPromise()
+                .then(
+                    responseOrVoid => {
+                        const response = responseOrVoid as Response;
+                        if (!response) {
+                            return;
+                        }
+
+                        this.assemblyInfo = response.json() as AssemblyInfo;
+                        if (!this.index) {
+                            return;
+                        }
+
+                        this.isLoaded = true;
+                        this.isLoading = false;
+
+                        resolve(responseOrVoid);
+                    },
+                    error => {
+                        this.isError = true;
+                        this.isLoaded = false;
+                        reject(error);
+                    }
+                );
+        };
+
+        const promise = new Promise<Response>(wrapPromise);
+        return promise;
+    }
+
+    /**
+     * Promises to search index data.
+     *
+     * @param {string} searchText
+     * @param {number} skipValue
+     * @returns {Promise<Response>}
+     * @memberof BlogEntriesService
+     */
     search(searchText: string, skipValue: number): Promise<Response> {
         this.initialize();
 
