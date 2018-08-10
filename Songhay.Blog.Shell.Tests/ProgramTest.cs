@@ -13,7 +13,6 @@ namespace Songhay.Blog.Shell.Tests
     {
         public TestContext TestContext { get; set; }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestMethod]
         [TestProperty("serverMetadataFile", @"ClientApp\src\assets\data\server-meta.json")]
         public void ShouldGenerateServerMetadata()

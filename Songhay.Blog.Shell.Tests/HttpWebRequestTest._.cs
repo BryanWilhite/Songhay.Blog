@@ -57,7 +57,6 @@ namespace Songhay.Blog.Shell.Tests
             Assert.IsNotNull(azureSearchPostTemplate, "The expected Azure Search template is not here.");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("uri", "http://ow.ly/87kA3076kM1")]
@@ -72,7 +71,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"Location: {response.Headers.Location}");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldExpandUris.json")]
@@ -124,7 +122,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine("XHTML:\n{0}", xhtml);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("htmlPath", @"Songhay.Blog.Shell.Tests\html\ShouldGenerateBlogEntry.html")]

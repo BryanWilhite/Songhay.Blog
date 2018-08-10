@@ -12,7 +12,6 @@ namespace Songhay.Blog.Shell.Tests
 {
     public partial class HttpWebRequestTest
     {
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         public async Task ShouldDeleteAzureSearchServiceComponent()
@@ -30,7 +29,6 @@ namespace Songhay.Blog.Shell.Tests
             Assert.IsTrue(response.StatusCode == HttpStatusCode.NoContent, "The expected status code is not here.");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldGenerateAzureSearchServiceDataSource.json")]
@@ -64,7 +62,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldGenerateAzureSearchServiceIndex.json")]
@@ -93,7 +90,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("jsonPath", @"json\ShouldGenerateAzureSearchServiceIndexer.json")]
@@ -122,7 +118,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"response: {await response.Content.ReadAsStringAsync()}");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         public async Task ShouldGetAzureSearchServiceComponent()
@@ -139,7 +134,6 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.WriteLine($"response: {response}");
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("searchText", "ASP.NET")]
