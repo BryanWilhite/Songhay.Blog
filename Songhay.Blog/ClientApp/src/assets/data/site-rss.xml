@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Wed, 08 Aug 2018 17:48:10 GMT</pubDate>
+  <channel><pubDate>Fri, 10 Aug 2018 17:27:37 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2018-08</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-08</link>
+  <description>Going forward from here my passive-voice intention is to keep track of myself monthly. My work habits have always included keeping a private journal. In the “early years,” one Microsoft Word document per year was enough. As my software-development surfac...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2018-08</guid>
+  <pubDate>Fri, 10 Aug 2018 17:25:50 GMT</pubDate>
+</item>
 <item>
   <title>“How to make responsiveness super simple with CSS Variables” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</link>
@@ -103,17 +111,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">analyzing-the-hamburger-menu-in-web-design-and-other-tweeted-links</guid>
   <pubDate>Mon, 23 Jul 2018 16:03:29 GMT</pubDate>
-</item>
-<item>
-  <title>“The Difference and Relation Between #UI and #UX Design” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/the-difference-and-relation-between-ui-and-ux-design-and-other-tweeted-links</link>
-  <description>The Difference and Relation Between
-    #UI and
-    #UX Design (In 30 Seconds)
-    [apple.news] As of a week ago, Ruby Sass was officially deprecated. Read about what that means for the project and for you here:
-    [sass.logdown.com] Flexbox and Gri...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">the-difference-and-relation-between-ui-and-ux-design-and-other-tweeted-links</guid>
-  <pubDate>Thu, 12 Jul 2018 22:14:57 GMT</pubDate>
 </item></channel>
 </rss>

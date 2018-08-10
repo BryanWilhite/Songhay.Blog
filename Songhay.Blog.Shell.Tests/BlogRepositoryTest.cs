@@ -45,7 +45,6 @@ namespace Songhay.Blog.Shell.Tests
             cloudStorageAccount = (new ConfigurationBuilder()).ToCloudStorageAccount(projectInfo.FullName);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -158,7 +157,6 @@ namespace Songhay.Blog.Shell.Tests
             });
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -225,7 +223,6 @@ namespace Songhay.Blog.Shell.Tests
             File.WriteAllText(entryOutputPath, json);
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -302,7 +299,6 @@ namespace Songhay.Blog.Shell.Tests
             File.WriteAllText(rssPath, builder.ToString());
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -341,7 +337,6 @@ namespace Songhay.Blog.Shell.Tests
 
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
@@ -378,7 +373,6 @@ namespace Songhay.Blog.Shell.Tests
             File.WriteAllText(htmlFile, xDoc.ToString());
         }
 
-        [Ignore("This test is meant to run manually on the Desktop.")]
         [TestCategory("Integration")]
         [TestMethod]
         [TestProperty("markdownPath", @"E:\~shares\sourceRoot\Git\Blog\2016-12\Working in markdown, leaving behind typing a typeface.md")]
