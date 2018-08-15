@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
+import { AppScalars } from '../models/songhay-app-scalars';
 import { AssemblyInfo } from '../models/songhay-assembly-info';
 import { BlogEntry } from '../models/songhay-blog-entry';
 
@@ -21,11 +22,6 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     constructor(private http: Http) {
-        this.client = this.http;
-        this.baseApiRoute = './api/blog';
-        this.baseApiSearchRoute = './api/search/blog';
-        this.indexLocation = './assets/data/index.json'; // TODO: inject this from config?
-        this.serverMetaLocation = './assets/data/server-meta.json';
         this.initialize();
     }
 
@@ -36,22 +32,6 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     assemblyInfo: AssemblyInfo;
-
-    /**
-     * Returns the base, relative Blog API location.
-     *
-     * @type {string}
-     * @memberof BlogEntriesService
-     */
-    baseApiRoute: string;
-
-    /**
-     * Returns the base for search, relative Blog API location.
-     *
-     * @type {string}
-     * @memberof BlogEntriesService
-     */
-    baseApiSearchRoute: string;
 
     /**
      * Returns the injected @type {Http} from the DI container.
@@ -78,14 +58,6 @@ export class BlogEntriesService {
     index: BlogEntry[];
 
     /**
-     * Returns the @type {string}, locating Index JSON.
-     *
-     * @type {string}
-     * @memberof BlogEntriesService
-     */
-    indexLocation: string;
-
-    /**
      * Returns true when the last API promise is rejected.
      *
      * @type {boolean}
@@ -109,14 +81,6 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     isLoading: boolean;
-
-    /**
-     * Server metadata location
-     *
-     * @type {string}
-     * @memberof BlogEntriesService
-     */
-    serverMetaLocation: string;
 
     /**
      * Filters the specified entries with the specified particle.
@@ -156,7 +120,7 @@ export class BlogEntriesService {
 
         const uri = entryLocation
             ? entryLocation
-            : `${this.baseApiRoute}/entry/${slug}`;
+            : `${AppScalars.baseApiRoute}/entry/${slug}`;
 
         const wrapPromise = (resolve: any, reject: any) => {
             this.client
@@ -199,7 +163,7 @@ export class BlogEntriesService {
 
         const wrapPromise = (resolve: any, reject: any) => {
             this.client
-                .get(this.indexLocation)
+                .get(AppScalars.indexLocation)
                 .toPromise()
                 .then(
                     responseOrVoid => {
@@ -254,7 +218,7 @@ export class BlogEntriesService {
 
         const wrapPromise = (resolve: any, reject: any) => {
             this.client
-                .get(this.serverMetaLocation)
+                .get(AppScalars.serverMetaLocation)
                 .toPromise()
                 .then(
                     responseOrVoid => {
@@ -296,7 +260,7 @@ export class BlogEntriesService {
     search(searchText: string, skipValue: number): Promise<Response> {
         this.initialize();
 
-        const uri = `${this.baseApiSearchRoute}/${searchText}/${skipValue}`;
+        const uri = `${AppScalars.baseApiSearchRoute}/${searchText}/${skipValue}`;
 
         const wrapPromise = (resolve: any, reject: any) => {
             this.client
