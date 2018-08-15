@@ -21,7 +21,7 @@ export class BlogEntriesService {
      * @param {Http} client
      * @memberof BlogEntriesService
      */
-    constructor(private http: Http) {
+    constructor(private client: Http) {
         this.initialize();
     }
 
@@ -32,14 +32,6 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     assemblyInfo: AssemblyInfo;
-
-    /**
-     * Returns the injected @type {Http} from the DI container.
-     *
-     * @type {Http}
-     * @memberof BlogEntriesService
-     */
-    client: Http;
 
     /**
      * Returns the @type {BlogEntry}.
@@ -130,10 +122,15 @@ export class BlogEntriesService {
                     responseOrVoid => {
                         const response = responseOrVoid as Response;
                         if (!response) {
+                            reject('response is not truthy.');
                             return;
                         }
 
                         this.entry = response.json() as BlogEntry;
+                        if (!this.entry) {
+                            reject('Blog entry is not truthy.');
+                            return;
+                        }
 
                         this.isLoaded = true;
                         this.isLoading = false;
@@ -174,6 +171,7 @@ export class BlogEntriesService {
 
                         this.index = response.json() as BlogEntry[];
                         if (!this.index) {
+                            reject('index is not truthy.');
                             return;
                         }
 
@@ -228,7 +226,8 @@ export class BlogEntriesService {
                         }
 
                         this.assemblyInfo = response.json() as AssemblyInfo;
-                        if (!this.index) {
+                        if (!this.assemblyInfo) {
+                            reject('assemblyInfo is not truthy.');
                             return;
                         }
 

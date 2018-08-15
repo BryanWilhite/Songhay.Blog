@@ -6,6 +6,7 @@ import {
     Response,
     XHRBackend
 } from '@angular/http';
+import { AppScalars } from '../models/songhay-app-scalars';
 import { BlogEntriesService } from './songhay-blog-entries.service';
 import { MathUtility } from './songhay-math.utility';
 
@@ -40,9 +41,11 @@ describe('BlogEntriesService', () => {
     });
 
     it('should load index', done => {
+        AppScalars.indexLocation = './base/src/assets/data/index.json';
+
         service = testBed.get(BlogEntriesService);
-        service.indexLocation = './base/src/assets/data/index.json';
         expect(service).not.toBeNull();
+
         service
             .loadIndex()
             .then(responseOrVoid => {
@@ -92,9 +95,12 @@ describe('BlogEntriesService', () => {
     });
 
     it('should load server meta', done => {
+
+        AppScalars.serverMetaLocation = './base/src/assets/data/server-meta.json';
+
         service = testBed.get(BlogEntriesService);
-        service.serverMetaLocation = './base/src/assets/data/server-meta.json';
         expect(service).not.toBeNull();
+
         service
             .loadServerMeta()
             .then(responseOrVoid => {
@@ -139,9 +145,10 @@ describe('BlogEntriesService', () => {
     });
 
     it('should load entry from live service (when available)', done => {
+
+        AppScalars.baseApiRoute = 'https://songhayblog-staging.azurewebsites.net/api/blog';
+
         service = testBed.get(BlogEntriesService);
-        service.baseApiRoute =
-            'https://songhayblog-staging.azurewebsites.net/api/blog';
         expect(service).not.toBeNull();
 
         const slug = 'asp-net-web-api-ready-state-4-2017';
