@@ -114,38 +114,17 @@ export class BlogEntriesService {
             ? entryLocation
             : `${AppScalars.baseApiRoute}/entry/${slug}`;
 
-        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
-            this.client
-                .get(uri)
-                .toPromise()
-                .then(
-                    responseOrVoid => {
-                        const response = responseOrVoid as Response;
-                        if (!response) {
-                            reject('response is not truthy.');
-                            return;
-                        }
-
-                        this.entry = response.json() as BlogEntry;
-                        if (!this.entry) {
-                            reject('Blog entry is not truthy.');
-                            return;
-                        }
-
-                        this.isLoaded = true;
-                        this.isLoading = false;
-
-                        resolve(responseOrVoid);
-                    },
-                    error => {
-                        this.isError = true;
-                        this.isLoaded = false;
-                        reject(error);
-                    }
-                );
+        const inceptionExecutor = (response: Response, reject: any) => {
+            this.entry = response.json() as BlogEntry;
+            if (!this.entry) {
+                reject('Blog entry is not truthy.');
+                return;
+            }
         };
 
-        const promise = new Promise<Response>(wrapPromise);
+        const promise = new Promise<Response>(
+            this.getExecutor(AppScalars.baseApiRoute, inceptionExecutor)
+        );
         return promise;
     }
 
@@ -158,50 +137,29 @@ export class BlogEntriesService {
     loadIndex(): Promise<Response> {
         this.initialize();
 
-        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
-            this.client
-                .get(AppScalars.indexLocation)
-                .toPromise()
-                .then(
-                    responseOrVoid => {
-                        const response = responseOrVoid as Response;
-                        if (!response) {
-                            return;
-                        }
+        const inceptionExecutor = (response: Response, reject: any) => {
+            console.log({response});
+            this.index = response.json() as BlogEntry[];
+            if (!this.index) {
+                reject('index is not truthy.');
+                return;
+            }
 
-                        this.index = response.json() as BlogEntry[];
-                        if (!this.index) {
-                            reject('index is not truthy.');
-                            return;
-                        }
-
-                        _(this.index).each((blogEntry: BlogEntry) => {
-                            blogEntry.itemCategoryObject = this.getItemCategoryProperties(
-                                blogEntry
-                            );
-                            blogEntry.sortOrdinal = this.getSortOrdinal(
-                                blogEntry
-                            );
-                        });
-
-                        this.index = _(this.index)
-                            .orderBy(['sortOrdinal'], ['desc'])
-                            .value();
-
-                        this.isLoaded = true;
-                        this.isLoading = false;
-
-                        resolve(responseOrVoid);
-                    },
-                    error => {
-                        this.isError = true;
-                        this.isLoaded = false;
-                        reject(error);
-                    }
+            _(this.index).each((blogEntry: BlogEntry) => {
+                blogEntry.itemCategoryObject = this.getItemCategoryProperties(
+                    blogEntry
                 );
+                blogEntry.sortOrdinal = this.getSortOrdinal(blogEntry);
+            });
+
+            this.index = _(this.index)
+                .orderBy(['sortOrdinal'], ['desc'])
+                .value();
         };
 
-        const promise = new Promise<Response>(wrapPromise);
+        const promise = new Promise<Response>(
+            this.getExecutor(AppScalars.indexLocation, inceptionExecutor)
+        );
         return promise;
     }
 
@@ -214,37 +172,17 @@ export class BlogEntriesService {
     loadServerMeta(): Promise<Response> {
         this.initialize();
 
-        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
-            this.client
-                .get(AppScalars.serverMetaLocation)
-                .toPromise()
-                .then(
-                    responseOrVoid => {
-                        const response = responseOrVoid as Response;
-                        if (!response) {
-                            return;
-                        }
-
-                        this.assemblyInfo = response.json() as AssemblyInfo;
-                        if (!this.assemblyInfo) {
-                            reject('assemblyInfo is not truthy.');
-                            return;
-                        }
-
-                        this.isLoaded = true;
-                        this.isLoading = false;
-
-                        resolve(responseOrVoid);
-                    },
-                    error => {
-                        this.isError = true;
-                        this.isLoaded = false;
-                        reject(error);
-                    }
-                );
+        const inceptionExecutor = (response: Response, reject: any) => {
+            this.assemblyInfo = response.json() as AssemblyInfo;
+            if (!this.assemblyInfo) {
+                reject('assemblyInfo is not truthy.');
+                return;
+            }
         };
 
-        const promise = new Promise<Response>(wrapPromise);
+        const promise = new Promise<Response>(
+            this.getExecutor(AppScalars.serverMetaLocation, inceptionExecutor)
+        );
         return promise;
     }
 
@@ -258,18 +196,34 @@ export class BlogEntriesService {
      */
     search(searchText: string, skipValue: number): Promise<Response> {
         this.initialize();
+        const uri = `${
+            AppScalars.baseApiSearchRoute
+        }/${searchText}/${skipValue}`;
+        const promise = new Promise<Response>(this.getExecutor(uri));
+        return promise;
+    }
 
-        const uri = `${AppScalars.baseApiSearchRoute}/${searchText}/${skipValue}`;
-
-        const wrapPromise = (resolve: any, reject: any) => {
+    private getExecutor(
+        url: string,
+        inceptionExecutor?: (response: Response, reject?: any) => void
+    ) {
+        const executor = (
+            resolve: (Response) => void,
+            reject: (any) => void
+        ) => {
             this.client
-                .get(uri)
+                .get(url)
                 .toPromise()
                 .then(
                     responseOrVoid => {
                         const response = responseOrVoid as Response;
                         if (!response) {
+                            reject('response is not truthy.');
                             return;
+                        }
+
+                        if (inceptionExecutor) {
+                            inceptionExecutor(response, reject);
                         }
 
                         this.isLoaded = true;
@@ -284,9 +238,7 @@ export class BlogEntriesService {
                     }
                 );
         };
-
-        const promise = new Promise<Response>(wrapPromise);
-        return promise;
+        return executor;
     }
 
     private getItemCategoryProperties(blogEntry: BlogEntry): object {

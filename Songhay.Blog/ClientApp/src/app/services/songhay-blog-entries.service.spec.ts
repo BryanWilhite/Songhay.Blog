@@ -13,16 +13,9 @@ import { MathUtility } from './songhay-math.utility';
 describe('BlogEntriesService', () => {
     const math: MathUtility = new MathUtility();
     const testBed: TestBed = getTestBed();
-    const timeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
     let service: BlogEntriesService;
 
-    afterEach(() => (jasmine.DEFAULT_TIMEOUT_INTERVAL = timeout));
     beforeEach(() => {
-        jasmine.DEFAULT_TIMEOUT_INTERVAL = timeout * 2;
-        console.log({
-            DEFAULT_TIMEOUT_INTERVAL: jasmine.DEFAULT_TIMEOUT_INTERVAL
-        });
-
         TestBed.configureTestingModule({
             providers: [
                 BaseRequestOptions,
