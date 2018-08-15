@@ -114,7 +114,7 @@ export class BlogEntriesService {
             ? entryLocation
             : `${AppScalars.baseApiRoute}/entry/${slug}`;
 
-        const wrapPromise = (resolve: any, reject: any) => {
+        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
             this.client
                 .get(uri)
                 .toPromise()
@@ -158,7 +158,7 @@ export class BlogEntriesService {
     loadIndex(): Promise<Response> {
         this.initialize();
 
-        const wrapPromise = (resolve: any, reject: any) => {
+        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
             this.client
                 .get(AppScalars.indexLocation)
                 .toPromise()
@@ -214,7 +214,7 @@ export class BlogEntriesService {
     loadServerMeta(): Promise<Response> {
         this.initialize();
 
-        const wrapPromise = (resolve: any, reject: any) => {
+        const wrapPromise = (resolve: (Response) => void, reject: (any) => void) => {
             this.client
                 .get(AppScalars.serverMetaLocation)
                 .toPromise()
