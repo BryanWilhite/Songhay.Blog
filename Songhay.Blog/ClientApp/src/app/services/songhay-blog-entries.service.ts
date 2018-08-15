@@ -253,7 +253,6 @@ export class BlogEntriesService {
         this.initialize();
 
         const wrapPromise = (resolve: any, reject: any) => {
-            console.log({ serverMetaLocation: this.serverMetaLocation });
             this.client
                 .get(this.serverMetaLocation)
                 .toPromise()
