@@ -84,6 +84,51 @@ describe('BlogEntriesService', () => {
             });
     });
 
+    it('should load server meta', done => {
+        service = testBed.get(BlogEntriesService);
+        service.serverMetaLocation = './base/src/assets/data/server-meta.json';
+        expect(service).not.toBeNull();
+        service
+            .loadServerMeta()
+            .then(responseOrVoid => {
+                const response = responseOrVoid as Response;
+                expect(response).toBeDefined(
+                    'The expected response is not defined.'
+                );
+                expect(response).not.toBeNull(
+                    'The expected response is not here.'
+                );
+                expect(response.ok).toBe(
+                    true,
+                    'The expected OK response is not here.'
+                );
+
+                expect(service.isError).toEqual(
+                    false,
+                    'Service in error state is unexpected.'
+                );
+                expect(service.isLoaded).toEqual(
+                    true,
+                    'The expected Service loaded state is not here.'
+                );
+                expect(service.isLoading).toEqual(
+                    false,
+                    'The expected Service loading state is not here.'
+                );
+
+                expect(service.assemblyInfo).not.toBeNull(
+                    'The expected Assembly Info is not here.'
+                );
+
+                done();
+            })
+            .catch(response => {
+                console.log('loadServerMeta() catch response: ', response);
+
+                done();
+            });
+    });
+
     it('should load entry from live service (when available)', done => {
         service = testBed.get(BlogEntriesService);
         service.baseApiRoute =
