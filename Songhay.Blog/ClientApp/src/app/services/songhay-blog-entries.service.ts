@@ -123,7 +123,7 @@ export class BlogEntriesService {
         };
 
         const promise = new Promise<Response>(
-            this.getExecutor(AppScalars.baseApiRoute, inceptionExecutor)
+            this.getExecutor(uri, inceptionExecutor)
         );
         return promise;
     }
@@ -173,7 +173,7 @@ export class BlogEntriesService {
         this.initialize();
 
         const inceptionExecutor = (response: Response, reject: any) => {
-            this.assemblyInfo = response.json() as AssemblyInfo;
+            this.assemblyInfo = response.json()['assemblyInfo'] as AssemblyInfo;
             if (!this.assemblyInfo) {
                 reject('assemblyInfo is not truthy.');
                 return;
