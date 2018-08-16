@@ -32,12 +32,12 @@
     <router-outlet></router-outlet>
     <div class="app footer" fxLayout="row">
         <div fxFlex="50">
-            <mat-icon color="accent" svgIcon="rx:mdi_angular_24px" title="Angular {{frameworkVersion}}"></mat-icon>
-            <span class="framework version" title="Angular {{frameworkVersion}}">{{frameworkVersion}}</span>
+            <mat-icon color="accent" svgIcon="rx:mdi_angular_24px" title="Angular {{clientFrameworkVersion}}"></mat-icon>
+            <span class="framework version" title="Angular {{clientFrameworkVersion}}">{{clientFrameworkVersion}}</span>
         </div>
         <div fxFlex="50">
-            <mat-icon *ngIf="indexService.isLoaded" color="accent" svgIcon="rx:mdi_azure_24px" title="Azure Web App {{indexService.assemblyInfo.assemblyVersion}}"></mat-icon>
-            <span *ngIf="indexService.isLoaded" class="server version" title="{{indexService.assemblyInfo.assemblyTitle}} {{indexService.assemblyInfo.assemblyVersion}} {{indexService.assemblyInfo.assemblyCopyright}}">{{indexService.assemblyInfo.assemblyVersion}}</span>
+            <mat-icon *ngIf="indexService.isLoaded" color="accent" svgIcon="rx:mdi_azure_24px" title="Azure Web App {{serverAssemblyVersion}}"></mat-icon>
+            <span *ngIf="indexService.isLoaded" class="server version" title="{{serverAssemblyInfo}}">{{serverAssemblyVersion}}</span>
         </div>
     </div>
 </div>

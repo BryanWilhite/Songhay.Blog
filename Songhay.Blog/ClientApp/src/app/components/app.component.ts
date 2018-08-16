@@ -30,7 +30,23 @@ export class AppComponent {
      * @type {string}
      * @memberof AppComponent
      */
-    frameworkVersion: string;
+    clientFrameworkVersion: string;
+
+    /**
+     * server info
+     *
+     * @type {string}
+     * @memberof AppComponent
+     */
+    serverAssemblyInfo: string;
+
+    /**
+     * server version
+     *
+     * @type {string}
+     * @memberof AppComponent
+     */
+    serverAssemblyVersion: string;
 
     /**
      *Creates an instance of AppComponent.
@@ -50,6 +66,19 @@ export class AppComponent {
         );
 
         this.appTitle = '>Day Path_';
-        this.frameworkVersion = `${VERSION.major}.${VERSION.minor}.${VERSION.patch}`;
+
+        this.clientFrameworkVersion = `${VERSION.major}.${VERSION.minor}.${
+            VERSION.patch
+        }`;
+
+        indexService.loadAppData().then(() => {
+            this.serverAssemblyInfo = `${
+                indexService.assemblyInfo.assemblyTitle
+            } ${indexService.assemblyInfo.assemblyVersion} ${
+                indexService.assemblyInfo.assemblyCopyright
+            }`;
+            this.serverAssemblyVersion =
+                indexService.assemblyInfo.assemblyVersion;
+        });
     }
 }

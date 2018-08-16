@@ -94,7 +94,6 @@ export class BlogEntriesService extends AppDataService {
         this.initialize();
 
         const rejectionExecutor = (response: Response, reject: any) => {
-            console.log({ response });
             this.index = response.json()['index'] as BlogEntry[];
             if (!this.index) {
                 reject('index is not truthy.');
@@ -112,7 +111,7 @@ export class BlogEntriesService extends AppDataService {
                 .orderBy(['sortOrdinal'], ['desc'])
                 .value();
 
-            this.assemblyInfo = response.json()['assemblyInfo'] as AssemblyInfo;
+            this.assemblyInfo = response.json()['serverMeta']['assemblyInfo'] as AssemblyInfo;
             if (!this.assemblyInfo) {
                 reject('assemblyInfo is not truthy.');
                 return;

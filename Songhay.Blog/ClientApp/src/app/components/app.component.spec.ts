@@ -68,7 +68,7 @@ describe('AppComponent', () => {
             de.query(By.css('.app.footer .framework.version')).nativeElement
                 .innerText
         ).toEqual(
-            component.frameworkVersion,
+            component.clientFrameworkVersion,
             'The expected framework version is not here.'
         );
     });
