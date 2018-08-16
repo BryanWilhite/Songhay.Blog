@@ -36,7 +36,6 @@
             <span class="framework version" title="Angular {{frameworkVersion}}">{{frameworkVersion}}</span>
         </div>
         <div fxFlex="50">
-            <mat-spinner *ngIf="indexService.isLoading" color="accent"></mat-spinner>
             <mat-icon *ngIf="indexService.isLoaded" color="accent" svgIcon="rx:mdi_azure_24px" title="Azure Web App {{indexService.assemblyInfo.assemblyVersion}}"></mat-icon>
             <span *ngIf="indexService.isLoaded" class="server version" title="{{indexService.assemblyInfo.assemblyTitle}} {{indexService.assemblyInfo.assemblyVersion}} {{indexService.assemblyInfo.assemblyCopyright}}">{{indexService.assemblyInfo.assemblyVersion}}</span>
         </div>

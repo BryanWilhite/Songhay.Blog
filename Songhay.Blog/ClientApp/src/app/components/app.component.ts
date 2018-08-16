@@ -16,7 +16,7 @@ import { BlogEntriesService } from '../services/songhay-blog-entries.service';
     styleUrls: ['./app.component.scss'],
     templateUrl: './app.component.html'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     /**
      * App Title
      *
@@ -51,18 +51,6 @@ export class AppComponent implements OnInit {
         );
 
         this.appTitle = '>Day Path_';
-        this.frameworkVersion = `${VERSION.major}.${VERSION.minor}.${
-            VERSION.patch
-        }`;
-    }
-
-    /**
-     * implements @type {OnInit.ngOnInit}
-     *
-     * @memberof AppComponent
-     */
-    ngOnInit(): void {
-        this.indexService
-            .loadServerMeta();
+        this.frameworkVersion = `${VERSION.major}.${VERSION.minor}.${VERSION.patch}`;
     }
 }
