@@ -75,6 +75,12 @@ describe('BlogEntriesService', () => {
                     'The expected Service Index entries are not here.'
                 );
 
+                expect(service.assemblyInfo).not.toBeNull(
+                    'The expected Assembly Info is not here.'
+                );
+
+                console.log({ assemblyInfo: service.assemblyInfo });
+
                 const i = math.getRandom(0, service.index.length);
                 console.log(`service.index[${i}]`, service.index[i]);
 

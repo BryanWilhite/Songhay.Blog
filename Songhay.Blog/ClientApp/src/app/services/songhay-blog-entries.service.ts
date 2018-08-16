@@ -93,9 +93,9 @@ export class BlogEntriesService extends AppDataService {
     loadAppData(): Promise<Response> {
         this.initialize();
 
-        const inceptionExecutor = (response: Response, reject: any) => {
-            console.log({response});
-            this.index = response.json() as BlogEntry[];
+        const rejectionExecutor = (response: Response, reject: any) => {
+            console.log({ response });
+            this.index = response.json()['index'] as BlogEntry[];
             if (!this.index) {
                 reject('index is not truthy.');
                 return;
@@ -111,10 +111,16 @@ export class BlogEntriesService extends AppDataService {
             this.index = _(this.index)
                 .orderBy(['sortOrdinal'], ['desc'])
                 .value();
+
+            this.assemblyInfo = response.json()['assemblyInfo'] as AssemblyInfo;
+            if (!this.assemblyInfo) {
+                reject('assemblyInfo is not truthy.');
+                return;
+            }
         };
 
         const promise = new Promise<Response>(
-            super.getExecutor(AppScalars.appDataLocation, inceptionExecutor)
+            super.getExecutor(AppScalars.appDataLocation, rejectionExecutor)
         );
         return promise;
     }
@@ -134,7 +140,7 @@ export class BlogEntriesService extends AppDataService {
             ? entryLocation
             : `${AppScalars.baseApiRoute}/entry/${slug}`;
 
-        const inceptionExecutor = (response: Response, reject: any) => {
+        const rejectionExecutor = (response: Response, reject: any) => {
             this.entry = response.json() as BlogEntry;
             if (!this.entry) {
                 reject('Blog entry is not truthy.');
@@ -143,7 +149,7 @@ export class BlogEntriesService extends AppDataService {
         };
 
         const promise = new Promise<Response>(
-            super.getExecutor(uri, inceptionExecutor)
+            super.getExecutor(uri, rejectionExecutor)
         );
         return promise;
     }
