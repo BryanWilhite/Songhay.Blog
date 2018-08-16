@@ -24,6 +24,7 @@ namespace Songhay.Blog.Shell.Tests
         public void ShouldGenerateSitemap()
         {
             var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
+            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
@@ -36,7 +37,7 @@ namespace Songhay.Blog.Shell.Tests
             var rootUri = new Uri(this.TestContext.Properties["rootUri"].ToString(), UriKind.Absolute);
 
             var sitemapFile = this.TestContext.Properties["sitemapFile"].ToString();
-            sitemapFile = Path.Combine(projectDirectoryInfo.FullName, sitemapFile);
+            sitemapFile = Path.Combine(webProjectInfo.FullName, sitemapFile);
             this.TestContext.ShouldFindFile(sitemapFile);
 
             var urlTemplate = new UriTemplate(this.TestContext.Properties["urlTemplate"].ToString());
