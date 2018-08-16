@@ -30,12 +30,12 @@
         </span>
     </mat-toolbar>
     <router-outlet></router-outlet>
-    <div class="app footer" fxLayout="row">
-        <div fxFlex="50">
+    <div class="app footer">
+        <div>
             <mat-icon color="accent" svgIcon="rx:mdi_angular_24px" title="Angular {{clientFrameworkVersion}}"></mat-icon>
             <span class="framework version" title="Angular {{clientFrameworkVersion}}">{{clientFrameworkVersion}}</span>
         </div>
-        <div fxFlex="50">
+        <div>
             <mat-icon *ngIf="indexService.isLoaded" color="accent" svgIcon="rx:mdi_azure_24px" title="Azure Web App {{serverAssemblyVersion}}"></mat-icon>
             <span *ngIf="indexService.isLoaded" class="server version" title="{{serverAssemblyInfo}}">{{serverAssemblyVersion}}</span>
         </div>
