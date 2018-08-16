@@ -7,6 +7,7 @@ import 'rxjs/add/operator/toPromise';
 import { AppScalars } from '../models/songhay-app-scalars';
 import { AssemblyInfo } from '../models/songhay-assembly-info';
 import { BlogEntry } from '../models/songhay-blog-entry';
+import { AppDataService } from './songhay-app-data.service';
 
 /**
  * API for @type {BlogEntry}
@@ -15,13 +16,14 @@ import { BlogEntry } from '../models/songhay-blog-entry';
  * @class BlogEntriesService
  */
 @Injectable()
-export class BlogEntriesService {
+export class BlogEntriesService extends AppDataService {
     /**
      * Creates an instance of @type {BlogEntriesService}.
      * @param {Http} client
      * @memberof BlogEntriesService
      */
-    constructor(private client: Http) {
+    constructor(client: Http) {
+        super(client);
         this.initialize();
     }
 
@@ -48,31 +50,6 @@ export class BlogEntriesService {
      * @memberof BlogEntriesService
      */
     index: BlogEntry[];
-
-    /**
-     * Returns true when the last API promise is rejected.
-     *
-     * @type {boolean}
-     * @memberof BlogEntriesService
-     */
-    isError: boolean;
-
-    /**
-     * Returns true when the last API call loaded data
-     * without any errors.
-     *
-     * @type {boolean}
-     * @memberof BlogEntriesService
-     */
-    isLoaded: boolean;
-
-    /**
-     * Returns true when the API call is promising.
-     *
-     * @type {boolean}
-     * @memberof BlogEntriesService
-     */
-    isLoading: boolean;
 
     /**
      * Filters the specified entries with the specified particle.
@@ -123,7 +100,7 @@ export class BlogEntriesService {
         };
 
         const promise = new Promise<Response>(
-            this.getExecutor(uri, inceptionExecutor)
+            super.getExecutor(uri, inceptionExecutor)
         );
         return promise;
     }
@@ -158,7 +135,7 @@ export class BlogEntriesService {
         };
 
         const promise = new Promise<Response>(
-            this.getExecutor(AppScalars.indexLocation, inceptionExecutor)
+            super.getExecutor(AppScalars.indexLocation, inceptionExecutor)
         );
         return promise;
     }
@@ -181,7 +158,7 @@ export class BlogEntriesService {
         };
 
         const promise = new Promise<Response>(
-            this.getExecutor(AppScalars.serverMetaLocation, inceptionExecutor)
+            super.getExecutor(AppScalars.serverMetaLocation, inceptionExecutor)
         );
         return promise;
     }
@@ -199,46 +176,8 @@ export class BlogEntriesService {
         const uri = `${
             AppScalars.baseApiSearchRoute
         }/${searchText}/${skipValue}`;
-        const promise = new Promise<Response>(this.getExecutor(uri));
+        const promise = new Promise<Response>(super.getExecutor(uri));
         return promise;
-    }
-
-    private getExecutor(
-        url: string,
-        inceptionExecutor?: (response: Response, reject?: any) => void
-    ) {
-        const executor = (
-            resolve: (Response) => void,
-            reject: (any) => void
-        ) => {
-            this.client
-                .get(url)
-                .toPromise()
-                .then(
-                    responseOrVoid => {
-                        const response = responseOrVoid as Response;
-                        if (!response) {
-                            reject('response is not truthy.');
-                            return;
-                        }
-
-                        if (inceptionExecutor) {
-                            inceptionExecutor(response, reject);
-                        }
-
-                        this.isLoaded = true;
-                        this.isLoading = false;
-
-                        resolve(responseOrVoid);
-                    },
-                    error => {
-                        this.isError = true;
-                        this.isLoaded = false;
-                        reject(error);
-                    }
-                );
-        };
-        return executor;
     }
 
     private getItemCategoryProperties(blogEntry: BlogEntry): object {
@@ -282,8 +221,6 @@ export class BlogEntriesService {
 
     private initialize(): void {
         this.index = null;
-        this.isError = false;
-        this.isLoaded = false;
-        this.isLoading = true;
+        super.initializeLoadState();
     }
 }

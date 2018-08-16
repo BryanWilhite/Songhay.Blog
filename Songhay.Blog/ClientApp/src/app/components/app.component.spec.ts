@@ -2,11 +2,17 @@ import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
+import { BlogEntriesService } from '../services/songhay-blog-entries.service';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+    const serviceMemberName = 'loadIndex';
+    const service = jasmine.createSpyObj('BlogEntriesService', [
+        serviceMemberName
+    ]);
+
     const matIconRegistryMemberName = 'addSvgIconSetInNamespace';
     const mockMatIconRegistry = jasmine.createSpyObj('MatIconRegistry', [
         matIconRegistryMemberName
@@ -31,6 +37,7 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             providers: [
+                { provide: BlogEntriesService, useValue: service },
                 { provide: MatIconRegistry, useValue: mockMatIconRegistry },
                 { provide: DomSanitizer, useValue: mockDomSanitizer }
             ],
