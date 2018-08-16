@@ -33,14 +33,14 @@ describe('BlogEntriesService', () => {
         });
     });
 
-    it('should load index', done => {
-        AppScalars.indexLocation = './base/src/assets/data/index.json';
+    it('should load App data', done => {
+        AppScalars.appDataLocation = './base/src/assets/data/app.json';
 
         service = testBed.get(BlogEntriesService);
         expect(service).not.toBeNull();
 
         service
-            .loadIndex()
+            .loadAppData()
             .then(responseOrVoid => {
                 const response = responseOrVoid as Response;
                 expect(response).toBeDefined(

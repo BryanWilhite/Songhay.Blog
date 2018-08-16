@@ -46,6 +46,6 @@ export class AppIndexComponent implements OnInit {
             this.viewStyle = params['style'] as any;
         });
 
-        this.indexService.loadIndex();
+        this.indexService.loadAppData();
     }
 }

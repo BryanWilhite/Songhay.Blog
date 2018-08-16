@@ -111,7 +111,7 @@ export class BlogEntriesService extends AppDataService {
      * @returns {Promise<HttpResponse>}
      * @memberof BlogEntriesService
      */
-    loadIndex(): Promise<Response> {
+    loadAppData(): Promise<Response> {
         this.initialize();
 
         const inceptionExecutor = (response: Response, reject: any) => {
@@ -135,7 +135,7 @@ export class BlogEntriesService extends AppDataService {
         };
 
         const promise = new Promise<Response>(
-            super.getExecutor(AppScalars.indexLocation, inceptionExecutor)
+            super.getExecutor(AppScalars.appDataLocation, inceptionExecutor)
         );
         return promise;
     }

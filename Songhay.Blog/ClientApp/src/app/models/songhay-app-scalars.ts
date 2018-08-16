@@ -6,6 +6,14 @@
  */
 export class AppScalars {
     /**
+     * location of App data
+     *
+     * @static
+     * @memberof AppScalars
+     */
+    static appDataLocation = './assets/data/app.json';
+
+    /**
      * location of Blog entries API
      *
      * @static
@@ -20,14 +28,6 @@ export class AppScalars {
      * @memberof AppScalars
      */
     static baseApiSearchRoute = './api/search/blog';
-
-    /**
-     * location of Index data
-     *
-     * @static
-     * @memberof AppScalars
-     */
-    static indexLocation = './assets/data/index.json';
 
     /**
      * location of App server metadata

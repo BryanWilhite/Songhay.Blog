@@ -17,26 +17,26 @@ namespace Songhay.Blog.Shell.Tests
 
         [TestMethod]
         [TestProperty("defaultNamespace", "http://www.sitemaps.org/schemas/sitemap/0.9")]
-        [TestProperty("indexJsonFile", @"ClientApp\src\assets\data\index.json")]
+        [TestProperty("indexJsonFile", @"json\index.json")]
         [TestProperty("rootUri", "http://songhayblog.azurewebsites.net")]
         [TestProperty("sitemapFile", @"ClientApp\src\sitemap.xml")]
         [TestProperty("urlTemplate", "/blog/entry/{slug}")]
         public void ShouldGenerateSitemap()
         {
-            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var defaultNamespace = XNamespace.Get(this.TestContext.Properties["defaultNamespace"].ToString());
 
             var indexJsonFile = this.TestContext.Properties["indexJsonFile"].ToString();
-            indexJsonFile = Path.Combine(webProjectInfo.FullName, indexJsonFile);
+            indexJsonFile = Path.Combine(projectDirectoryInfo.FullName, indexJsonFile);
             this.TestContext.ShouldFindFile(indexJsonFile);
 
             var rootUri = new Uri(this.TestContext.Properties["rootUri"].ToString(), UriKind.Absolute);
 
             var sitemapFile = this.TestContext.Properties["sitemapFile"].ToString();
-            sitemapFile = Path.Combine(webProjectInfo.FullName, sitemapFile);
+            sitemapFile = Path.Combine(projectDirectoryInfo.FullName, sitemapFile);
             this.TestContext.ShouldFindFile(sitemapFile);
 
             var urlTemplate = new UriTemplate(this.TestContext.Properties["urlTemplate"].ToString());
