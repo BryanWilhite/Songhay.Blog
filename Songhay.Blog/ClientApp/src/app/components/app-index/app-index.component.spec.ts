@@ -10,9 +10,8 @@ import { AppIndexComponent } from './app-index.component';
 import { IndexStyles } from '../../models/songhay-index-styles';
 
 describe('AppIndexComponent', () => {
-    const serviceMemberName = 'loadIndex';
     const service = jasmine.createSpyObj('BlogEntriesService', [
-        serviceMemberName
+        BlogEntriesService.loadAppDataMethodName
     ]);
 
     let component: AppIndexComponent;
@@ -60,7 +59,7 @@ describe('AppIndexComponent', () => {
             1,
             'The expected number of route-param subscription calls are not here.'
         );
-        expect(service[serviceMemberName].calls.count()).toBe(
+        expect(service[BlogEntriesService.loadAppDataMethodName].calls.count()).toBe(
             1,
             'The expected number of service calls are not here.'
         );

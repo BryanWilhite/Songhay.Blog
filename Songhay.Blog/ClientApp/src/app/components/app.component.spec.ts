@@ -8,9 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-    const serviceMemberName = 'loadIndex';
     const service = jasmine.createSpyObj('BlogEntriesService', [
-        serviceMemberName
+        BlogEntriesService.loadAppDataMethodName
     ]);
 
     const matIconRegistryMemberName = 'addSvgIconSetInNamespace';

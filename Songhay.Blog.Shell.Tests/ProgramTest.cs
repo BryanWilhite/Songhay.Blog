@@ -14,15 +14,15 @@ namespace Songhay.Blog.Shell.Tests
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        [TestProperty("serverMetadataFile", @"ClientApp\src\assets\data\server-meta.json")]
+        [TestProperty("serverMetadataFile", @"json\server-meta.json")]
         public void ShouldGenerateServerMetadata()
         {
-            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var serverMetadataFile = this.TestContext.Properties["serverMetadataFile"].ToString();
-            serverMetadataFile = Path.Combine(webProjectInfo.FullName, serverMetadataFile);
+            serverMetadataFile = Path.Combine(projectDirectoryInfo.FullName, serverMetadataFile);
             this.TestContext.ShouldFindFile(serverMetadataFile);
 
             #endregion

@@ -28,12 +28,4 @@ export class AppScalars {
      * @memberof AppScalars
      */
     static baseApiSearchRoute = './api/search/blog';
-
-    /**
-     * location of App server metadata
-     *
-     * @static
-     * @memberof AppScalars
-     */
-    static serverMetaLocation = './assets/data/server-meta.json';
 }

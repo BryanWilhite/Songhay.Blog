@@ -81,57 +81,7 @@ describe('BlogEntriesService', () => {
                 done();
             })
             .catch(response => {
-                console.log('loadIndex() catch response: ', response);
-
-                done();
-            });
-    });
-
-    it('should load server meta', done => {
-
-        AppScalars.serverMetaLocation = './base/src/assets/data/server-meta.json';
-
-        service = testBed.get(BlogEntriesService);
-        expect(service).not.toBeNull();
-
-        service
-            .loadServerMeta()
-            .then(responseOrVoid => {
-                const response = responseOrVoid as Response;
-                expect(response).toBeDefined(
-                    'The expected response is not defined.'
-                );
-                expect(response).not.toBeNull(
-                    'The expected response is not here.'
-                );
-                expect(response.ok).toBe(
-                    true,
-                    'The expected OK response is not here.'
-                );
-
-                expect(service.isError).toEqual(
-                    false,
-                    'Service in error state is unexpected.'
-                );
-                expect(service.isLoaded).toEqual(
-                    true,
-                    'The expected Service loaded state is not here.'
-                );
-                expect(service.isLoading).toEqual(
-                    false,
-                    'The expected Service loading state is not here.'
-                );
-
-                expect(service.assemblyInfo).not.toBeNull(
-                    'The expected Assembly Info is not here.'
-                );
-
-                console.log({ assemblyInfo: service.assemblyInfo });
-
-                done();
-            })
-            .catch(response => {
-                console.log('loadServerMeta() catch response: ', response);
+                console.log(`${BlogEntriesService.loadAppDataMethodName}() catch response: `, response);
 
                 done();
             });

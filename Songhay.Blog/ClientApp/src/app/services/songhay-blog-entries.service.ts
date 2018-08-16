@@ -28,6 +28,14 @@ export class BlogEntriesService extends AppDataService {
     }
 
     /**
+     * name of method on this class for Jasmine spies
+     *
+     * @static
+     * @memberof BlogEntriesService
+     */
+    static loadAppDataMethodName = 'loadAppData';
+
+    /**
      * Returns server assembly info.
      *
      * @type {AssemblyInfo}
@@ -77,35 +85,6 @@ export class BlogEntriesService extends AppDataService {
     }
 
     /**
-     * Promises to load a Blog entry.
-     *
-     * @param {string} slug
-     * @param {string} entryLocation
-     * @returns {Promise<Response>}
-     * @memberof BlogEntriesService
-     */
-    loadEntry(slug: string, entryLocation: string = null): Promise<Response> {
-        this.initialize();
-
-        const uri = entryLocation
-            ? entryLocation
-            : `${AppScalars.baseApiRoute}/entry/${slug}`;
-
-        const inceptionExecutor = (response: Response, reject: any) => {
-            this.entry = response.json() as BlogEntry;
-            if (!this.entry) {
-                reject('Blog entry is not truthy.');
-                return;
-            }
-        };
-
-        const promise = new Promise<Response>(
-            super.getExecutor(uri, inceptionExecutor)
-        );
-        return promise;
-    }
-
-    /**
      * Promises to load index data.
      *
      * @returns {Promise<HttpResponse>}
@@ -141,24 +120,30 @@ export class BlogEntriesService extends AppDataService {
     }
 
     /**
-     * Promises to load server metadata.
+     * Promises to load a Blog entry.
      *
-     * @returns {Promise<HttpResponse>}
+     * @param {string} slug
+     * @param {string} entryLocation
+     * @returns {Promise<Response>}
      * @memberof BlogEntriesService
      */
-    loadServerMeta(): Promise<Response> {
+    loadEntry(slug: string, entryLocation: string = null): Promise<Response> {
         this.initialize();
 
+        const uri = entryLocation
+            ? entryLocation
+            : `${AppScalars.baseApiRoute}/entry/${slug}`;
+
         const inceptionExecutor = (response: Response, reject: any) => {
-            this.assemblyInfo = response.json()['assemblyInfo'] as AssemblyInfo;
-            if (!this.assemblyInfo) {
-                reject('assemblyInfo is not truthy.');
+            this.entry = response.json() as BlogEntry;
+            if (!this.entry) {
+                reject('Blog entry is not truthy.');
                 return;
             }
         };
 
         const promise = new Promise<Response>(
-            super.getExecutor(AppScalars.serverMetaLocation, inceptionExecutor)
+            super.getExecutor(uri, inceptionExecutor)
         );
         return promise;
     }
