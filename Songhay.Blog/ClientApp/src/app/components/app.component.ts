@@ -1,4 +1,4 @@
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 
@@ -9,7 +9,6 @@ import { BlogEntriesService } from '../services/songhay-blog-entries.service';
  *
  * @export
  * @class AppComponent
- * @implements {OnInit}
  */
 @Component({
     selector: 'app-root',
