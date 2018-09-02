@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 
@@ -15,9 +15,9 @@ import { BlogEntriesService } from '../services/songhay-blog-entries.service';
     styleUrls: ['./app.component.scss'],
     templateUrl: './app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     /**
-     * App Title
+     * App title
      *
      * @type {string}
      * @memberof AppComponent
@@ -49,7 +49,7 @@ export class AppComponent {
     serverAssemblyVersion: string;
 
     /**
-     *Creates an instance of AppComponent.
+     * Creates an instance of AppComponent.
      * @param {MatIconRegistry} iconRegistry
      * @param {BlogEntriesService} indexService
      * @param {DomSanitizer} sanitizer
@@ -70,15 +70,22 @@ export class AppComponent {
         this.clientFrameworkVersion = `${VERSION.major}.${VERSION.minor}.${
             VERSION.patch
         }`;
+    }
 
-        indexService.loadAppData().then(() => {
+    /**
+     * implements OnInit
+     *
+     * @memberof AppComponent
+     */
+    ngOnInit(): void {
+        this.indexService.appDataLoaded.subscribe(() => {
             this.serverAssemblyInfo = `${
-                indexService.assemblyInfo.assemblyTitle
-            } ${indexService.assemblyInfo.assemblyVersion} ${
-                indexService.assemblyInfo.assemblyCopyright
+                this.indexService.assemblyInfo.assemblyTitle
+            } ${this.indexService.assemblyInfo.assemblyVersion} ${
+                this.indexService.assemblyInfo.assemblyCopyright
             }`;
             this.serverAssemblyVersion =
-                indexService.assemblyInfo.assemblyVersion;
+                this.indexService.assemblyInfo.assemblyVersion;
         });
     }
 }

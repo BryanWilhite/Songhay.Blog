@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
@@ -18,22 +18,20 @@ import { AppDataService } from './songhay-app-data.service';
 @Injectable()
 export class BlogEntriesService extends AppDataService {
     /**
-     * Creates an instance of @type {BlogEntriesService}.
-     * @param {Http} client
-     * @memberof BlogEntriesService
-     */
-    constructor(client: Http) {
-        super(client);
-        this.initialize();
-    }
-
-    /**
-     * name of method on this class for Jasmine spies
+     * Name of method on this class for Jasmine spies.
      *
      * @static
      * @memberof BlogEntriesService
      */
     static loadAppDataMethodName = 'loadAppData';
+
+    /**
+     * Emits when the Promise of loadAppData resolves.
+     *
+     * @type {EventEmitter<BlogEntry[]>}
+     * @memberof BlogEntriesService
+     */
+    appDataLoaded: EventEmitter<BlogEntry[]>;
 
     /**
      * Returns server assembly info.
@@ -58,6 +56,17 @@ export class BlogEntriesService extends AppDataService {
      * @memberof BlogEntriesService
      */
     index: BlogEntry[];
+
+    /**
+     * Creates an instance of @type {BlogEntriesService}.
+     * @param {Http} client
+     * @memberof BlogEntriesService
+     */
+    constructor(client: Http) {
+        super(client);
+        this.appDataLoaded = new EventEmitter<BlogEntry[]>();
+        this.initialize();
+    }
 
     /**
      * Filters the specified entries with the specified particle.
@@ -116,6 +125,8 @@ export class BlogEntriesService extends AppDataService {
                 reject('assemblyInfo is not truthy.');
                 return;
             }
+
+            this.appDataLoaded.emit(this.index);
         };
 
         const promise = new Promise<Response>(
