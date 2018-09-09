@@ -6,10 +6,7 @@
             "label": "dotnet build",
             "isBackground": true,
             "type": "shell",
-            "args": [
-                "build",
-                "Songhay.Blog.sln"
-            ],
+            "args": ["build", "Songhay.Blog.sln"],
             "options": {
                 "cwd": "${workspaceRoot}"
             },
@@ -20,23 +17,22 @@
             "label": "dotnet build [process]",
             "isBackground": false,
             "type": "process",
-            "args": [
-                "build",
-                "Songhay.Blog.sln"
-            ],
+            "args": ["build", "Songhay.Blog.sln"],
             "options": {
                 "cwd": "${workspaceRoot}"
             },
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "command": "dotnet",
             "label": "dotnet clean",
             "isBackground": true,
             "type": "shell",
-            "args": [
-                "clean"
-            ],
+            "args": ["clean"],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog"
             },
@@ -47,9 +43,7 @@
             "label": "dotnet run",
             "isBackground": true,
             "type": "shell",
-            "args": [
-                "run"
-            ],
+            "args": ["run"],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog"
             },
@@ -60,11 +54,39 @@
             "label": "npm: audit",
             "isBackground": false,
             "type": "shell",
-            "args": [
-                "audit"
-            ],
+            "args": ["audit"],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "test [Songhay.Blog.Shell.Tests, filtered by selected text]",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "test",
+                "${workspaceFolder}/Songhay.Blog.Shell.Tests/Songhay.Blog.Shell.Tests.csproj",
+                "--filter:${selectedText}",
+                "--logger:trx",
+                "--results-directory:${workspaceFolder}/TestResults",
+                "--verbosity:normal"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test [clean test output folder]",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/TestResults"
+            },
+            "linux": {
+                "command": "rm",
+                "args": ["--verbose", "*.trx"]
+            },
+            "windows": {
+                "command": "Remove-Item",
+                "args": ["-Path", "*.trx", "-Verbose"]
             },
             "problemMatcher": []
         },
@@ -73,9 +95,7 @@
             "label": "npm: install",
             "isBackground": false,
             "type": "shell",
-            "args": [
-                "install"
-            ],
+            "args": ["install"],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
             },
@@ -86,9 +106,7 @@
             "label": "npm: outdated",
             "isBackground": false,
             "type": "shell",
-            "args": [
-                "outdated"
-            ],
+            "args": ["outdated"],
             "options": {
                 "cwd": "${workspaceRoot}/Songhay.Blog/ClientApp/"
             },
@@ -99,54 +117,42 @@
             "type": "npm",
             "script": "build",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         },
         {
             "label": "npm build:prod",
             "type": "npm",
             "script": "build:prod",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         },
         {
             "label": "build:ssr [Server-Side Rendering]",
             "type": "npm",
             "script": "build:ssr",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         },
         {
             "label": "npm build:staging",
             "type": "npm",
             "script": "build:staging",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         },
         {
             "label": "npm e2e",
             "type": "npm",
             "script": "e2e",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         },
         {
             "label": "npm start",
             "type": "npm",
             "script": "start",
             "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": [
-                "$tslint5"
-            ]
+            "problemMatcher": ["$tslint5"]
         }
     ]
 }

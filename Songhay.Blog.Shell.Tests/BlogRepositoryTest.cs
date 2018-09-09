@@ -51,18 +51,13 @@ namespace Songhay.Blog.Shell.Tests
         [TestProperty("inRoot", @"AzureBlobStorage-songhay\songhayblog-azurewebsites-net\BlogEntry\")]
         public async Task ShouldDownloadNewBlogEntries()
         {
-            var projectDirectory = this.TestContext
-                .ShouldGetAssemblyDirectoryInfo(this.GetType())
-                ?.Parent
-                ?.Parent
-                ?.Parent.FullName;
-            this.TestContext.ShouldFindDirectory(projectDirectory);
+            var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
             var inRoot = this.TestContext.Properties["inRoot"].ToString();
-            inRoot = Path.Combine(projectDirectory, inRoot);
+            inRoot = projectDirectoryInfo.FullName.ToCombinedPath(inRoot);
             this.TestContext.ShouldFindDirectory(inRoot);
 
             #endregion
@@ -174,11 +169,11 @@ namespace Songhay.Blog.Shell.Tests
             var entryHeaderElement = this.TestContext.Properties["entryHeaderElement"].ToString();
 
             var entryPath = this.TestContext.Properties["entryPath"].ToString();
-            entryPath = Path.Combine(projectInfo.FullName, entryPath);
+            entryPath = projectInfo.FullName.ToCombinedPath(entryPath);
             this.TestContext.ShouldFindFile(entryPath);
 
             var entryOutputPath = this.TestContext.Properties["entryOutputPath"].ToString();
-            entryOutputPath = Path.Combine(projectInfo.FullName, entryOutputPath);
+            entryOutputPath = projectInfo.FullName.ToCombinedPath(entryOutputPath);
             this.TestContext.ShouldFindFile(entryOutputPath);
 
             #endregion
@@ -236,7 +231,7 @@ namespace Songhay.Blog.Shell.Tests
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var rssPath = this.TestContext.Properties["rssPath"].ToString();
-            rssPath = Path.Combine(webProjectInfo.FullName, rssPath);
+            rssPath = webProjectInfo.FullName.ToCombinedPath(rssPath);
             this.TestContext.ShouldFindFile(rssPath);
 
             #endregion
@@ -313,11 +308,11 @@ namespace Songhay.Blog.Shell.Tests
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var indexPath = this.TestContext.Properties["indexPath"].ToString();
-            indexPath = Path.Combine(projectInfo.FullName, indexPath);
+            indexPath = projectInfo.FullName.ToCombinedPath(indexPath);
             this.TestContext.ShouldFindFile(indexPath);
 
             var topicsPath = this.TestContext.Properties["topicsPath"].ToString();
-            topicsPath = Path.Combine(projectInfo.FullName, topicsPath);
+            topicsPath = projectInfo.FullName.ToCombinedPath(topicsPath);
             this.TestContext.ShouldFindFile(topicsPath);
 
             #endregion
@@ -386,7 +381,7 @@ namespace Songhay.Blog.Shell.Tests
             this.TestContext.ShouldFindFile(markdownPath);
 
             var entryPath = this.TestContext.Properties["entryPath"].ToString();
-            entryPath = Path.Combine(projectRoot, entryPath);
+            entryPath = projectRoot.ToCombinedPath(entryPath);
             this.TestContext.ShouldFindFile(entryPath);
 
             #endregion

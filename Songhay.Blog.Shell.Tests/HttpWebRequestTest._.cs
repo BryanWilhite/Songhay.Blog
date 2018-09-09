@@ -82,7 +82,7 @@ namespace Songhay.Blog.Shell.Tests
             #region test properties:
 
             var jsonPath = this.TestContext.Properties["jsonPath"].ToString();
-            jsonPath = Path.Combine(projectDirectoryInfo.FullName, jsonPath);
+            jsonPath = projectDirectoryInfo.FullName.ToCombinedPath(jsonPath);
             this.TestContext.ShouldFindFile(jsonPath);
 
             var twitterHost = this.TestContext.Properties["twitterHost"].ToString();
@@ -134,7 +134,7 @@ namespace Songhay.Blog.Shell.Tests
             #region test properties:
 
             var htmlPath = this.TestContext.Properties["htmlPath"].ToString();
-            htmlPath = Path.Combine(root, htmlPath);
+            htmlPath = root.ToCombinedPath(htmlPath);
             this.TestContext.ShouldFindFile(htmlPath);
 
             var twitterHost = this.TestContext.Properties["twitterHost"].ToString();
