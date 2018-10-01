@@ -11,6 +11,7 @@ queue:
 
 variables:
   BuildConfiguration: 'Release'
+  ConventionalName: 'Songhay.Blog'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -22,7 +23,7 @@ steps:
 - task: Npm@1
   displayName: 'npm install'
   inputs:
-    workingDir: Songhay.Blog/ClientApp
+    workingDir: $(ConventionalName)/ClientApp
     verbose: true
 
 - task: DotNetCoreCLI@2
@@ -35,13 +36,13 @@ steps:
   displayName: 'Download Secure File 27efdf69-4ae9-48a5-82d6-dde14d86aef0'
   inputs:
     fileInput: '27efdf69-4ae9-48a5-82d6-dde14d86aef0'
-    targetPath: $(Build.Repository.Name)
+    targetPath: $(ConventionalName)/$(ConventionalName)
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet test'
   inputs:
     command: test
-    projects: '**/$(Build.Repository.Name).Tests/*.csproj'
+    projects: '**/$(ConventionalName).Tests/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
