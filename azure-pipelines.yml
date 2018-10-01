@@ -27,7 +27,7 @@ steps:
   displayName: 'npm install'
 
   inputs:
-    workingDir: $(Build.Repository.Name)/ClientApp
+    workingDir: $(Build.Repository.Name)/$(Build.Repository.Name)/ClientApp
     verbose: false
 
 - task: DotNetCoreCLI@2
