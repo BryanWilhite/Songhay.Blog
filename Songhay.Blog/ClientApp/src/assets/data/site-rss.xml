@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 10 Aug 2018 17:27:37 GMT</pubDate>
+  <channel><pubDate>Sun, 30 Sep 2018 23:00:11 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2018-09</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-09</link>
+  <description>This report is a extremely late as this writing occurs on the last day of the month.the work on the new SonghaySystem.com continuesThe prime suspect for the lateness of this report is the work represented by Songhay.Dashboardissue #16. This single issue ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2018-09</guid>
+  <pubDate>Sun, 30 Sep 2018 22:50:14 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2018-08</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-08</link>
@@ -99,17 +107,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">gestalt-theory-for-ux-design-and-other-tweeted-links</guid>
   <pubDate>Wed, 25 Jul 2018 17:39:00 GMT</pubDate>
-</item>
-<item>
-  <title>“Analyzing the Hamburger Menu in Web Design” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/analyzing-the-hamburger-menu-in-web-design-and-other-tweeted-links</link>
-  <description>Analyzing the Hamburger Menu in Web Design
-      [speckyboy.com] Information Architecture. The Most Important Part of Design You’re Probably Overlooking.
-      [blog.prototypr.io] Getting Started with
-      #CSS Counters
-      [scotch.io] 24 Ways to ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">analyzing-the-hamburger-menu-in-web-design-and-other-tweeted-links</guid>
-  <pubDate>Mon, 23 Jul 2018 16:03:29 GMT</pubDate>
 </item></channel>
 </rss>
