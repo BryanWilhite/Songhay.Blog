@@ -1,5 +1,7 @@
 # Songhay.Blog
 
+[![Build Status](https://songhay.visualstudio.com/SonghaySystem/_apis/build/status/songhay-system-blog-yaml-build)](https://songhay.visualstudio.com/SonghaySystem/_build/latest?definitionId=8)
+
 Here is the source code for [my technical Blog](http://songhayblog.azurewebsites.net/) that will replace what is currently running as of this writing.
 
 There is a separate repository that holds [the articles of this Blog system](https://github.com/BryanWilhite/Blog), currently existing for historical reasons.
