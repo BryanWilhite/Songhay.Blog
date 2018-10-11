@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Sun, 30 Sep 2018 23:00:11 GMT</pubDate>
+  <channel><pubDate>Thu, 11 Oct 2018 00:10:33 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2018-10</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-10</link>
+  <description>the new SonghaySystem.com releasedSonghaySystem.com is released. I tweeted about it to capture the moment—which was a moment of exhaustion. I would love to say that this release captured all of the Angular-related topics I plan to study but I can’t. Thes...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2018-10</guid>
+  <pubDate>Thu, 11 Oct 2018 00:02:11 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2018-09</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-09</link>
@@ -25,7 +33,7 @@
   <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</link>
   <description>How to make responsiveness super simple with CSS Variables A quick tutorial on how to create responsive websites i…
       [twitter.com] The 3.0 releases of our aXe
-      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ...</description>
+      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ru...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</guid>
   <pubDate>Wed, 08 Aug 2018 17:41:02 GMT</pubDate>
@@ -36,7 +44,7 @@
   <description>Glide.js: A Dependency-Free ES6 Slider and Carousel -
       [glidejs.com] ("Designed to slide. No less, no more" says the creator.) A Responsive Accessible Table
       [adrianroselli.com] Since their “redesign”
-      @HSBC_UK online banking is now bar...</description>
+      @HSBC_UK online banking is now barely...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</guid>
   <pubDate>Tue, 07 Aug 2018 16:59:20 GMT</pubDate>
@@ -47,7 +55,7 @@
   <description>SVG Polygon Generator
       [codepen.io] Design—and designers—seem perpetually threatened by democratization. -
       [subtraction.com] -
-      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes ...</description>
+      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes in ...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">svg-polygon-generator-and-other-tweeted-links</guid>
   <pubDate>Mon, 06 Aug 2018 21:06:48 GMT</pubDate>
@@ -58,7 +66,7 @@
   <description>Implementing an Infinite Scroll with Vue.js:
       [alligator.io] Build a Basic CRUD App with Vue.js and Node by sitepointdotcom
       [javascriptkicks.com]#javascript#vuejs#nodejs via JavaScriptKicks How
-      #CSS works: Parsing &amp;amp; painting CSS i...</description>
+      #CSS works: Parsing &amp;amp; painting CSS in t...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</guid>
   <pubDate>Sat, 04 Aug 2018 00:30:25 GMT</pubDate>
@@ -71,7 +79,7 @@
 
       ②…
       [twitter.com] A Practical Guide to Angular Elements:
-      [nitayneeman.com] People keep asking me about CSS Grid "best prac...</description>
+      [nitayneeman.com] People keep asking me about CSS Grid "best practices...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</guid>
   <pubDate>Wed, 01 Aug 2018 15:48:27 GMT</pubDate>
@@ -81,7 +89,8 @@
   <link>http://songhayblog.azurewebsites.net/blog/entry/using-color-psychology-for-better-website-results-and-other-tweeted-links</link>
   <description>Using Color Psychology for Better Website Results
       [speckyboy.com] Creating smooth sequential animations with Sass
-      [glennmccomb.com]#webdevelopment “How we designed page previews for Wikipedia — and what could be done with them in the future...</description>
+      [glennmccomb.com]#webdevelopment “How we designed page previews for Wikipedia — and what could be done with them in the future”
+...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">using-color-psychology-for-better-website-results-and-other-tweeted-links</guid>
   <pubDate>Mon, 30 Jul 2018 23:30:53 GMT</pubDate>
@@ -91,21 +100,9 @@
   <link>http://songhayblog.azurewebsites.net/blog/entry/everything-you-need-to-know-about-change-detection-in-angular-and-other-tweeted-links</link>
   <description>“Everything you need to know about change detection in Angular” by
       @maxim_koretskyi[blog.angularindepth.com] 🔥 I hear *a lot* from people who would like to create native-like animations on the web, so I made a write-up &amp;amp;&amp;amp; de…
-      [twit...</description>
+      [twitte...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">everything-you-need-to-know-about-change-detection-in-angular-and-other-tweeted-links</guid>
   <pubDate>Thu, 26 Jul 2018 17:30:26 GMT</pubDate>
-</item>
-<item>
-  <title>“Gestalt Theory for #UX #Design” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/gestalt-theory-for-ux-design-and-other-tweeted-links</link>
-  <description>Gestalt Theory for
-      #UX#Design: Principle of Proximity
-      [tubikstudio.com] Tabbed Interfaces
-      [inclusive-components.design] Simple Icon Generator
-      [prefinem.com]#UI ⚛️ Preact, a fast 3KB React alternative with the same API, has jus...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">gestalt-theory-for-ux-design-and-other-tweeted-links</guid>
-  <pubDate>Wed, 25 Jul 2018 17:39:00 GMT</pubDate>
 </item></channel>
 </rss>
