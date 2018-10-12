@@ -1,10 +1,16 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.WindowsAzure.Storage;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
+using Songhay.Blog.Models;
+using Songhay.Blog.Repository.Extensions;
+using Songhay.Cloud.BlobStorage.Extensions;
 using Songhay.Extensions;
 using Songhay.Models;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Songhay.Blog.Shell.Tests
 {
@@ -13,20 +19,31 @@ namespace Songhay.Blog.Shell.Tests
     {
         public TestContext TestContext { get; set; }
 
+        [TestInitialize]
+        public void InitializeTest()
+        {
+            var projectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            var builder = new ConfigurationBuilder();
+
+            cloudStorageAccount = builder.ToCloudStorageAccount(projectInfo.FullName, AppScalars.cloudStorageAccountGeneralPurposeV1);
+        }
+
         [TestMethod]
-        [TestProperty("appFile", @"ClientApp\src\assets\data\app.json")]
+        [TestProperty("appFile", @"json\app.json")]
+        [TestProperty("blobContainerName", "day-path-blog")]
         [TestProperty("indexFile", @"json\index.json")]
         [TestProperty("serverMetadataFile", @"json\server-meta.json")]
-        public void ShouldGenerateAppData()
+        public async Task ShouldGenerateAppData()
         {
             var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
-            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var appFile = this.TestContext.Properties["appFile"].ToString();
-            appFile = Path.Combine(webProjectInfo.FullName, appFile);
+            appFile = Path.Combine(projectDirectoryInfo.FullName, appFile);
             this.TestContext.ShouldFindFile(appFile);
+
+            var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var indexFile = this.TestContext.Properties["indexFile"].ToString();
             indexFile = Path.Combine(projectDirectoryInfo.FullName, indexFile);
@@ -51,6 +68,9 @@ namespace Songhay.Blog.Shell.Tests
             jO[indexRoot] = jA_index;
 
             File.WriteAllText(appFile, jO.ToString());
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            await container.UploadBlob(appFile, string.Empty);
         }
 
         [TestMethod]
@@ -82,5 +102,7 @@ namespace Songhay.Blog.Shell.Tests
 
             File.WriteAllText(serverMetadataFile, jO.ToString());
         }
+
+        static CloudStorageAccount cloudStorageAccount;
     }
 }

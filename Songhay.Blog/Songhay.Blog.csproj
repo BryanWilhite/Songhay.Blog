@@ -37,7 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\src\assets\data\app.json" />
     <Content Include="ClientApp\src\assets\css\normalize.css" />
     <Content Include="ClientApp\src\assets\css\styles.min.css" />
     <Content Include="ClientApp\src\assets\css\styles.min.css.map" />

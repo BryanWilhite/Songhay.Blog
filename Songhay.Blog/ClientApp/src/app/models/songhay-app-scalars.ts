@@ -11,7 +11,7 @@ export class AppScalars {
      * @static
      * @memberof AppScalars
      */
-    static appDataLocation = './assets/data/app.json';
+    static appDataLocation = 'https://songhaystorage.blob.core.windows.net/day-path-blog/app.json';
 
     /**
      * location of Blog entries API

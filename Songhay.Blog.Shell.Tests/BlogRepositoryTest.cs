@@ -9,6 +9,7 @@ using Songhay.Blog.Models;
 using Songhay.Blog.Models.Extensions;
 using Songhay.Blog.Repository;
 using Songhay.Blog.Repository.Extensions;
+using Songhay.Cloud.BlobStorage.Extensions;
 using Songhay.Cloud.BlobStorage.Models;
 using Songhay.Diagnostics;
 using Songhay.Extensions;
@@ -42,7 +43,10 @@ namespace Songhay.Blog.Shell.Tests
         public void InitializeTest()
         {
             var projectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
-            cloudStorageAccount = (new ConfigurationBuilder()).ToCloudStorageAccount(projectInfo.FullName);
+            var builder = new ConfigurationBuilder();
+
+            cloudStorageAccount = builder.ToCloudStorageAccount(projectInfo.FullName, AppScalars.cloudStorageAccountGeneralPurposeV1);
+            cloudStorageAccountClassic = builder.ToCloudStorageAccount(projectInfo.FullName);
         }
 
         [TestCategory("Integration")]
@@ -67,7 +71,7 @@ namespace Songhay.Blog.Shell.Tests
                 .Select(i => JsonConvert.DeserializeObject<BlogEntry>(File.ReadAllText(i)).Slug)
                 .ToArray();
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
 
             var newBlobs = new List<IListBlobItem>();
 
@@ -178,7 +182,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -220,27 +224,29 @@ namespace Songhay.Blog.Shell.Tests
 
         [TestCategory("Integration")]
         [TestMethod]
-        [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
-        [TestProperty("rssPath", @"ClientApp\src\assets\data\site-rss.xml")]
+        [TestProperty("blobContainerName", "day-path-blog")]
+        [TestProperty("blobContainerNameClassic", "songhayblog-azurewebsites-net")]
+        [TestProperty("rssPath", @"xml\site-rss.xml")]
         public async Task ShouldGenerateBlogRss()
         {
-            var webProjectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
+            var blobContainerNameClassic = this.TestContext.Properties["blobContainerNameClassic"].ToString();
 
             var rssPath = this.TestContext.Properties["rssPath"].ToString();
-            rssPath = webProjectInfo.FullName.ToCombinedPath(rssPath);
+            rssPath = projectInfo.FullName.ToCombinedPath(rssPath);
             this.TestContext.ShouldFindFile(rssPath);
 
             #endregion
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var containerClassic = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerNameClassic);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
-            var repository = new BlogRepository(keys, container);
+            var repository = new BlogRepository(keys, containerClassic);
             var data = await (repository as IBlogEntryIndex).GetIndexAsync();
             Assert.IsTrue(data.Any(), "The expected data are not here.");
 
@@ -292,6 +298,9 @@ namespace Songhay.Blog.Shell.Tests
             }
 
             File.WriteAllText(rssPath, builder.ToString());
+
+            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            await container.UploadBlob(rssPath, string.Empty);
         }
 
         [TestCategory("Integration")]
@@ -317,7 +326,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #endregion
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -345,7 +354,7 @@ namespace Songhay.Blog.Shell.Tests
             htmlFile = Path.Combine(projectInfo.FullName, htmlFile);
             var slug = this.TestContext.Properties["slug"].ToString();
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -402,5 +411,6 @@ namespace Songhay.Blog.Shell.Tests
         }
 
         static CloudStorageAccount cloudStorageAccount;
+        static CloudStorageAccount cloudStorageAccountClassic;
     }
 }

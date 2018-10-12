@@ -30,7 +30,9 @@ namespace Songhay.Blog.Repository.Tests
         public void InitializeTest()
         {
             var projectInfo = this.TestContext.ShouldGetConventionalProjectDirectoryInfo(this.GetType());
-            cloudStorageAccount = (new ConfigurationBuilder()).ToCloudStorageAccount(projectInfo.FullName);
+            var builder = new ConfigurationBuilder();
+
+            cloudStorageAccountClassic = builder.ToCloudStorageAccount(projectInfo.FullName);
         }
 
         [Ignore("This test is meant to run manually on the Desktop.")]
@@ -42,7 +44,7 @@ namespace Songhay.Blog.Repository.Tests
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -70,7 +72,7 @@ namespace Songhay.Blog.Repository.Tests
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
             var slug = this.TestContext.Properties["slug"].ToString();
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -90,7 +92,7 @@ namespace Songhay.Blog.Repository.Tests
             var slugNew = this.TestContext.Properties["slugNew"].ToString();
             var slugOld = this.TestContext.Properties["slugOld"].ToString();
 
-            var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
+            var container = cloudStorageAccountClassic.CreateCloudBlobClient().GetContainerReference(blobContainerName);
             var keys = new AzureBlobKeys();
             keys.Add<BlogEntry>(i => i.Slug);
 
@@ -105,6 +107,6 @@ namespace Songhay.Blog.Repository.Tests
             await repository.DeleteEntityAsync<BlogEntry>(blogEntryOld.Slug);
         }
 
-        static CloudStorageAccount cloudStorageAccount;
+        static CloudStorageAccount cloudStorageAccountClassic;
     }
 }

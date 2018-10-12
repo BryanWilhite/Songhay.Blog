@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="json\app.json" />
     <None Remove="opml\topics.opml" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="json\app.json" />
     <Content Include="opml\topics.opml">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
