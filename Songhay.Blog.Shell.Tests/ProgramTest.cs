@@ -40,17 +40,17 @@ namespace Songhay.Blog.Shell.Tests
             #region test properties:
 
             var appFile = this.TestContext.Properties["appFile"].ToString();
-            appFile = Path.Combine(projectDirectoryInfo.FullName, appFile);
+            appFile = projectDirectoryInfo.FullName.ToCombinedPath(appFile);
             this.TestContext.ShouldFindFile(appFile);
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var indexFile = this.TestContext.Properties["indexFile"].ToString();
-            indexFile = Path.Combine(projectDirectoryInfo.FullName, indexFile);
+            indexFile = projectDirectoryInfo.FullName.ToCombinedPath(indexFile);
             this.TestContext.ShouldFindFile(indexFile);
 
             var serverMetadataFile = this.TestContext.Properties["serverMetadataFile"].ToString();
-            serverMetadataFile = Path.Combine(projectDirectoryInfo.FullName, serverMetadataFile);
+            serverMetadataFile = projectDirectoryInfo.FullName.ToCombinedPath(serverMetadataFile);
             this.TestContext.ShouldFindFile(serverMetadataFile);
 
             #endregion

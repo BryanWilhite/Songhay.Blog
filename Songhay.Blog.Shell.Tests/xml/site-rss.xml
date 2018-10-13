@@ -1,9 +1,22 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 12 Oct 2018 01:34:24 GMT</pubDate>
+  <channel><pubDate>Sat, 13 Oct 2018 23:18:23 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“With Angular v6 it’s now as easy as `ng add” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</link>
+  <description>With Angular v6 it's now as easy as `ng add @angular/pwa`. 🌟🌞⚡ [twitter.com]
+      What's new in #Angular Release 6.0.0 🇬🇧. My article at @JAXenter shows:
+
+      🌴Treeshakable Providers
+      ⚡️Angular Elements ("Web Components")
+      📺Outlook to ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</guid>
+  <pubDate>Sat, 13 Oct 2018 23:15:46 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2018-10</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-10</link>
@@ -94,15 +107,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">using-color-psychology-for-better-website-results-and-other-tweeted-links</guid>
   <pubDate>Mon, 30 Jul 2018 23:30:53 GMT</pubDate>
-</item>
-<item>
-  <title>“Everything you need to know about change detection in Angular” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/everything-you-need-to-know-about-change-detection-in-angular-and-other-tweeted-links</link>
-  <description>“Everything you need to know about change detection in Angular” by
-      @maxim_koretskyi[blog.angularindepth.com] 🔥 I hear *a lot* from people who would like to create native-like animations on the web, so I made a write-up &amp;amp;&amp;amp; de…
-      [twitte...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">everything-you-need-to-know-about-change-detection-in-angular-and-other-tweeted-links</guid>
-  <pubDate>Thu, 26 Jul 2018 17:30:26 GMT</pubDate>
 </item></channel>
 </rss>
