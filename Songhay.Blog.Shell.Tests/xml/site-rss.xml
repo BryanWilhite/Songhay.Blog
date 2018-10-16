@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 13 Oct 2018 23:18:23 GMT</pubDate>
+  <channel><pubDate>Tue, 16 Oct 2018 06:21:26 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Mad props to Microsoft for their PWA push!” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/mad-props-to-microsoft-for-their-pwa-push-and-other-tweeted-links</link>
+  <description>Mad props to Microsoft for their PWA push! [developer.microsoft.com] Love seeing PWAs become first class on Windows 10. I am working on a blog post right now about what this means for @Ionicframework users (:
+    
+      The Power of Flex-Grow [hackerno...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">mad-props-to-microsoft-for-their-pwa-push-and-other-tweeted-links</guid>
+  <pubDate>Tue, 16 Oct 2018 06:19:25 GMT</pubDate>
+</item>
 <item>
   <title>“With Angular v6 it’s now as easy as `ng add” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</link>
@@ -12,7 +22,7 @@
 
       🌴Treeshakable Providers
       ⚡️Angular Elements ("Web Components")
-      📺Outlook to ...</description>
+      📺Outloo...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</guid>
   <pubDate>Sat, 13 Oct 2018 23:15:46 GMT</pubDate>
@@ -46,7 +56,7 @@
   <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</link>
   <description>How to make responsiveness super simple with CSS Variables A quick tutorial on how to create responsive websites i…
       [twitter.com] The 3.0 releases of our aXe
-      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ru...</description>
+      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</guid>
   <pubDate>Wed, 08 Aug 2018 17:41:02 GMT</pubDate>
@@ -57,7 +67,7 @@
   <description>Glide.js: A Dependency-Free ES6 Slider and Carousel -
       [glidejs.com] ("Designed to slide. No less, no more" says the creator.) A Responsive Accessible Table
       [adrianroselli.com] Since their “redesign”
-      @HSBC_UK online banking is now barely...</description>
+      @HSBC_UK online banking is now bar...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</guid>
   <pubDate>Tue, 07 Aug 2018 16:59:20 GMT</pubDate>
@@ -68,7 +78,7 @@
   <description>SVG Polygon Generator
       [codepen.io] Design—and designers—seem perpetually threatened by democratization. -
       [subtraction.com] -
-      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes in ...</description>
+      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes ...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">svg-polygon-generator-and-other-tweeted-links</guid>
   <pubDate>Mon, 06 Aug 2018 21:06:48 GMT</pubDate>
@@ -79,7 +89,7 @@
   <description>Implementing an Infinite Scroll with Vue.js:
       [alligator.io] Build a Basic CRUD App with Vue.js and Node by sitepointdotcom
       [javascriptkicks.com]#javascript#vuejs#nodejs via JavaScriptKicks How
-      #CSS works: Parsing &amp;amp; painting CSS in t...</description>
+      #CSS works: Parsing &amp;amp; painting CSS i...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</guid>
   <pubDate>Sat, 04 Aug 2018 00:30:25 GMT</pubDate>
@@ -92,20 +102,9 @@
 
       ②…
       [twitter.com] A Practical Guide to Angular Elements:
-      [nitayneeman.com] People keep asking me about CSS Grid "best practices...</description>
+      [nitayneeman.com] People keep asking me about CSS Grid "best prac...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</guid>
   <pubDate>Wed, 01 Aug 2018 15:48:27 GMT</pubDate>
-</item>
-<item>
-  <title>“Using Color Psychology for Better Website Results” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/using-color-psychology-for-better-website-results-and-other-tweeted-links</link>
-  <description>Using Color Psychology for Better Website Results
-      [speckyboy.com] Creating smooth sequential animations with Sass
-      [glennmccomb.com]#webdevelopment “How we designed page previews for Wikipedia — and what could be done with them in the future”
-...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">using-color-psychology-for-better-website-results-and-other-tweeted-links</guid>
-  <pubDate>Mon, 30 Jul 2018 23:30:53 GMT</pubDate>
 </item></channel>
 </rss>
