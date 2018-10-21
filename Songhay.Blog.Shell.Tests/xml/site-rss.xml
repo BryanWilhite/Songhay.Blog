@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 16 Oct 2018 06:21:26 GMT</pubDate>
+  <channel><pubDate>Sun, 21 Oct 2018 18:19:35 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>jupyter central</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/jupyter-central</link>
+  <description>I am sure there are many reasons why Span&amp;lt;T&amp;gt; (and Memory&amp;lt;T&amp;gt;) was introduced to the .NET Framework. To me, these C# language features are a response to the dangerous (and tedious) supremacy of handling data in unmanaged memory in general and t...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">jupyter-central</guid>
+  <pubDate>Sun, 21 Oct 2018 18:17:34 GMT</pubDate>
+</item>
 <item>
   <title>“Mad props to Microsoft for their PWA push!” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/mad-props-to-microsoft-for-their-pwa-push-and-other-tweeted-links</link>
@@ -93,18 +101,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</guid>
   <pubDate>Sat, 04 Aug 2018 00:30:25 GMT</pubDate>
-</item>
-<item>
-  <title>“There are at least 🖐 five services that can process your static &amp;lt;form&amp;gt; for you” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</link>
-  <description>There are at least 🖐 five services that can process your static &amp;lt;form&amp;gt; for you: ①
-      [pageclip.co]
-
-      ②…
-      [twitter.com] A Practical Guide to Angular Elements:
-      [nitayneeman.com] People keep asking me about CSS Grid "best prac...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">there-are-at-least-five-services-that-can-process-your-static-form-for-you-and-other-tweeted-links</guid>
-  <pubDate>Wed, 01 Aug 2018 15:48:27 GMT</pubDate>
 </item></channel>
 </rss>
