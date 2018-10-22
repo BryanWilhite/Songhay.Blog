@@ -1,9 +1,20 @@
 <rss version="2.0">
-  <channel><pubDate>Sun, 21 Oct 2018 18:19:35 GMT</pubDate>
+  <channel><pubDate>Mon, 22 Oct 2018 02:28:56 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Upgrading to Angular v6: Step by Step” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</link>
+  <description>Upgrading to Angular v6: Step by Step [loiane.com]#angular
+      8 Free #JavaScript Image Cropping Scripts &amp;amp; Plugins [webdesignerdepot.com]
+      “Version 6 of Angular Now Available” by @stephenfluin[blog.angular.io]
+      Using Lektor with Travis...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</guid>
+  <pubDate>Mon, 22 Oct 2018 02:27:32 GMT</pubDate>
+</item>
 <item>
   <title>jupyter central</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/jupyter-central</link>
@@ -90,16 +101,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">svg-polygon-generator-and-other-tweeted-links</guid>
   <pubDate>Mon, 06 Aug 2018 21:06:48 GMT</pubDate>
-</item>
-<item>
-  <title>“Implementing an Infinite Scroll with Vue.js” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</link>
-  <description>Implementing an Infinite Scroll with Vue.js:
-      [alligator.io] Build a Basic CRUD App with Vue.js and Node by sitepointdotcom
-      [javascriptkicks.com]#javascript#vuejs#nodejs via JavaScriptKicks How
-      #CSS works: Parsing &amp;amp; painting CSS i...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">implementing-an-infinite-scroll-with-vue-js-and-other-tweeted-links</guid>
-  <pubDate>Sat, 04 Aug 2018 00:30:25 GMT</pubDate>
 </item></channel>
 </rss>
