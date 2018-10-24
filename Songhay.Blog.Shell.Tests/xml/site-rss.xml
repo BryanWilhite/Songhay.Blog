@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 22 Oct 2018 02:28:56 GMT</pubDate>
+  <channel><pubDate>Wed, 24 Oct 2018 04:43:22 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Ready for more details about #Angular new engine Ivy?” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/ready-for-more-details-about-angular-new-engine-ivy-and-other-tweeted-links</link>
+  <description>Ready for more details about #Angular new engine Ivy? I just published an article that dives deep into Ivy implementation and provides a comparison with the existing engine. Read it to find out if what you've learnt about Angular internals applies to Ivy...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">ready-for-more-details-about-angular-new-engine-ivy-and-other-tweeted-links</guid>
+  <pubDate>Wed, 24 Oct 2018 04:41:48 GMT</pubDate>
+</item>
 <item>
   <title>“Upgrading to Angular v6: Step by Step” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</link>
@@ -90,16 +98,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">glide-js-a-dependency-free-es6-slider-and-carousel-and-other-tweeted-links</guid>
   <pubDate>Tue, 07 Aug 2018 16:59:20 GMT</pubDate>
-</item>
-<item>
-  <title>“SVG Polygon Generator” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/svg-polygon-generator-and-other-tweeted-links</link>
-  <description>SVG Polygon Generator
-      [codepen.io] Design—and designers—seem perpetually threatened by democratization. -
-      [subtraction.com] -
-      [twitter.com] "...among the eight most important qualities of Google’s top employees, STEM expertise comes ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">svg-polygon-generator-and-other-tweeted-links</guid>
-  <pubDate>Mon, 06 Aug 2018 21:06:48 GMT</pubDate>
 </item></channel>
 </rss>
