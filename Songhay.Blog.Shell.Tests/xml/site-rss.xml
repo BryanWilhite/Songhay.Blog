@@ -1,9 +1,21 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 25 Oct 2018 05:24:40 GMT</pubDate>
+  <channel><pubDate>Sat, 27 Oct 2018 03:55:13 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“I just published ‘RxJS: Avoiding takeUntil Leaks’” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</link>
+  <description>I just published “RxJS: Avoiding takeUntil Leaks” [medium.com]
+      I was looking for a color picker component made for @angular, thanks god [ngx.tools] is here to help me find one 😅
+
+      [ngx.tools][twitter.com]
+      10 essential #typescript ti...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</guid>
+  <pubDate>Sat, 27 Oct 2018 03:54:01 GMT</pubDate>
+</item>
 <item>
   <title>“Using Web Assembly to speed up your Angular Application” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/using-web-assembly-to-speed-up-your-angular-application-and-other-tweeted-links</link>
@@ -86,15 +98,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">studio-status-report-2018-08</guid>
   <pubDate>Fri, 10 Aug 2018 17:25:50 GMT</pubDate>
-</item>
-<item>
-  <title>“How to make responsiveness super simple with CSS Variables” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</link>
-  <description>How to make responsiveness super simple with CSS Variables A quick tutorial on how to create responsive websites i…
-      [twitter.com] The 3.0 releases of our aXe
-      #a11y extensions are out! You can now test inside of Shadow DOM and with some new ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">how-to-make-responsiveness-super-simple-with-css-variables-and-other-tweeted-links</guid>
-  <pubDate>Wed, 08 Aug 2018 17:41:02 GMT</pubDate>
 </item></channel>
 </rss>
