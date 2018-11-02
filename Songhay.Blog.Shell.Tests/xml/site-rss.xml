@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 27 Oct 2018 03:55:13 GMT</pubDate>
+  <channel><pubDate>Fri, 02 Nov 2018 05:05:25 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“A collection of some of the best data visualisation related content discovered during March 2018” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</link>
+  <description>NEW POST: A collection of some of the best data visualisation related content discovered during March 2018 [visualisingdata.com][twitter.com]
+      ICYMI, 📊short-course &amp;amp;📽s!
+      "Data Visualization Pitfalls to Avoid" 👩‍💻 @tamaramunzner[buff.l...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</guid>
+  <pubDate>Fri, 02 Nov 2018 05:03:56 GMT</pubDate>
+</item>
 <item>
   <title>“I just published ‘RxJS: Avoiding takeUntil Leaks’” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</link>
@@ -90,13 +100,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">studio-status-report-2018-09</guid>
   <pubDate>Sun, 30 Sep 2018 22:50:14 GMT</pubDate>
-</item>
-<item>
-  <title>studio status report: 2018-08</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-08</link>
-  <description>Going forward from here my passive-voice intention is to keep track of myself monthly. My work habits have always included keeping a private journal. In the “early years,” one Microsoft Word document per year was enough. As my software-development surfac...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">studio-status-report-2018-08</guid>
-  <pubDate>Fri, 10 Aug 2018 17:25:50 GMT</pubDate>
 </item></channel>
 </rss>
