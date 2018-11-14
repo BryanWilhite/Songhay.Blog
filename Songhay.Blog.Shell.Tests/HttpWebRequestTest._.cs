@@ -144,6 +144,35 @@ namespace Songhay.Blog.Shell.Tests
 
             #region functional members:
 
+            string expandAmpersandGlyph(string s)
+            {
+                var re = new Regex(@"&\s+");
+                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
+                {
+                    s = s.Replace(i.Value, "&amp; ");
+                });
+
+                return s;
+            }
+
+            string expandArrows(string s)
+            {
+                s = s.Replace("=>", "=&gt;");
+                return s;
+            }
+
+            string expandLessThanGlyph(string s)
+            {
+                var re = new Regex(@"(<)[^\w,\/]");
+                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
+                {
+                    if (i.Groups.Count() != 2) return;
+                    s = s.Replace(i.Groups[1].Value, "&lt;");
+                });
+
+                return s;
+            }
+
             async Task<Uri> expandUri(Uri expandableUri)
             {
                 this.TestContext.WriteLine("expanding wrapped URI: {0}...", expandableUri);
@@ -165,13 +194,42 @@ namespace Songhay.Blog.Shell.Tests
 
             bool isHost(string context, string host) => context.Contains(string.Format("://{0}/", host));
 
+            string removeAnchorLineBreaks(string s)
+            {
+                var regexes = new[]
+                {
+                    new Regex(@"(\r\n?\s*)<a "),
+                    new Regex(@"</a>\s*(\r\n?\s*)")
+                };
+
+                regexes.ForEachInEnumerable(re =>
+                {
+                    s = re.Replace(s, match =>
+                     {
+                         if (match.Groups.Count() != 2) return match.Value;
+                         return match.Value.Replace(match.Groups[1].Value, " ");
+                     });
+                });
+
+                return s;
+            }
+
+            string removeImageLineBreaks(string s)
+            {
+                var re = new Regex(@"(\r\n?\s*)(<img [^>]+/>)\s*(\r\n?\s*)");
+
+                s = re.Replace(s, match =>
+                {
+                    if (match.Groups.Count() != 4) return match.Value;
+                    return $" {match.Groups[2].Value} ";
+                });
+
+                return s;
+            }
+
             string removeNonBreakingSpace(string s)
             {
-                var re = new Regex(@"\s*(&nbsp;)\s*");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    s = s.Replace(i.Value, " ");
-                });
+                s = s.Replace("&nbsp;", " ");
 
                 return s;
             }
@@ -179,9 +237,14 @@ namespace Songhay.Blog.Shell.Tests
             #endregion
 
             var html = File.ReadAllText(htmlPath);
-            var xml = HtmlUtility.ConvertToXml(html);
+            html = expandAmpersandGlyph(html);
+            html = expandArrows(html);
+            html = expandLessThanGlyph(html);
+            html = removeAnchorLineBreaks(html);
+            html = removeImageLineBreaks(html);
+            html = removeNonBreakingSpace(html);
 
-            xml = removeNonBreakingSpace(xml);
+            var xml = HtmlUtility.ConvertToXml(html);
 
             var xd = XDocument.Parse(xml);
 
@@ -204,11 +267,6 @@ namespace Songhay.Blog.Shell.Tests
 
             #region functional members:
 
-            string addSpaceBetweenAnchors(string s)
-            {
-                return s.Replace("</a><", "</a> <");
-            }
-
             string removeNewLineAndSpaceAfterParagraphElement(string s)
             {
                 var re = new Regex(@"(\<p\>)\r\n\s+");
@@ -220,35 +278,9 @@ namespace Songhay.Blog.Shell.Tests
                 return s;
             }
 
-            string removeNewLineAndSpaceBeforeAnchorElement(string s)
-            {
-                var re = new Regex(@"\r\n\s+(\<a [^\>]+\>)");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    s = s.Replace(i.Value, i.Groups[1].Value);
-                });
-
-                return s;
-            }
-
-            string removeNewLineAndSpaceBeforeImageElement(string s)
-            {
-                var re = new Regex(@"\r\n\s+(\<img [^\>]+\>)\r\n\s+");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    s = s.Replace(i.Value, i.Groups[1].Value);
-                });
-
-                return s;
-            }
-
             #endregion
 
             xml = removeNewLineAndSpaceAfterParagraphElement(xml);
-            xml = removeNewLineAndSpaceBeforeImageElement(xml);
-            xml = removeNewLineAndSpaceBeforeAnchorElement(xml);
-
-            xml = addSpaceBetweenAnchors(xd.ToString());
 
             File.WriteAllText(htmlPath, xml);
         }
