@@ -1,7 +1,14 @@
 name: $(System.TeamProject)_$(Build.DefinitionName)_$(Build.SourceBranchName)_$(Build.BuildId)
 trigger:
-- master
-- releases/*
+  branches:
+    include:
+    - master
+    - releases/*
+  paths:
+    exclude:
+    - /*.yml
+    - Songhay.Blog.Shell.Tests/*
+    - Songhay.Blog.Tests/*
 
 resources:
 - repo: self
