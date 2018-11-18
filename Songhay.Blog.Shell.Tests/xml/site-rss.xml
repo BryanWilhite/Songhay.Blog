@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 02 Nov 2018 05:05:25 GMT</pubDate>
+  <channel><pubDate>Sun, 18 Nov 2018 07:02:53 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Downplaying Empty States in Design” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/downplaying-empty-states-in-design-and-other-tweeted-links</link>
+  <description>Downplaying Empty States in Design https://t.co/nyrO5l1Fhr New CSS Features That Are Changing Web Design
+
+            Zell Liew takes a closer look at new CSS features such as CSS Grid. The article has code examples so you can see how it was achieved. ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">downplaying-empty-states-in-design-and-other-tweeted-links</guid>
+  <pubDate>Sun, 18 Nov 2018 07:00:40 GMT</pubDate>
+</item>
 <item>
   <title>“A collection of some of the best data visualisation related content discovered during March 2018” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</link>
@@ -92,13 +102,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">studio-status-report-2018-10</guid>
   <pubDate>Thu, 11 Oct 2018 00:02:11 GMT</pubDate>
-</item>
-<item>
-  <title>studio status report: 2018-09</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-09</link>
-  <description>This report is a extremely late as this writing occurs on the last day of the month.the work on the new SonghaySystem.com continuesThe prime suspect for the lateness of this report is the work represented by Songhay.Dashboardissue #16. This single issue ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">studio-status-report-2018-09</guid>
-  <pubDate>Sun, 30 Sep 2018 22:50:14 GMT</pubDate>
 </item></channel>
 </rss>
