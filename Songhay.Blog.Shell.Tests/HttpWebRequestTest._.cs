@@ -12,6 +12,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -59,15 +60,14 @@ namespace Songhay.Blog.Shell.Tests
 
         [TestCategory("Integration")]
         [TestMethod]
-        [TestProperty("uri", "http://ow.ly/87kA3076kM1")]
+        [TestProperty("uri", "https://t.co/Ok1vhFXZy7")]
         public async Task ShouldGet301Or302()
         {
             var uri = new Uri(this.TestContext.Properties["uri"].ToString(), UriKind.Absolute);
 
             var response = await httpClient.GetAsync(uri);
             this.TestContext.WriteLine("HttpStatusCode: {0}", response.StatusCode);
-            Assert.IsTrue(response.StatusCode == HttpStatusCode.Moved ||
-                response.StatusCode == HttpStatusCode.Redirect, "The expected status code is not here.");
+            Assert.IsTrue(response.IsMovedOrRedirected(), "The expected status code is not here.");
             this.TestContext.WriteLine($"Location: {response.Headers.Location}");
         }
 
@@ -107,8 +107,7 @@ namespace Songhay.Blog.Shell.Tests
 
                 var response = await httpClient.GetAsync(uri);
                 this.TestContext.WriteLine("HttpStatusCode: {0}", response.StatusCode);
-                Assert.IsTrue(response.StatusCode == HttpStatusCode.Moved ||
-                    response.StatusCode == HttpStatusCode.Redirect, "The expected status code is not here.");
+                Assert.IsTrue(response.IsMovedOrRedirected(), "The expected status code is not here.");
 
                 var expandedUri = response.Headers.Location;
                 this.TestContext.WriteLine("expanded URI: {0}", expandedUri);
@@ -124,17 +123,17 @@ namespace Songhay.Blog.Shell.Tests
 
         [TestCategory("Integration")]
         [TestMethod]
-        [TestProperty("htmlPath", @"Songhay.Blog.Shell.Tests\html\ShouldGenerateBlogEntry.html")]
+        [TestProperty("htmlPath", @"html\ShouldGenerateBlogEntry.html")]
         [TestProperty("twitterHost", "t.co")]
         [TestProperty("hootsuiteHost", "ow.ly")]
         public async Task ShouldExpandUrisFromNewEntry()
         {
-            var root = this.TestContext.ShouldGetAssemblyDirectoryParent(this.GetType(), expectedLevels: 4);
+            var projectDirectoryInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
 
             #region test properties:
 
             var htmlPath = this.TestContext.Properties["htmlPath"].ToString();
-            htmlPath = root.ToCombinedPath(htmlPath);
+            htmlPath = projectDirectoryInfo.FullName.ToCombinedPath(htmlPath);
             this.TestContext.ShouldFindFile(htmlPath);
 
             var twitterHost = this.TestContext.Properties["twitterHost"].ToString();
@@ -175,24 +174,52 @@ namespace Songhay.Blog.Shell.Tests
 
             async Task<Uri> expandUri(Uri expandableUri)
             {
-                this.TestContext.WriteLine("expanding wrapped URI: {0}...", expandableUri);
+                var messageBuilder = new StringBuilder();
+
+                messageBuilder.AppendLine($"expanding wrapped URI: {expandableUri}...");
 
                 var response = await httpClient.GetAsync(expandableUri);
-                this.TestContext.WriteLine("HttpStatusCode: {0}", response.StatusCode);
-                if (response.StatusCode == HttpStatusCode.Moved || response.StatusCode == HttpStatusCode.Redirect)
+                messageBuilder.AppendLine($"HttpStatusCode: {response.StatusCode}");
+                if (response.IsMovedOrRedirected())
                 {
                     var expandedUri = response.Headers.Location;
-                    this.TestContext.WriteLine("expanded URI: {0}", expandedUri);
+                    messageBuilder.AppendLine($"expanded URI: {expandedUri}");
+
+                    this.TestContext.WriteLine(messageBuilder.ToString());
+
                     return expandedUri;
                 }
                 else
                 {
-                    this.TestContext.WriteLine("The expected status code is not here.");
+                    messageBuilder.AppendLine($"WARNING: the expected status code is not here. Headers location: {response.Headers.Location}");
+
+                    this.TestContext.WriteLine(messageBuilder.ToString());
+
                     return expandableUri;
                 }
             }
 
-            bool isHost(string context, string host) => context.Contains(string.Format("://{0}/", host));
+            bool isHost(string context, string host) => context.Contains($"://{host}/");
+
+            async Task processTwitterAnchorsAsync(XDocument xDocument)
+            {
+                this.TestContext.WriteLine("looking for Twitter anchors of the form <a*>*://{0}//*</a>...", twitterHost);
+                var twitterAnchors = xDocument.Descendants("a").Where(i => isHost(i.Value, twitterHost));
+                Assert.IsTrue(twitterAnchors.Any(), string.Format("The expected {0} anchors are not here.", twitterHost));
+
+                var tasks = twitterAnchors.Select(async i =>
+                {
+                    var uri = new Uri(i.Attribute("href").Value, UriKind.Absolute);
+                    var expandedUri = await expandUri(uri);
+                    if (isHost(expandedUri?.OriginalString, hootsuiteHost))
+                    {
+                        expandedUri = await expandUri(expandedUri);
+                    }
+
+                    i.ExpandTwitterAnchor(expandedUri.OriginalString, twitterHost);
+                });
+                await Task.WhenAll(tasks);
+            }
 
             string removeAnchorLineBreaks(string s)
             {
@@ -227,6 +254,17 @@ namespace Songhay.Blog.Shell.Tests
                 return s;
             }
 
+            string removeNewLineAndSpaceAfterParagraphElement(string s)
+            {
+                var re = new Regex(@"(\<p\>)\r\n\s+");
+                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
+                {
+                    s = s.Replace(i.Value, i.Groups[1].Value);
+                });
+
+                return s;
+            }
+
             string removeNonBreakingSpace(string s)
             {
                 s = s.Replace("&nbsp;", " ");
@@ -240,49 +278,16 @@ namespace Songhay.Blog.Shell.Tests
             html = expandAmpersandGlyph(html);
             html = expandArrows(html);
             html = expandLessThanGlyph(html);
+            html = removeNonBreakingSpace(html);
+            html = HtmlUtility.ConvertToXml(html);
+
+            var xd = XDocument.Parse(html);
+            await processTwitterAnchorsAsync(xd);
+            html = xd.ToString();
             html = removeAnchorLineBreaks(html);
             html = removeImageLineBreaks(html);
-            html = removeNonBreakingSpace(html);
-
-            var xml = HtmlUtility.ConvertToXml(html);
-
-            var xd = XDocument.Parse(xml);
-
-            this.TestContext.WriteLine("looking for Twitter anchors of the form <a*>*://{0}//*</a>...", twitterHost);
-            var twitterAnchors = xd.Descendants("a").Where(i => isHost(i.Value, twitterHost));
-            Assert.IsTrue(twitterAnchors.Any(), string.Format("The expected {0} anchors are not here.", twitterHost));
-
-            var tasks = twitterAnchors.Select(async i =>
-            {
-                var uri = new Uri(i.Attribute("href").Value, UriKind.Absolute);
-                var expandedUri = await expandUri(uri);
-                if (isHost(expandedUri?.OriginalString, hootsuiteHost))
-                {
-                    expandedUri = await expandUri(expandedUri);
-                }
-
-                i.ExpandTwitterAnchor(expandedUri.OriginalString, twitterHost);
-            });
-            await Task.WhenAll(tasks);
-
-            #region functional members:
-
-            string removeNewLineAndSpaceAfterParagraphElement(string s)
-            {
-                var re = new Regex(@"(\<p\>)\r\n\s+");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    s = s.Replace(i.Value, i.Groups[1].Value);
-                });
-
-                return s;
-            }
-
-            #endregion
-
-            xml = removeNewLineAndSpaceAfterParagraphElement(xml);
-
-            File.WriteAllText(htmlPath, xml);
+            html = removeNewLineAndSpaceAfterParagraphElement(html);
+            File.WriteAllText(htmlPath, html);
         }
 
         const string apiKeyHeader = "api-key";
