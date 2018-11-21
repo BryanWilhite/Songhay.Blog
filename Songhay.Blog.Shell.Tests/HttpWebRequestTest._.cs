@@ -205,7 +205,6 @@ namespace Songhay.Blog.Shell.Tests
             {
                 this.TestContext.WriteLine("looking for Twitter anchors of the form <a*>*://{0}//*</a>...", twitterHost);
                 var twitterAnchors = xDocument.Descendants("a").Where(i => isHost(i.Value, twitterHost));
-                Assert.IsTrue(twitterAnchors.Any(), string.Format("The expected {0} anchors are not here.", twitterHost));
 
                 var tasks = twitterAnchors.Select(async i =>
                 {

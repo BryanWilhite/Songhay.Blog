@@ -344,7 +344,7 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("htmlFile", @"html\ShouldGenerateBlogEntry.html")]
-        [TestProperty("slug", "yes-finally-here-architecting-ng-apps-with-redux-rxjs-and-nhrx-and-other-tweeted-links")]
+        [TestProperty("slug", "downplaying-empty-states-in-design-and-other-tweeted-links")]
         public async Task ShouldLoadEntryIntoHtmlFile()
         {
             var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
