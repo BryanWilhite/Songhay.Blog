@@ -12,7 +12,6 @@ trigger:
     - releases/*
   paths:
     exclude:
-    - /azure*.yml
     - $(RepoName).Repository.Tests/*
     - $(RepoName).Shell.Tests/*
     - $(RepoName).Tests/*
