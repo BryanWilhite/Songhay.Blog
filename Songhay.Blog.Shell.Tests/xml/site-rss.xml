@@ -1,15 +1,25 @@
 <rss version="2.0">
-  <channel><pubDate>Sun, 18 Nov 2018 07:02:53 GMT</pubDate>
+  <channel><pubDate>Sun, 25 Nov 2018 20:30:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
 <item>
+  <title>“Interactive SVG mask w/full screen image” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</link>
+  <description>Interactive SVG mask w/full screen image
+
+            Pretty fantastic SVG mask demo done by Craig Roblewsk. [codepen.io] I feel like we as front end developers should be doing more static websites and server-side templating. Front end frameworks are m...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</guid>
+  <pubDate>Sun, 25 Nov 2018 20:28:36 GMT</pubDate>
+</item>
+<item>
   <title>“Downplaying Empty States in Design” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/downplaying-empty-states-in-design-and-other-tweeted-links</link>
-  <description>Downplaying Empty States in Design https://t.co/nyrO5l1Fhr New CSS Features That Are Changing Web Design
+  <description>Downplaying Empty States in Design [shakuro.com] New CSS Features That Are Changing Web Design
 
-            Zell Liew takes a closer look at new CSS features such as CSS Grid. The article has code examples so you can see how it was achieved. ...</description>
+            Zell Liew takes a closer look at new CSS features such as CSS Grid. The article has code examples so you can see how it was achieved. [smashingm...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">downplaying-empty-states-in-design-and-other-tweeted-links</guid>
   <pubDate>Sun, 18 Nov 2018 07:00:40 GMT</pubDate>
@@ -94,13 +104,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</guid>
   <pubDate>Sat, 13 Oct 2018 23:15:46 GMT</pubDate>
-</item>
-<item>
-  <title>studio status report: 2018-10</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-10</link>
-  <description>the new SonghaySystem.com releasedSonghaySystem.com is released. I tweeted about it to capture the moment—which was a moment of exhaustion. I would love to say that this release captured all of the Angular-related topics I plan to study but I can’t. Thes...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">studio-status-report-2018-10</guid>
-  <pubDate>Thu, 11 Oct 2018 00:02:11 GMT</pubDate>
 </item></channel>
 </rss>
