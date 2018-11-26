@@ -1,9 +1,25 @@
 <rss version="2.0">
-  <channel><pubDate>Sun, 25 Nov 2018 20:30:05 GMT</pubDate>
+  <channel><pubDate>Mon, 26 Nov 2018 20:25:03 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>remembering the CLI and the multi-tasking OS</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/remembering-the-cli-and-the-multi-tasking-os</link>
+  <description>I have literally paid the price for forgetting about the wonders of a multitasking Operating System and how the Common Language Infrastructure (CLI) takes advantage of such a thing for my benefit. And when I mean “literally paid” I am talking about the i...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">remembering-the-cli-and-the-multi-tasking-os</guid>
+  <pubDate>Mon, 26 Nov 2018 20:22:15 GMT</pubDate>
+</item>
+<item>
+  <title>studio status report: 2018-11</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-11</link>
+  <description>SonghaySystem.com is fully covered by Azure Web JobsIt would awesome to celebrate without reservation that my Songhay Dashboard will now update itself via an Azure Web Job. This is great news and the first tangible evidence of a system for the Songhay Sy...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2018-11</guid>
+  <pubDate>Mon, 26 Nov 2018 20:18:14 GMT</pubDate>
+</item>
 <item>
   <title>“Interactive SVG mask w/full screen image” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</link>
@@ -81,28 +97,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">jupyter-central</guid>
   <pubDate>Sun, 21 Oct 2018 18:17:34 GMT</pubDate>
-</item>
-<item>
-  <title>“Mad props to Microsoft for their PWA push!” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/mad-props-to-microsoft-for-their-pwa-push-and-other-tweeted-links</link>
-  <description>Mad props to Microsoft for their PWA push! [developer.microsoft.com] Love seeing PWAs become first class on Windows 10. I am working on a blog post right now about what this means for @Ionicframework users (:
-    
-      The Power of Flex-Grow [hackerno...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">mad-props-to-microsoft-for-their-pwa-push-and-other-tweeted-links</guid>
-  <pubDate>Tue, 16 Oct 2018 06:19:25 GMT</pubDate>
-</item>
-<item>
-  <title>“With Angular v6 it’s now as easy as `ng add” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</link>
-  <description>With Angular v6 it's now as easy as `ng add @angular/pwa`. 🌟🌞⚡ [twitter.com]
-      What's new in #Angular Release 6.0.0 🇬🇧. My article at @JAXenter shows:
-
-      🌴Treeshakable Providers
-      ⚡️Angular Elements ("Web Components")
-      📺Outloo...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">with-angular-v6-it-s-now-as-easy-as-ng-add-and-other-tweeted-links</guid>
-  <pubDate>Sat, 13 Oct 2018 23:15:46 GMT</pubDate>
 </item></channel>
 </rss>
