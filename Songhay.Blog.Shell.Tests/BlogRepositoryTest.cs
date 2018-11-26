@@ -344,7 +344,7 @@ namespace Songhay.Blog.Shell.Tests
         [TestMethod]
         [TestProperty("blobContainerName", "songhayblog-azurewebsites-net")]
         [TestProperty("htmlFile", @"html\ShouldGenerateBlogEntry.html")]
-        [TestProperty("slug", "downplaying-empty-states-in-design-and-other-tweeted-links")]
+        [TestProperty("slug", "studio-status-report-2018-11")]
         public async Task ShouldLoadEntryIntoHtmlFile()
         {
             var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
