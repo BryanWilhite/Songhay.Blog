@@ -157,18 +157,27 @@ namespace Songhay.Blog.Shell.Tests
             string expandArrows(string s)
             {
                 s = s.Replace("=>", "=&gt;");
+                s = s.Replace("<=", "&lt;=");
                 return s;
             }
 
-            string expandLessThanGlyph(string s)
+            string expandComparisonOperatorGlyphs(string s)
             {
-                var re = new Regex(@"(<)[^\w,\/]");
+                var re = new Regex(@"\s(<|>)\s");
                 re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
                 {
                     if (i.Groups.Count() != 2) return;
-                    s = s.Replace(i.Groups[1].Value, "&lt;");
+                    var @value = i.Groups[1].Value;
+                    if (@value == "<") s = s.Replace(@value, "&lt;");
+                    if (@value == ">") s = s.Replace(@value, "&gt;");
                 });
 
+                return s;
+            }
+
+            string expandGenericNotation(string s)
+            {
+                s = s.Replace("<T>", "&lt;T&gt;");
                 return s;
             }
 
@@ -276,7 +285,8 @@ namespace Songhay.Blog.Shell.Tests
             var html = File.ReadAllText(htmlPath);
             html = expandAmpersandGlyph(html);
             html = expandArrows(html);
-            html = expandLessThanGlyph(html);
+            html = expandComparisonOperatorGlyphs(html);
+            html = expandGenericNotation(html);
             html = removeNonBreakingSpace(html);
             html = HtmlUtility.ConvertToXml(html);
 
