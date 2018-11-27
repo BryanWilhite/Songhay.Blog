@@ -1,9 +1,24 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 26 Nov 2018 20:25:03 GMT</pubDate>
+  <channel><pubDate>Tue, 27 Nov 2018 20:43:32 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“JavaScript is like leaded gasoline; toxic, bad for everyone” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/javascript-is-like-leaded-gasoline-toxic-bad-for-everyone-and-other-tweeted-links</link>
+  <description>JavaScript is like leaded gasoline; toxic, bad for everyone, but readily available and with few alternatives. Like in the 60’s - people will go to great lengths to justify it. [twitter.com] JavaScript
+
+      &amp;gt; "" == []
+      true
+
+      wat
+
+  ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">javascript-is-like-leaded-gasoline-toxic-bad-for-everyone-and-other-tweeted-links</guid>
+  <pubDate>Tue, 27 Nov 2018 20:41:54 GMT</pubDate>
+</item>
 <item>
   <title>remembering the CLI and the multi-tasking OS</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/remembering-the-cli-and-the-multi-tasking-os</link>
@@ -89,13 +104,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</guid>
   <pubDate>Mon, 22 Oct 2018 02:27:32 GMT</pubDate>
-</item>
-<item>
-  <title>jupyter central</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/jupyter-central</link>
-  <description>I am sure there are many reasons why Span&amp;lt;T&amp;gt; (and Memory&amp;lt;T&amp;gt;) was introduced to the .NET Framework. To me, these C# language features are a response to the dangerous (and tedious) supremacy of handling data in unmanaged memory in general and t...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">jupyter-central</guid>
-  <pubDate>Sun, 21 Oct 2018 18:17:34 GMT</pubDate>
 </item></channel>
 </rss>
