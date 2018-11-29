@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 29 Nov 2018 03:17:25 GMT</pubDate>
+  <channel><pubDate>Thu, 29 Nov 2018 19:54:10 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“How to easily create modern material design cards with HTML and CSS” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-easily-create-modern-material-design-cards-with-html-and-css-and-other-tweeted-links</link>
+  <description>How to easily create modern material design cards with HTML and CSS [codepen.io] Building a Fancy Countdown Timer with MomentumSlider.js [scotch.io]#html5#css#scss#javascript Now at #ngAu18#ngconfau, @ErinJZimmer talks us "Angular, the Event Loop &amp;amp; Y...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">how-to-easily-create-modern-material-design-cards-with-html-and-css-and-other-tweeted-links</guid>
+  <pubDate>Thu, 29 Nov 2018 19:52:22 GMT</pubDate>
+</item>
 <item>
   <title>“Introducing npx: an npm package runner” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/introducing-npx-an-npm-package-runner-and-other-tweeted-links</link>
@@ -93,13 +101,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">using-web-assembly-to-speed-up-your-angular-application-and-other-tweeted-links</guid>
   <pubDate>Thu, 25 Oct 2018 05:23:25 GMT</pubDate>
-</item>
-<item>
-  <title>“Ready for more details about #Angular new engine Ivy?” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/ready-for-more-details-about-angular-new-engine-ivy-and-other-tweeted-links</link>
-  <description>Ready for more details about #Angular new engine Ivy? I just published an article that dives deep into Ivy implementation and provides a comparison with the existing engine. Read it to find out if what you've learnt about Angular internals applies to Ivy...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">ready-for-more-details-about-angular-new-engine-ivy-and-other-tweeted-links</guid>
-  <pubDate>Wed, 24 Oct 2018 04:41:48 GMT</pubDate>
 </item></channel>
 </rss>
