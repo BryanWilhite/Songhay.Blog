@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 27 Nov 2018 20:43:32 GMT</pubDate>
+  <channel><pubDate>Thu, 29 Nov 2018 03:17:25 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Introducing npx: an npm package runner” and other Tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/introducing-npx-an-npm-package-runner-and-other-tweeted-links</link>
+  <description>“Introducing npx: an npm package runner” by @maybekatz[medium.com] “State of React Native 2018 · React Native” [htn.to] Beautifully visualised selection of UX principles. [lawsofux.com] The #UX of AI - An article about Google Clips and what it means in p...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">introducing-npx-an-npm-package-runner-and-other-tweeted-links</guid>
+  <pubDate>Thu, 29 Nov 2018 03:16:00 GMT</pubDate>
+</item>
 <item>
   <title>“JavaScript is like leaded gasoline; toxic, bad for everyone” and other Tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/javascript-is-like-leaded-gasoline-toxic-bad-for-everyone-and-other-tweeted-links</link>
@@ -93,16 +101,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">ready-for-more-details-about-angular-new-engine-ivy-and-other-tweeted-links</guid>
   <pubDate>Wed, 24 Oct 2018 04:41:48 GMT</pubDate>
-</item>
-<item>
-  <title>“Upgrading to Angular v6: Step by Step” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</link>
-  <description>Upgrading to Angular v6: Step by Step [loiane.com]#angular
-      8 Free #JavaScript Image Cropping Scripts &amp;amp; Plugins [webdesignerdepot.com]
-      “Version 6 of Angular Now Available” by @stephenfluin[blog.angular.io]
-      Using Lektor with Travis...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">upgrading-to-angular-v6-step-by-step-and-other-tweeted-links</guid>
-  <pubDate>Mon, 22 Oct 2018 02:27:32 GMT</pubDate>
 </item></channel>
 </rss>
