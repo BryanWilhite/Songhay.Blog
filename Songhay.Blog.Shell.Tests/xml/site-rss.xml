@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 29 Nov 2018 19:54:10 GMT</pubDate>
+  <channel><pubDate>Fri, 30 Nov 2018 19:19:30 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“ES2018 was just approved!” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/es2018-was-just-approved-and-other-tweeted-links</link>
+  <description>ES2018 was just approved! This is a list of its features: [exploringjs.com][twitter.com] I wrote a book about layout for @abookapart[buff.ly]#aeabos "Again. The web is boring. Everything looks the same. Let's start having fun with CSS and make the Web am...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">es2018-was-just-approved-and-other-tweeted-links</guid>
+  <pubDate>Fri, 30 Nov 2018 19:18:23 GMT</pubDate>
+</item>
 <item>
   <title>“How to easily create modern material design cards with HTML and CSS” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-easily-create-modern-material-design-cards-with-html-and-css-and-other-tweeted-links</link>
@@ -92,14 +100,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</guid>
   <pubDate>Sat, 27 Oct 2018 03:54:01 GMT</pubDate>
-</item>
-<item>
-  <title>“Using Web Assembly to speed up your Angular Application” and other Tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/using-web-assembly-to-speed-up-your-angular-application-and-other-tweeted-links</link>
-  <description>Using Web Assembly to speed up your Angular Application [malcoded.com]#angular#javascript via @malcoded
-      Why another state management framework for Angular? by @amcdnl#ngxs#ngrx#angular[medium.com][twitter.com]#RxJS 6.2.0 published - Finally added ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">using-web-assembly-to-speed-up-your-angular-application-and-other-tweeted-links</guid>
-  <pubDate>Thu, 25 Oct 2018 05:23:25 GMT</pubDate>
 </item></channel>
 </rss>
