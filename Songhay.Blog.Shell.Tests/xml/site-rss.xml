@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 30 Nov 2018 19:19:30 GMT</pubDate>
+  <channel><pubDate>Mon, 03 Dec 2018 03:52:25 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Hexi Flexi: A #CSS Grid powered SCSS component that creates a hexagonal lattice” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/hexi-flexi-a-css-grid-powered-scss-component-that-creates-a-hexagonal-lattice-and-other-tweeted-links</link>
+  <description>Hexi Flexi: A #CSS Grid powered SCSS component that creates a hexagonal lattice [vmcreative.github.io] Did I tell you yesterday my slides for my talk at @ampersandconf are up at [noti.st]? Well, they are. A video was recorded and will be posted sometime ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">hexi-flexi-a-css-grid-powered-scss-component-that-creates-a-hexagonal-lattice-and-other-tweeted-links</guid>
+  <pubDate>Mon, 03 Dec 2018 03:50:43 GMT</pubDate>
+</item>
 <item>
   <title>“ES2018 was just approved!” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/es2018-was-just-approved-and-other-tweeted-links</link>
@@ -88,17 +96,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</guid>
   <pubDate>Fri, 02 Nov 2018 05:03:56 GMT</pubDate>
-</item>
-<item>
-  <title>“I just published ‘RxJS: Avoiding takeUntil Leaks’” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</link>
-  <description>I just published “RxJS: Avoiding takeUntil Leaks” [medium.com]
-      I was looking for a color picker component made for @angular, thanks god [ngx.tools] is here to help me find one 😅
-
-      [ngx.tools][twitter.com]
-      10 essential #typescript ti...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">i-just-published-rxjs-avoiding-takeuntil-leaks-and-other-tweeted-links</guid>
-  <pubDate>Sat, 27 Oct 2018 03:54:01 GMT</pubDate>
 </item></channel>
 </rss>
