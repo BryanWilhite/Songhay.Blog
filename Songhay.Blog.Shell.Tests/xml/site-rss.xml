@@ -1,9 +1,18 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 03 Dec 2018 03:52:25 GMT</pubDate>
+  <channel><pubDate>Fri, 07 Dec 2018 21:56:03 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Why GraphQL: Advantages, Disadvantages and Alternatives” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/why-graphql-advantages-disadvantages-and-alternatives-and-other-tweeted-links</link>
+  <description>Why GraphQL: Advantages, Disadvantages and Alternatives - [robinwieruch.de] Created an Example: Dynamic Dashboard with @Angular Elements and Web Components: 📦 Dynamically adding Custom Elements
+            🚂 Lazy Loading Custom Elements ➡️ Loading ext...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">why-graphql-advantages-disadvantages-and-alternatives-and-other-tweeted-links</guid>
+  <pubDate>Fri, 07 Dec 2018 21:54:09 GMT</pubDate>
+</item>
 <item>
   <title>“Hexi Flexi: A #CSS Grid powered SCSS component that creates a hexagonal lattice” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/hexi-flexi-a-css-grid-powered-scss-component-that-creates-a-hexagonal-lattice-and-other-tweeted-links</link>
@@ -86,15 +95,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">downplaying-empty-states-in-design-and-other-tweeted-links</guid>
   <pubDate>Sun, 18 Nov 2018 07:00:40 GMT</pubDate>
-</item>
-<item>
-  <title>“A collection of some of the best data visualisation related content discovered during March 2018” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</link>
-  <description>NEW POST: A collection of some of the best data visualisation related content discovered during March 2018 [visualisingdata.com][twitter.com]
-      ICYMI, 📊short-course &amp;amp;📽s!
-      "Data Visualization Pitfalls to Avoid" 👩‍💻 @tamaramunzner[buff.l...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">a-collection-of-some-of-the-best-data-visualisation-related-content-discovered-during-march-2018-and-other-tweeted-links</guid>
-  <pubDate>Fri, 02 Nov 2018 05:03:56 GMT</pubDate>
 </item></channel>
 </rss>
