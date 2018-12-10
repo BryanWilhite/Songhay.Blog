@@ -143,7 +143,7 @@ namespace Songhay.Blog.Shell.Tests
 
             #region functional members:
 
-            string expandAmpersandGlyph(string s)
+            string expandAmpersand(string s)
             {
                 var re = new Regex(@"&\s+");
                 re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
@@ -151,13 +151,19 @@ namespace Songhay.Blog.Shell.Tests
                     s = s.Replace(i.Value, "&amp; ");
                 });
 
+                s = s
+                    .Replace("Q&A", "Q&amp;A")
+                    .Replace("R&B", "R&amp;B")
+                    ;
+
                 return s;
             }
 
             string expandArrows(string s)
             {
-                s = s.Replace("=>", "=&gt;");
-                s = s.Replace("<=", "&lt;=");
+                s = s
+                    .Replace("=>", "=&gt;")
+                    .Replace("<=", "&lt;=");
                 return s;
             }
 
@@ -283,7 +289,7 @@ namespace Songhay.Blog.Shell.Tests
             #endregion
 
             var html = File.ReadAllText(htmlPath);
-            html = expandAmpersandGlyph(html);
+            html = expandAmpersand(html);
             html = expandArrows(html);
             html = expandComparisonOperatorGlyphs(html);
             html = expandGenericNotation(html);
