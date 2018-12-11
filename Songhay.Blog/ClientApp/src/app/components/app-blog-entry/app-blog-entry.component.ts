@@ -16,9 +16,10 @@ export class AppBlogEntryComponent implements OnInit {
         private sanitizer: DomSanitizer
     ) {}
 
+    trustedContent: SafeHtml;
+    trustedTitle: SafeHtml;
+
     private slug: string;
-    private trustedContent: SafeHtml;
-    private trustedTitle: SafeHtml;
 
     ngOnInit() {
         this.route.params.subscribe(params => {
