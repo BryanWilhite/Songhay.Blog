@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 07 Dec 2018 21:56:03 GMT</pubDate>
+  <channel><pubDate>Wed, 12 Dec 2018 21:46:24 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“The Golden Age of #UX” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/the-golden-age-of-ux-and-other-tweeted-links</link>
+  <description>The Golden Age of #UX is Over [uxplanet.org] Your Body Text Is Too Small – [blog.marvelapp.com] by @xtianmiller Really Good UX – A #library of #UX screenshots. [reallygoodux.io] I rarely get great ideas while scrolling, no matter what I'm scrolling. The ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">the-golden-age-of-ux-and-other-tweeted-links</guid>
+  <pubDate>Wed, 12 Dec 2018 21:44:16 GMT</pubDate>
+</item>
 <item>
   <title>“Why GraphQL: Advantages, Disadvantages and Alternatives” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/why-graphql-advantages-disadvantages-and-alternatives-and-other-tweeted-links</link>
@@ -85,15 +93,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</guid>
   <pubDate>Sun, 25 Nov 2018 20:28:36 GMT</pubDate>
-</item>
-<item>
-  <title>“Downplaying Empty States in Design” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/downplaying-empty-states-in-design-and-other-tweeted-links</link>
-  <description>Downplaying Empty States in Design [shakuro.com] New CSS Features That Are Changing Web Design
-
-            Zell Liew takes a closer look at new CSS features such as CSS Grid. The article has code examples so you can see how it was achieved. [smashingm...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">downplaying-empty-states-in-design-and-other-tweeted-links</guid>
-  <pubDate>Sun, 18 Nov 2018 07:00:40 GMT</pubDate>
 </item></channel>
 </rss>
