@@ -1,8 +1,7 @@
 import * as _ from 'lodash';
 
 import { DomSanitizer } from '@angular/platform-browser';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable ,  of } from 'rxjs';
 
 import {
     debounceTime,

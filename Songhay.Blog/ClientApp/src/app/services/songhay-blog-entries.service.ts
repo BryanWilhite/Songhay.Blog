@@ -2,7 +2,7 @@ import * as _ from 'lodash';
 
 import { EventEmitter, Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
+
 
 import { AppScalars } from '../models/songhay-app-scalars';
 import { AssemblyInfo } from '../models/songhay-assembly-info';

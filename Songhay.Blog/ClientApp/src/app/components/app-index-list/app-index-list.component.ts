@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
-import { of } from 'rxjs/observable/of';
+import { of ,  Subject ,  Observable } from 'rxjs';
 import {
     debounceTime,
     distinctUntilChanged,
@@ -14,10 +14,6 @@ import {
     startWith,
     switchMap
 } from 'rxjs/operators';
-
-import { Subject } from 'rxjs/Subject';
-
-import { Observable } from 'rxjs/Observable';
 
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
 import { BlogEntry } from '../../models/songhay-blog-entry';
