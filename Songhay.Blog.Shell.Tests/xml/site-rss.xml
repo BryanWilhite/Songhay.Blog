@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 15 Dec 2018 00:33:02 GMT</pubDate>
+  <channel><pubDate>Sat, 15 Dec 2018 00:39:33 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“The guide to integrating and styling icon systems — SVG sprites” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/the-guide-to-integrating-and-styling-icon-systems-svg-sprites-and-other-tweeted-links</link>
+  <description>The guide to integrating and styling icon systems — SVG sprites, #SVG symbols and icon fonts [blog.nucleoapp.com] Still boggled by the beauty that is CSS Grid. This responsive (or intrinsic, 🙌 @jensimmons) nested layout is less than 20 lines of code. Fl...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">the-guide-to-integrating-and-styling-icon-systems-svg-sprites-and-other-tweeted-links</guid>
+  <pubDate>Sat, 15 Dec 2018 00:38:47 GMT</pubDate>
+</item>
 <item>
   <title>“The Golden Age of #UX” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/the-golden-age-of-ux-and-other-tweeted-links</link>
@@ -83,15 +91,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">studio-status-report-2018-11</guid>
   <pubDate>Mon, 26 Nov 2018 20:18:14 GMT</pubDate>
-</item>
-<item>
-  <title>“Interactive SVG mask w/full screen image” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</link>
-  <description>Interactive SVG mask w/full screen image
-
-            Pretty fantastic SVG mask demo done by Craig Roblewsk. [codepen.io] I feel like we as front end developers should be doing more static websites and server-side templating. Front end frameworks are m...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">interactive-svg-mask-w-full-screen-image-and-other-tweeted-links</guid>
-  <pubDate>Sun, 25 Nov 2018 20:28:36 GMT</pubDate>
 </item></channel>
 </rss>
