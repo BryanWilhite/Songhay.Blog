@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 15 Dec 2018 00:39:33 GMT</pubDate>
+  <channel><pubDate>Mon, 17 Dec 2018 19:35:30 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“NgRx Entity—Complete Practical Guide” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/ngrx-entity-complete-practical-guide-and-other-tweeted-links</link>
+  <description>NgRx Entity - Complete Practical Guide. By angular-university [bit.ly] I agree w/ @Elijah_Meeks ([medium.com]) &amp;amp; @enjalot ([medium.com]) that #d3js is a collection of tools to help with different aspects of #dataviz. Building on that, I tried to plac...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">ngrx-entity-complete-practical-guide-and-other-tweeted-links</guid>
+  <pubDate>Mon, 17 Dec 2018 19:33:02 GMT</pubDate>
+</item>
 <item>
   <title>“The guide to integrating and styling icon systems — SVG sprites” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/the-guide-to-integrating-and-styling-icon-systems-svg-sprites-and-other-tweeted-links</link>
@@ -15,7 +23,7 @@
 <item>
   <title>“The Golden Age of #UX” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/the-golden-age-of-ux-and-other-tweeted-links</link>
-  <description>The guide to integrating and styling icon systems — SVG sprites, #SVG symbols and icon fonts [blog.nucleoapp.com] Still boggled by the beauty that is CSS Grid. This responsive (or intrinsic, 🙌 @jensimmons) nested layout is less than 20 lines of code. Fl...</description>
+  <description>The Golden Age of #UX is Over [uxplanet.org] Your Body Text Is Too Small – [blog.marvelapp.com] by @xtianmiller Really Good UX – A #library of #UX screenshots. [reallygoodux.io] I rarely get great ideas while scrolling, no matter what I'm scrolling. The ...</description>
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">the-golden-age-of-ux-and-other-tweeted-links</guid>
   <pubDate>Wed, 12 Dec 2018 21:44:16 GMT</pubDate>
@@ -83,13 +91,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">remembering-the-cli-and-the-multi-tasking-os</guid>
   <pubDate>Mon, 26 Nov 2018 20:22:15 GMT</pubDate>
-</item>
-<item>
-  <title>studio status report: 2018-11</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-11</link>
-  <description>SonghaySystem.com is fully covered by Azure Web JobsIt would awesome to celebrate without reservation that my Songhay Dashboard will now update itself via an Azure Web Job. This is great news and the first tangible evidence of a system for the Songhay Sy...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">studio-status-report-2018-11</guid>
-  <pubDate>Mon, 26 Nov 2018 20:18:14 GMT</pubDate>
 </item></channel>
 </rss>
