@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 17 Dec 2018 19:35:30 GMT</pubDate>
+  <channel><pubDate>Wed, 19 Dec 2018 22:49:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Getting Started with Vue.js in .NET Core using Visual Studio” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-vue-js-in-net-core-using-visual-studio-and-other-tweeted-links</link>
+  <description>Getting Started with Vue.js in .NET Core using Visual Studio [blog.bitsrc.io] Just Blogged "The poor man's PWA" [luizbon.com] BuddyCSS – A simple #CSS framework that aims to make development easier. [buddycss.com] A Comprehensive Guide to Working with Da...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">getting-started-with-vue-js-in-net-core-using-visual-studio-and-other-tweeted-links</guid>
+  <pubDate>Wed, 19 Dec 2018 22:48:01 GMT</pubDate>
+</item>
 <item>
   <title>“NgRx Entity—Complete Practical Guide” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/ngrx-entity-complete-practical-guide-and-other-tweeted-links</link>
@@ -83,13 +91,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">javascript-is-like-leaded-gasoline-toxic-bad-for-everyone-and-other-tweeted-links</guid>
   <pubDate>Tue, 27 Nov 2018 20:41:54 GMT</pubDate>
-</item>
-<item>
-  <title>remembering the CLI and the multi-tasking OS</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/remembering-the-cli-and-the-multi-tasking-os</link>
-  <description>I have literally paid the price for forgetting about the wonders of a multitasking Operating System and how the Common Language Infrastructure (CLI) takes advantage of such a thing for my benefit. And when I mean “literally paid” I am talking about the i...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">remembering-the-cli-and-the-multi-tasking-os</guid>
-  <pubDate>Mon, 26 Nov 2018 20:22:15 GMT</pubDate>
 </item></channel>
 </rss>
