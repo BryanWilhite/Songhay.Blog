@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 21 Dec 2018 17:20:57 GMT</pubDate>
+  <channel><pubDate>Fri, 28 Dec 2018 00:36:08 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Testing with the Angular HttpClient API” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/testing-with-the-angular-httpclient-api-and-other-tweeted-links</link>
+  <description>“Testing with the Angular HttpClient API” by @cironunesdev[medium.com] a very nice read, recommended for people building and designing HTTP APIs
+
+            Developing Restful APIs: A Comprehensive Set of Guidelines by Zalando [opensource.zalando.com]...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">testing-with-the-angular-httpclient-api-and-other-tweeted-links</guid>
+  <pubDate>Fri, 28 Dec 2018 00:35:08 GMT</pubDate>
+</item>
 <item>
   <title>“14 Flat #Design Packs for Your Next Project” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/14-flat-design-packs-for-your-next-project-and-other-tweeted-links</link>
@@ -76,13 +86,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">es2018-was-just-approved-and-other-tweeted-links</guid>
   <pubDate>Fri, 30 Nov 2018 19:18:23 GMT</pubDate>
-</item>
-<item>
-  <title>“How to easily create modern material design cards with HTML and CSS” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/how-to-easily-create-modern-material-design-cards-with-html-and-css-and-other-tweeted-links</link>
-  <description>How to easily create modern material design cards with HTML and CSS [codepen.io] Building a Fancy Countdown Timer with MomentumSlider.js [scotch.io]#html5#css#scss#javascript Now at #ngAu18#ngconfau, @ErinJZimmer talks us "Angular, the Event Loop &amp;amp; Y...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">how-to-easily-create-modern-material-design-cards-with-html-and-css-and-other-tweeted-links</guid>
-  <pubDate>Thu, 29 Nov 2018 19:52:22 GMT</pubDate>
 </item></channel>
 </rss>
