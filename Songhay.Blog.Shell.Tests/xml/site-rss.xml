@@ -1,9 +1,18 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 28 Dec 2018 00:36:08 GMT</pubDate>
+  <channel><pubDate>Fri, 28 Dec 2018 20:28:55 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2018</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Managing State in Angular using Akita” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/managing-state-in-angular-using-akita-and-other-tweeted-links</link>
+  <description>Managing State in Angular using Akita: [blog.ng-book.com] Do you still think that NgZone (zone.js) is required for change detection in Angular? [bit.ly] Just published audioworklet-polyfill 1.1.0.
+            Now this cool bitcrusher demo works in Firef...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">managing-state-in-angular-using-akita-and-other-tweeted-links</guid>
+  <pubDate>Fri, 28 Dec 2018 20:27:43 GMT</pubDate>
+</item>
 <item>
   <title>“Testing with the Angular HttpClient API” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/testing-with-the-angular-httpclient-api-and-other-tweeted-links</link>
@@ -78,13 +87,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">hexi-flexi-a-css-grid-powered-scss-component-that-creates-a-hexagonal-lattice-and-other-tweeted-links</guid>
   <pubDate>Mon, 03 Dec 2018 03:50:43 GMT</pubDate>
-</item>
-<item>
-  <title>“ES2018 was just approved!” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/es2018-was-just-approved-and-other-tweeted-links</link>
-  <description>ES2018 was just approved! This is a list of its features: [exploringjs.com][twitter.com] I wrote a book about layout for @abookapart[buff.ly]#aeabos "Again. The web is boring. Everything looks the same. Let's start having fun with CSS and make the Web am...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">es2018-was-just-approved-and-other-tweeted-links</guid>
-  <pubDate>Fri, 30 Nov 2018 19:18:23 GMT</pubDate>
 </item></channel>
 </rss>
