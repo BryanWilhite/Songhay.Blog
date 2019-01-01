@@ -18,7 +18,15 @@ import { AppDataService } from './songhay-app-data.service';
 @Injectable()
 export class BlogEntriesService extends AppDataService {
     /**
-     * Name of method on this class for Jasmine spies.
+     * Name of member in this class for Jasmine spies.
+     *
+     * @static
+     * @memberof BlogEntriesService
+     */
+    static appDataLoadedMemberName = 'appDataLoaded';
+
+    /**
+     * Name of method in this class for Jasmine spies.
      *
      * @static
      * @memberof BlogEntriesService
