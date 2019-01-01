@@ -14,7 +14,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { ActivatedRouteMock } from '../../mocks/services/activated-route-mock';
 import { AppBlogEntryComponent } from './app-blog-entry.component';
 
-describe('AppBlogEntryComponent', () => {
+describe(AppBlogEntryComponent.name, () => {
     let component: AppBlogEntryComponent;
     let fixture: ComponentFixture<AppBlogEntryComponent>;
 

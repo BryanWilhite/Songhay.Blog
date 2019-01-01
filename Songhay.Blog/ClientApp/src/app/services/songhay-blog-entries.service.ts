@@ -31,6 +31,14 @@ export class BlogEntriesService extends AppDataService {
      * @static
      * @memberof BlogEntriesService
      */
+    static filterEntriesMethodName = 'filterEntries';
+
+    /**
+     * Name of method in this class for Jasmine spies.
+     *
+     * @static
+     * @memberof BlogEntriesService
+     */
     static loadAppDataMethodName = 'loadAppData';
 
     /**

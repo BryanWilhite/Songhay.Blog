@@ -9,7 +9,7 @@ import { ActivatedRouteMock } from '../../mocks/services/activated-route-mock';
 import { AppIndexComponent } from './app-index.component';
 import { IndexStyles } from '../../models/songhay-index-styles';
 
-describe('AppIndexComponent', () => {
+describe(AppIndexComponent.name, () => {
     const service = jasmine.createSpyObj('BlogEntriesService', [
         BlogEntriesService.loadAppDataMethodName
     ]);
@@ -20,7 +20,7 @@ describe('AppIndexComponent', () => {
 
     let spyOnActivatedRouteMock: jasmine.Spy;
 
-    const initializeComponentAndDetectChanges = function(): Promise<any> {
+    const initializeComponentAndDetectChanges = function (): Promise<any> {
         fixture = TestBed.createComponent(AppIndexComponent);
 
         const activatedRouteMock = fixture.debugElement.injector.get(
@@ -42,12 +42,16 @@ describe('AppIndexComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [AppIndexComponent],
-            providers: [
-                { provide: BlogEntriesService, useValue: service },
-                { provide: ActivatedRoute, useClass: ActivatedRouteMock }
-            ],
             schemas: [NO_ERRORS_SCHEMA]
         })
+            .overrideComponent(AppIndexComponent, {
+                set: {
+                    providers: [
+                        { provide: BlogEntriesService, useValue: service },
+                        { provide: ActivatedRoute, useClass: ActivatedRouteMock }
+                    ]
+                }
+            })
             .compileComponents()
             .then(initializeComponentAndDetectChanges);
     }));

@@ -1,25 +1,21 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {
-    BaseRequestOptions,
-    Http,
-    HttpModule,
-    XHRBackend
-} from '@angular/http';
-
 import { BlogEntriesService } from '../../services/songhay-blog-entries.service';
 
 import { AppIndexGroupsHostMockComponent } from '../../mocks/components/app-index-groups-host-mock';
 import { AppIndexGroupsComponent } from './app-index-groups.component';
 
-describe('AppIndexGroupsComponent', () => {
+describe(AppIndexGroupsComponent.name, () => {
+    const service = jasmine.createSpyObj(BlogEntriesService.name, [BlogEntriesService.filterEntriesMethodName]);
+    service.index = null;
+
     let component: AppIndexGroupsComponent;
     let componentHost: AppIndexGroupsHostMockComponent;
     let fixtureHost: ComponentFixture<AppIndexGroupsHostMockComponent>;
     let whenStablePromise: Promise<any>;
 
-    const initializeComponentAndDetectChanges = function(): Promise<any> {
+    const initializeComponentAndDetectChanges = function (): Promise<any> {
         fixtureHost = TestBed.createComponent(AppIndexGroupsHostMockComponent);
         componentHost = fixtureHost.componentInstance;
         component = componentHost.hostedComponent;
@@ -38,19 +34,7 @@ describe('AppIndexGroupsComponent', () => {
                 AppIndexGroupsHostMockComponent,
                 AppIndexGroupsComponent
             ],
-            providers: [
-                BaseRequestOptions,
-                BlogEntriesService,
-                {
-                    deps: [XHRBackend, BaseRequestOptions],
-                    provide: Http,
-                    useFactory: (
-                        backend: XHRBackend,
-                        defaultOptions: BaseRequestOptions
-                    ) => new Http(backend, defaultOptions)
-                }
-            ],
-            imports: [HttpModule],
+            providers: [{ provide: BlogEntriesService, useValue: service }],
             schemas: [NO_ERRORS_SCHEMA]
         })
             .compileComponents()
