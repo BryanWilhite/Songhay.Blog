@@ -1,282 +1,100 @@
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Generator" content="PowerTools for Open XML" />
+    <title>My Page Title Tuesday, November 22, 2016 5:33:00 AM</title>
+  </head>
+  <body>
+    <h2>“Flexbox  - The Animated Tutorial” and other tweeted links…</h2>
+    <p class="tweet" data-status-id="1035156683876515800"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> Flexbox  - The Animated Tutorial <a href="https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2" target="_blank">[medium.com]</a></p>
+    <p class="tweet" data-status-id="1037244440249741300"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> Everything You Need To Know About Alignment In <a href="http://twitter.com/search?q='%23Flexbox" target="_blank">#Flexbox</a><a href="https://www.smashingmagazine.com/2018/08/flexbox-alignment/" target="_blank">[smashingmagazine.com]</a><a href="http://twitter.com/search?q='%23Layouts" target="_blank">#Layouts</a></p>
+    <p class="tweet" data-status-id="1036625864396427300"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> Carousels on <a href="http://twitter.com/search?q='%23Mobile" target="_blank">#Mobile</a> Devices <a href="https://www.nngroup.com/articles/mobile-carousels/" target="_blank">[nngroup.com]</a></p>
+    <p class="tweet" data-status-id="1037450802690895900"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> Toggle-Switch Guidelines <a href="https://www.nngroup.com/articles/toggle-switch-guidelines/" target="_blank">[nngroup.com]</a><a href="http://twitter.com/search?q='%23InteractionDesign" target="_blank">#InteractionDesign</a></p>
+    <p class="tweet" data-status-id="1037693147373957100"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> CSS-only double-click <a href="https://codepen.io/MartijnCuppens/full/GZWgaQ/" target="_blank">[codepen.io]</a></p>
+    <p class="tweet" data-status-id="1036218178010062800"> <a href="https://t.co/0XkdgvQwZp" target="_blank"> <img alt="Jonathan Torke [JonathanTorke]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JonathanTorke.jpg" /> </a> Designing Illustrations for Small Screens <a href="https://medium.com/@megdraws/designing-illustrations-for-small-screens-a352a5712fa0" target="_blank">[medium.com]</a><a href="http://twitter.com/search?q='%23Design" target="_blank">#Design</a></p>
+    <p class="tweet" data-status-id="1035961748317073400"> <a href="https://t.co/q5aLwMoLMs" target="_blank"> <img alt="Samantha Ming [samantha_ming]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/samantha_ming.jpg" /> </a> Style the Cursor Color in CSS 🤩
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="Generator" content="PowerTools for Open XML" />
-        <title>My Page Title Tuesday, November 22, 2016 5:33:00 AM</title>
-    </head>
-
-    <body>
-        <h2 id="flippant-remarks-about-karma-jasmine-in-angular">flippant remarks about Karma-Jasmine in Angular</h2>
-        <p>The details below try to explain these fundamentals:</p>
-        <ul>
-            <li>use <code>NO_ERRORS_SCHEMA</code></li>
-            <li>initialize properties used in component-binding HTML to prevent <code>[object ErrorEvent] thrown</code></li>
-            <li>call <code>overrideComponent</code> to null or mock services for the component spec</li>
-            <li>consider using inline mocks with <code>useValue</code> for providers</li>
-            <li>consider using the “Elvis operator” in component-binding HTML</li>
-            <li>be ready to use <code>HttpClientTestingModule</code>, <code>HttpTestingController</code> and/or <code>RouterTestingModule</code></li>
-            <li>comment out <code>fixture.detectChanges()</code> to narrow down troubleshooting binding or initialization issues</li>
-        </ul>
-        <p>One, <a href="https://github.com/BryanWilhite/nodejs/tree/master/karma-and-jasmine-minimal">small introduction to Karma-Jasmine</a> outside of Angular reminds us <a href="https://karma-runner.github.io/latest/index.html">Karma</a> is the “test runner” (from the Angular team) and <a href="https://jasmine.github.io/">Jasmine</a> is a behavior driven development framework. <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">Behavior Driven Development</a> is beyond the scope of these remarks apart from the consideration that we might make when use the word <em>specification</em> instead of <em>test</em>.</p>
-        <h3 id="a-jasmine-.spec.ts-file-is-generated-by-the-angular-cli-by-default">a Jasmine <code>*.spec.ts</code> file is generated by the Angular CLI by default</h3>
-        <p>Unless the <code>--spec=false</code> option is explicitly used, <code>ng generate component</code> [<a href="https://angular.io/cli/generate#component">docs</a>] will auto-generate a Jasmine spec file like this:</p>
-        <pre class="typescript"><code>
-import { async, ComponentFixture, TestBed } from &#39;@angular/core/testing&#39;;
-
-import { MyComponent } from &#39;./my.component&#39;;
-
-describe(&#39;MyComponent&#39;, () =&gt; {
-    let component: MyComponent;
-    let fixture: ComponentFixture&lt;MyComponent&gt;;
-
-    beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        declarations: [ MyComponent ]
-    })
-    .compileComponents();
-    }));
-
-    beforeEach(() =&gt; {
-    fixture = TestBed.createComponent(MyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-    });
-
-    it(&#39;should create&#39;, () =&gt; {
-    expect(component).toBeTruthy();
-    });
-});</code></pre>
-        <p>One way to easily be confused by the Karma-Jasmine combo is not really, really understanding that <code>async</code>, <code>ComponentFixture</code> and <code>TestBed</code> do <em>not</em> come from Jasmine—we must depend on the Angular team to <a href="https://angular.io/guide/testing">tell us</a> about these things. One of these things is the use of <code>async</code> with <code>beforeEach</code>. A <a href="https://stackoverflow.com/a/40127164/22944">StackOverflow.com answer</a> asserts that <code>async</code> (from the Angular team) replaces the use of <code>done()</code> which is native to Jasmine [<a href="https://jasmine.github.io/tutorials/async">docs</a>]. <code>ComponentFixture</code> and <code>TestBed</code> are covered reasonably well by the Angular team [<a href="https://angular.io/guide/testing#component-test-basics">docs</a>].</p>
-        <h3 id="using-no_errors_schema">using <code>NO_ERRORS_SCHEMA</code></h3>
-        <p>The auto-generated test above might be for a component with an HTML file like this:</p>
-        <div class="sourceCode" id="cb2">
-            <pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;css-class&quot;</span><span class="kw">&gt;</span></a>
-        <a class="sourceLine" id="cb2-2" data-line-number="2">    <span class="kw">&lt;app-my-child</span><span class="ot"> [prop1]=</span><span class="st">&quot;foo.bar&quot;</span><span class="ot"> [prop2]=</span><span class="st">&quot;fuBar.prop3&quot;</span><span class="kw">&gt;&lt;/app-my-child&gt;</span></a>
-        <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">&lt;/div&gt;</span></a></code></pre>
-        </div>
-        <p>By default, the test will likely throw a very verbose error like this:</p>
-        <pre class="console"><code>Failed: Template parse errors:
-        &#39;app-my-child&#39; is not a known element:
-        1. If &#39;app-my-child&#39; is an Angular component, then verify that it is part of this module.
-        …</code></pre>
-        <p>We need to tell our <code>TestBed</code> to ignore “custom” elements like <code>app-my-child</code>:</p>
-        <pre class="typescript"><code>
-import { NO_ERRORS_SCHEMA } from &#39;@angular/core&#39;;
-
-import { async, ComponentFixture, TestBed } from &#39;@angular/core/testing&#39;;
-
-import { MyComponent } from &#39;./my.component&#39;;
-
-describe(MyComponent.name, () =&gt; {
-    let component: MyComponent;
-    let fixture: ComponentFixture&lt;MyComponent&gt;;
-
-    beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        declarations: [ MyComponent ],
-        schemas: [ NO_ERRORS_SCHEMA ]
-    })
-    .compileComponents();
-    }));
-
-    beforeEach(() =&gt; {
-    fixture = TestBed.createComponent(MyComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-    });
-
-    it(&#39;should create&#39;, () =&gt; {
-    expect(component).toBeTruthy();
-    });
-});</code></pre>
-        <p>For more detail on <code>NO_ERRORS_SCHEMA</code>, see the <a href="https://angular.io/guide/testing#no_errors_schema">docs</a>. Also note that we can cut down on the use of magic strings by using <code>MyComponent.name</code> which is convenience from the Angular team.</p>
-        <h3 id="the-mysterious-object-errorevent-thrown-error">the mysterious <code>[object ErrorEvent] thrown</code> error</h3>
-        <p>The <code>NO_ERRORS_SCHEMA</code> remedy might be followed by another, more mysterious Jasmine error:</p>
-        <pre class="console"><code>[object ErrorEvent] thrown</code></pre>
-        <p>What is happening in our HTML example above is the null value of <code>foo</code> in the binding <code>foo.bar</code> and the null value of <code>fuBar</code> in the binding <code>fuBar.prop3</code>. The typescript of a component backing these bindings might look like this:</p>
-        <pre class="typescript"><code>
-import { Component, OnInit } from &#39;@angular/core&#39;;
-import { FooService } from &#39;../../services/foo.service&#39;;
-
-@Component({
-    selector: &#39;app-my-widget&#39;,
-    templateUrl: &#39;./my.component.html&#39;,
-    styleUrls: [&#39;./my.component.css&#39;]
-})
-export class ContextPanelComponent implements OnInit {
-    @Input
-    fuBar: {};
-
-    constructor(public foo: FooService) { }
-
-    ngOnInit() {
-    foo.loadBar();
-    }
-}</code></pre>
-        <p>We see that <code>fuBar</code> is an <code>@Input</code> property and <code>foo</code> is injected as a service. To address these members of the component, we update our Jasmine spec:</p>
-        <pre class="typescript"><code>
-import { NO_ERRORS_SCHEMA } from &#39;@angular/core&#39;;
-
-import { async, ComponentFixture, TestBed } from &#39;@angular/core/testing&#39;;
-
-import { FooService } from &#39;../../services/foo.service&#39;;
-import { MyComponent } from &#39;./my.component&#39;;
-
-describe(MyComponent.name, () =&gt; {
-    let component: MyComponent;
-    let fixture: ComponentFixture&lt;MyComponent&gt;;
-
-    beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        declarations: [ MyComponent ],
-        schemas: [ NO_ERRORS_SCHEMA ]
-    })
-    .overrideComponent(MyComponent, {
-        set: { providers: [ { provide: FooService, useValue: null } ] }
-    })
-    .compileComponents();
-    }));
-
-    beforeEach(() =&gt; {
-    fixture = TestBed.createComponent(MyComponent);
-    component = fixture.componentInstance;
-
-    component.fuBar = { prop3: null };
-
-    fixture.detectChanges();
-    });
-
-    it(&#39;should create&#39;, () =&gt; {
-    expect(component).toBeTruthy();
-    });
-});</code></pre>
-        <p>This updated spec should still throw the same cryptic error, <code>[object ErrorEvent] thrown</code>, because, while we <em>did</em> address <code>fuBar</code>, we did <em>not</em> provide a value for <code>FooService</code>. It is often useful to provide a null value for a service to show that the service might not be necessary and should be removed from the component. Let’s flippantly provide a value for <code>FooService</code>:</p>
-        <pre class="typescript"><code>
-import { NO_ERRORS_SCHEMA } from &#39;@angular/core&#39;;
-
-import { async, ComponentFixture, TestBed } from &#39;@angular/core/testing&#39;;
-
-import { FooService } from &#39;../../services/foo.service&#39;;
-import { MyComponent } from &#39;./my.component&#39;;
-
-describe(MyComponent.name, () =&gt; {
-    const fooService = { bar: null };
-
-    let component: MyComponent;
-    let fixture: ComponentFixture&lt;MyComponent&gt;;
-
-    beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        declarations: [ MyComponent ],
-        schemas: [ NO_ERRORS_SCHEMA ]
-    })
-    .overrideComponent(MyComponent, {
-        set: { providers: [ { provide: FooService, useValue: fooService } ] }
-    })
-    .compileComponents();
-    }));
-
-    beforeEach(() =&gt; {
-    fixture = TestBed.createComponent(MyComponent);
-    component = fixture.componentInstance;
-
-    component.fuBar = { prop3: null };
-
-    fixture.detectChanges();
-    });
-
-    it(&#39;should create&#39;, () =&gt; {
-    expect(component).toBeTruthy();
-    });
-});</code></pre>
-        <p>The spec should now be valid. Now we can actually specify an interesting behavior (write an actual test). Let’s test whether <code>foo.loadBar()</code> was called by <em>spying</em> on it. We can replace <code>fooService</code> with the value of <code>createSpyObj()</code> [<a href="https://jasmine.github.io/api/2.8/jasmine.html#.createSpyObj">docs</a>]:</p>
-        <pre class="typescript"><code>
-import { NO_ERRORS_SCHEMA } from &#39;@angular/core&#39;;
-
-import { async, ComponentFixture, TestBed } from &#39;@angular/core/testing&#39;;
-
-import { FooService } from &#39;../../services/foo.service&#39;;
-import { MyComponent } from &#39;./my.component&#39;;
-
-describe(MyComponent.name, () =&gt; {
-    const loadBarMethodName = &#39;loadBar&#39;;
-    const fooService = jasmine.createSpyObj(FooService.Name, [loadBarMethodName]);
-    fooService.bar = null;
-
-    let component: MyComponent;
-    let fixture: ComponentFixture&lt;MyComponent&gt;;
-
-    beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        declarations: [ MyComponent ],
-        schemas: [ NO_ERRORS_SCHEMA ]
-    })
-    .overrideComponent(MyComponent, {
-        set: { providers: [ { provide: FooService, useValue: fooService } ] }
-    })
-    .compileComponents();
-    }));
-
-    beforeEach(() =&gt; {
-    fixture = TestBed.createComponent(MyComponent);
-    component = fixture.componentInstance;
-
-    fooService[loadBarMethodName].calls.reset();
-    component.fuBar = { prop3: null };
-
-    fixture.detectChanges();
-    });
-
-    it(&#39;should create&#39;, () =&gt; {
-    expect(component).toBeTruthy();
-    });
-
-    it(`should call ${loadBarMethodName}`, () =&gt; {
-    expect(fooService[loadBarMethodName].calls.count()).toBe(1, &#39;The expected number of service calls is not here.&#39;);
-    });
-
-});</code></pre>
-        <p>In typescript, <code>fooService</code> will be of type <code>any</code>. So, when we see the <code>calls</code> object (or “namespace”) hanging off it, we might need to go to <a href="https://jasmine.github.io/api/2.8/Spy_calls.html">the Jasmine documentation</a> to see what is going on.</p>
-        <h3 id="use-of-the-elvis-operator-in-component-binding-html">use of the “Elvis operator” in component-binding HTML</h3>
-        <p>Had our HTML been like this:</p>
-        <div class="sourceCode" id="cb10">
-            <pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;css-class&quot;</span><span class="kw">&gt;</span></a>
-        <a class="sourceLine" id="cb10-2" data-line-number="2">    <span class="kw">&lt;app-my-child</span><span class="ot"> [prop1]=</span><span class="st">&quot;foo?.bar&quot;</span><span class="ot"> [prop2]=</span><span class="st">&quot;fuBar?.prop3&quot;</span><span class="kw">&gt;&lt;/app-my-child&gt;</span></a>
-        <a class="sourceLine" id="cb10-3" data-line-number="3"><span class="kw">&lt;/div&gt;</span></a></code></pre>
-        </div>
-        <p>We could have avoided writing these lines of spec code:</p>
-        <pre class="typescript"><code>
-fooService.bar = null;
-…
-component.fuBar = { prop3: null };</code></pre>
-        <p>The use the Elvis operator has some issues with async in bindings, see “<a href="https://hackernoon.com/the-angry-angular-asyncpipe-the-evil-elvis-operator-89293e37e04d">The Angry Angular AsyncPipe &amp; The Evil Elvis Operator</a>” by Vitaliy Isikov.</p>
-        <h3 id="the-right-way-to-initialize-input-values">the ‘right’ way to initialize <code>@Input</code> values</h3>
-        <p>In my example above, you see me explicitly setting the value of <code>fuBar</code>. To test whether <code>@Input</code> is working (which is kind of like testing something that belongs to the Angular team) we can set up a mock component to host <code>MyComponent</code>. This is detailed in “<span class="citation" data-cites="Input">[Testing Angular components with @Input()]</span>(https://medium.com/<span class="citation" data-cites="AikoPath/testing-angular-components-with-input-3bd6c07cfaf6">@AikoPath/testing-angular-components-with-input-3bd6c07cfaf6</span>)” by Aiko Klostermann of Thoughtworks.</p>
-        <h3 id="using-formal-mocks">using formal mocks</h3>
-        <p>I am very, very certain that Angular team does not recommend constructing a mock inline as we have seen above:</p>
-        <pre class="typescript"><code>const loadBarMethodName = &#39;loadBar&#39;;
-        const fooService = jasmine.createSpyObj(FooService.Name, [loadBarMethodName]);
-        fooService.bar = null;</code></pre>
-        <p>I find this helpful when I am <em>not</em> repeating myself in multiple <code>*.spec.ts</code> files and it is less intimidating to first-time Jasmine writers.</p>
-        <h3 id="commenting-out-fixture.detectchanges">commenting out <code>fixture.detectChanges()</code></h3>
-        <p>Commenting out <code>fixture.detectChanges()</code> in specs might prevent the spec from throwing errors. This is a surefire way to consider that any failures with this line enabled are due to binding issues.</p>
-        <h3 id="the-auto-generated-tests-for-services-look-different">the auto-generated tests for services look different</h3>
-        <p>When a test for a service is generated (with <code>ng generate service</code> [<a href="https://angular.io/cli/generate#service">docs</a>]) the main difference is the use of <code>inject</code> (also from the Angular team):</p>
-        <pre class="typescript"><code>it(&#39;should be created&#39;, inject([MyService], (service: MyService) =&gt; {
-          expect(service).toBeTruthy();
-        }));</code></pre>
-        <p>The other difference is that you cannot use <code>overrideComponent</code> for a service spec; set <code>providers</code> in <code>configureTestingModule</code>:</p>
-        <pre class="typescript"><code>
-beforeEach(async(() =&gt; {
-    TestBed.configureTestingModule({
-        imports: [HttpClientTestingModule, RouterTestingModule],
-        providers: [ { provide: FooService, useValue: null } ]
-    });
-}));</code></pre>
-        <h3 id="the-nullinjectorerror-no-provider-for-httpclient-error">the <code>NullInjectorError: No provider for HttpClient!</code> error</h3>
-        <p>When the <code>NullInjectorError: No provider for HttpClient!</code> error is thrown, the knee-jerk response is to add <code>imports: [HttpClientModule]</code> to the <code>TestBed</code>. The better response is to import <code>HttpClientTestingModule</code> (with <code>HttpTestingController</code>) instead. This is detailed in “<a href="https://medium.com/netscape/testing-with-the-angular-httpclient-api-648203820712">Testing with the Angular HttpClient API</a>” by Ciro Nunes.</p>
-        <p>There is a similar Karma-Jasmine error that should lead us to importing <code>RouterTestingModule</code> as described in “<a href="https://medium.com/burak-tasci/using-jasmine-framework-to-test-angular-router-b568a232efed">Using Jasmine framework to test Angular Router</a>” by Burak Tasci.</p>
-        <p>@<a href="http://twitter.com/BryanWilhite">BryanWilhite</a></p>
-    </body>
+            Use the `caret-color` to change the color of the cursor (caret). It's the blinking cursor when you click on the &lt;input&gt; or &lt;textarea&gt;. Now you can change the color to match the theme of your website 👍 <a href="http://twitter.com/search?q='%23100DaysOfCode" target="_blank">#100DaysOfCode</a><a href="http://twitter.com/search?q='%23CodeNewbie" target="_blank">#CodeNewbie</a><a href="http://twitter.com/search?q='%23301DaysOfCode" target="_blank">#301DaysOfCode</a><a href="https://twitter.com/samantha_ming/status/1035961748317073408/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1037235807835357200"> <a href="http://t.co/A4ZEwCEPEs" target="_blank"> <img alt="Veerle Pieters [vpieters]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/vpieters.png" /> </a> What Happens When You Create A Flexbox Flex Container?
+        
+        The start of a series of articles by <a href="http://twitter.com/@rachelandrew" target="_blank">@rachelandrew</a>. In this article, she will take a detailed look at what actually happens when you add display: flex to your stylesheet. <a href="https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/" target="_blank">[smashingmagazine.com]</a></p>
+    <p class="tweet" data-status-id="1036909253162926100"> <a href="https://t.co/bnYdfVIAqQ" target="_blank"> <img alt="Rachel Andrew [rachelandrew]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/rachelandrew.jpg" /> </a> Watch the video of my talk at Frontend Conf Zurich, on this <a href="http://twitter.com/@benotist" target="_blank">@benotist</a> page which also includes all the resources and code for the talk. <a href="https://noti.st/rachelandrew/vXGvXa/unlocking-the-power-of-css-grid-layout" target="_blank">[noti.st]</a></p>
+    <p class="tweet" data-status-id="1037003762278301700"> <a href="https://t.co/8FEcRMJN4d" target="_blank"> <img alt="Jen Simmons [jensimmons]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/jensimmons.jpg" /> </a> Firefox 62: tomorrow. 
+        
+        We are shipping support for CSS Shapes (`shape-outside` and `shape-margin`) along with a Developer Tools for editing your shape (which also works with `clip-path`). 
+        
+        Also shipping support for Variable Fonts. And in <a href="http://twitter.com/@FirefoxNightly" target="_blank">@FirefoxNightly</a> have a new Font Editor.
+        </p>
+    <p class="tweet" data-status-id="1036232360340140000"> <a href="https://twitter.com/NG_Tutorial" target="_blank"> <img alt="NG Tutorial 🔥 [NG_Tutorial]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/NG_Tutorial.jpg" /> </a> What is `forwardRef` in Angular and why we need it. By <a href="http://twitter.com/@maxim_koretskyi" target="_blank">@maxim_koretskyi</a><a href="http://bit.ly/2tCEAxr" target="_blank">[bit.ly]</a></p>
+    <p class="tweet" data-status-id="1036152908599963600"> <a href="https://t.co/GM6rJooKHb" target="_blank"> <img alt="Thomas Watson [wa7son]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/wa7son.jpeg" /> </a> Dear npm community ❤️ I want to drop support for Node.js 4 as much as the next person, but when I do, rest assured that I'll do so in a major release. Sneaking it into a patch release is not cool 😢
+        </p>
+    <p class="tweet" data-status-id="1034829927076560900"> <a href="https://twitter.com/thisispointless" target="_blank"> <img alt="thisispointless [thisispointless]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/thisispointless.jpg" /> </a> I have now seen the stupidest thing yet on my stupid, stupid, <a href="http://twitter.com/search?q='%23Android" target="_blank">#Android</a> phone. 
+        
+        I set an alarm for 7:00AM. Because that's when I want to wake up.
+        
+        The phone "helpfully" sounds the notification tone at 6:00AM: "You've got an alarm coming up at 7:00AM".
+        </p>
+    <p class="tweet" data-status-id="1037388224040038400"> <a href="https://twitter.com/MacRaph" target="_blank"> <img alt="Raphael Berger [MacRaph]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/MacRaph.jpg" /> </a> Introducing Skype call recording—now you can capture, save and share special moments <a href="http://dlvr.it/QjD7Xx" target="_blank">[dlvr.it]</a><a href="https://twitter.com/MacRaph/status/1037388224040038400/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1037418926760706000"> <a href="https://t.co/nZzSNwUIFK" target="_blank"> <img alt="Francois Rimasson [F_Rimasson]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/F_Rimasson.jpg" /> </a> Hair combing in Blender 2.8. I don't have to launch cycles renders every 10 minutes. <a href="https://twitter.com/F_Rimasson/status/1037418926760706051/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1035409486884745200"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Writing a Blazor App <a href="https://davidpine.net/blog/blazing-chuck/" target="_blank">[davidpine.net]</a> via <a href="http://twitter.com/@davidpine7" target="_blank">@davidpine7</a></p>
+    <p class="tweet" data-status-id="1037384946220855300"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> <a href="http://vuematerial.io" target="_blank">[vuematerial.io]</a> Build beautiful apps with Material Design and Vue.js <a href="https://twitter.com/BryanWilhite/status/1037384946220855296/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1035408169281835000"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Exploring the Fluent Design System <a href="https://channel9.msdn.com/Shows/On-NET/Exploring-the-Fluent-Design-System" target="_blank">[channel9.msdn.com]</a></p>
+    <p class="tweet" data-status-id="1035407272036327400"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> What I've learned since quitting Elm <a href="https://qiita.com/kimagure/items/93a42d67a8833f99fe2e" target="_blank">[qiita.com]</a><a href="http://twitter.com/search?q='%23Qiita" target="_blank">#Qiita</a></p>
+    <p class="tweet" data-status-id="1037470221399801900"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> let me guess: i am the only person on Earth who can new up a <a href="http://twitter.com/@stackblitz" target="_blank">@stackblitz</a> project for <a href="http://twitter.com/@angular" target="_blank">@angular</a> and get a  failure to load <a href="http://unpkg.com/rxjs@6.3.2/?json" target="_blank">[unpkg.com]</a> error <a href="https://twitter.com/BryanWilhite/status/1037470221399801856/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1037479607748837400"> <a href="https://t.co/QRFc8C2PwO" target="_blank"> <img alt="Eric Simons [ericsimons40]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/ericsimons40.jpg" /> </a> <a href="http://twitter.com/@BryanWilhite" target="_blank">@BryanWilhite</a> <a href="http://twitter.com/@stackblitz" target="_blank">@stackblitz</a> <a href="http://twitter.com/@angular" target="_blank">@angular</a> Nope not just you, looks like <a href="http://twitter.com/@unpkg" target="_blank">@unpkg</a> is having issues. 6.3.2 is a valid version but it says it doesn't exist 🤔 cc/ <a href="http://twitter.com/@mjackson" target="_blank">@mjackson</a></p>
+    <p class="tweet" data-status-id="1037566858033913900"> <a href="https://t.co/qIGsh2Pazq" target="_blank"> <img alt="UNPKG [unpkg]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/unpkg.jpg" /> </a> <a href="http://twitter.com/@ericsimons40" target="_blank">@ericsimons40</a> <a href="http://twitter.com/@BryanWilhite" target="_blank">@BryanWilhite</a> <a href="http://twitter.com/@stackblitz" target="_blank">@stackblitz</a> <a href="http://twitter.com/@angular" target="_blank">@angular</a> <a href="http://twitter.com/@mjackson" target="_blank">@mjackson</a> Fixed! Sorry for the inconvenience.
+        </p>
+    <p class="tweet" data-status-id="1037087750359593000"> <a href="https://t.co/iUB5r3wVUv" target="_blank"> <img alt="EricWenger [EricWenger]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/EricWenger.jpg" /> </a> .<a href="http://twitter.com/@Microsoft" target="_blank">@Microsoft</a> shifts cloud strategy for German towards <a href="http://twitter.com/@Azure" target="_blank">@Azure</a> services geolocated in the EU--including forthcoming options in Germany--and away from "data trustee" model announced in 2015. <a href="https://news.microsoft.com/europe/2018/08/31/microsoft-to-deliver-cloud-services-from-new-datacentres-in-germany-in-2019-to-meet-evolving-customer-needs" target="_blank">[news.microsoft.com]</a></p>
+    <p class="tweet" data-status-id="1037221694459572200"> <a href="https://t.co/oeLidqKxmX" target="_blank"> <img alt="André Staltz [andrestaltz]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/andrestaltz.jpg" /> </a> Google search takes 3x more memory than DuckDuckGo and Google Maps takes 10x more memory than OpenStreet Maps.
+        
+        Is it the tracking or just bad programming? <a href="https://twitter.com/dominictarr/status/1037107791385645059" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1036955438141657100"> <a href="https://t.co/JVwPgAdoD4" target="_blank"> <img alt="@rem [rem]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/rem.jpeg" /> </a> Being a bit lazy here, but anyone know if there's a graphql backend **mock** server that can run from a JSON file (possibly with support to write to JSON file)?
+        
+        Wanted for dev whilst "real" backend is built out.
+        </p>
+    <p class="tweet" data-status-id="1037053934521573400"> <a href="https://twitter.com/_Zionts" target="_blank"> <img alt="Adam Zionts [_Zionts]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/_Zionts.jpg" /> </a> <a href="http://twitter.com/@rem" target="_blank">@rem</a> Pretty sure this is built directly and automagically into any Apollo Server :)
+        </p>
+    <p class="tweet" data-status-id="1036963982165209100"> <a href="https://t.co/PWNNultwvA" target="_blank"> <img alt="Jaikanth Kumaran [Jaikantkumaran]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/Jaikantkumaran.jpg" /> </a> <a href="http://twitter.com/@rem" target="_blank">@rem</a> I had a similar use case with Prisma and ended up using <a href="https://github.com/APIs-guru/graphql-faker" target="_blank">[github.com]</a></p>
+    <p class="tweet" data-status-id="1037321684712403000"> <a href="https://t.co/vzTP0ZikNv" target="_blank"> <img alt="this is jess [thisisjess]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/thisisjess.png" /> </a> Google Wants to Kill the URL - (For reading levels above DNS and Internet Protocol) <a href="https://www.wired.com/story/google-wants-to-kill-the-url/" target="_blank">[wired.com]</a></p>
+    <p class="tweet" data-status-id="1035267764418621400"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> VMware Cloud on AWS <a href="https://cloud.vmware.com/vmc-aws?mid=21788&amp;eid=CVMW2000003757100" target="_blank">[cloud.vmware.com]</a><a href="https://twitter.com/BryanWilhite/status/1035267764418621440/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1035268468122120200"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Introduction to VMware Cloud on AWS <a href="https://www.youtube.com/watch?v=zkgMEuiD5rc" target="_blank">[youtube.com]</a></p>
+    <p class="tweet" data-status-id="1036081525886869500"> <a href="http://t.co/rM9N1bQpLr" target="_blank"> <img alt="Jeff Atwood [codinghorror]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/codinghorror.png" /> </a> if you don't build great moderation tooling, you won't get great moderation <a href="https://nolanlawson.com/2018/08/31/mastodon-and-the-challenges-of-abuse-in-a-federated-system/" target="_blank">[nolanlawson.com]</a></p>
+    <p class="tweet" data-status-id="1034563410870976500"> <a href="https://t.co/8nJi2349l3" target="_blank"> <img alt="Jacqueline Nolis [skyetetra]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/skyetetra.jpg" /> </a> The most underrated algorithm in data science is “go talk to people who deal with the problem every day and learn from them.”
+        
+        Modeling customer churn? Talk to people working at the store
+        Optimizing a website? Talk to users
+        
+        Looking at just tables of data is so limiting!
+        </p>
+    <p class="tweet" data-status-id="1037348687226253300"> <a href="http://t.co/tnTVooPuIt" target="_blank"> <img alt="S. Vaughan-Nichols [sjvn]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/sjvn.jpg" /> </a> Linus Torvalds talks frankly about Intel security bugs <a href="https://zd.net/2N7PW8J" target="_blank">[zd.net]</a>   via <a href="http://twitter.com/@ZDNet" target="_blank">@ZDNet</a> &amp; <a href="http://twitter.com/@sjvn" target="_blank">@sjvn</a> ​There was no love lost between the <a href="http://twitter.com/search?q='%23Linux" target="_blank">#Linux</a> developers and <a href="http://twitter.com/search?q='%23Intel" target="_blank">#Intel</a> when the <a href="http://twitter.com/search?q='%23Spectre" target="_blank">#Spectre</a><a href="http://twitter.com/search?q='%23security" target="_blank">#security</a> holes first popped up.
+        </p>
+    <p class="tweet" data-status-id="1037434888901812200"> <a href="http://t.co/qJf6Vbi9nq" target="_blank"> <img alt="Mary Jo Foley [maryjofoley]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/maryjofoley.png" /> </a> Microsoft shares a few specifics about Windows Server 2019 Essentials Edition. It is coming, as officials said, later this year alongside the other Win Server 2019 releases: <a href="https://cloudblogs.microsoft.com/windowsserver/2018/09/05/windows-server-2019-essentials-update/" target="_blank">[cloudblogs.microsoft.com]</a></p>
+    <p class="tweet" data-status-id="1036482080165646300"> <a href="https://t.co/KWE5X1k0pH" target="_blank"> <img alt="Scott Hanselman [shanselman]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/shanselman.jpg" /> </a> I’ve had a Synology Server in our closet for 8 years. It just emailed me that disk 3 of 4 failed. I hot swapped in a new disk. One of the best tech purchases I’ve made. Highly recommended. Don’t trust just the cloud. Backup your life &amp; photos local. <a href="http://amzn.to/2fzrr4q" target="_blank">[amzn.to]</a></p>
+    <p class="tweet" data-status-id="1034892947852951600"> <a href="https://t.co/KWE5X1k0pH" target="_blank"> <img alt="Scott Hanselman [shanselman]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/shanselman.jpg" /> </a> So Windows 10 has "Game Mode" to optimize when playing and streaming. It has "Presentation Mode" when you're using PowerPoint and projecting.
+        
+        I propose Developer Mode. I want Indexing off, Virus checking off, max filesystem speed, optimized caches, etc. IDE/Text editor priority.
+        </p>
+    <p class="tweet" data-status-id="1037585085866762200"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> <a href="http://twitter.com/@KinteSpace" target="_blank">@KinteSpace</a> Assessing the Impact of Bias in Artificial Intelligence [Timnit Gebru <a href="http://twitter.com/@timnitGebru" target="_blank">@timnitGebru</a>] <a href="https://www.youtube.com/watch?v=WP9oOxWQDc4" target="_blank">[youtube.com]</a></p>
+    <p class="tweet" data-status-id="1034892976240058400"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Git on Linux: “SSH is more secure (and although I have not confirmed this officially, it seems to transfer faster than HTTPS). If it is at all possible, use SSH instead of HTTPS.” <a href="http://blog.iqandreas.com/git/storing-https-authentication-in-ubuntu-and-arch-linux/" target="_blank">[blog.iqandreas.com]</a><a href="https://twitter.com/BryanWilhite/status/1034892976240058368/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1035409992755503100"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> .<a href="http://twitter.com/@mark_heath" target="_blank">@mark_heath</a> explores <a href="http://twitter.com/search?q='%23morelinq" target="_blank">#morelinq</a><a href="https://markheath.net/category/MoreLINQ" target="_blank">[markheath.net]</a></p>
+    <p class="tweet" data-status-id="1035411323817881600"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> “Latest Memo: Most people will be disappointed by the second edition” The Second Edition of "Refactoring" ➙ <a href="https://martinfowler.com/articles/refactoring-2nd-ed.html" target="_blank">[martinfowler.com]</a><a href="http://twitter.com/@martinfowler" target="_blank">@martinfowler</a></p>
+    <p class="tweet" data-status-id="1037298953899962400"> <a href="https://t.co/Vcf3yPuPpv" target="_blank"> <img alt="Emma Wedekind ✨ [EmmaWedekind]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/EmmaWedekind.jpg" /> </a> Open Position: Entry-Level Front-End Dev
+        
+        Must have:
+        - 6 yrs experience
+        - Fluent in React, Haskell and COBOL
+        - 15 Github commits each day
+        - 12 references
+        
+        6 month contract with no potential for hire $8/hr
+        
+        🤔 Am I the only one who finds job postings as unrealistic as this?
+        </p>
+    <p class="tweet" data-status-id="1036176153629913100"> <a href="https://t.co/OfjPk1VNvq" target="_blank"> <img alt="John Arundel [bitfield]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/bitfield.jpeg" /> </a> The skills programmers need now are drastically different from what they were in the 1990s. They need less mathematics and algorithms, and more ‘sociotech’ skills: navigating relationships between people and communities <a href="https://cacm.acm.org/magazines/2018/7/229044-we-are-done-with-hacking/fulltext" target="_blank">[cacm.acm.org]</a></p>
+    <p class="tweet" data-status-id="1037751937221910500"> <a href="https://t.co/dsKUTUWYHQ" target="_blank"> <img alt="Jacqueline [JackieMJensen]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/JackieMJensen.jpg" /> </a> "Useful modern education is not the work of rote. When you tell someone the answer and then give them a test to see if they remember what you told them, that’s not education, it’s incented memorization."
+        – <a href="http://twitter.com/search?q='%23SethGodin" target="_blank">#SethGodin</a><a href="https://seths.blog/2018/09/the-trick-question/" target="_blank">[seths.blog]</a></p>
+    <p class="tweet" data-status-id="1036680623400730600"> <a href="https://t.co/BJ4Ib1CWli" target="_blank"> <img alt="Mark Russinovich [markrussinovich]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/markrussinovich.jpg" /> </a> Great article about <a href="http://twitter.com/@scottgu" target="_blank">@scottgu</a>: "The man in the red polo: Meet Scott Guthrie, Microsoft CEO Satya Nadella's front-line general in the cloud wars with Amazon and Google" <a href="https://www.businessinsider.com/microsoft-executive-vp-scott-guthrie-on-working-with-satya-nadella-the-cloud-wars-and-his-red-polo-2018-8?utm_source=twitter&amp;utm_medium=referral&amp;utm_content=topbar&amp;utm_term=mobile" target="_blank">[businessinsider.com]</a></p>
+    <p class="tweet" data-status-id="1034973571326464000"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Valley of Genius: The Uncensored History of Silicon Valley (As Told by the Hackers, Founders, and Freaks Who Made It Boom) <a href="https://www.amazon.com/Valley-Genius-Uncensored-History-Founders-ebook/dp/B0769XXGXX?SubscriptionId=1SW6D7X6ZXXR92KVX0G2&amp;tag=thekintespacec00&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B0769XXGXX" target="_blank">[amazon.com]</a> by <a href="http://twitter.com/@adamcfisher" target="_blank">@adamcfisher</a><a href="https://twitter.com/BryanWilhite/status/1034973571326464000/photo/1" target="_blank">[twitter.com]</a></p>
+    <p class="tweet" data-status-id="1034974915781320700"> <a href="http://t.co/UNdqV0Z1zz" target="_blank"> <img alt="Bryan D. Wilhite [BryanWilhite]" src="https://songhay.blob.core.windows.net:443/shared-social-twitter/BryanWilhite.jpeg" /> </a> Triangulation 356: Adam Fisher, Valley of Genius <a href="https://www.youtube.com/watch?v=xTqe2ACcwVQ" target="_blank">[youtube.com]</a></p>
+  </body>
 </html>
