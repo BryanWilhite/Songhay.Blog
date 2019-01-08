@@ -1,9 +1,18 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 08 Jan 2019 00:53:25 GMT</pubDate>
+  <channel><pubDate>Tue, 08 Jan 2019 17:57:41 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Expression and implicit animations can now be applied directly in XAML” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/expression-and-implicit-animations-can-now-be-applied-directly-in-xaml-and-other-tweeted-links</link>
+  <description>Expression and implicit animations can now be applied directly in XAML!!  Check out @pag3rd talking about what's new in XAML BRK2423 What's New for Windows UX Developers: Fluent and XAML
+        #XAML developers are used to BooleanInverseConverters. But...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">expression-and-implicit-animations-can-now-be-applied-directly-in-xaml-and-other-tweeted-links</guid>
+  <pubDate>Tue, 08 Jan 2019 17:56:47 GMT</pubDate>
+</item>
 <item>
   <title>“Get started with Angular Grid in 5 minutes” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</link>
@@ -81,13 +90,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">getting-started-with-vue-js-in-net-core-using-visual-studio-and-other-tweeted-links</guid>
   <pubDate>Wed, 19 Dec 2018 22:48:01 GMT</pubDate>
-</item>
-<item>
-  <title>“NgRx Entity—Complete Practical Guide” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/ngrx-entity-complete-practical-guide-and-other-tweeted-links</link>
-  <description>NgRx Entity - Complete Practical Guide. By angular-university [bit.ly] I agree w/ @Elijah_Meeks ([medium.com]) &amp;amp; @enjalot ([medium.com]) that #d3js is a collection of tools to help with different aspects of #dataviz. Building on that, I tried to plac...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">ngrx-entity-complete-practical-guide-and-other-tweeted-links</guid>
-  <pubDate>Mon, 17 Dec 2018 19:33:02 GMT</pubDate>
 </item></channel>
 </rss>
