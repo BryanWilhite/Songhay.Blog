@@ -1,23 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="json\app.json" />
     <None Remove="opml\topics.opml" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="json\app.json" />
     <Content Include="opml\topics.opml">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="CommonMark.NET" Version="0.15.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
@@ -27,11 +23,9 @@
     <PackageReference Include="Songhay.Cloud.BlobStorage" Version="2.4.0" />
     <PackageReference Include="SonghayCore.MSTest" Version="2.4.2" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Songhay.Blog.Models\Songhay.Blog.Models.csproj" />
     <ProjectReference Include="..\Songhay.Blog.Repository\Songhay.Blog.Repository.csproj" />
     <ProjectReference Include="..\Songhay.Blog\Songhay.Blog.csproj" />
   </ItemGroup>
-
 </Project>
