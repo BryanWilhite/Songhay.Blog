@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 04 Jan 2019 20:54:37 GMT</pubDate>
+  <channel><pubDate>Tue, 08 Jan 2019 00:53:25 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Get started with Angular Grid in 5 minutes” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</link>
+  <description>Get started with Angular Grid in 5 minutes. By @maxim_koretskyi[bit.ly] Sal.js - A lightweight scroll animation library [mciastek.github.io] Combining #fonts is one of the trickiest parts of #typography. Here’s a guide, combined with an example to help y...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</guid>
+  <pubDate>Tue, 08 Jan 2019 00:52:15 GMT</pubDate>
+</item>
 <item>
   <title>“Getting to Know the Angular CDK Drag and Drop Feature” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/getting-to-know-the-angular-cdk-drag-and-drop-feature-and-other-tweeted-links</link>
@@ -81,13 +89,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">ngrx-entity-complete-practical-guide-and-other-tweeted-links</guid>
   <pubDate>Mon, 17 Dec 2018 19:33:02 GMT</pubDate>
-</item>
-<item>
-  <title>“The guide to integrating and styling icon systems — SVG sprites” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/the-guide-to-integrating-and-styling-icon-systems-svg-sprites-and-other-tweeted-links</link>
-  <description>The guide to integrating and styling icon systems — SVG sprites, #SVG symbols and icon fonts [blog.nucleoapp.com] Still boggled by the beauty that is CSS Grid. This responsive (or intrinsic, 🙌 @jensimmons) nested layout is less than 20 lines of code. Fl...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">the-guide-to-integrating-and-styling-icon-systems-svg-sprites-and-other-tweeted-links</guid>
-  <pubDate>Sat, 15 Dec 2018 00:38:47 GMT</pubDate>
 </item></channel>
 </rss>

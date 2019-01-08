@@ -162,8 +162,15 @@ namespace Songhay.Blog.Shell.Tests
             string expandArrows(string s)
             {
                 s = s
+                    .Replace("<<", "&lt;&lt;")
+                    .Replace(">>", "&gt;&gt;")
                     .Replace("=>", "=&gt;")
-                    .Replace("<=", "&lt;=");
+                    .Replace("<=", "&lt;=")
+                    .Replace("<Action<", "&lt;Action&lt;")
+                    .Replace("<Func<", "&lt;Func&lt;")
+                    .Replace("Action<", "Action&lt;")
+                    .Replace("Func<", "Func&lt;")
+                    ;
                 return s;
             }
 
