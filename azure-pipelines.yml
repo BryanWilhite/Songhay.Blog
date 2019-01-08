@@ -12,9 +12,12 @@ trigger:
     - releases/*
   paths:
     exclude:
-    - $(RepoName).Repository.Tests/*
-    - $(RepoName).Shell.Tests/*
-    - $(RepoName).Tests/*
+    - Songhay.Blog.Repository.Tests/*
+    - Songhay.Blog.Shell.Tests/*
+    - Songhay.Blog.Tests/*
+
+#TODO: wait for “macro support” for exclude
+#[https://github.com/Microsoft/azure-pipelines-tasks/issues/9235#issuecomment-451982478]
 
 resources:
 - repo: self
