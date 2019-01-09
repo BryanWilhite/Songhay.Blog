@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 08 Jan 2019 17:57:41 GMT</pubDate>
+  <channel><pubDate>Wed, 09 Jan 2019 21:13:07 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“eagle.js: A hackable slideshow framework built with Vue.js” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/eagle-js-a-hackable-slideshow-framework-built-with-vue-js-and-other-tweeted-links</link>
+  <description>eagle.js: A hackable slideshow framework built with Vue.js. Contribute to Zulko/eagle.js development by creating an account on GitHub. #vue ★2.1k [github.com][twitter.com] Jan is at #ReactConf17 enjoying talks like cross-platform #dataviz possibilities w...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">eagle-js-a-hackable-slideshow-framework-built-with-vue-js-and-other-tweeted-links</guid>
+  <pubDate>Wed, 09 Jan 2019 21:12:20 GMT</pubDate>
+</item>
 <item>
   <title>“Expression and implicit animations can now be applied directly in XAML” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/expression-and-implicit-animations-can-now-be-applied-directly-in-xaml-and-other-tweeted-links</link>
@@ -82,13 +90,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">studio-status-report-2018-12</guid>
   <pubDate>Thu, 20 Dec 2018 22:21:54 GMT</pubDate>
-</item>
-<item>
-  <title>“Getting Started with Vue.js in .NET Core using Visual Studio” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/getting-started-with-vue-js-in-net-core-using-visual-studio-and-other-tweeted-links</link>
-  <description>Getting Started with Vue.js in .NET Core using Visual Studio [blog.bitsrc.io] Just Blogged "The poor man's PWA" [luizbon.com] BuddyCSS – A simple #CSS framework that aims to make development easier. [buddycss.com] A Comprehensive Guide to Working with Da...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">getting-started-with-vue-js-in-net-core-using-visual-studio-and-other-tweeted-links</guid>
-  <pubDate>Wed, 19 Dec 2018 22:48:01 GMT</pubDate>
 </item></channel>
 </rss>
