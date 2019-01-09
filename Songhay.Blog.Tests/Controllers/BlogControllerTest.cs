@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 using Songhay.Blog.Models;
 using Songhay.Extensions;
 using Songhay.Models;
@@ -59,12 +60,18 @@ namespace Songhay.Blog.Tests.Controllers
         [TestMethod]
         [TestProperty("pathTemplate", "entry/{id}")]
         [TestProperty("id", "asp-net-web-api-ready-state-4-2017")]
+        [TestProperty("outputFile", @"json\ShouldGetBlogEntryAsync.json")]
         public async Task ShouldGetBlogEntryAsync()
         {
+            var projectInfo = this.TestContext.ShouldGetProjectDirectoryInfo(this.GetType());
+
             #region test properties:
 
             var pathTemplate = new UriTemplate(string.Concat(baseRoute, this.TestContext.Properties["pathTemplate"].ToString()));
             var id = this.TestContext.Properties["id"].ToString();
+            var outputFile = this.TestContext.Properties["outputFile"].ToString();
+            outputFile = projectInfo.FullName.ToCombinedPath(outputFile);
+            this.TestContext.ShouldFindFile(outputFile);
 
             #endregion
 
@@ -73,6 +80,11 @@ namespace Songhay.Blog.Tests.Controllers
             var response = await client.GetAsync(path);
 
             response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            Assert.IsFalse(string.IsNullOrEmpty(content), "The expected content is not here.");
+            var jO = JObject.Parse(content);
+            File.WriteAllText(outputFile, jO.ToString());
         }
 
         const string baseRoute = "api/blog/";

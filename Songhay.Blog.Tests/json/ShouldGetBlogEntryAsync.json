@@ -1,0 +1,12 @@
+{
+  "author": "@BryanWilhite",
+  "content": "<p>I need to record my personal satisfaction with ASP.NET Web API ‘readiness’ (as in battle-ready state), after about four years of working toward this <em>feeling</em>. The trigger for this emotional outburst came with understanding how <a href=\"https://msdn.microsoft.com/en-us/library/ff359101.aspx\">claims-based security</a> can be used with ASP/NET Web API. Now I can make a little list of highlights for this ready state:</p><ul><li>Using claims-based authentication to ‘spawn’ a generic/shared user without LDAP or AD</li><li>Sharing routes among services with an abstract <code>ApiController</code> class</li><li>Moving legacy databases to SQL Azure</li><li>Automated testing of API controllers with <a href=\"http://owin.org/\">OWIN</a></li><li>Using the <code>EnableCors</code> attribute to support Cross-Origin Resource Sharing</li><li>Leveraging <code>JObject</code> with Web API</li><li>Extending <code>DefaultContractResolver</code> to handle circular references in data access models</li><li>Building a <code>JObject</code> Repository to back an API (with <a href=\"https://autofac.org/\">Autofac</a>)</li><li><code>IHttpActionResult</code>, attribute-based routing and other ‘basics’</li><li>My use of ‘business domain’ (<code>*.Foo.Models</code> =&gt; <code>*.Foo.ModelContext</code> and/or <code>*.Foo.Models</code> =&gt; <code>*.Foo.Repository</code>) namespaces for data access (with Autofac).</li></ul><p>And now the punchline: All of these learnings have to migrated to ASP.NET Core. Before this great migration, I will need to write notes about each of these items to preserve my progress in these areas and prevent relearning-bottlenecks in future.</p><h3>Related Links</h3><ul><li>“<a href=\"https://msdn.microsoft.com/en-us/library/ff359101.aspx\">An Introduction to Claims</a>”</li><li>“<a href=\"https://channel9.msdn.com/Blogs/Technology-and-Friends/tf426\">Raffaele Rialdi on Security in ASP.NET Core</a>”</li></ul>",
+  "inceptDate": "2017-04-27T17:38:01.2601276-07:00",
+  "isPublished": true,
+  "itemCategory": null,
+  "modificationDate": "0001-01-01T00:00:00",
+  "slug": "asp-net-web-api-ready-state-4-2017",
+  "sortOrdinal": 0,
+  "tag": null,
+  "title": "ASP.NET Web API Ready State (4/2017)"
+}
