@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Wed, 09 Jan 2019 21:13:07 GMT</pubDate>
+  <channel><pubDate>Tue, 15 Jan 2019 20:17:57 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Building Fluid Interfaces” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/building-fluid-interfaces-and-other-tweeted-links</link>
+  <description>Building Fluid Interfaces [medium.com] Who’s a UX writer? [invisionapp.com] How To Set an Apple Touch Icon for Any Site — All in the head: This week, Apple rolled out an update to the ... http://bit.ly/ms8Tui#ux Your CSS Layout Toolkit for 2019 [noti.st]...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">building-fluid-interfaces-and-other-tweeted-links</guid>
+  <pubDate>Tue, 15 Jan 2019 20:17:04 GMT</pubDate>
+</item>
 <item>
   <title>“eagle.js: A hackable slideshow framework built with Vue.js” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/eagle-js-a-hackable-slideshow-framework-built-with-vue-js-and-other-tweeted-links</link>
@@ -82,13 +90,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">14-flat-design-packs-for-your-next-project-and-other-tweeted-links</guid>
   <pubDate>Fri, 21 Dec 2018 17:19:07 GMT</pubDate>
-</item>
-<item>
-  <title>studio status report: 2018-12</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2018-12</link>
-  <description>Azure spending rate crisisThere are quite a bit of internal notes on this matter but the gist of it is this: moving around App services into resource groups caused two of these services to upgrade themselves to shared App Service plans. These two changes...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">studio-status-report-2018-12</guid>
-  <pubDate>Thu, 20 Dec 2018 22:21:54 GMT</pubDate>
 </item></channel>
 </rss>
