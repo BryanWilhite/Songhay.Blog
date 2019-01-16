@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 15 Jan 2019 20:17:57 GMT</pubDate>
+  <channel><pubDate>Wed, 16 Jan 2019 05:21:52 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Dynamic Nested Reactive Forms In Angular” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/dynamic-nested-reactive-forms-in-angular-and-other-tweeted-links</link>
+  <description>Dynamic Nested Reactive Forms In Angular – Josh Hicks – Medium [medium.com] How to Create Custom Angular Pipes and Dynamic Locales: [medium.com] Adjustable sidebar using Angular - @nicuvlad89[medium.com]#JavaScript#Typescript#Angular#WebDevelopment Under...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">dynamic-nested-reactive-forms-in-angular-and-other-tweeted-links</guid>
+  <pubDate>Wed, 16 Jan 2019 05:20:45 GMT</pubDate>
+</item>
 <item>
   <title>“Building Fluid Interfaces” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/building-fluid-interfaces-and-other-tweeted-links</link>
@@ -82,13 +90,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">testing-with-the-angular-httpclient-api-and-other-tweeted-links</guid>
   <pubDate>Fri, 28 Dec 2018 00:35:08 GMT</pubDate>
-</item>
-<item>
-  <title>“14 Flat #Design Packs for Your Next Project” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/14-flat-design-packs-for-your-next-project-and-other-tweeted-links</link>
-  <description>14 Flat #Design#UI Packs for Your Next Project [spyrestudios.com] Nx 6.2 is now available, which includes updates to the #NgRx schematics and a shared karma config as well as additional bug fixes. Check out the blog post by @FrozenPandaz for more details...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">14-flat-design-packs-for-your-next-project-and-other-tweeted-links</guid>
-  <pubDate>Fri, 21 Dec 2018 17:19:07 GMT</pubDate>
 </item></channel>
 </rss>
