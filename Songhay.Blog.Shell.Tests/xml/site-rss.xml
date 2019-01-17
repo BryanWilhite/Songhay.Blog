@@ -1,9 +1,19 @@
 <rss version="2.0">
-  <channel><pubDate>Wed, 16 Jan 2019 05:21:52 GMT</pubDate>
+  <channel><pubDate>Thu, 17 Jan 2019 04:27:29 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“I just published ‘Implementing Search in GraphQL’"” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-implementing-search-in-graphql-and-other-tweeted-links</link>
+  <description>I just published "Implementing Search in GraphQL" showing how to implement text-based searches that are both case-insensitive &amp;amp; full field!
+
+            This is a 2 part series, the next will be advanced search using Elasticsearch for things like g...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">i-just-published-implementing-search-in-graphql-and-other-tweeted-links</guid>
+  <pubDate>Thu, 17 Jan 2019 04:26:24 GMT</pubDate>
+</item>
 <item>
   <title>“Dynamic Nested Reactive Forms In Angular” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/dynamic-nested-reactive-forms-in-angular-and-other-tweeted-links</link>
@@ -80,15 +90,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">managing-state-in-angular-using-akita-and-other-tweeted-links</guid>
   <pubDate>Fri, 28 Dec 2018 20:27:43 GMT</pubDate>
-</item>
-<item>
-  <title>“Testing with the Angular HttpClient API” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/testing-with-the-angular-httpclient-api-and-other-tweeted-links</link>
-  <description>“Testing with the Angular HttpClient API” by @cironunesdev[medium.com] a very nice read, recommended for people building and designing HTTP APIs
-
-            Developing Restful APIs: A Comprehensive Set of Guidelines by Zalando [opensource.zalando.com]...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">testing-with-the-angular-httpclient-api-and-other-tweeted-links</guid>
-  <pubDate>Fri, 28 Dec 2018 00:35:08 GMT</pubDate>
 </item></channel>
 </rss>

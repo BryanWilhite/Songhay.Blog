@@ -173,15 +173,10 @@ namespace Songhay.Blog.Shell.Tests
 
             string expandComparisonOperatorGlyphs(string s)
             {
-                var re = new Regex(@"\s([<>])\s");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    if (i.Groups.Count() != 2) return;
-                    var @value = i.Groups[1].Value;
-                    if (@value == "<") s = s.Replace(@value, "&lt;");
-                    if (@value == ">") s = s.Replace(@value, "&gt;");
-                });
-
+                s = s
+                    .Replace(" < ", " &lt; ")
+                    .Replace(" > ", " &gt; ")
+                    ;
                 return s;
             }
 
