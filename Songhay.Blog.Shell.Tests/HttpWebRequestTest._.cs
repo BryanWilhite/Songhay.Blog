@@ -145,13 +145,8 @@ namespace Songhay.Blog.Shell.Tests
 
             string expandAmpersand(string s)
             {
-                var re = new Regex(@"&\s+");
-                re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
-                {
-                    s = s.Replace(i.Value, "&amp; ");
-                });
-
                 s = s
+                    .Replace(" & ", " &amp; ")
                     .Replace("Q&A", "Q&amp;A")
                     .Replace("R&B", "R&amp;B")
                     ;
@@ -166,6 +161,8 @@ namespace Songhay.Blog.Shell.Tests
                     .Replace(">>", "&gt;&gt;")
                     .Replace("=>", "=&gt;")
                     .Replace("<=", "&lt;=")
+                    .Replace("->", "-&gt;")
+                    .Replace("<-", "&lt;-")
                     .Replace("<Action<", "&lt;Action&lt;")
                     .Replace("<Func<", "&lt;Func&lt;")
                     .Replace("Action<", "Action&lt;")
@@ -176,7 +173,7 @@ namespace Songhay.Blog.Shell.Tests
 
             string expandComparisonOperatorGlyphs(string s)
             {
-                var re = new Regex(@"\s(<|>)\s");
+                var re = new Regex(@"\s([<>])\s");
                 re.Matches(s).OfType<Match>().ForEachInEnumerable(i =>
                 {
                     if (i.Groups.Count() != 2) return;
