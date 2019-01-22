@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Fri, 18 Jan 2019 21:01:04 GMT</pubDate>
+  <channel><pubDate>Mon, 21 Jan 2019 20:37:32 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“You asked, we answered. MSFT open sources WPF, Windows Forms and Windows UI XAML Library” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/you-asked-we-answered-msft-open-sources-wpf-windows-forms-and-windows-ui-xaml-library-and-other-tweeted-links</link>
+  <description>You asked, we answered. MSFT open sources WPF, Windows Forms and Windows UI XAML Library [blogs.windows.com] Microsoft ❤️ OpenSource - the UI toolkits, Windows.Forms and WPF are now open source: [blogs.msdn.microsoft.com] Some big news for developers at ...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">you-asked-we-answered-msft-open-sources-wpf-windows-forms-and-windows-ui-xaml-library-and-other-tweeted-links</guid>
+  <pubDate>Mon, 21 Jan 2019 20:36:32 GMT</pubDate>
+</item>
 <item>
   <title>“I just published ‘Implementing Search in GraphQL’"” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-implementing-search-in-graphql-and-other-tweeted-links</link>
@@ -81,14 +89,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">flippant-remarks-about-karma-jasmine-in-angular</guid>
   <pubDate>Mon, 31 Dec 2018 19:42:59 GMT</pubDate>
-</item>
-<item>
-  <title>“Managing State in Angular using Akita” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/managing-state-in-angular-using-akita-and-other-tweeted-links</link>
-  <description>Managing State in Angular using Akita: [blog.ng-book.com] Do you still think that NgZone (zone.js) is required for change detection in Angular? [bit.ly] Just published audioworklet-polyfill 1.1.0.
-            Now this cool bitcrusher demo works in Firef...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">managing-state-in-angular-using-akita-and-other-tweeted-links</guid>
-  <pubDate>Fri, 28 Dec 2018 20:27:43 GMT</pubDate>
 </item></channel>
 </rss>
