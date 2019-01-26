@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Mon, 21 Jan 2019 20:37:32 GMT</pubDate>
+  <channel><pubDate>Sat, 26 Jan 2019 01:49:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Internet Explorer… Critical security flaw” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/internet-explorer-critical-security-flaw-and-other-tweeted-links</link>
+  <description>If for whatever reason you are still using Internet Explorer (any version), STOP NOW. Critical security flaw enabling drive-by remote code execution is being actively exploited. Emergency patch is being pushed - but why not move to a better browser? [ars...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">internet-explorer-critical-security-flaw-and-other-tweeted-links</guid>
+  <pubDate>Sat, 26 Jan 2019 01:47:50 GMT</pubDate>
+</item>
 <item>
   <title>“You asked, we answered. MSFT open sources WPF, Windows Forms and Windows UI XAML Library” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/you-asked-we-answered-msft-open-sources-wpf-windows-forms-and-windows-ui-xaml-library-and-other-tweeted-links</link>
@@ -81,13 +89,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">flexbox-the-animated-tutorial-and-other-tweeted-links</guid>
   <pubDate>Wed, 02 Jan 2019 18:50:31 GMT</pubDate>
-</item>
-<item>
-  <title>flippant remarks about Karma-Jasmine in Angular</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/flippant-remarks-about-karma-jasmine-in-angular</link>
-  <description>The details below try to explain these fundamentals:use NO_ERRORS_SCHEMAinitialize properties used in component-binding HTML to prevent [object ErrorEvent] throwncall overrideComponent to null or mock services for the component specconsider using inline ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">flippant-remarks-about-karma-jasmine-in-angular</guid>
-  <pubDate>Mon, 31 Dec 2018 19:42:59 GMT</pubDate>
 </item></channel>
 </rss>
