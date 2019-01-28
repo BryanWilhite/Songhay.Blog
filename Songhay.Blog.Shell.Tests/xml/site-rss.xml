@@ -1,9 +1,30 @@
 <rss version="2.0">
-  <channel><pubDate>Sat, 26 Jan 2019 01:49:05 GMT</pubDate>
+  <channel><pubDate>Mon, 28 Jan 2019 22:40:35 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>“Microsoft Garage releases XAML Studio” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/microsoft-garage-releases-xaml-studio-and-other-tweeted-links</link>
+  <description>Microsoft Garage releases XAML Studio, a new tool to help you
+            rapidly prototype UWP XAML [bit.ly] 🚀🌛 Announcing Apollo Elements: GraphQL + Web Components 👩‍🚀 👨‍🚀 With
+            support for 🔥 LitElement 👾 Hybrids 🔬 Gluon 🧱 Polyme...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">microsoft-garage-releases-xaml-studio-and-other-tweeted-links</guid>
+  <pubDate>Mon, 28 Jan 2019 22:39:20 GMT</pubDate>
+</item>
+<item>
+  <title>“Hard-pressed Amazon workers in Scotland sleeping in tents near
+            warehouse to save money” and other tweeted links…</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/hard-pressed-amazon-workers-in-scotland-sleeping-in-tents-near-warehouse-to-save-money-and-other-tweeted-links</link>
+  <description>Microsoft Garage releases XAML Studio, a new tool to help you
+            rapidly prototype UWP XAML [bit.ly] 🚀🌛 Announcing Apollo Elements: GraphQL + Web Components 👩‍🚀 👨‍🚀 With
+            support for 🔥 LitElement 👾 Hybrids 🔬 Gluon 🧱 Polyme...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">hard-pressed-amazon-workers-in-scotland-sleeping-in-tents-near-warehouse-to-save-money-and-other-tweeted-links</guid>
+  <pubDate>Mon, 28 Jan 2019 22:28:09 GMT</pubDate>
+</item>
 <item>
   <title>“Internet Explorer… Critical security flaw” and other tweeted links…</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/internet-explorer-critical-security-flaw-and-other-tweeted-links</link>
@@ -70,24 +91,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</guid>
   <pubDate>Tue, 08 Jan 2019 00:52:15 GMT</pubDate>
-</item>
-<item>
-  <title>“Getting to Know the Angular CDK Drag and Drop Feature” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/getting-to-know-the-angular-cdk-drag-and-drop-feature-and-other-tweeted-links</link>
-  <description>Getting to Know the Angular CDK Drag and Drop Feature. By @NetanelBasal[bit.ly] Easier scrollytelling with position sticky [pudding.cool] Just how many kinds of boxes are there in CSS? @fantasai@tabatkins@meyerweb
- content-box
-            padding-box
-...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">getting-to-know-the-angular-cdk-drag-and-drop-feature-and-other-tweeted-links</guid>
-  <pubDate>Fri, 04 Jan 2019 20:53:40 GMT</pubDate>
-</item>
-<item>
-  <title>“Flexbox  - The Animated Tutorial” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/flexbox-the-animated-tutorial-and-other-tweeted-links</link>
-  <description>Flexbox  - The Animated Tutorial [medium.com] Everything You Need To Know About Alignment In #Flexbox[smashingmagazine.com]#Layouts Carousels on #Mobile Devices [nngroup.com] Toggle-Switch Guidelines [nngroup.com]#InteractionDesign CSS-only double-click ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">flexbox-the-animated-tutorial-and-other-tweeted-links</guid>
-  <pubDate>Wed, 02 Jan 2019 18:50:31 GMT</pubDate>
 </item></channel>
 </rss>
