@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Tue, 26 Feb 2019 02:53:06 GMT</pubDate>
+  <channel><pubDate>Tue, 26 Feb 2019 02:57:46 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2019-02</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-02</link>
+  <description>One “pure” NPM package and two Angular packagesAfter another miserable, 20-day siege, these are the repositories I have committed to that develop Javascript code reuse in the Songhay Studio:songhay-core [GitHub]songhay-ng-workspace [GitHub]Here is a sele...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2019-02</guid>
+  <pubDate>Tue, 26 Feb 2019 02:52:45 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2019-01</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-01</link>
@@ -80,13 +88,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">expression-and-implicit-animations-can-now-be-applied-directly-in-xaml-and-other-tweeted-links</guid>
   <pubDate>Tue, 08 Jan 2019 17:56:47 GMT</pubDate>
-</item>
-<item>
-  <title>“Get started with Angular Grid in 5 minutes” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</link>
-  <description>Get started with Angular Grid in 5 minutes. By @maxim_koretskyi[bit.ly] Sal.js - A lightweight scroll animation library [mciastek.github.io] Combining #fonts is one of the trickiest parts of #typography. Here’s a guide, combined with an example to help y...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">get-started-with-angular-grid-in-5-minutes-and-other-tweeted-links</guid>
-  <pubDate>Tue, 08 Jan 2019 00:52:15 GMT</pubDate>
 </item></channel>
 </rss>
