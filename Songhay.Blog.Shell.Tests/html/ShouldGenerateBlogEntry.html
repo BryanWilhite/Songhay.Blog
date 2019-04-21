@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,29 +7,27 @@
     </head>
 
     <body>
-        <h2 id="studio-status-report-2019-03">studio status report: 2019-03</h2>
-        <h3 id="excited-about-songhay-system-being-on-npm">excited about Songhay System being on NPM</h3>
-        <div style="text-align:center">
-            <!-- cSpell:disable -->
-            <p><a href="https://www.flickr.com/photos/wilhite/33569352448/in/dateposted-public/" target="_blank"><img alt="Songhay System on npm" src="https://farm8.staticflickr.com/7821/33569352448_26e910c124_c.jpg" /></a> <!-- cSpell:enable -->
-            </p>
-        </div>
-        <p>The 20-month siege to obtain the fundamental ability to share/reuse code in Javascript framework developed by one of the wealthiest companies in the world is finally over. Now the Songhay studio can steam ahead with view toward bigger business. The first step is getting this shared/reusable Javascript on <a href="https://www.npmjs.com/~rasx">npm</a>!</p>
-        <p>I remember when I opened my npm account <em>years and years</em> ago seriously doubting that I would see a day like this.</p>
-        <h2 id="sketching-out-a-development-schedule">sketching out a development schedule</h2>
+        <h2 id="studio-status-report-2019-04">studio status report: 2019-04</h2>
+        <h3 id="getting-this-index-app-into-songhay-ng-workspace">getting this Index App into <code>songhay-ng-workspace</code></h3>
+        <p>This month saw the archiving of <code>angular.io-index-app</code> [<a href="https://github.com/BryanWilhite/angular.io-index-app">GitHub</a>] because it <a href="https://github.com/BryanWilhite/songhay-ng-workspace/issues/11">is being moved</a> to <code>songhay-ng-workspace</code>. This was quite a forehead slapping moment and should be reflected in this month’s version of ‘sketching out a development schedule (revision 1)’ (below).</p>
+        <h3 id="making-menudisplayitemmodel-grouping-and-sorting-framework-agnostic">making <code>MenuDisplayItemModel</code> grouping and sorting framework agnostic</h3>
+        <p>Another huge slap (that apparently has been over a decade in the making), is the studio-realization that <code>MenuDisplayItemModel</code> grouping and sorting can be done in pure Typescript without regard to Angular, Vue, React, etc.</p>
+        <p>I developed the <code>DisplayItemUtility</code> [<a href="https://github.com/BryanWilhite/songhay-core/blob/master/src/utilities/display-item.utility.ts">GitHub</a>] to establish what should have super obvious to me at least 10 years ago. My company name is Songhay System—not <em>systems</em>—because here we see <em>one</em> concept that can be implemented in a <em>diverse</em> array of technologies. Once the <code>DisplayItemUtility</code> shows up in C#, it will be the realization of this ideal. (The <code>DisplayItemModel</code> and <code>MenuDisplayItemModel</code>, by the way, are already here: <a href="https://github.com/BryanWilhite/SonghayCore/tree/master/SonghayCore/Models">in C#</a> and <a href="https://github.com/BryanWilhite/songhay-core/tree/master/src/models">in TypeScript</a>).</p>
+        <h3 id="really-thinking-about-display-text-the-songhay-system-way">really thinking about display text the Songhay System way</h3>
+        <p>Another huge cognitive step around my late arrival to this thinking party compels me <a href="https://github.com/BryanWilhite/songhay-core/issues/12">to raise the issue</a> about the limitations of having the display text concept represented by the <code>string</code>. The display text concept should start at plain text and advance through markdown—and <em>optionally</em> store HTML. This introduction of markdown as a super-fine line between plain text and HTML is a subtlety that has escaped me for at least a decade (I am just throwing decades left and right).</p>
+        <p>For my sanity, I should remind myself that <code>ngx-markdown</code> did not <a href="https://github.com/jfcere/ngx-markdown/graphs/contributors">start</a> until 2017/2 but the underlying <code>marked</code> was <a href="https://github.com/markedjs/marked/graphs/contributors">around in 2011</a>.</p>
+        <h3 id="sketching-out-a-development-schedule-revision-1">sketching out a development schedule (revision 1)</h3>
         <p>Today the studio development schedule looks like this:</p>
         <ul>
-            <li>finish modernizing <code>@songhay/player-video-you-tube</code> into a ready state</li>
+            <li>finish modernizing <code>@songhay/player-video-you-tube</code> and <code>@songhay/index</code> into a ready state [<a href="https://github.com/BryanWilhite/songhay-ng-workspace/issues/11">#11</a>]</li>
+            <li>introduce splash page(s) to the Day Path blog (an SEO emergency—<em>for years</em>) and convert to HTTPs by default</li>
             <li>use the learnings from existing npm packages to build <code>@songhay/player-audio-???</code></li>
             <li>convert the kinté space blog to Hexo (this has been an emergency <em>for years</em>)</li>
             <li>set up automated social-media posting with Azure logic apps (and a queue of some kind?)</li>
-            <li>introduce splash pages to the Day Path blog (an SEO emergency—<em>for years</em>)</li>
             <li>modernize the kinté hits page into a progressive web app</li>
             <li>use the learnings of previous work to upgrade and re-release the kinté space</li>
         </ul>
-        <p>I assume that this work can be completed in 2019. No more studio emergencies going on—<em>for years</em>.</p>
-        <h3 id="the-gihub-credentials-drama-solved">the GiHub credentials drama solved?</h3>
-        <p>Long story short: reinstalling <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest">Microsoft Git Credential Manager for Windows</a> appears to have fixed the problem.</p>
+        <p>The Day Path Blog bullet was moved up because many of the later bullets will not be trackable via public GitHub issues.</p>
         <p>@<a href="https://twitter.com/bryanwilhite">BryanWilhite</a></p>
     </body>
 
