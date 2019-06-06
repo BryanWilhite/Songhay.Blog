@@ -11,9 +11,8 @@ namespace Songhay.Blog.Models.Extensions
     {
         static IBlogEntryIndexExtensions() => traceSource = TraceSources
             .Instance
-            .GetTraceSourceFromConfiguredName()
-            .WithAllSourceLevels()
-            .EnsureTraceSource();
+            .GetConfiguredTraceSource()
+            .WithSourceLevels();
 
         /// <summary>
         /// Adds the default slug, fluently.

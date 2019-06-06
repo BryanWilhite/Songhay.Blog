@@ -20,9 +20,8 @@ namespace Songhay.Blog.Controllers
         {
             traceSource = TraceSources
                 .Instance
-                .GetTraceSourceFromConfiguredName()
-                .WithAllSourceLevels()
-                .EnsureTraceSource();
+                .GetConfiguredTraceSource()
+                .WithSourceLevels();
 
             httpClient = new HttpClient();
         }
@@ -43,7 +42,7 @@ namespace Songhay.Blog.Controllers
             this._searchPostTemplate.Skip = skipValue;
 
             var json = this._searchPostTemplate.ToJson();
-            traceSource.TraceVerbose("query: {0}", json);
+            traceSource?.TraceVerbose("query: {0}", json);
 
             var apiTemplate = new UriTemplate(this._restApiMetadata.UriTemplates["search-docs"]);
             var indexName = this._restApiMetadata.ClaimsSet["search-item-index-name"];
@@ -52,15 +51,15 @@ namespace Songhay.Blog.Controllers
             var uriBuilder = new UriBuilder(uri.OriginalString.Replace("%3F", "?"));
             uriBuilder.Query = uriBuilder.Query.Replace("api_version", "api-version");
             uri = uriBuilder.Uri;
-            traceSource.TraceVerbose("URI: {0}", uri);
+            traceSource?.TraceVerbose("URI: {0}", uri);
 
             var response = await httpClient.PostJsonAsync(uri, json, request => request.Headers.Add(apiKeyHeader, this._restApiMetadata.ApiKey));
             var jsonOutput = await response.Content.ReadAsStringAsync();
 
             if (!response.IsSuccessStatusCode)
             {
-                traceSource.TraceError($"Search POST response: {response.StatusCode}");
-                if (string.IsNullOrEmpty(jsonOutput)) traceSource.TraceError("The expected JSON output is not here.");
+                traceSource?.TraceError($"Search POST response: {response.StatusCode}");
+                if (string.IsNullOrEmpty(jsonOutput)) traceSource?.TraceError("The expected JSON output is not here.");
                 return this.BadRequest();
             }
 

@@ -20,9 +20,8 @@ namespace Songhay.Blog.Models.Extensions
     {
         static BlogEntryExtensions() => traceSource = TraceSources
             .Instance
-            .GetTraceSourceFromConfiguredName()
-            .WithAllSourceLevels()
-            .EnsureTraceSource();
+            .GetConfiguredTraceSource()
+            .WithSourceLevels();
 
         /// <summary>
         /// Generates an index from <see cref="IEnumerable{BlogEntry}"/>.
@@ -65,7 +64,7 @@ namespace Songhay.Blog.Models.Extensions
             if (entries == null) throw new NullReferenceException("The expected Blog entries are not here.");
             if (!entries.Any()) throw new NullReferenceException("The expected Blog entries are not here.");
 
-            traceSource.TraceInformation("Generating Blog Index...");
+            traceSource?.TraceInformation("Generating Blog Index...");
 
             var entriesLite = entries.Select(i =>
             {
@@ -73,7 +72,7 @@ namespace Songhay.Blog.Models.Extensions
                     .WithItemCategory(topics)
                     .WithContentAsExtract();
 
-                traceSource.TraceVerbose("entry: {0}", entry);
+                traceSource?.TraceVerbose("entry: {0}", entry);
 
                 return entry;
             });
@@ -120,8 +119,8 @@ namespace Songhay.Blog.Models.Extensions
             {
                 if (string.IsNullOrEmpty(content)) return null;
 
-                traceSource.TraceVerbose("Getting Blog Entry Content...");
-                traceSource.TraceVerbose("Getting Blog Entry Slug: {0}", data.Slug);
+                traceSource?.TraceVerbose("Getting Blog Entry Content...");
+                traceSource?.TraceVerbose("Getting Blog Entry Slug: {0}", data.Slug);
 
                 var limit = default(int);
 
@@ -138,7 +137,7 @@ namespace Songhay.Blog.Models.Extensions
                 }
                 catch (Exception ex)
                 {
-                    traceSource.TraceError(ex);
+                    traceSource?.TraceError(ex);
                 }
 
                 return (content.Length > limit) ? string.Format("{0}...", content.Trim().Substring(0, limit - 1)) : content;

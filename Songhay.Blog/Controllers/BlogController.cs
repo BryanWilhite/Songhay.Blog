@@ -20,9 +20,8 @@ namespace Songhay.Blog.Controllers
     {
         static BlogController() => traceSource = TraceSources
             .Instance
-            .GetTraceSourceFromConfiguredName()
-            .WithAllSourceLevels()
-            .EnsureTraceSource();
+            .GetConfiguredTraceSource()
+            .WithSourceLevels();
 
         static readonly TraceSource traceSource;
 
@@ -33,7 +32,7 @@ namespace Songhay.Blog.Controllers
         public BlogController(IRepositoryAsync repository)
         {
             this._repository = repository;
-            traceSource.TraceVerbose($"initializing {this.GetType().Name}...");
+            traceSource?.TraceVerbose($"initializing {this.GetType().Name}...");
         }
 
         /// <summary>
@@ -48,17 +47,17 @@ namespace Songhay.Blog.Controllers
 
             if (string.IsNullOrEmpty(id)) return this.BadRequest();
 
-            traceSource.TraceVerbose("Getting repository entry...");
+            traceSource?.TraceVerbose("Getting repository entry...");
             try
             {
                 var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
-                traceSource.TraceVerbose("Returning repository entry...");
+                traceSource?.TraceVerbose("Returning repository entry...");
                 return this.Ok(blogEntry);
             }
             catch (FileNotFoundException ex)
             {
-                traceSource.TraceError("The expected repository entry ID {0} is not here. Throwing a 404...", id);
-                traceSource.TraceError(ex);
+                traceSource?.TraceError("The expected repository entry ID {0} is not here. Throwing a 404...", id);
+                traceSource?.TraceError(ex);
                 return this.NotFound();
             }
         }
@@ -76,13 +75,13 @@ namespace Songhay.Blog.Controllers
             try
             {
                 var blogEntry = await this._repository.LoadSingleAsync<BlogEntry>(id.ToLowerInvariant());
-                traceSource.TraceVerbose("Returning repository entry...");
+                traceSource?.TraceVerbose("Returning repository entry...");
                 return this.View("PermaLink", blogEntry.WithGitHubDirectivesTranscluded());
             }
             catch (FileNotFoundException ex)
             {
-                traceSource.TraceError("The expected repository entry ID {0} is not here. Throwing a 404...", id);
-                traceSource.TraceError(ex);
+                traceSource?.TraceError("The expected repository entry ID {0} is not here. Throwing a 404...", id);
+                traceSource?.TraceError(ex);
                 return this.NotFound();
             }
         }
@@ -106,7 +105,7 @@ namespace Songhay.Blog.Controllers
         [Route("/Inline/GitHubGist/{id}")]
         public IActionResult GetInlineFramingOfGitHubGist(string id)
         {
-            traceSource.TraceVerbose($"{nameof(this.GetInlineFramingOfGitHubGist)} ID: {0}", id);
+            traceSource?.TraceVerbose($"{nameof(this.GetInlineFramingOfGitHubGist)} ID: {0}", id);
 
             var data = new DisplayItemModel
             {
@@ -124,7 +123,7 @@ namespace Songhay.Blog.Controllers
         [Route("/Index/Entry/Show/{id}")]
         public IActionResult RedirectToAngularClient(string id)
         {
-            traceSource.TraceVerbose($"{nameof(this.RedirectToAngularClient)} ID: {id}");
+            traceSource?.TraceVerbose($"{nameof(this.RedirectToAngularClient)} ID: {id}");
 
             return this.RedirectPermanent($"~/blog/entry/{id}");
         }

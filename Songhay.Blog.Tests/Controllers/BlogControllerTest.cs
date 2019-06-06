@@ -70,7 +70,7 @@ namespace Songhay.Blog.Tests.Controllers
             var pathTemplate = new UriTemplate(string.Concat(baseRoute, this.TestContext.Properties["pathTemplate"].ToString()));
             var id = this.TestContext.Properties["id"].ToString();
             var outputFile = this.TestContext.Properties["outputFile"].ToString();
-            outputFile = projectInfo.FullName.ToCombinedPath(outputFile);
+            outputFile = projectInfo.ToCombinedPath(outputFile);
             this.TestContext.ShouldFindFile(outputFile);
 
             #endregion

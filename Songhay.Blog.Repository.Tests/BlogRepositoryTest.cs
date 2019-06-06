@@ -18,9 +18,8 @@ namespace Songhay.Blog.Repository.Tests
     {
         static BlogRepositoryTest() => traceSource = TraceSources
             .Instance
-            .GetTraceSourceFromConfiguredName()
-            .WithAllSourceLevels()
-            .EnsureTraceSource();
+            .GetConfiguredTraceSource()
+            .WithSourceLevels();
 
         static readonly TraceSource traceSource;
 

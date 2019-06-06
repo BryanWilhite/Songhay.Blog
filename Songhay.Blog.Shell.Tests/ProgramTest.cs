@@ -40,17 +40,17 @@ namespace Songhay.Blog.Shell.Tests
             #region test properties:
 
             var appFile = this.TestContext.Properties["appFile"].ToString();
-            appFile = projectDirectoryInfo.FullName.ToCombinedPath(appFile);
+            appFile = projectDirectoryInfo.ToCombinedPath(appFile);
             this.TestContext.ShouldFindFile(appFile);
 
             var blobContainerName = this.TestContext.Properties["blobContainerName"].ToString();
 
             var indexFile = this.TestContext.Properties["indexFile"].ToString();
-            indexFile = projectDirectoryInfo.FullName.ToCombinedPath(indexFile);
+            indexFile = projectDirectoryInfo.ToCombinedPath(indexFile);
             this.TestContext.ShouldFindFile(indexFile);
 
             var serverMetadataFile = this.TestContext.Properties["serverMetadataFile"].ToString();
-            serverMetadataFile = projectDirectoryInfo.FullName.ToCombinedPath(serverMetadataFile);
+            serverMetadataFile = projectDirectoryInfo.ToCombinedPath(serverMetadataFile);
             this.TestContext.ShouldFindFile(serverMetadataFile);
 
             #endregion
@@ -70,7 +70,7 @@ namespace Songhay.Blog.Shell.Tests
             File.WriteAllText(appFile, jO.ToString());
 
             var container = cloudStorageAccount.CreateCloudBlobClient().GetContainerReference(blobContainerName);
-            await container.UploadBlob(appFile, string.Empty);
+            await container.UploadBlobAsync(appFile, string.Empty);
         }
 
         [TestMethod]
