@@ -1,9 +1,17 @@
 <rss version="2.0">
-  <channel><pubDate>Sun, 21 Apr 2019 03:10:30 GMT</pubDate>
+  <channel><pubDate>Thu, 06 Jun 2019 18:36:05 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2019-06</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-06</link>
+  <description>I missed last month 😒🤷‍️😁month-4 was all about upgrading SonghayCore 🐰🕳I have started using GitHub projects to batch issues together to mark a NuGet release. My first project, version 3.1.3 release, records the miserable but compelling details aroun...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2019-06</guid>
+  <pubDate>Thu, 06 Jun 2019 18:35:09 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2019-04</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-04</link>
@@ -79,13 +87,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">i-just-published-implementing-search-in-graphql-and-other-tweeted-links</guid>
   <pubDate>Thu, 17 Jan 2019 04:26:24 GMT</pubDate>
-</item>
-<item>
-  <title>“Dynamic Nested Reactive Forms In Angular” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/dynamic-nested-reactive-forms-in-angular-and-other-tweeted-links</link>
-  <description>Dynamic Nested Reactive Forms In Angular – Josh Hicks – Medium [medium.com] How to Create Custom Angular Pipes and Dynamic Locales: [medium.com] Adjustable sidebar using Angular - @nicuvlad89[medium.com]#JavaScript#Typescript#Angular#WebDevelopment Under...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">dynamic-nested-reactive-forms-in-angular-and-other-tweeted-links</guid>
-  <pubDate>Wed, 16 Jan 2019 05:20:45 GMT</pubDate>
 </item></channel>
 </rss>
