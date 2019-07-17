@@ -134,13 +134,6 @@
             "problemMatcher": ["$tslint5"]
         },
         {
-            "label": "npm build:staging",
-            "type": "npm",
-            "script": "build:staging",
-            "path": "Songhay.Blog/ClientApp/",
-            "problemMatcher": ["$tslint5"]
-        },
-        {
             "label": "npm e2e",
             "type": "npm",
             "script": "e2e",
