@@ -5,7 +5,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
-        <PackageReference Include="Songhay.Cloud.BlobStorage" Version="3.0.1" />
+        <PackageReference Include="Songhay.Cloud.BlobStorage" Version="3.0.4" />
         <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
     </ItemGroup>
     <ItemGroup>
