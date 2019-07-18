@@ -1,5 +1,5 @@
-@import '../../../assets/scss/mat-spinner';
-@import '../../../assets/scss/normalize-component';
+@import "../../../assets/scss/mat-spinner";
+@import "../../../assets/scss/normalize-component";
 
 .entry {
     background-color: #fff;
@@ -97,15 +97,31 @@
         & kbd {
             background-color: #cfc;
             color: navy;
-            font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
+            font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono",
                 monospace;
             font-size: smaller;
         }
 
+        $code-colors: (
+            al: #cb4b16,
+            bg: #fdf6e3,
+            bn: #d33682,
+            ch: #dc322f,
+            co: #93a1a1,
+            dt: #268bd2,
+            dv: #d33682,
+            er: #d30102,
+            fl: #d33682,
+            fu: #268bd2,
+            kw: #268bd2,
+            ot: #a57800,
+            st: #2aa198
+        );
+
         & pre {
             background-color: #cfc;
             color: navy;
-            font-family: Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono',
+            font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono",
                 monospace;
             line-height: 1.5em;
             margin-bottom: 1.5em;
@@ -114,13 +130,68 @@
             padding: 0.75em 1.625em;
         }
 
-        & > .sourceCode {
-            & > pre {
-                white-space: normal;
-
+        & > div.sourceCode {
+            & > pre.sourceCode {
                 & code {
                     & > .sourceLine {
                         display: block;
+                    }
+                }
+                & > code.sourceCode {
+                    & > span {
+                        /* alert */
+                        &.al {
+                            color: map-get($map: $code-colors, $key: al);
+                        }
+                        /* background */
+                        &.bg {
+                            color: map-get($map: $code-colors, $key: bg);
+                        }
+                        /* base-n */
+                        &.bn {
+                            color: map-get($map: $code-colors, $key: bn);
+                        }
+                        /* char */
+                        &.ch {
+                            color: map-get($map: $code-colors, $key: ch);
+                        }
+                        /* comment */
+                        &.co {
+                            color: map-get($map: $code-colors, $key: co);
+                            display: block;
+                        }
+                        /* data type */
+                        &.dt {
+                            color: map-get($map: $code-colors, $key: dt);
+                        }
+                        /* decimal value */
+                        &.dv {
+                            color: map-get($map: $code-colors, $key: dv);
+                        }
+                        /* error */
+                        &.er {
+                            color: map-get($map: $code-colors, $key: er);
+                        }
+                        /* float */
+                        &.fl {
+                            color: map-get($map: $code-colors, $key: fl);
+                        }
+                        /* function */
+                        &.fu {
+                            color: map-get($map: $code-colors, $key: fu);
+                        }
+                        /* keyword */
+                        &.kw {
+                            color: map-get($map: $code-colors, $key: kw);
+                        }
+                        /* other */
+                        &.ot {
+                            color: map-get($map: $code-colors, $key: ot);
+                        }
+                        /* string */
+                        &.st {
+                            color: map-get($map: $code-colors, $key: st);
+                        }
                     }
                 }
             }
