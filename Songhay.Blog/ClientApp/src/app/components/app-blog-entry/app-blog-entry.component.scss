@@ -93,15 +93,6 @@
             margin: 1.5em;
         }
 
-        & code,
-        & kbd {
-            background-color: #cfc;
-            color: navy;
-            font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono",
-                monospace;
-            font-size: smaller;
-        }
-
         $code-colors: (
             al: #cb4b16,
             bg: #fdf6e3,
@@ -118,9 +109,16 @@
             st: #2aa198
         );
 
+        & code,
+        & kbd {
+            background-color: map-get($map: $code-colors, $key: bg);
+            font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono",
+                monospace;
+            font-size: smaller;
+        }
+
         & pre {
-            background-color: #cfc;
-            color: navy;
+            background-color: map-get($map: $code-colors, $key: bg);
             font-family: Consolas, Monaco, "Andale Mono", "DejaVu Sans Mono",
                 monospace;
             line-height: 1.5em;
@@ -158,7 +156,9 @@
                         /* comment */
                         &.co {
                             color: map-get($map: $code-colors, $key: co);
-                            display: block;
+                            &:before {
+                                content: "\A";
+                            }
                         }
                         /* data type */
                         &.dt {
