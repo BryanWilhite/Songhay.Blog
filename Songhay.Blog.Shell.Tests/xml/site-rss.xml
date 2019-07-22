@@ -1,9 +1,25 @@
 <rss version="2.0">
-  <channel><pubDate>Thu, 06 Jun 2019 18:36:05 GMT</pubDate>
+  <channel><pubDate>Mon, 22 Jul 2019 18:56:15 GMT</pubDate>
 <title>&gt;DayPath_</title>
 <description>The technical journey of @BryanWilhite.</description>
 <copyright>Bryan Wilhite, Songhay System 2019</copyright>
 <link>http://songhayblog.azurewebsites.net/</link>
+<item>
+  <title>studio status report: 2019-07</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-07</link>
+  <description>month-6 was about switching to Hyper-V, being 134% behind and 11tyMy studio notes on setting up Ubuntu on Hyper-V boil down to this:Install OS (minimal install) from *.ISO on Generation 2 VM without RemoteFX 3D Video Adapter (with Checkpoints Disabled)Co...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">studio-status-report-2019-07</guid>
+  <pubDate>Mon, 22 Jul 2019 18:54:32 GMT</pubDate>
+</item>
+<item>
+  <title>flippant remarks about DGML and Visual Studio code visualization</title>
+  <link>http://songhayblog.azurewebsites.net/blog/entry/flippant-remarks-about-dgml-and-visual-studio-code-visualization</link>
+  <description>In 2008, Cameron Skinner of Microsoft wrote, “Introduction to Directed Graph Markup Language (DGML).” In the comments of this post, Chris Lovett is mentioned as an architect working on DGML and Sadi Khan as a Program Manager. Lovett developed DgmlPowerTo...</description>
+  <author>rasx@songhaysystem.com</author>
+  <guid isPermaLink="false">flippant-remarks-about-dgml-and-visual-studio-code-visualization</guid>
+  <pubDate>Mon, 22 Jul 2019 18:51:53 GMT</pubDate>
+</item>
 <item>
   <title>studio status report: 2019-06</title>
   <link>http://songhayblog.azurewebsites.net/blog/entry/studio-status-report-2019-06</link>
@@ -69,23 +85,5 @@
   <author>rasx@songhaysystem.com</author>
   <guid isPermaLink="false">internet-explorer-critical-security-flaw-and-other-tweeted-links</guid>
   <pubDate>Sat, 26 Jan 2019 01:47:50 GMT</pubDate>
-</item>
-<item>
-  <title>“You asked, we answered. MSFT open sources WPF, Windows Forms and Windows UI XAML Library” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/you-asked-we-answered-msft-open-sources-wpf-windows-forms-and-windows-ui-xaml-library-and-other-tweeted-links</link>
-  <description>You asked, we answered. MSFT open sources WPF, Windows Forms and Windows UI XAML Library [blogs.windows.com] Microsoft ❤️ OpenSource - the UI toolkits, Windows.Forms and WPF are now open source: [blogs.msdn.microsoft.com] Some big news for developers at ...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">you-asked-we-answered-msft-open-sources-wpf-windows-forms-and-windows-ui-xaml-library-and-other-tweeted-links</guid>
-  <pubDate>Mon, 21 Jan 2019 20:36:32 GMT</pubDate>
-</item>
-<item>
-  <title>“I just published ‘Implementing Search in GraphQL’"” and other tweeted links…</title>
-  <link>http://songhayblog.azurewebsites.net/blog/entry/i-just-published-implementing-search-in-graphql-and-other-tweeted-links</link>
-  <description>I just published "Implementing Search in GraphQL" showing how to implement text-based searches that are both case-insensitive &amp;amp; full field!
-
-            This is a 2 part series, the next will be advanced search using Elasticsearch for things like g...</description>
-  <author>rasx@songhaysystem.com</author>
-  <guid isPermaLink="false">i-just-published-implementing-search-in-graphql-and-other-tweeted-links</guid>
-  <pubDate>Thu, 17 Jan 2019 04:26:24 GMT</pubDate>
 </item></channel>
 </rss>
