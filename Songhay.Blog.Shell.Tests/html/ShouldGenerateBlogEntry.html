@@ -7,43 +7,35 @@
     </head>
 
     <body>
-        <h2 id="studio-status-report-2019-07">studio status report: 2019-07</h2>
-        <h3 id="month-6-was-about-switching-to-hyper-v-being-134-behind-and-11ty">month-6 was about switching to Hyper-V, being 134% behind and 11ty</h3>
-        <p>My studio notes on setting up Ubuntu on Hyper-V boil down to this:</p>
+        <h2 id="studio-status-report-2019-08">studio status report: 2019-08</h2>
+        <h3 id="month-7-was-about-moving-the-kinté-space-blog-into-an-11ty-pipeline">month-7 was about moving the kinté space Blog into an 11ty pipeline</h3>
+        <p><em>11ty pipeline for kintespace.com Blog.</em> I am almost certain that end-of-month-8 or early month 9 will see the re-launch of the kintespace.com Blog <em>without</em> WordPress! Success here will make <em>the rasx() context</em> a standalone Songhay Publication on an 11ty production pipeline. This implies that I finally see the way to use 11ty to write to a sibling folder or a folder of another parent—this means every presentation/publication can have its own repo👍 This implies I can make <em>some</em> presentations/publications public on GitHub and use them as a guide for any sophisticated, 3<sup>rd</sup>-party contributors in future💪💡</p>
+        <h3 id="month-8-is-about-ssd-andor-motherboard-failure-and-daz3d-apphangtransient-errors">month-8 is about SSD and/or motherboard failure and Daz3D AppHangTransient errors</h3>
+        <p><em>SSD and/or motherboard failure.</em> My internal hardware journal is packed full of a miserable adventure that all started with me falsely accusing myself of letting studio hardware age over five years. It turns out that the eldest piece, a Western Digital Black (Scorpio?) 320 GB 2.5&quot; drive from 2011, did <em>not</em> fail. Either my Samsung EVO SSD from 2017 dropped into a read-only-mode coma or my Asus M5A97 motherboard from 2015 independently decided there was no operating system volume. This drama left me with a few takeaways:</p>
         <ul>
-            <li>Install OS (minimal install) from *.ISO on Generation 2 VM without RemoteFX 3D Video Adapter (with Checkpoints Disabled)</li>
-            <li>Configure <code>hyperv_fb</code> to support max-res (<code>1920x1080</code>): <a href="https://www.sysnettechsolutions.com/en/hyperv/change-screen-resolution-in-ubuntu-on-hyper-v/" class="uri">https://www.sysnettechsolutions.com/en/hyperv/change-screen-resolution-in-ubuntu-on-hyper-v/</a></li>
-            <li>Use Ubuntu Software to install Bing Wallpaper Changer, Chromium and Visual Studio Code</li>
-            <li>Install <code>ucaresystem-core</code>: <a href="https://www.utappia.org/2016/03/ucaresystem-core-v30-released-and.html" class="uri">https://www.utappia.org/2016/03/ucaresystem-core-v30-released-and.html</a></li>
-            <li>Move the Home folder to a separate virtual disk: <a href="https://www.maketecheasier.com/move-home-folder-ubuntu/" class="uri">https://www.maketecheasier.com/move-home-folder-ubuntu/</a></li>
-            <li>Install curl</li>
-            <li>Run ssh-keygen for git SSH</li>
-            <li>Install git with <code>git config --global user.name &quot;Bryan Wilhite&quot;</code> and <code>git config --global user.email &quot;rasx@songhaysystem.com&quot;</code></li>
-            <li>Clone <code>Songhay.Shell</code> and install Monoid Font</li>
-            <li>Install current .NET Core SDK</li>
-            <li>Install Node.JS and NPM</li>
+            <li>consider <a href="https://www.howto-connect.com/tweak-paging-file-for-better-windows-10-performance/">customizing the Windows 10 paging-file strategy</a> to encourage the OS to beat up a mechanical drive with a huge paging-file allocation</li>
+            <li>MSI motherboard RAM slots ship with LEDs that glow <em>red</em> when everything is apparently fine</li>
+            <li>consider adding calendar events for studio-hardware, five-year birthdays</li>
         </ul>
-        <p>Even though this studio is divesting in VMWare, it is now clear that VMWare has one advantage: its host-guest software <em>feels</em> superior to that of Hyper-V but this superiority <em>feels</em> like it comes at a cost—and Microsoft by design might <em>prefer</em> to limit guest desktop resolution and the clipboard (but <a href="https://www.tenforums.com/virtualization/127999-hyper-v-windows-linux-rdc-rdp-no-connection-after-xorg-loging.html">depending on XOrg and prompt for an “enhanced” session</a> <em>feels</em> a bit cynical).</p>
-        <p><em>Being 134% behind.</em> This switch to Hyper-V (as well as the revival of Daz3D Studio) coupled with <a href="https://www.youtube.com/watch?v=0GjSiLbCtHU">the buzz around the “return” of AMD via Ryzen</a> has inspired research into just how behind my studio hardware is to the state of the art. Answer: <a href="https://cpu.userbenchmark.com/Compare/AMD-Ryzen-7-2700X-vs-AMD-Phenom-II-X6-1055T/3958vs2003">134% percent behind</a>.</p>
-        <p><em>The FunkyKB runs on 11ty.</em> This is success: <a href="https://bryanwilhite.github.io/the-funky-knowledge-base/" class="uri">https://bryanwilhite.github.io/the-funky-knowledge-base/</a> The 11ty-based pipeline brings together the preference in this studio for working with static JSON and static site generation (which I have been messing about with since the late 1990s). 11ty will allow this studio to:</p>
+        <p><em>Daz3D AppHangTransient errors.</em> After serious suffering with the hardware woes above, I was very much looking forward to seeing Daz3D Studio 4.11.x running on this new hardware. Nope. 😶 Here are/were the suspicious issues that could be preventing Daz from running:</p>
         <ul>
-            <li>formally replace ancient XSLT-based templates</li>
-            <li>eliminate the need for recognizing XHTML as a core architectural element</li>
-            <li>allow APIs returning static JSON to fuel static site generation</li>
+            <li>the PostgreSQL CMS is not starting</li>
+            <li><del>the Radeon Virtual Super Resolution settings being on</del></li>
+            <li><del>the default paging file is too small for Daz3D (on the new system)</del></li>
+            <li>my old-ass Radeon R9 270X is not really working properly on the new MSI AMD X470 motherboard</li>
         </ul>
-        <p>That last bullet point is huge: <code>Songhay.Publications</code> and <code>GenericWeb</code> can shed <em>all</em> document-generating responsibilities because of a tool like 11ty.</p>
-        <p>I have updated my sketchy TODO list below to assert that <code>Songhay.Blog</code> <em>can</em> make the switch to an 11ty-based pipeline <em>and</em> use Angular as a supplement to the static site (a different take on “progressive enhancement”).</p>
+        <p>Until this issue is resolved, I can fall back to my Sager laptop (and an HDMI cable) to work with Daz3D there.😬😒</p>
         <h3 id="sketching-out-a-development-schedule-revision-2">sketching out a development schedule (revision 2)</h3>
         <p>Today the studio development schedule looks like this:</p>
         <ul>
             <li><del>get 11ty pipelines running with the FunkyKB</del> ✔</li>
-            <li>migrate Thunderbird email to new Hyper-V Ubuntu VM 🚜🚛🚛</li>
+            <li><del>migrate Thunderbird email to new Hyper-V Ubuntu VM</del> ✔</li>
+            <li>move the kinté space blog to an 11ty pipeline (this has been another emergency <em>for years</em>) 🔥🚜🔨</li>
             <li>update SonghaySystem.com with my new <code>@songhay/player-video-you-tube</code> and <code>@songhay/index</code> 📦</li>
             <li>convert the Day Path blog to 11ty (with <code>@songhay/index</code> as a side-car app) 💪💡</li>
             <li>convert SonghaySystem.com to HTTPs by default 🔐</li>
             <li>convert Day Path Blog to HTTPs by default 🔐</li>
             <li>use the learnings from existing npm packages to build <code>@songhay/player-audio-???</code> 📦✨</li>
-            <li>move the kinté space blog to an 11ty pipeline (this has been another emergency <em>for years</em>) 🔥🔥🔥😬</li>
             <li>set up automated social-media posting with Azure logic apps (and Azure functions orchestration) ☁🤖</li>
             <li>modernize the kinté hits page into a progressive web app 💄✨</li>
             <li>use the learnings of previous work to upgrade and re-release the kinté space 🚀</li>
