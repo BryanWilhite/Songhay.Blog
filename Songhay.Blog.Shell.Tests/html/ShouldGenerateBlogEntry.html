@@ -7,38 +7,35 @@
     </head>
 
     <body>
-        <h2 id="studio-status-report-2019-08">studio status report: 2019-08</h2>
-        <h3 id="month-7-was-about-moving-the-kinté-space-blog-into-an-11ty-pipeline">month-7 was about moving the kinté space Blog into an 11ty pipeline</h3>
-        <p><em>11ty pipeline for kintespace.com Blog.</em> I am almost certain that end-of-month-8 or early month 9 will see the re-launch of the kintespace.com Blog <em>without</em> WordPress! Success here will make <em>the rasx() context</em> a standalone Songhay Publication on an 11ty production pipeline. This implies that I finally see the way to use 11ty to write to a sibling folder or a folder of another parent—this means every presentation/publication can have its own repo👍 This implies I can make <em>some</em> presentations/publications public on GitHub and use them as a guide for any sophisticated, 3<sup>rd</sup>-party contributors in future💪💡</p>
-        <h3 id="month-8-is-about-ssd-andor-motherboard-failure-and-daz3d-apphangtransient-errors">month-8 is about SSD and/or motherboard failure and Daz3D AppHangTransient errors</h3>
-        <p><em>SSD and/or motherboard failure.</em> My internal hardware journal is packed full of a miserable adventure that all started with me falsely accusing myself of letting studio hardware age over five years. It turns out that the eldest piece, a Western Digital Black (Scorpio?) 320 GB 2.5&quot; drive from 2011, did <em>not</em> fail. Either my Samsung EVO SSD from 2017 dropped into a read-only-mode coma or my Asus M5A97 motherboard from 2015 independently decided there was no operating system volume. This drama left me with a few takeaways:</p>
+        <h2 id="studio-status-report-2019-09">studio status report: 2019-09</h2>
+        <h3 id="month-9-has-been-about-actually-using-songhayplayer-video-you-tube">month-9 has been about actually using <code>@songhay/player-video-you-tube</code></h3>
+        <p>The NPM package <code>@songhay/player-video-you-tube</code> is installed and compiling into the build for SonghaySystem.com.👏 (BTW: it was editorial error to mention <code>@songhay/index</code> for the last few months as this package is not in use for the Songhay Dashboard 😒). The following GitHub issues detail the transition:</p>
         <ul>
-            <li>consider <a href="https://www.howto-connect.com/tweak-paging-file-for-better-windows-10-performance/">customizing the Windows 10 paging-file strategy</a> to encourage the OS to beat up a mechanical drive with a huge paging-file allocation</li>
-            <li>MSI motherboard RAM slots ship with LEDs that glow <em>red</em> when everything is apparently fine</li>
-            <li>consider adding calendar events for studio-hardware, five-year birthdays</li>
+        <li><a href="https://github.com/BryanWilhite/Songhay.Dashboard/issues/53" class="uri">https://github.com/BryanWilhite/Songhay.Dashboard/issues/53</a></li>
+        <li><a href="https://github.com/BryanWilhite/Songhay.Dashboard/issues/54" class="uri">https://github.com/BryanWilhite/Songhay.Dashboard/issues/54</a></li>
+        <li><a href="https://github.com/BryanWilhite/Songhay.Dashboard/issues/55" class="uri">https://github.com/BryanWilhite/Songhay.Dashboard/issues/55</a></li>
+        <li><a href="https://github.com/BryanWilhite/Songhay.Dashboard/issues/59" class="uri">https://github.com/BryanWilhite/Songhay.Dashboard/issues/59</a></li>
         </ul>
-        <p><em>Daz3D AppHangTransient errors.</em> After serious suffering with the hardware woes above, I was very much looking forward to seeing Daz3D Studio 4.11.x running on this new hardware. Nope. 😶 Here are/were the suspicious issues that could be preventing Daz from running:</p>
-        <ul>
-            <li>the PostgreSQL CMS is not starting</li>
-            <li><del>the Radeon Virtual Super Resolution settings being on</del></li>
-            <li><del>the default paging file is too small for Daz3D (on the new system)</del></li>
-            <li>my old-ass Radeon R9 270X is not really working properly on the new MSI AMD X470 motherboard</li>
-        </ul>
-        <p>Until this issue is resolved, I can fall back to my Sager laptop (and an HDMI cable) to work with Daz3D there.😬😒</p>
-        <h3 id="sketching-out-a-development-schedule-revision-2">sketching out a development schedule (revision 2)</h3>
+        <h3 id="daz3d-studio-is-stabilized">Daz3D Studio is stabilized</h3>
+        <p>The ultimate fix for my recent Daz3D problems was to reinstall Windows 10 (the 1903 build) which was painful and time consuming. It was important to install MSI drivers <a href="https://www.arduino.cc/en/Guide/DriverInstallation">the old-fashioned way</a> (with the <strong>Browse my computer for driver software</strong> command) and not trust any default suite installs from any optical media.</p>
+        <p>The <a href="https://forums.tomshardware.com/threads/nahimic-audio-service.3396247/">Nahimic service</a> (installed by MSI optical media) was found to be directly correlated to causing Daz3D studio to crash with the white view ports. This trial-and-error process with the <a href="https://www.howtogeek.com/school/using-windows-admin-tools-like-a-pro/lesson8/">Services Manager</a> and <code>MSCONFIG.EXE</code> was also painful and time consuming.</p>
+        <h3 id="songhayindex-and-lunr-andor-bing-web-search-api"><code>@songhay/index</code> and lunr and/or Bing Web Search API</h3>
+        <p>Converting the Day Path Blog to 11ty has some back-end implications. The 11ty pipeline will be based on markdown, eliminating JSON as the storage format. This implies that <a href="http://songhayblog.azurewebsites.net/blog/entry/setting-up-an-azure-search-json-blob-indexer-with-api-version-2015-02-28-preview">Azure Search over JSON in Azure Storage</a> can no longer be used to drive Index App search.</p>
+        <p>I think the Index App should be based on <a href="https://lunrjs.com/">lunr</a> and <a href="https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/">Bing Web Search</a> (or some open source equivalent). This new thinking should be made coherent with the old thinking of this issue: <a href="https://github.com/BryanWilhite/songhay-ng-workspace/issues/13" class="uri">https://github.com/BryanWilhite/songhay-ng-workspace/issues/13</a></p>
+        <h3 id="sketching-out-a-development-schedule-revision-3">sketching out a development schedule (revision 3)</h3>
         <p>Today the studio development schedule looks like this:</p>
         <ul>
-            <li><del>get 11ty pipelines running with the FunkyKB</del> ✔</li>
-            <li><del>migrate Thunderbird email to new Hyper-V Ubuntu VM</del> ✔</li>
-            <li>move the kinté space blog to an 11ty pipeline (this has been another emergency <em>for years</em>) 🔥🚜🔨</li>
-            <li>update SonghaySystem.com with my new <code>@songhay/player-video-you-tube</code> and <code>@songhay/index</code> 📦</li>
-            <li>convert the Day Path blog to 11ty (with <code>@songhay/index</code> as a side-car app) 💪💡</li>
-            <li>convert SonghaySystem.com to HTTPs by default 🔐</li>
-            <li>convert Day Path Blog to HTTPs by default 🔐</li>
-            <li>use the learnings from existing npm packages to build <code>@songhay/player-audio-???</code> 📦✨</li>
-            <li>set up automated social-media posting with Azure logic apps (and Azure functions orchestration) ☁🤖</li>
-            <li>modernize the kinté hits page into a progressive web app 💄✨</li>
-            <li>use the learnings of previous work to upgrade and re-release the kinté space 🚀</li>
+        <li><del>get 11ty pipelines running with the FunkyKB</del> ✔</li>
+        <li><del>migrate Thunderbird email to new Hyper-V Ubuntu VM</del> ✔</li>
+        <li><del>move the kinté space blog to an 11ty pipeline (this has been another emergency <em>for years</em>)</del> ✔</li>
+        <li><del>update SonghaySystem.com with my new <code>@songhay/player-video-you-tube</code></del> ✔</li>
+        <li>convert the Day Path blog to 11ty (with <code>@songhay/index</code> as a side-car app) 💪💡</li>
+        <li>convert SonghaySystem.com to HTTPs by default 🔐</li>
+        <li>convert Day Path Blog to HTTPs by default 🔐</li>
+        <li>use the learnings from existing npm packages to build <code>@songhay/player-audio-???</code> 📦✨</li>
+        <li>set up automated social-media posting with Azure logic apps (and Azure functions orchestration) ☁🤖</li>
+        <li>modernize the kinté hits page into a progressive web app 💄✨</li>
+        <li>use the learnings of previous work to upgrade and re-release the kinté space 🚀</li>
         </ul>
         <p>@<a href="https://twitter.com/bryanwilhite">BryanWilhite</a></p>
     </body>
